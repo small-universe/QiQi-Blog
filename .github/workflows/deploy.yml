@@ -4,20 +4,22 @@ on:
   push:
     branches:
       - master
-
 jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
-
+  build-and-deploy:
+    runs-on: ubuntu-latest   // 使用 ubuntu 服务器
     steps:
-      - uses: actions/checkout@v1
-      - run: npm ci
-      - run: npm install vuepress
-      - run: npm run build
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
+      - name: install and build
+        run: |
+          npm install
+          npm run build
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v2.5.0
-        env:
+        uses: JamesIves/github-pages-deploy-action@3.5.9  // 引用别人的部署插件
+        with:
           ACTIONS_DEPLOY_KEY: ${{secrets.ACTIONS_DEPLOY_KEY}}
-          PUBLISH_BRANCH: qiqi-page
-          PUBLISH_DIR: dist
+          PUBLISH_BRANCH: giqi-pages
+          FOLDER: dist
