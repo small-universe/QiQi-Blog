@@ -8,17 +8,16 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v1
-      - run: npm ci # 相当于npm install
+      - run: npm ci
+      - run: npm install vuepress
       - run: npm run build
 
-      #发布到 mybells.github.io/master
-      - name: Deploy to branch qiqi-page
-        uses: peaceiris/actions-gh-pages@v2
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v2.5.0
         env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          ACTIONS_DEPLOY_KEY: ${{secrets.ACTIONS_DEPLOY_KEY}}
           PUBLISH_BRANCH: qiqi-page
           PUBLISH_DIR: dist
-        with:
-          emptyCommits: false
