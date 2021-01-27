@@ -10,7 +10,6 @@ module.exports = config({
   logo: "/logo.svg",
   description: "欢迎一起交流学习✨",
   dest: "./dist",
-  backtotop: false,
 
   head: [
     [
@@ -48,6 +47,7 @@ module.exports = config({
     iconPrefix: "icon-",
     nav: navBarConfig.blog,
     sidebar: sideBarConfig.blog,
+    backtotop: false,
     mdEnhance: {
       enableAll: true,
     },
