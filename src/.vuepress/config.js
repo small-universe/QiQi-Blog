@@ -9,7 +9,6 @@ module.exports = config({
   title: "七七博客",
   logo: "/logo.svg",
   description: "欢迎一起交流学习✨",
-  base: "/QiQi-Blog/",
   dest: "./dist",
 
   head: [
