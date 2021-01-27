@@ -1,9 +1,9 @@
 name: qiqi-page deploy
 
-on:
-  push:
-    branches:
-      - master
+on: push
+#  push:
+#    branches:
+#      - master
 
 jobs:
   build-deploy:
