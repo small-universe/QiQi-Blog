@@ -1,0 +1,30 @@
+{
+  "name": "QiQi-Blog",
+  "version": "1.0.0",
+  "description": "七七博客",
+  "scripts": {
+    "serve": "vuepress dev src",
+    "cleanServe": "vuepress dev src --no-cache",
+    "build": "vuepress build src",
+    "test": "echo \"Warning: no test specified\" && exit 0"
+  },
+  "author": "nanci",
+  "license": "MIT",
+  "keywords": [
+    "vuepress",
+    "QiQi-Blog"
+  ],
+  "dependencies": {
+    "@vuepress-reco/vuepress-plugin-loading-page": "^1.6.0",
+    "@vuepress/plugin-blog": "^1.9.4",
+    "vuepress": "1.8.0",
+    "vuepress-plugin-reading-progress": "^1.0.10",
+    "vuepress-theme-hope": "1.8.3"
+  },
+  "devDependencies": {
+    "vuepress-plugin-cursor-effects": "^1.0.0",
+    "vuepress-plugin-go-top": "^1.0.4",
+    "vuepress-plugin-meting": "^0.1.1",
+    "vuepress-plugin-ribbon-animation": "^1.1.3"
+  }
+}
