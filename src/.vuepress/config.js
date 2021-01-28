@@ -2,7 +2,7 @@
 const navBarConfig = require("./navBar");
 // 侧边栏
 const sideBarConfig = require("./sideBar");
-
+const comment = require("./private")
 const { config } = require("vuepress-theme-hope");
 
 module.exports = config({
@@ -57,6 +57,8 @@ module.exports = config({
       type: "valine",
       appId: process.env.LEANCLOUD_APP_ID,
       appKey: process.env.LEANCLOUD_APP_KEY,
+      // appId: comment.valine.AppID,
+      // appKey: comment.valine.AppKey,
     },
 
     // 页脚
