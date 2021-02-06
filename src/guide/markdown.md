@@ -1,12 +1,10 @@
 ---
-icon: markdown
 title: Markdown增强
 category: 使用指南
 tag:
   - markdown
 ---
-
-`vuepress-theme-hope` 通过内置 [md-enhance](https://vuepress-md-enhance.mrhope.site)，在 Markdown 中启用了更多的语法与新功能。
+> `vuepress-theme-hope` 通过内置 [md-enhance](https://vuepress-md-enhance.mrhope.site)，在 Markdown 中启用了更多的语法与新功能。
 
 <!-- more -->
 
@@ -16,11 +14,11 @@ tag:
 
 ```js {3-5}
 module.exports = {
-  themeConfig: {
-    mdEnhance: {
-      enableAll: true,
+    themeConfig: {
+        mdEnhance: {
+            enableAll: true,
+        },
     },
-  },
 };
 ```
 
@@ -157,13 +155,13 @@ $$
 
 ```js
 document.querySelector("#very").addEventListener("click", () => {
-  alert("十分帅");
+    alert("十分帅");
 });
 ```
 
 ```css
 span {
-  color: red;
+    color: red;
 }
 ```
 
@@ -174,7 +172,7 @@ span {
 ````md
 ::: demo 一个普通 Demo
 
-```html
+​```html
 <h1>Mr.Hope</h1>
 <p><span id="very">十分</span> 帅</p>
 ```
@@ -192,42 +190,15 @@ span {
 ```
 
 :::
-````
 
-::::
 
-::: demo [react] 一个 React Demo
-
-```js
-export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { message: "十分帅" };
-  }
-  render() {
-    return (
-      <div className="box-react">
-        Mr.Hope <span>{this.state.message}</span>
-      </div>
-    );
-  }
-}
-```
-
-```css
-.box-react span {
-  color: red;
-}
-```
-
-:::
 
 :::: details 代码
 
 ````md
 ::: demo [react] 一个 React Demo
 
-```js
+​```js
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -250,13 +221,15 @@ export default class App extends React.Component {
 ```
 
 :::
-````
 
+
+
+````
 ::::
 
 ::: demo [vue] 一个 Vue Demo
 
-```vue
+​```vue
 <template>
   <div class="box-vue">
     Mr.Hope <span>{{ message }}</span>
@@ -281,7 +254,7 @@ export default {
 ````md
 ::: demo [vue] 一个 Vue Demo
 
-```vue
+​```vue
 <template>
   <div class="box-vue">
     Mr.Hope <span>{{ message }}</span>
@@ -300,13 +273,13 @@ export default {
 ```
 
 :::
-````
 
+````
 ::::
 
 ::: demo 一个普通 Demo
 
-```md
+​```md
 # 标题
 
 十分帅
@@ -335,7 +308,7 @@ h1 {
 ````md
 ::: demo 一个普通 Demo
 
-```md
+​```md
 # 标题
 
 十分帅
@@ -358,8 +331,8 @@ h1 {
 ```
 
 :::
-````
 
+````
 ::::
 
 - [点击查看](https://vuepress-theme.mrhope.site/zh/guide/feature/markdown/demo/)
@@ -383,7 +356,7 @@ h1 {
 
 ## 幻灯片 3.1
 
-```js
+​```js
 const a = 1;
 ```
 
@@ -417,7 +390,7 @@ $$
 
 ## 幻灯片 3.1
 
-```js
+​```js
 const a = 1;
 ```
 
@@ -430,8 +403,8 @@ J(\theta_0,\theta_1) = \sum_{i=0}
 $$
 
 @slideend
-````
 
+````
 :::
 
 - [点击查看](https://vuepress-theme.mrhope.site/zh/guide/feature/markdown/presentation/)
@@ -460,7 +433,7 @@ $$
 
 :::: details 代码
 
-```md
+​```md
 ::: info 自定义标题
 信息容器
 :::

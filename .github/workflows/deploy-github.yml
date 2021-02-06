@@ -1,0 +1,89 @@
+name: Deploy QiQi-Blog
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          submodules: true
+          fetch-depth: 0
+
+      - uses: actions/cache@v2
+        id: node-modules
+        with:
+          path: node_modules/
+          key: ${{ runner.os }}-node-modules-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node-modules-
+
+      - name: Install Deps
+        if: steps.node-modules.outputs.cache-hit != 'true'
+        run: yarn install --frozen-lockfile
+
+      - name: Build Blog
+        run: yarn run super:build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
+
+#  linter-test:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v2
+#        with:
+#          persist-credentials: false
+#          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+#          submodules: true
+#
+#      - uses: actions/cache@v2
+#        id: node-modules
+#        with:
+#          path: node_modules/
+#          key: ${{ runner.os }}-node-modules-${{ hashFiles('yarn.lock') }}
+#          restore-keys: |
+#            ${{ runner.os }}-node-modules-
+#
+#      - name: Install Deps
+#        if: steps.node-modules.outputs.cache-hit != 'true'
+#        run: yarn install --frozen-lockfile
+#
+#      - name: Linter test
+#        run: yarn run lint
+#
+#  deploy-server:
+#    runs-on: ubuntu-latest
+#    needs: deploy-gh-pages
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v2
+#        with:
+#          ref: gh-pages
+#          fetch-depth: 0
+#
+#      - name: Configuration environment
+#        run: |
+#          mkdir -p ~/.ssh/
+#          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+#          chmod 600 ~/.ssh/id_rsa
+#          ssh-keyscan dreamagain.top >> ~/.ssh/known_hosts
+#          git config --global user.name 'small-universe'
+#          git config --global user.email '1715261428@qq.com'
+#
+#      - name: Deploy
+#        run: |
+#          git push -f git@mrhope.site:/www/wwwroot/mrhope gh-pages
+#          ssh git@mrhope.site "cd /www/wwwroot/mrhope && git reset --hard HEAD"

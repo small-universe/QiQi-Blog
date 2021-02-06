@@ -1,130 +1,105 @@
-// 导航栏
-const navBarConfig = require("./navBar");
-// 侧边栏
-const sideBarConfig = require("./sideBar");
-const comment = require("./private")
 const { config } = require("vuepress-theme-hope");
+const navBarConfig = require("./config/navbar");
+const sideBarConfig = require("./config/sideBar");
+const privateConfig = require("./config/private");
 
 module.exports = config({
-  title: "七七博客",
+  title: "七七部落",
   logo: "/logo.svg",
-  description: "欢迎一起交流学习✨",
+  description: "Actions speak louder than words.",
 
   head: [
+    // 百度站点验证
+    ["meta", { name: "baidu-site-verification", content: "nGf5yi0Gec" }],
+    ["meta", { name: "baidu-site-verification", content: "4H7tszevS8" }],
+
     [
-      "script",
-      { src: "https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" },
-    ],
-    [
-      "script",
+      "link",
       {
-        src:
-            "https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js",
+        rel: "mask-icon",
+        href: "/assets/safari-pinned-tab.svg",
+        color: "#5c92d1",
       },
-    ],
-    ["script", { src: "https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js" }],
-    [
-      "script",
-      { src: "https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js" },
     ],
   ],
 
-  extraWatchFiles: [".vuepress/navBar.js", ".vuepress/sideBar.js"],
+  shouldPrefetch: (filename) => !filename.includes("page-"),
 
-  // 进入主页
-  locales: {
-    "/": {
-      title: "七七部落",
-      description: "南辞 | 学习成长之路",
-    },
-  },
+  dest: "dist",
 
   themeConfig: {
-    logo: '/logo.png',
-    hostname: "http://qiqi.dreamagain.top/",
+    baseLang: "zh-CN",
+    logo: "/logo.png",
+    nav: navBarConfig.zh,
+    sidebar: sideBarConfig.zh,
     author: "南辞",
-    iconPrefix: "icon-",
-    nav: navBarConfig.blog,
-    sidebar: sideBarConfig.blog,
-    backtotop: false,
+    backToTop: false, // 回到顶部（用小喵代替）
+    editLinks: false, // 显示编辑本页链接（全局不显示）
+
+    locales: {
+      /** 英文设置 */
+      "/en/": {
+        nav: navBarConfig.en,
+        sidebar: sideBarConfig.en,
+      },
+    },
+
+    blog: {
+      intro: "/about/intro.html",//个人介绍地址
+      sidebarDisplay: "mobile",
+      blogger: "南辞", //博主名
+      avatar: "/avatar.jpg",//头像
+      links: {
+        Zhihu: "https://zhihu.com/people/qiqiblog",
+        Github: "https://github.com/small-universe",
+        Gitee:'https://gitee.com/small-universe',
+        QQ:"tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1715261428",
+        Gmail:"mailto:18846770224@163.com",
+      },
+      timeline:"昨日不再", // 时间轴的顶部文字
+      perPage: 10, //每页文章数量
+    },
+
+    copyright: {
+      status: "global",
+    },
+
     mdEnhance: {
       enableAll: true,
     },
-    baseLang:"zh-CN",
 
-    // 评论 type可选
     comment: {
       type: "valine",
-      appId: process.env.LEANCLOUD_APP_ID,
-      appKey: process.env.LEANCLOUD_APP_KEY,
-      // appId: comment.valine.AppID,
-      // appKey: comment.valine.AppKey,
+      appId: privateConfig.valine.AppID,
+      appKey: privateConfig.valine.AppKey,
     },
 
     // 页脚
     footer: {
       display: true,
-      content:"七七部落 " +
-          "| <a href='http://www.beian.gov.cn/portal/index.do'>备案号:滇ICP备20004889-1号</a> " +
-          "<a href='http://www.dreamagain.top'> | 锦鲤博客</a>",
+      content:"<a href='http://qiqi.dreamagain.top'>七七部落 </a>" +
+          "| <a href='http://www.beian.gov.cn/portal/index.do'>备案号:滇ICP备20004889号-1</a> " +
+          "<a href='http://www.dreamagain.top'> | 七七博客</a>",
       copyright: "Copyright © 2021 Mr.Yang",
     },
 
+    hostname: "http://qiqi.dreamagain.top",
+
     // 搜索配置
-    algolia: {
-      apiKey: process.env.ALGOLIA_API_KEY,
-      indexName: process.env.ALGOLIA_INDEX_NAME,
-    },
     searchPlaceholder: "Search...",
-
-    // 博客配置
-    blog: {
-      intro: "/intro/",//个人介绍地址
-      sidebarDisplay: "mobile",
-      blogger: "nanci", //博主名
-      avatar: "/avatar.jpg",//头像
-      links: {
-        Zhihu: "https://zhihu.com/people/qiqiblog",
-        Github: "https://github.com/small-universe",
-        QQ:"tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1715261428",
-        Gmail:"mailto:18846770224@163.com",
-      },
-      // timeline:"昨日不再",//时间轴的顶部文字
-      perPage: 10,//每页文章数量
+    algolia: {
+      apiKey: "",
+      indexName: "",
     },
 
-    // 版权
-    copyright: {
-      status: "global",
+
+    lastUpdate: {
+      timezone: "Asia/Shanghai",
     },
 
-    // 项目地址
-    repo: "https://github.com/small-universe/QiQi-Blog",
-    repoDisplay: false,
-    // docsDir: "",
-
-    // markdown扩展
-    mdEnhance: {
-      // please only enable the features you need
-      enableAll: true,
-      presentation: {
-        plugins: [
-          "highlight",
-          "math",
-          "search",
-          "notes",
-          "zoom",
-          "anything",
-          "audio",
-          "chalkboard",
-        ],
-      },
-    },
-
-    // PWA设置（渐进式的网页应用程序）
     pwa: {
       favicon: "/favicon.ico",
-      cachePic: true,
+      themeColor: "#5c92d1",
       apple: {
         icon: "/assets/icon/apple-icon-152.png",
         statusBarColor: "black",
@@ -134,11 +109,19 @@ module.exports = config({
         color: "#ffffff",
       },
       manifest: {
+        name: "七七部落",
+        short_name: "QiQi Tribe",
+        description: "南辞 个人博客",
+        theme_color: "#5c92d1",
         icons: [
           {
-            src: "/assets/icon/chrome-mask-512.png",
+            src: "/assets/icon/chrome-192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "/assets/icon/chrome-512.png",
             sizes: "512x512",
-            purpose: "maskable",
             type: "image/png",
           },
           {
@@ -148,49 +131,104 @@ module.exports = config({
             type: "image/png",
           },
           {
-            src: "/assets/icon/chrome-512.png",
+            src: "/assets/icon/chrome-mask-512.png",
             sizes: "512x512",
-            type: "image/png",
-          },
-          {
-            src: "/assets/icon/chrome-192.png",
-            sizes: "192x192",
+            purpose: "maskable",
             type: "image/png",
           },
         ],
         shortcuts: [
           {
-            name: "Guide",
-            short_name: "Guide",
-            url: "/guide/",
+            name: "分类",
+            short_name: "分类",
             icons: [
               {
-                src: "/assets/icon/guide-maskable.png",
+                src: "/assets/icon/category-maskable.png",
                 sizes: "192x192",
                 purpose: "maskable",
                 type: "image/png",
               },
               {
-                src: "/assets/icon/guide-monochrome.png",
+                src: "/assets/icon/category-monochrome.png",
                 sizes: "192x192",
                 purpose: "monochrome",
                 type: "image/png",
               },
             ],
+            url: "/category/",
+            description: "文章分类分组",
+          },
+          {
+            name: "标签",
+            short_name: "标签",
+            icons: [
+              {
+                src: "/assets/icon/tag-maskable.png",
+                sizes: "192x192",
+                purpose: "maskable",
+                type: "image/png",
+              },
+              {
+                src: "/assets/icon/tag-monochrome.png",
+                sizes: "192x192",
+                purpose: "monochrome",
+                type: "image/png",
+              },
+            ],
+            url: "/tag/",
+            description: "文章标签分组",
+          },
+          {
+            name: "时间线",
+            short_name: "时间线",
+            icons: [
+              {
+                src: "/assets/icon/timeline-maskable.png",
+                sizes: "192x192",
+                purpose: "maskable",
+                type: "image/png",
+              },
+              {
+                src: "/assets/icon/timeline-monochrome.png",
+                sizes: "192x192",
+                purpose: "monochrome",
+                type: "image/png",
+              },
+            ],
+            url: "/timeline/",
+            description: "时间线文章列表",
+          },
+          {
+            name: "个人介绍",
+            short_name: "个人介绍",
+            icons: [
+              {
+                src: "/assets/icon/about-maskable.png",
+                sizes: "192x192",
+                purpose: "maskable",
+                type: "image/png",
+              },
+              {
+                src: "/assets/icon/about-monochrome.png",
+                sizes: "192x192",
+                purpose: "monochrome",
+                type: "image/png",
+              },
+            ],
+            url: "/about/",
+            description: "个人介绍",
           },
         ],
       },
+      cacheHTML: false,
+      maxSize: 2048,
     },
 
-    // 主题颜色
-    themeColor:{
-      blue: '#2196f3',
-      red: '#ec3434',
-      green: '#3eaf7c',
-      orange: '#f1972a'
-    },
+    repo: "https://github.com/small-universe/QiQi-Blog",
+    repoDisplay: false,
+    repoLabel: "Github",
+    docsDir: "src",
   },
-
   // 插件配置
   plugins: [
     // 樱花插件
@@ -254,19 +292,22 @@ module.exports = config({
     [
       'meting',
       {
+        // metingApi: 'https://meting.sigure.xyz/api/music',
         meting: {
           server: 'netease',//网易云
           type: 'playlist',
           mid: '5306071955',
         },
-        // aplayer: {
-        //     lrcType: 3,//歌词解析模式
-        // },
+        aplayer: {
+          mini: true,
+          fixed: true,
+          lrcType: 0,//歌词解析模式(禁用歌词)
+        },
       },
     ],
     // 页面加载
     ['loading-page'],
-    // 其他自定义插件
+    // 其他自定义组件
     // common_plugin
   ],
 });
