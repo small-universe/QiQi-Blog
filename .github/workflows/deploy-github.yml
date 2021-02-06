@@ -27,10 +27,10 @@ jobs:
 
       - name: Install Deps
         if: steps.node-modules.outputs.cache-hit != 'true'
-        run: yarn install --frozen-lockfile
+        run: npm install --frozen-lockfile
 
       - name: Build Blog
-        run: yarn run super:build
+        run: npm run super:build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3

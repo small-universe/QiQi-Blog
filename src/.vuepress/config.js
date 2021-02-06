@@ -7,6 +7,8 @@ module.exports = config({
   title: "七七部落",
   logo: "/logo.svg",
   description: "Actions speak louder than words.",
+  base:"/QiQi-Blog",
+  dest: "dist",
 
   head: [
     // 百度站点验证
@@ -24,8 +26,6 @@ module.exports = config({
   ],
 
   shouldPrefetch: (filename) => !filename.includes("page-"),
-
-  dest: "dist",
 
   themeConfig: {
     baseLang: "zh-CN",
