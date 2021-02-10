@@ -6,7 +6,7 @@
   <author>
     <name>南辞</name>
   </author>
-  <updated>2021-02-10T03:13:46.683Z</updated>
+  <updated>2021-02-10T03:53:34.948Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="http://qiqi.dreamagain.top/atom.xml"/>
   <link rel="alternate" href="http://qiqi.dreamagain.top/"/>
@@ -14,10 +14,10 @@
   <category term="目录"/>
   <category term="使用指南"/>
   <category term="面试"/>
+  <category term="后端框架"/>
   <category term="框架"/>
   <category term="Java"/>
   <category term="编程语言"/>
-  <category term="后端框架"/>
   <category term="JavaScript"/>
   <category term="前端"/>
   <category term="编程开发"/>
@@ -4152,6 +4152,585 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
       <name>南辞</name>
     </author>
     <category term="面试"/>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
+    <title type="html">Spring Security整合</title>
+    <id>http://qiqi.dreamagain.top/program/backend/backframe/Spring%20Security/example/</id>
+    <link href="http://qiqi.dreamagain.top/program/backend/backframe/Spring%20Security/example/"/>
+    <updated>2021-02-10T03:52:39.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="spring-security"> Spring Security</h1>
+<h1 id="spring-security整合"> Spring Security整合</h1>
+<h2 id="一、创建spring-security模块"> 一、创建spring_security模块</h2>
+<p><img src="Spring%20Security%E6%95%B4%E5%90%88.assets/423034c7-c21a-4555-8380-393ac7ebca4d.png" alt="img"></p>
+<h2 id="二、在spring-security中引入相关依赖"> 二、在spring_security中引入相关依赖</h2>
+<div><pre><code><span><span><span>&lt;</span>dependencies</span><span>></span></span>
+    <span><span><span>&lt;</span>dependency</span><span>></span></span>
+        <span><span><span>&lt;</span>groupId</span><span>></span></span>com.atguigu<span><span><span>&lt;/</span>groupId</span><span>></span></span>
+        <span><span><span>&lt;</span>artifactId</span><span>></span></span>common_utils<span><span><span>&lt;/</span>artifactId</span><span>></span></span>
+        <span><span><span>&lt;</span>version</span><span>></span></span>0.0.1-SNAPSHOT<span><span><span>&lt;/</span>version</span><span>></span></span>
+    <span><span><span>&lt;/</span>dependency</span><span>></span></span>
+    
+    <span>&lt;!-- Spring Security依赖 --></span>
+    <span><span><span>&lt;</span>dependency</span><span>></span></span>
+        <span><span><span>&lt;</span>groupId</span><span>></span></span>org.springframework.boot<span><span><span>&lt;/</span>groupId</span><span>></span></span>
+        <span><span><span>&lt;</span>artifactId</span><span>></span></span>spring-boot-starter-security<span><span><span>&lt;/</span>artifactId</span><span>></span></span>
+    <span><span><span>&lt;/</span>dependency</span><span>></span></span>
+    <span><span><span>&lt;</span>dependency</span><span>></span></span>
+        <span><span><span>&lt;</span>groupId</span><span>></span></span>io.jsonwebtoken<span><span><span>&lt;/</span>groupId</span><span>></span></span>
+        <span><span><span>&lt;</span>artifactId</span><span>></span></span>jjwt<span><span><span>&lt;/</span>artifactId</span><span>></span></span>
+    <span><span><span>&lt;/</span>dependency</span><span>></span></span>
+<span><span><span>&lt;/</span>dependencies</span><span>></span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><h2 id="三、在service-acl引入spring-security依赖"> 三、在service_acl引入spring_security依赖</h2>
+<div><pre><code><span><span><span>&lt;</span>dependency</span><span>></span></span>
+    <span><span><span>&lt;</span>groupId</span><span>></span></span>com.nanci<span><span><span>&lt;/</span>groupId</span><span>></span></span>
+    <span><span><span>&lt;</span>artifactId</span><span>></span></span>spring_security<span><span><span>&lt;/</span>artifactId</span><span>></span></span>
+    <span><span><span>&lt;</span>version</span><span>></span></span>0.0.1-SNAPSHOT<span><span><span>&lt;/</span>version</span><span>></span></span>
+<span><span><span>&lt;/</span>dependency</span><span>></span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p><strong>1、代码结构说明：</strong></p>
+<p>**<img src="Spring%20Security%E6%95%B4%E5%90%88.assets/6aafe337-8a5d-440c-b93d-ff60d4f9cef6.png" alt="img">
+**</p>
+<p><strong>2、创建spring security核心配置类</strong></p>
+<p><em><strong>*<img src="Spring%20Security%E6%95%B4%E5%90%88.assets/553c05a4-ff6d-456c-a5f6-ee9db5e6954a.png" alt="img">*</strong></em></p>
+<p>Spring Security的核心配置就是继承WebSecurityConfigurerAdapter并注解@EnableWebSecurity的配置。</p>
+<p>这个配置指明了用户名密码的处理方式、请求路径的开合、登录登出控制等和安全相关的配置</p>
+<div><pre><code><span>import</span> <span>com<span>.</span>atguigu<span>.</span>serurity<span>.</span>filter<span>.</span></span><span>TokenAuthenticationFilter</span><span>;</span>
+<span>import</span> <span>com<span>.</span>atguigu<span>.</span>serurity<span>.</span>filter<span>.</span></span><span>TokenLoginFilter</span><span>;</span>
+<span>import</span> <span>com<span>.</span>atguigu<span>.</span>serurity<span>.</span>security<span>.</span></span><span>DefaultPasswordEncoder</span><span>;</span>
+<span>import</span> <span>com<span>.</span>atguigu<span>.</span>serurity<span>.</span>security<span>.</span></span><span>TokenLogoutHandler</span><span>;</span>
+<span>import</span> <span>com<span>.</span>atguigu<span>.</span>serurity<span>.</span>security<span>.</span></span><span>TokenManager</span><span>;</span>
+<span>import</span> <span>com<span>.</span>atguigu<span>.</span>serurity<span>.</span>security<span>.</span></span><span>UnauthorizedEntryPoint</span><span>;</span>
+<span>import</span> <span>org<span>.</span>springframework<span>.</span>beans<span>.</span>factory<span>.</span>annotation<span>.</span></span><span>Autowired</span><span>;</span>
+<span>import</span> <span>org<span>.</span>springframework<span>.</span>context<span>.</span>annotation<span>.</span></span><span>Configuration</span><span>;</span>
+<span>import</span> <span>org<span>.</span>springframework<span>.</span>data<span>.</span>redis<span>.</span>core<span>.</span></span><span>RedisTemplate</span><span>;</span>
+<span>import</span> <span>org<span>.</span>springframework<span>.</span>security<span>.</span>config<span>.</span>annotation<span>.</span>authentication<span>.</span>builders<span>.</span></span><span>AuthenticationManagerBuilder</span><span>;</span>
+<span>import</span> <span>org<span>.</span>springframework<span>.</span>security<span>.</span>config<span>.</span>annotation<span>.</span>method<span>.</span>configuration<span>.</span></span><span>EnableGlobalMethodSecurity</span><span>;</span>
+<span>import</span> <span>org<span>.</span>springframework<span>.</span>security<span>.</span>config<span>.</span>annotation<span>.</span>web<span>.</span>builders<span>.</span></span><span>HttpSecurity</span><span>;</span>
+<span>import</span> <span>org<span>.</span>springframework<span>.</span>security<span>.</span>config<span>.</span>annotation<span>.</span>web<span>.</span>builders<span>.</span></span><span>WebSecurity</span><span>;</span>
+<span>import</span> <span>org<span>.</span>springframework<span>.</span>security<span>.</span>config<span>.</span>annotation<span>.</span>web<span>.</span>configuration<span>.</span></span><span>EnableWebSecurity</span><span>;</span>
+<span>import</span> <span>org<span>.</span>springframework<span>.</span>security<span>.</span>config<span>.</span>annotation<span>.</span>web<span>.</span>configuration<span>.</span></span><span>WebSecurityConfigurerAdapter</span><span>;</span>
+<span>import</span> <span>org<span>.</span>springframework<span>.</span>security<span>.</span>core<span>.</span>userdetails<span>.</span></span><span>UserDetailsService</span><span>;</span>
+<span>/**
+ * &lt;p>
+ * Security配置类
+ * &lt;/p>
+ */</span>
+<span>@Configuration</span>
+<span>@EnableWebSecurity</span>
+<span>@EnableGlobalMethodSecurity</span><span>(</span>prePostEnabled <span>=</span> <span>true</span><span>)</span>
+<span>public</span> <span>class</span> <span>TokenWebSecurityConfig</span> <span>extends</span> <span>WebSecurityConfigurerAdapter</span> <span>{</span>
+    <span>private</span> <span>UserDetailsService</span> userDetailsService<span>;</span>
+    <span>private</span> <span>TokenManager</span> tokenManager<span>;</span>
+    <span>private</span> <span>DefaultPasswordEncoder</span> defaultPasswordEncoder<span>;</span>
+    <span>private</span> <span>RedisTemplate</span> redisTemplate<span>;</span>
+    <span>@Autowired</span>
+    <span>public</span> <span>TokenWebSecurityConfig</span><span>(</span><span>UserDetailsService</span> userDetailsService<span>,</span> <span>DefaultPasswordEncoder</span> defaultPasswordEncoder<span>,</span>
+                                  <span>TokenManager</span> tokenManager<span>,</span> <span>RedisTemplate</span> redisTemplate<span>)</span> <span>{</span>
+        <span>this</span><span>.</span>userDetailsService <span>=</span> userDetailsService<span>;</span>
+        <span>this</span><span>.</span>defaultPasswordEncoder <span>=</span> defaultPasswordEncoder<span>;</span>
+        <span>this</span><span>.</span>tokenManager <span>=</span> tokenManager<span>;</span>
+        <span>this</span><span>.</span>redisTemplate <span>=</span> redisTemplate<span>;</span>
+    <span>}</span>
+    <span>/**
+     * 配置设置
+     * @param http
+     * @throws Exception
+     */</span>
+    <span>@Override</span>
+    <span>protected</span> <span>void</span> <span>configure</span><span>(</span><span>HttpSecurity</span> http<span>)</span> <span>throws</span> <span>Exception</span> <span>{</span>
+        http<span>.</span><span>exceptionHandling</span><span>(</span><span>)</span>
+                <span>.</span><span>authenticationEntryPoint</span><span>(</span><span>new</span> <span>UnauthorizedEntryPoint</span><span>(</span><span>)</span><span>)</span>
+                <span>.</span><span>and</span><span>(</span><span>)</span><span>.</span><span>csrf</span><span>(</span><span>)</span><span>.</span><span>disable</span><span>(</span><span>)</span>
+                <span>.</span><span>authorizeRequests</span><span>(</span><span>)</span>
+                <span>.</span><span>anyRequest</span><span>(</span><span>)</span><span>.</span><span>authenticated</span><span>(</span><span>)</span>
+                <span>.</span><span>and</span><span>(</span><span>)</span><span>.</span><span>logout</span><span>(</span><span>)</span><span>.</span><span>logoutUrl</span><span>(</span><span>"/admin/acl/index/logout"</span><span>)</span>
+                <span>.</span><span>addLogoutHandler</span><span>(</span><span>new</span> <span>TokenLogoutHandler</span><span>(</span>tokenManager<span>,</span>redisTemplate<span>)</span><span>)</span><span>.</span><span>and</span><span>(</span><span>)</span>
+                <span>.</span><span>addFilter</span><span>(</span><span>new</span> <span>TokenLoginFilter</span><span>(</span><span>authenticationManager</span><span>(</span><span>)</span><span>,</span> tokenManager<span>,</span> redisTemplate<span>)</span><span>)</span>
+                <span>.</span><span>addFilter</span><span>(</span><span>new</span> <span>TokenAuthenticationFilter</span><span>(</span><span>authenticationManager</span><span>(</span><span>)</span><span>,</span> tokenManager<span>,</span> redisTemplate<span>)</span><span>)</span><span>.</span><span>httpBasic</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span>
+    <span>/**
+     * 密码处理
+     * @param auth
+     * @throws Exception
+     */</span>
+    <span>@Override</span>
+    <span>public</span> <span>void</span> <span>configure</span><span>(</span><span>AuthenticationManagerBuilder</span> auth<span>)</span> <span>throws</span> <span>Exception</span> <span>{</span>
+        auth<span>.</span><span>userDetailsService</span><span>(</span>userDetailsService<span>)</span><span>.</span><span>passwordEncoder</span><span>(</span>defaultPasswordEncoder<span>)</span><span>;</span>
+    <span>}</span>
+    <span>/**
+     * 配置哪些请求不拦截
+     * @param web
+     * @throws Exception
+     */</span>
+    <span>@Override</span>
+    <span>public</span> <span>void</span> <span>configure</span><span>(</span><span>WebSecurity</span> web<span>)</span> <span>throws</span> <span>Exception</span> <span>{</span>
+        web<span>.</span><span>ignoring</span><span>(</span><span>)</span><span>.</span><span>antMatchers</span><span>(</span><span>"/api/**"</span><span>,</span>
+                <span>"/swagger-resources/**"</span><span>,</span> <span>"/webjars/**"</span><span>,</span> <span>"/v2/**"</span><span>,</span> <span>"/swagger-ui.html/**"</span>
+               <span>)</span><span>;</span>
+    <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br><span>57</span><br><span>58</span><br><span>59</span><br><span>60</span><br><span>61</span><br><span>62</span><br><span>63</span><br><span>64</span><br><span>65</span><br><span>66</span><br><span>67</span><br><span>68</span><br><span>69</span><br><span>70</span><br><span>71</span><br><span>72</span><br><span>73</span><br><span>74</span><br><span>75</span><br></div></div><p><strong>5、创建认证授权相关的工具类</strong></p>
+<p><img src="Spring%20Security%E6%95%B4%E5%90%88.assets/75ccbeef-10c1-45fd-8f68-b598019832b1.png" alt="img"></p>
+<div><pre><code>（1）DefaultPasswordEncoder：密码处理的方法
+</code></pre>
+<div><span>1</span><br></div></div><div><pre><code>package com.atguigu.serurity.security;
+import com.atguigu.commonutils.utils.MD5;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Component;
+/**
+ * &lt;p&gt;
+ * 密码的处理方法类型
+ * &lt;/p&gt;
+ */
+@Component
+public class DefaultPasswordEncoder implements PasswordEncoder {
+    public DefaultPasswordEncoder() {
+        this(-1);
+    }
+    /**
+     * @param strength
+     *            the log rounds to use, between 4 and 31
+     */
+    public DefaultPasswordEncoder(int strength) {
+    }
+    public String encode(CharSequence rawPassword) {
+        return MD5.encrypt(rawPassword.toString());
+    }
+    public boolean matches(CharSequence rawPassword, String encodedPassword) {
+        return encodedPassword.equals(MD5.encrypt(rawPassword.toString()));
+    }
+}
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br></div></div><p><em><em><em>*</em>*（2）********<code>TokenManager：token操作的工具类</code>******</em>*</em>*</p>
+<div><pre><code>import io.jsonwebtoken.CompressionCodecs;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.stereotype.Component;
+import java.util.Date;
+/**
+ * &lt;p&gt;
+ * token管理
+ * &lt;/p&gt;
+ */
+@Component
+public class TokenManager {
+    private long tokenExpiration = 24*60*60*1000;
+    private String tokenSignKey = &quot;123456&quot;;
+    public String createToken(String username) {
+        String token = Jwts.builder().setSubject(username)
+                .setExpiration(new Date(System.currentTimeMillis() + tokenExpiration))
+                .signWith(SignatureAlgorithm.HS512, tokenSignKey).compressWith(CompressionCodecs.GZIP).compact();
+        return token;
+    }
+    public String getUserFromToken(String token) {
+        String user = Jwts.parser().setSigningKey(tokenSignKey).parseClaimsJws(token).getBody().getSubject();
+        return user;
+    }
+    public void removeToken(String token) {
+        //jwttoken无需删除，客户端扔掉即可。
+    }
+}
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br></div></div><p><em><em><em>*</em>*（3）**********<code>TokenLogoutHandler：退出实现</code>**********
+**</em>*</em>*</p>
+<div><pre><code>import com.atguigu.commonutils.R;
+import com.atguigu.commonutils.utils.ResponseUtil;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.web.authentication.logout.LogoutHandler;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+/**
+ * &lt;p&gt;
+ * 登出业务逻辑类
+ * &lt;/p&gt;
+ */
+public class TokenLogoutHandler implements LogoutHandler {
+    private TokenManager tokenManager;
+    private RedisTemplate redisTemplate;
+    public TokenLogoutHandler(TokenManager tokenManager, RedisTemplate redisTemplate) {
+        this.tokenManager = tokenManager;
+        this.redisTemplate = redisTemplate;
+    }
+    @Override
+    public void logout(HttpServletRequest request, HttpServletResponse response, Authentication authentication) {
+        String token = request.getHeader(&quot;token&quot;);
+        if (token != null) {
+            tokenManager.removeToken(token);
+            //清空当前用户缓存中的权限数据
+            String userName = tokenManager.getUserFromToken(token);
+            redisTemplate.delete(userName);
+        }
+        ResponseUtil.out(response, R.ok());
+    }
+}
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br></div></div><p><em><strong>*（4）********<code>UnauthorizedEntryPoint：未授权统一处理</code>*********</strong></em></p>
+<div><pre><code>import com.atguigu.commonutils.R;
+import com.atguigu.commonutils.utils.ResponseUtil;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.AuthenticationEntryPoint;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+/**
+ * &lt;p&gt;
+ * 未授权的统一处理方式
+ * &lt;/p&gt;
+ */
+public class UnauthorizedEntryPoint implements AuthenticationEntryPoint {
+    @Override
+    public void commence(HttpServletRequest request, HttpServletResponse response,
+                         AuthenticationException authException) throws IOException, ServletException {
+        ResponseUtil.out(response, R.error());
+    }
+}
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div><p><strong><em>*</em>*********6、创建认证授权实体类**********
+****<img src="Spring%20Security%E6%95%B4%E5%90%88.assets/76236594-2238-4d28-a15e-7cf743bb53e2.png" alt="img">（1）SecutityUser*****</strong>*</p>
+<div><pre><code>import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.util.StringUtils;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+/**
+ * &lt;p&gt;
+ * 安全认证用户详情信息
+ * &lt;/p&gt;
+ */
+@Data
+@Slf4j
+public class SecurityUser implements UserDetails {
+    //当前登录用户
+    private transient User currentUserInfo;
+    //当前权限
+    private List&lt;String&gt; permissionValueList;
+    public SecurityUser() {
+    }
+    public SecurityUser(User user) {
+        if (user != null) {
+            this.currentUserInfo = user;
+        }
+    }
+    @Override
+    public Collection&lt;? extends GrantedAuthority&gt; getAuthorities() {
+        Collection&lt;GrantedAuthority&gt; authorities = new ArrayList&lt;&gt;();
+        for(String permissionValue : permissionValueList) {
+            if(StringUtils.isEmpty(permissionValue)) continue;
+            SimpleGrantedAuthority authority = new SimpleGrantedAuthority(permissionValue);
+            authorities.add(authority);
+        }
+        return authorities;
+    }
+    @Override
+    public String getPassword() {
+        return currentUserInfo.getPassword();
+    }
+    @Override
+    public String getUsername() {
+        return currentUserInfo.getUsername();
+    }
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+    @Override
+    public boolean isEnabled() {
+        return true;
+    }
+}
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br><span>57</span><br><span>58</span><br><span>59</span><br><span>60</span><br><span>61</span><br><span>62</span><br><span>63</span><br></div></div><p><em><em><em>*</em>*****（2）User******</em>*</em>*</p>
+<div><pre><code>import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+import java.io.Serializable;
+/**
+ * &lt;p&gt;
+ * 用户实体类
+ * &lt;/p&gt;
+ */
+@Data
+@ApiModel(description = &quot;用户实体类&quot;)
+public class User implements Serializable {
+    private static final long serialVersionUID = 1L;
+    @ApiModelProperty(value = &quot;微信openid&quot;)
+    private String username;
+    @ApiModelProperty(value = &quot;密码&quot;)
+    private String password;
+    @ApiModelProperty(value = &quot;昵称&quot;)
+    private String nickName;
+    @ApiModelProperty(value = &quot;用户头像&quot;)
+    private String salt;
+    @ApiModelProperty(value = &quot;用户签名&quot;)
+    private String token;
+}
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br></div></div><p><strong><em>*</em>*******************7、创建认证和授权的filter**********
+**********<img src="Spring%20Security%E6%95%B4%E5%90%88.assets/bee4d171-befe-4b08-a792-5f1d50a8642b.png" alt="img">
+****（1）TokenLoginFilter：认证的filter*****</strong>*</p>
+<div><pre><code>import com.atguigu.commonutils.R;
+import com.atguigu.commonutils.utils.ResponseUtil;
+import com.atguigu.serurity.entity.SecurityUser;
+import com.atguigu.serurity.entity.User;
+import com.atguigu.serurity.security.TokenManager;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.ArrayList;
+/**
+ * &lt;p&gt;
+ * 登录过滤器，继承UsernamePasswordAuthenticationFilter，对用户名密码进行登录校验
+ * &lt;/p&gt;
+ */
+public class TokenLoginFilter extends UsernamePasswordAuthenticationFilter {
+    private AuthenticationManager authenticationManager;
+    private TokenManager tokenManager;
+    private RedisTemplate redisTemplate;
+    public TokenLoginFilter(AuthenticationManager authenticationManager, TokenManager tokenManager, RedisTemplate redisTemplate) {
+        this.authenticationManager = authenticationManager;
+        this.tokenManager = tokenManager;
+        this.redisTemplate = redisTemplate;
+        this.setPostOnly(false);
+        this.setRequiresAuthenticationRequestMatcher(new AntPathRequestMatcher(&quot;/admin/acl/login&quot;,&quot;POST&quot;));
+    }
+    @Override
+    public Authentication attemptAuthentication(HttpServletRequest req, HttpServletResponse res)
+            throws AuthenticationException {
+        try {
+            User user = new ObjectMapper().readValue(req.getInputStream(), User.class);
+            return authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword(), new ArrayList&lt;&gt;()));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    /**
+     * 登录成功
+     * @param req
+     * @param res
+     * @param chain
+     * @param auth
+     * @throws IOException
+     * @throws ServletException
+     */
+    @Override
+    protected void successfulAuthentication(HttpServletRequest req, HttpServletResponse res, FilterChain chain,
+                                            Authentication auth) throws IOException, ServletException {
+        SecurityUser user = (SecurityUser) auth.getPrincipal();
+        String token = tokenManager.createToken(user.getCurrentUserInfo().getUsername());
+        redisTemplate.opsForValue().set(user.getCurrentUserInfo().getUsername(), user.getPermissionValueList());
+        ResponseUtil.out(res, R.ok().data(&quot;token&quot;, token));
+    }
+    /**
+     * 登录失败
+     * @param request
+     * @param response
+     * @param e
+     * @throws IOException
+     * @throws ServletException
+     */
+    @Override
+    protected void unsuccessfulAuthentication(HttpServletRequest request, HttpServletResponse response,
+                                              AuthenticationException e) throws IOException, ServletException {
+        ResponseUtil.out(response, R.error());
+    }
+}
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br><span>57</span><br><span>58</span><br><span>59</span><br><span>60</span><br><span>61</span><br><span>62</span><br><span>63</span><br><span>64</span><br><span>65</span><br><span>66</span><br><span>67</span><br><span>68</span><br><span>69</span><br><span>70</span><br><span>71</span><br><span>72</span><br><span>73</span><br><span>74</span><br><span>75</span><br><span>76</span><br></div></div><p><strong><em>*</em>*******************************<code>（2）TokenAuthenticationFilter：</code>*********************************</strong>*</p>
+<div><pre><code>授权filter
+</code></pre>
+<div><span>1</span><br></div></div><div><pre><code>package com.atguigu.serurity.filter;
+import com.atguigu.commonutils.R;
+import com.atguigu.commonutils.utils.ResponseUtil;
+import com.atguigu.serurity.security.TokenManager;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
+import org.springframework.util.StringUtils;
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+/**
+ * &lt;p&gt;
+ * 访问过滤器
+ * &lt;/p&gt;
+ */
+public class TokenAuthenticationFilter extends BasicAuthenticationFilter {
+    private TokenManager tokenManager;
+    private RedisTemplate redisTemplate;
+    public TokenAuthenticationFilter(AuthenticationManager authManager, TokenManager tokenManager,RedisTemplate redisTemplate) {
+        super(authManager);
+        this.tokenManager = tokenManager;
+        this.redisTemplate = redisTemplate;
+    }
+    @Override
+    protected void doFilterInternal(HttpServletRequest req, HttpServletResponse res, FilterChain chain)
+            throws IOException, ServletException {
+        logger.info(&quot;=================&quot;+req.getRequestURI());
+        if(req.getRequestURI().indexOf(&quot;admin&quot;) == -1) {
+            chain.doFilter(req, res);
+            return;
+        }
+        UsernamePasswordAuthenticationToken authentication = null;
+        try {
+            authentication = getAuthentication(req);
+        } catch (Exception e) {
+            ResponseUtil.out(res, R.error());
+        }
+        if (authentication != null) {
+            SecurityContextHolder.getContext().setAuthentication(authentication);
+        } else {
+            ResponseUtil.out(res, R.error());
+        }
+        chain.doFilter(req, res);
+    }
+    private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) {
+        // token置于header里
+        String token = request.getHeader(&quot;token&quot;);
+        if (token != null &amp;&amp; !&quot;&quot;.equals(token.trim())) {
+            String userName = tokenManager.getUserFromToken(token);
+            List&lt;String&gt; permissionValueList = (List&lt;String&gt;) redisTemplate.opsForValue().get(userName);
+            Collection&lt;GrantedAuthority&gt; authorities = new ArrayList&lt;&gt;();
+            for(String permissionValue : permissionValueList) {
+                if(StringUtils.isEmpty(permissionValue)) continue;
+                SimpleGrantedAuthority authority = new SimpleGrantedAuthority(permissionValue);
+                authorities.add(authority);
+            }
+            if (!StringUtils.isEmpty(userName)) {
+                return new UsernamePasswordAuthenticationToken(userName, token, authorities);
+            }
+            return null;
+        }
+        return null;
+    }
+}
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br><span>57</span><br><span>58</span><br><span>59</span><br><span>60</span><br><span>61</span><br><span>62</span><br><span>63</span><br><span>64</span><br><span>65</span><br><span>66</span><br><span>67</span><br><span>68</span><br><span>69</span><br><span>70</span><br><span>71</span><br><span>72</span><br><span>73</span><br><span>74</span><br></div></div>]]></content>
+    <author>
+      <name>南辞</name>
+    </author>
+    <category term="后端框架"/>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <published>2021-01-13T00:00:00.000Z</published>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
+    <title type="html">Spring Security介绍</title>
+    <id>http://qiqi.dreamagain.top/program/backend/backframe/Spring%20Security/intro/</id>
+    <link href="http://qiqi.dreamagain.top/program/backend/backframe/Spring%20Security/intro/"/>
+    <updated>2021-02-10T03:52:39.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="spring-security"> Spring Security</h1>
+<h2 id="一、框架介绍"> 一、框架介绍</h2>
+<p>Spring 是一个非常流行和成功的 Java 应用开发框架。Spring Security 基于 Spring 框架，提供了一套 Web 应用安全性的完整解决方案。一般来说，Web 应用的安全性包括**用户认证（Authentication）和用户授权（Authorization）**两个部分。</p>
+<p>（1）用户认证指的是：验证某个用户是否为系统中的合法主体，也就是说用户能否访问该系统。用户认证一般要求用户提供用户名和密码。系统通过校验用户名和密码来完成认证过程。</p>
+<p>（2）用户授权指的是验证某个用户是否有权限执行某个操作。在一个系统中，不同用户所具有的权限是不同的。比如对一个文件来说，有的用户只能进行读取，而有的用户可以进行修改。一般来说，系统会为不同的用户分配不同的角色，而每个角色则对应一系列的权限。</p>
+<p><strong>Spring Security其实就是用filter，对多请求的路径进行过滤。</strong></p>
+<p>（1）如果是基于Session，那么Spring Security会对cookie里的sessionid进行解析，找到服务器存储的sesion信息，然后判断当前用户是否符合请求的要求。</p>
+<p>（2）如果是token，则是解析出token，然后将当前请求加入到Spring Security管理的权限信息中去</p>
+<h2 id="二、认证与授权实现思路"> 二、认证与授权实现思路</h2>
+<p>如果系统的模块众多，每个模块都需要进行授权与认证，可以选择基于token的形式进行授权与认证，用户根据用户名密码认证成功，然后获取当前用户角色的一系列权限值，并以用户名为key，权限列表为value的形式存入redis缓存中，根据用户名相关信息生成token返回，浏览器将token记录到cookie中，每次调用api接口都默认将token携带到header请求头中，Spring Security解析header头获取token信息，解析token获取当前用户名，根据用户名就可以从redis中获取权限列表，这样Spring Security就能够判断当前请求是否有权限访问。</p>
+<p>流程图：</p>
+<p><img src="intro.assets/image-20210202105449950.png" alt="image-20210202105449950"></p>
+<p>代码执行过程：</p>
+<p><img src="intro.assets/image-20210202105704682.png" alt="image-20210202105704682"></p>
+]]></content>
+    <author>
+      <name>南辞</name>
+    </author>
+    <category term="后端框架"/>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <published>2021-01-13T00:00:00.000Z</published>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
+    <title type="html">ORM相关框架</title>
+    <id>http://qiqi.dreamagain.top/program/backend/backframe/orm/</id>
+    <link href="http://qiqi.dreamagain.top/program/backend/backframe/orm/"/>
+    <updated>2021-02-10T03:52:39.000Z</updated>
+    <author>
+      <name>南辞</name>
+    </author>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
+    <title type="html">后端框架</title>
+    <id>http://qiqi.dreamagain.top/program/backend/backframe/</id>
+    <link href="http://qiqi.dreamagain.top/program/backend/backframe/"/>
+    <updated>2021-02-10T03:52:39.000Z</updated>
+    <summary type="html"><![CDATA[<blockquote>
+<p><img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-Spring-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringMVC-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringBoot-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringCloud-blue.svg" alt="img"> <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringSecurity-blue.svg" alt="img"></p>
+<p><img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-MyBatis-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-MyBatis--Plus-blue.svg" alt="img"></p>
+</blockquote>
+]]></summary>
+    <content type="html"><![CDATA[<blockquote>
+<p><img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-Spring-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringMVC-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringBoot-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringCloud-blue.svg" alt="img"> <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringSecurity-blue.svg" alt="img"></p>
+<p><img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-MyBatis-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-MyBatis--Plus-blue.svg" alt="img"></p>
+</blockquote>
+
+]]></content>
+    <author>
+      <name>南辞</name>
+    </author>
+    <category term="后端框架"/>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <published>2019-09-10T00:00:00.000Z</published>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
+    <title type="html">Spring家族框架体系</title>
+    <id>http://qiqi.dreamagain.top/program/backend/backframe/spring/</id>
+    <link href="http://qiqi.dreamagain.top/program/backend/backframe/spring/"/>
+    <updated>2021-02-10T03:52:39.000Z</updated>
+    <author>
+      <name>南辞</name>
+    </author>
     <contributor>
       <name>南辞</name>
     </contributor>
@@ -10695,585 +11274,6 @@ Java IO流共涉及40多个类，这些类看上去很杂乱，但实际上很�
 <li><a href="./backframe/spring.html">Spring framework</a></li>
 </ul>
 ]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
-    <title type="html">Spring Security整合</title>
-    <id>http://qiqi.dreamagain.top/program/frontend/backframe/Spring%20Security/example/</id>
-    <link href="http://qiqi.dreamagain.top/program/frontend/backframe/Spring%20Security/example/"/>
-    <updated>2021-02-08T17:34:42.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="spring-security"> Spring Security</h1>
-<h1 id="spring-security整合"> Spring Security整合</h1>
-<h2 id="一、创建spring-security模块"> 一、创建spring_security模块</h2>
-<p><img src="Spring%20Security%E6%95%B4%E5%90%88.assets/423034c7-c21a-4555-8380-393ac7ebca4d.png" alt="img"></p>
-<h2 id="二、在spring-security中引入相关依赖"> 二、在spring_security中引入相关依赖</h2>
-<div><pre><code><span><span><span>&lt;</span>dependencies</span><span>></span></span>
-    <span><span><span>&lt;</span>dependency</span><span>></span></span>
-        <span><span><span>&lt;</span>groupId</span><span>></span></span>com.atguigu<span><span><span>&lt;/</span>groupId</span><span>></span></span>
-        <span><span><span>&lt;</span>artifactId</span><span>></span></span>common_utils<span><span><span>&lt;/</span>artifactId</span><span>></span></span>
-        <span><span><span>&lt;</span>version</span><span>></span></span>0.0.1-SNAPSHOT<span><span><span>&lt;/</span>version</span><span>></span></span>
-    <span><span><span>&lt;/</span>dependency</span><span>></span></span>
-    
-    <span>&lt;!-- Spring Security依赖 --></span>
-    <span><span><span>&lt;</span>dependency</span><span>></span></span>
-        <span><span><span>&lt;</span>groupId</span><span>></span></span>org.springframework.boot<span><span><span>&lt;/</span>groupId</span><span>></span></span>
-        <span><span><span>&lt;</span>artifactId</span><span>></span></span>spring-boot-starter-security<span><span><span>&lt;/</span>artifactId</span><span>></span></span>
-    <span><span><span>&lt;/</span>dependency</span><span>></span></span>
-    <span><span><span>&lt;</span>dependency</span><span>></span></span>
-        <span><span><span>&lt;</span>groupId</span><span>></span></span>io.jsonwebtoken<span><span><span>&lt;/</span>groupId</span><span>></span></span>
-        <span><span><span>&lt;</span>artifactId</span><span>></span></span>jjwt<span><span><span>&lt;/</span>artifactId</span><span>></span></span>
-    <span><span><span>&lt;/</span>dependency</span><span>></span></span>
-<span><span><span>&lt;/</span>dependencies</span><span>></span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><h2 id="三、在service-acl引入spring-security依赖"> 三、在service_acl引入spring_security依赖</h2>
-<div><pre><code><span><span><span>&lt;</span>dependency</span><span>></span></span>
-    <span><span><span>&lt;</span>groupId</span><span>></span></span>com.nanci<span><span><span>&lt;/</span>groupId</span><span>></span></span>
-    <span><span><span>&lt;</span>artifactId</span><span>></span></span>spring_security<span><span><span>&lt;/</span>artifactId</span><span>></span></span>
-    <span><span><span>&lt;</span>version</span><span>></span></span>0.0.1-SNAPSHOT<span><span><span>&lt;/</span>version</span><span>></span></span>
-<span><span><span>&lt;/</span>dependency</span><span>></span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p><strong>1、代码结构说明：</strong></p>
-<p>**<img src="Spring%20Security%E6%95%B4%E5%90%88.assets/6aafe337-8a5d-440c-b93d-ff60d4f9cef6.png" alt="img">
-**</p>
-<p><strong>2、创建spring security核心配置类</strong></p>
-<p><em><strong>*<img src="Spring%20Security%E6%95%B4%E5%90%88.assets/553c05a4-ff6d-456c-a5f6-ee9db5e6954a.png" alt="img">*</strong></em></p>
-<p>Spring Security的核心配置就是继承WebSecurityConfigurerAdapter并注解@EnableWebSecurity的配置。</p>
-<p>这个配置指明了用户名密码的处理方式、请求路径的开合、登录登出控制等和安全相关的配置</p>
-<div><pre><code><span>import</span> <span>com<span>.</span>atguigu<span>.</span>serurity<span>.</span>filter<span>.</span></span><span>TokenAuthenticationFilter</span><span>;</span>
-<span>import</span> <span>com<span>.</span>atguigu<span>.</span>serurity<span>.</span>filter<span>.</span></span><span>TokenLoginFilter</span><span>;</span>
-<span>import</span> <span>com<span>.</span>atguigu<span>.</span>serurity<span>.</span>security<span>.</span></span><span>DefaultPasswordEncoder</span><span>;</span>
-<span>import</span> <span>com<span>.</span>atguigu<span>.</span>serurity<span>.</span>security<span>.</span></span><span>TokenLogoutHandler</span><span>;</span>
-<span>import</span> <span>com<span>.</span>atguigu<span>.</span>serurity<span>.</span>security<span>.</span></span><span>TokenManager</span><span>;</span>
-<span>import</span> <span>com<span>.</span>atguigu<span>.</span>serurity<span>.</span>security<span>.</span></span><span>UnauthorizedEntryPoint</span><span>;</span>
-<span>import</span> <span>org<span>.</span>springframework<span>.</span>beans<span>.</span>factory<span>.</span>annotation<span>.</span></span><span>Autowired</span><span>;</span>
-<span>import</span> <span>org<span>.</span>springframework<span>.</span>context<span>.</span>annotation<span>.</span></span><span>Configuration</span><span>;</span>
-<span>import</span> <span>org<span>.</span>springframework<span>.</span>data<span>.</span>redis<span>.</span>core<span>.</span></span><span>RedisTemplate</span><span>;</span>
-<span>import</span> <span>org<span>.</span>springframework<span>.</span>security<span>.</span>config<span>.</span>annotation<span>.</span>authentication<span>.</span>builders<span>.</span></span><span>AuthenticationManagerBuilder</span><span>;</span>
-<span>import</span> <span>org<span>.</span>springframework<span>.</span>security<span>.</span>config<span>.</span>annotation<span>.</span>method<span>.</span>configuration<span>.</span></span><span>EnableGlobalMethodSecurity</span><span>;</span>
-<span>import</span> <span>org<span>.</span>springframework<span>.</span>security<span>.</span>config<span>.</span>annotation<span>.</span>web<span>.</span>builders<span>.</span></span><span>HttpSecurity</span><span>;</span>
-<span>import</span> <span>org<span>.</span>springframework<span>.</span>security<span>.</span>config<span>.</span>annotation<span>.</span>web<span>.</span>builders<span>.</span></span><span>WebSecurity</span><span>;</span>
-<span>import</span> <span>org<span>.</span>springframework<span>.</span>security<span>.</span>config<span>.</span>annotation<span>.</span>web<span>.</span>configuration<span>.</span></span><span>EnableWebSecurity</span><span>;</span>
-<span>import</span> <span>org<span>.</span>springframework<span>.</span>security<span>.</span>config<span>.</span>annotation<span>.</span>web<span>.</span>configuration<span>.</span></span><span>WebSecurityConfigurerAdapter</span><span>;</span>
-<span>import</span> <span>org<span>.</span>springframework<span>.</span>security<span>.</span>core<span>.</span>userdetails<span>.</span></span><span>UserDetailsService</span><span>;</span>
-<span>/**
- * &lt;p>
- * Security配置类
- * &lt;/p>
- */</span>
-<span>@Configuration</span>
-<span>@EnableWebSecurity</span>
-<span>@EnableGlobalMethodSecurity</span><span>(</span>prePostEnabled <span>=</span> <span>true</span><span>)</span>
-<span>public</span> <span>class</span> <span>TokenWebSecurityConfig</span> <span>extends</span> <span>WebSecurityConfigurerAdapter</span> <span>{</span>
-    <span>private</span> <span>UserDetailsService</span> userDetailsService<span>;</span>
-    <span>private</span> <span>TokenManager</span> tokenManager<span>;</span>
-    <span>private</span> <span>DefaultPasswordEncoder</span> defaultPasswordEncoder<span>;</span>
-    <span>private</span> <span>RedisTemplate</span> redisTemplate<span>;</span>
-    <span>@Autowired</span>
-    <span>public</span> <span>TokenWebSecurityConfig</span><span>(</span><span>UserDetailsService</span> userDetailsService<span>,</span> <span>DefaultPasswordEncoder</span> defaultPasswordEncoder<span>,</span>
-                                  <span>TokenManager</span> tokenManager<span>,</span> <span>RedisTemplate</span> redisTemplate<span>)</span> <span>{</span>
-        <span>this</span><span>.</span>userDetailsService <span>=</span> userDetailsService<span>;</span>
-        <span>this</span><span>.</span>defaultPasswordEncoder <span>=</span> defaultPasswordEncoder<span>;</span>
-        <span>this</span><span>.</span>tokenManager <span>=</span> tokenManager<span>;</span>
-        <span>this</span><span>.</span>redisTemplate <span>=</span> redisTemplate<span>;</span>
-    <span>}</span>
-    <span>/**
-     * 配置设置
-     * @param http
-     * @throws Exception
-     */</span>
-    <span>@Override</span>
-    <span>protected</span> <span>void</span> <span>configure</span><span>(</span><span>HttpSecurity</span> http<span>)</span> <span>throws</span> <span>Exception</span> <span>{</span>
-        http<span>.</span><span>exceptionHandling</span><span>(</span><span>)</span>
-                <span>.</span><span>authenticationEntryPoint</span><span>(</span><span>new</span> <span>UnauthorizedEntryPoint</span><span>(</span><span>)</span><span>)</span>
-                <span>.</span><span>and</span><span>(</span><span>)</span><span>.</span><span>csrf</span><span>(</span><span>)</span><span>.</span><span>disable</span><span>(</span><span>)</span>
-                <span>.</span><span>authorizeRequests</span><span>(</span><span>)</span>
-                <span>.</span><span>anyRequest</span><span>(</span><span>)</span><span>.</span><span>authenticated</span><span>(</span><span>)</span>
-                <span>.</span><span>and</span><span>(</span><span>)</span><span>.</span><span>logout</span><span>(</span><span>)</span><span>.</span><span>logoutUrl</span><span>(</span><span>"/admin/acl/index/logout"</span><span>)</span>
-                <span>.</span><span>addLogoutHandler</span><span>(</span><span>new</span> <span>TokenLogoutHandler</span><span>(</span>tokenManager<span>,</span>redisTemplate<span>)</span><span>)</span><span>.</span><span>and</span><span>(</span><span>)</span>
-                <span>.</span><span>addFilter</span><span>(</span><span>new</span> <span>TokenLoginFilter</span><span>(</span><span>authenticationManager</span><span>(</span><span>)</span><span>,</span> tokenManager<span>,</span> redisTemplate<span>)</span><span>)</span>
-                <span>.</span><span>addFilter</span><span>(</span><span>new</span> <span>TokenAuthenticationFilter</span><span>(</span><span>authenticationManager</span><span>(</span><span>)</span><span>,</span> tokenManager<span>,</span> redisTemplate<span>)</span><span>)</span><span>.</span><span>httpBasic</span><span>(</span><span>)</span><span>;</span>
-    <span>}</span>
-    <span>/**
-     * 密码处理
-     * @param auth
-     * @throws Exception
-     */</span>
-    <span>@Override</span>
-    <span>public</span> <span>void</span> <span>configure</span><span>(</span><span>AuthenticationManagerBuilder</span> auth<span>)</span> <span>throws</span> <span>Exception</span> <span>{</span>
-        auth<span>.</span><span>userDetailsService</span><span>(</span>userDetailsService<span>)</span><span>.</span><span>passwordEncoder</span><span>(</span>defaultPasswordEncoder<span>)</span><span>;</span>
-    <span>}</span>
-    <span>/**
-     * 配置哪些请求不拦截
-     * @param web
-     * @throws Exception
-     */</span>
-    <span>@Override</span>
-    <span>public</span> <span>void</span> <span>configure</span><span>(</span><span>WebSecurity</span> web<span>)</span> <span>throws</span> <span>Exception</span> <span>{</span>
-        web<span>.</span><span>ignoring</span><span>(</span><span>)</span><span>.</span><span>antMatchers</span><span>(</span><span>"/api/**"</span><span>,</span>
-                <span>"/swagger-resources/**"</span><span>,</span> <span>"/webjars/**"</span><span>,</span> <span>"/v2/**"</span><span>,</span> <span>"/swagger-ui.html/**"</span>
-               <span>)</span><span>;</span>
-    <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br><span>57</span><br><span>58</span><br><span>59</span><br><span>60</span><br><span>61</span><br><span>62</span><br><span>63</span><br><span>64</span><br><span>65</span><br><span>66</span><br><span>67</span><br><span>68</span><br><span>69</span><br><span>70</span><br><span>71</span><br><span>72</span><br><span>73</span><br><span>74</span><br><span>75</span><br></div></div><p><strong>5、创建认证授权相关的工具类</strong></p>
-<p><img src="Spring%20Security%E6%95%B4%E5%90%88.assets/75ccbeef-10c1-45fd-8f68-b598019832b1.png" alt="img"></p>
-<div><pre><code>（1）DefaultPasswordEncoder：密码处理的方法
-</code></pre>
-<div><span>1</span><br></div></div><div><pre><code>package com.atguigu.serurity.security;
-import com.atguigu.commonutils.utils.MD5;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Component;
-/**
- * &lt;p&gt;
- * 密码的处理方法类型
- * &lt;/p&gt;
- */
-@Component
-public class DefaultPasswordEncoder implements PasswordEncoder {
-    public DefaultPasswordEncoder() {
-        this(-1);
-    }
-    /**
-     * @param strength
-     *            the log rounds to use, between 4 and 31
-     */
-    public DefaultPasswordEncoder(int strength) {
-    }
-    public String encode(CharSequence rawPassword) {
-        return MD5.encrypt(rawPassword.toString());
-    }
-    public boolean matches(CharSequence rawPassword, String encodedPassword) {
-        return encodedPassword.equals(MD5.encrypt(rawPassword.toString()));
-    }
-}
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br></div></div><p><em><em><em>*</em>*（2）********<code>TokenManager：token操作的工具类</code>******</em>*</em>*</p>
-<div><pre><code>import io.jsonwebtoken.CompressionCodecs;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
-import org.springframework.stereotype.Component;
-import java.util.Date;
-/**
- * &lt;p&gt;
- * token管理
- * &lt;/p&gt;
- */
-@Component
-public class TokenManager {
-    private long tokenExpiration = 24*60*60*1000;
-    private String tokenSignKey = &quot;123456&quot;;
-    public String createToken(String username) {
-        String token = Jwts.builder().setSubject(username)
-                .setExpiration(new Date(System.currentTimeMillis() + tokenExpiration))
-                .signWith(SignatureAlgorithm.HS512, tokenSignKey).compressWith(CompressionCodecs.GZIP).compact();
-        return token;
-    }
-    public String getUserFromToken(String token) {
-        String user = Jwts.parser().setSigningKey(tokenSignKey).parseClaimsJws(token).getBody().getSubject();
-        return user;
-    }
-    public void removeToken(String token) {
-        //jwttoken无需删除，客户端扔掉即可。
-    }
-}
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br></div></div><p><em><em><em>*</em>*（3）**********<code>TokenLogoutHandler：退出实现</code>**********
-**</em>*</em>*</p>
-<div><pre><code>import com.atguigu.commonutils.R;
-import com.atguigu.commonutils.utils.ResponseUtil;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.web.authentication.logout.LogoutHandler;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-/**
- * &lt;p&gt;
- * 登出业务逻辑类
- * &lt;/p&gt;
- */
-public class TokenLogoutHandler implements LogoutHandler {
-    private TokenManager tokenManager;
-    private RedisTemplate redisTemplate;
-    public TokenLogoutHandler(TokenManager tokenManager, RedisTemplate redisTemplate) {
-        this.tokenManager = tokenManager;
-        this.redisTemplate = redisTemplate;
-    }
-    @Override
-    public void logout(HttpServletRequest request, HttpServletResponse response, Authentication authentication) {
-        String token = request.getHeader(&quot;token&quot;);
-        if (token != null) {
-            tokenManager.removeToken(token);
-            //清空当前用户缓存中的权限数据
-            String userName = tokenManager.getUserFromToken(token);
-            redisTemplate.delete(userName);
-        }
-        ResponseUtil.out(response, R.ok());
-    }
-}
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br></div></div><p><em><strong>*（4）********<code>UnauthorizedEntryPoint：未授权统一处理</code>*********</strong></em></p>
-<div><pre><code>import com.atguigu.commonutils.R;
-import com.atguigu.commonutils.utils.ResponseUtil;
-import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.web.AuthenticationEntryPoint;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-/**
- * &lt;p&gt;
- * 未授权的统一处理方式
- * &lt;/p&gt;
- */
-public class UnauthorizedEntryPoint implements AuthenticationEntryPoint {
-    @Override
-    public void commence(HttpServletRequest request, HttpServletResponse response,
-                         AuthenticationException authException) throws IOException, ServletException {
-        ResponseUtil.out(response, R.error());
-    }
-}
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div><p><strong><em>*</em>*********6、创建认证授权实体类**********
-****<img src="Spring%20Security%E6%95%B4%E5%90%88.assets/76236594-2238-4d28-a15e-7cf743bb53e2.png" alt="img">（1）SecutityUser*****</strong>*</p>
-<div><pre><code>import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.util.StringUtils;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-/**
- * &lt;p&gt;
- * 安全认证用户详情信息
- * &lt;/p&gt;
- */
-@Data
-@Slf4j
-public class SecurityUser implements UserDetails {
-    //当前登录用户
-    private transient User currentUserInfo;
-    //当前权限
-    private List&lt;String&gt; permissionValueList;
-    public SecurityUser() {
-    }
-    public SecurityUser(User user) {
-        if (user != null) {
-            this.currentUserInfo = user;
-        }
-    }
-    @Override
-    public Collection&lt;? extends GrantedAuthority&gt; getAuthorities() {
-        Collection&lt;GrantedAuthority&gt; authorities = new ArrayList&lt;&gt;();
-        for(String permissionValue : permissionValueList) {
-            if(StringUtils.isEmpty(permissionValue)) continue;
-            SimpleGrantedAuthority authority = new SimpleGrantedAuthority(permissionValue);
-            authorities.add(authority);
-        }
-        return authorities;
-    }
-    @Override
-    public String getPassword() {
-        return currentUserInfo.getPassword();
-    }
-    @Override
-    public String getUsername() {
-        return currentUserInfo.getUsername();
-    }
-    @Override
-    public boolean isAccountNonExpired() {
-        return true;
-    }
-    @Override
-    public boolean isAccountNonLocked() {
-        return true;
-    }
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return true;
-    }
-    @Override
-    public boolean isEnabled() {
-        return true;
-    }
-}
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br><span>57</span><br><span>58</span><br><span>59</span><br><span>60</span><br><span>61</span><br><span>62</span><br><span>63</span><br></div></div><p><em><em><em>*</em>*****（2）User******</em>*</em>*</p>
-<div><pre><code>import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
-import java.io.Serializable;
-/**
- * &lt;p&gt;
- * 用户实体类
- * &lt;/p&gt;
- */
-@Data
-@ApiModel(description = &quot;用户实体类&quot;)
-public class User implements Serializable {
-    private static final long serialVersionUID = 1L;
-    @ApiModelProperty(value = &quot;微信openid&quot;)
-    private String username;
-    @ApiModelProperty(value = &quot;密码&quot;)
-    private String password;
-    @ApiModelProperty(value = &quot;昵称&quot;)
-    private String nickName;
-    @ApiModelProperty(value = &quot;用户头像&quot;)
-    private String salt;
-    @ApiModelProperty(value = &quot;用户签名&quot;)
-    private String token;
-}
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br></div></div><p><strong><em>*</em>*******************7、创建认证和授权的filter**********
-**********<img src="Spring%20Security%E6%95%B4%E5%90%88.assets/bee4d171-befe-4b08-a792-5f1d50a8642b.png" alt="img">
-****（1）TokenLoginFilter：认证的filter*****</strong>*</p>
-<div><pre><code>import com.atguigu.commonutils.R;
-import com.atguigu.commonutils.utils.ResponseUtil;
-import com.atguigu.serurity.entity.SecurityUser;
-import com.atguigu.serurity.entity.User;
-import com.atguigu.serurity.security.TokenManager;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.ArrayList;
-/**
- * &lt;p&gt;
- * 登录过滤器，继承UsernamePasswordAuthenticationFilter，对用户名密码进行登录校验
- * &lt;/p&gt;
- */
-public class TokenLoginFilter extends UsernamePasswordAuthenticationFilter {
-    private AuthenticationManager authenticationManager;
-    private TokenManager tokenManager;
-    private RedisTemplate redisTemplate;
-    public TokenLoginFilter(AuthenticationManager authenticationManager, TokenManager tokenManager, RedisTemplate redisTemplate) {
-        this.authenticationManager = authenticationManager;
-        this.tokenManager = tokenManager;
-        this.redisTemplate = redisTemplate;
-        this.setPostOnly(false);
-        this.setRequiresAuthenticationRequestMatcher(new AntPathRequestMatcher(&quot;/admin/acl/login&quot;,&quot;POST&quot;));
-    }
-    @Override
-    public Authentication attemptAuthentication(HttpServletRequest req, HttpServletResponse res)
-            throws AuthenticationException {
-        try {
-            User user = new ObjectMapper().readValue(req.getInputStream(), User.class);
-            return authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword(), new ArrayList&lt;&gt;()));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-    /**
-     * 登录成功
-     * @param req
-     * @param res
-     * @param chain
-     * @param auth
-     * @throws IOException
-     * @throws ServletException
-     */
-    @Override
-    protected void successfulAuthentication(HttpServletRequest req, HttpServletResponse res, FilterChain chain,
-                                            Authentication auth) throws IOException, ServletException {
-        SecurityUser user = (SecurityUser) auth.getPrincipal();
-        String token = tokenManager.createToken(user.getCurrentUserInfo().getUsername());
-        redisTemplate.opsForValue().set(user.getCurrentUserInfo().getUsername(), user.getPermissionValueList());
-        ResponseUtil.out(res, R.ok().data(&quot;token&quot;, token));
-    }
-    /**
-     * 登录失败
-     * @param request
-     * @param response
-     * @param e
-     * @throws IOException
-     * @throws ServletException
-     */
-    @Override
-    protected void unsuccessfulAuthentication(HttpServletRequest request, HttpServletResponse response,
-                                              AuthenticationException e) throws IOException, ServletException {
-        ResponseUtil.out(response, R.error());
-    }
-}
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br><span>57</span><br><span>58</span><br><span>59</span><br><span>60</span><br><span>61</span><br><span>62</span><br><span>63</span><br><span>64</span><br><span>65</span><br><span>66</span><br><span>67</span><br><span>68</span><br><span>69</span><br><span>70</span><br><span>71</span><br><span>72</span><br><span>73</span><br><span>74</span><br><span>75</span><br><span>76</span><br></div></div><p><strong><em>*</em>*******************************<code>（2）TokenAuthenticationFilter：</code>*********************************</strong>*</p>
-<div><pre><code>授权filter
-</code></pre>
-<div><span>1</span><br></div></div><div><pre><code>package com.atguigu.serurity.filter;
-import com.atguigu.commonutils.R;
-import com.atguigu.commonutils.utils.ResponseUtil;
-import com.atguigu.serurity.security.TokenManager;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
-import org.springframework.util.StringUtils;
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-/**
- * &lt;p&gt;
- * 访问过滤器
- * &lt;/p&gt;
- */
-public class TokenAuthenticationFilter extends BasicAuthenticationFilter {
-    private TokenManager tokenManager;
-    private RedisTemplate redisTemplate;
-    public TokenAuthenticationFilter(AuthenticationManager authManager, TokenManager tokenManager,RedisTemplate redisTemplate) {
-        super(authManager);
-        this.tokenManager = tokenManager;
-        this.redisTemplate = redisTemplate;
-    }
-    @Override
-    protected void doFilterInternal(HttpServletRequest req, HttpServletResponse res, FilterChain chain)
-            throws IOException, ServletException {
-        logger.info(&quot;=================&quot;+req.getRequestURI());
-        if(req.getRequestURI().indexOf(&quot;admin&quot;) == -1) {
-            chain.doFilter(req, res);
-            return;
-        }
-        UsernamePasswordAuthenticationToken authentication = null;
-        try {
-            authentication = getAuthentication(req);
-        } catch (Exception e) {
-            ResponseUtil.out(res, R.error());
-        }
-        if (authentication != null) {
-            SecurityContextHolder.getContext().setAuthentication(authentication);
-        } else {
-            ResponseUtil.out(res, R.error());
-        }
-        chain.doFilter(req, res);
-    }
-    private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) {
-        // token置于header里
-        String token = request.getHeader(&quot;token&quot;);
-        if (token != null &amp;&amp; !&quot;&quot;.equals(token.trim())) {
-            String userName = tokenManager.getUserFromToken(token);
-            List&lt;String&gt; permissionValueList = (List&lt;String&gt;) redisTemplate.opsForValue().get(userName);
-            Collection&lt;GrantedAuthority&gt; authorities = new ArrayList&lt;&gt;();
-            for(String permissionValue : permissionValueList) {
-                if(StringUtils.isEmpty(permissionValue)) continue;
-                SimpleGrantedAuthority authority = new SimpleGrantedAuthority(permissionValue);
-                authorities.add(authority);
-            }
-            if (!StringUtils.isEmpty(userName)) {
-                return new UsernamePasswordAuthenticationToken(userName, token, authorities);
-            }
-            return null;
-        }
-        return null;
-    }
-}
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br><span>57</span><br><span>58</span><br><span>59</span><br><span>60</span><br><span>61</span><br><span>62</span><br><span>63</span><br><span>64</span><br><span>65</span><br><span>66</span><br><span>67</span><br><span>68</span><br><span>69</span><br><span>70</span><br><span>71</span><br><span>72</span><br><span>73</span><br><span>74</span><br></div></div>]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <category term="后端框架"/>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <published>2021-01-13T00:00:00.000Z</published>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
-    <title type="html">Spring Security介绍</title>
-    <id>http://qiqi.dreamagain.top/program/frontend/backframe/Spring%20Security/intro/</id>
-    <link href="http://qiqi.dreamagain.top/program/frontend/backframe/Spring%20Security/intro/"/>
-    <updated>2021-02-08T17:34:42.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="spring-security"> Spring Security</h1>
-<h2 id="一、框架介绍"> 一、框架介绍</h2>
-<p>Spring 是一个非常流行和成功的 Java 应用开发框架。Spring Security 基于 Spring 框架，提供了一套 Web 应用安全性的完整解决方案。一般来说，Web 应用的安全性包括**用户认证（Authentication）和用户授权（Authorization）**两个部分。</p>
-<p>（1）用户认证指的是：验证某个用户是否为系统中的合法主体，也就是说用户能否访问该系统。用户认证一般要求用户提供用户名和密码。系统通过校验用户名和密码来完成认证过程。</p>
-<p>（2）用户授权指的是验证某个用户是否有权限执行某个操作。在一个系统中，不同用户所具有的权限是不同的。比如对一个文件来说，有的用户只能进行读取，而有的用户可以进行修改。一般来说，系统会为不同的用户分配不同的角色，而每个角色则对应一系列的权限。</p>
-<p><strong>Spring Security其实就是用filter，对多请求的路径进行过滤。</strong></p>
-<p>（1）如果是基于Session，那么Spring Security会对cookie里的sessionid进行解析，找到服务器存储的sesion信息，然后判断当前用户是否符合请求的要求。</p>
-<p>（2）如果是token，则是解析出token，然后将当前请求加入到Spring Security管理的权限信息中去</p>
-<h2 id="二、认证与授权实现思路"> 二、认证与授权实现思路</h2>
-<p>如果系统的模块众多，每个模块都需要进行授权与认证，可以选择基于token的形式进行授权与认证，用户根据用户名密码认证成功，然后获取当前用户角色的一系列权限值，并以用户名为key，权限列表为value的形式存入redis缓存中，根据用户名相关信息生成token返回，浏览器将token记录到cookie中，每次调用api接口都默认将token携带到header请求头中，Spring Security解析header头获取token信息，解析token获取当前用户名，根据用户名就可以从redis中获取权限列表，这样Spring Security就能够判断当前请求是否有权限访问。</p>
-<p>流程图：</p>
-<p><img src="intro.assets/image-20210202105449950.png" alt="image-20210202105449950"></p>
-<p>代码执行过程：</p>
-<p><img src="intro.assets/image-20210202105704682.png" alt="image-20210202105704682"></p>
-]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <category term="后端框架"/>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <published>2021-01-13T00:00:00.000Z</published>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
-    <title type="html">ORM相关框架</title>
-    <id>http://qiqi.dreamagain.top/program/frontend/backframe/orm/</id>
-    <link href="http://qiqi.dreamagain.top/program/frontend/backframe/orm/"/>
-    <updated>2021-02-08T17:34:42.000Z</updated>
-    <author>
-      <name>南辞</name>
-    </author>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
-    <title type="html">后端框架</title>
-    <id>http://qiqi.dreamagain.top/program/frontend/backframe/</id>
-    <link href="http://qiqi.dreamagain.top/program/frontend/backframe/"/>
-    <updated>2021-02-08T17:34:42.000Z</updated>
-    <summary type="html"><![CDATA[<blockquote>
-<p><img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-Spring-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringMVC-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringBoot-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringCloud-blue.svg" alt="img"> <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringSecurity-blue.svg" alt="img"></p>
-<p><img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-MyBatis-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-MyBatis--Plus-blue.svg" alt="img"></p>
-</blockquote>
-]]></summary>
-    <content type="html"><![CDATA[<blockquote>
-<p><img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-Spring-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringMVC-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringBoot-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringCloud-blue.svg" alt="img"> <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-SpringSecurity-blue.svg" alt="img"></p>
-<p><img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-MyBatis-blue.svg" alt="img">  <img src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-MyBatis--Plus-blue.svg" alt="img"></p>
-</blockquote>
-
-]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <category term="后端框架"/>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <published>2019-09-10T00:00:00.000Z</published>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
-    <title type="html">Spring家族框架体系</title>
-    <id>http://qiqi.dreamagain.top/program/frontend/backframe/spring/</id>
-    <link href="http://qiqi.dreamagain.top/program/frontend/backframe/spring/"/>
-    <updated>2021-02-08T17:34:42.000Z</updated>
     <author>
       <name>南辞</name>
     </author>
