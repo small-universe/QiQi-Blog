@@ -18,6 +18,7 @@ jobs:
         run: |
           yarn
           yarn build
+          zip -r algorithm.zip dist
 
       # 部署到 GitHub Pages
       - name: Deploy 🚀
@@ -27,6 +28,51 @@ jobs:
           publish_dir: dist
           external_repository: small-universe/qiqi-algorithm
           publish_branch: gh-pages
-          cname: algorithm.dreamagain.top
+          cname: alg.dreamagain.top
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
+
+      # Scp脚本拷贝dist.zip到服务器
+      - name: Scp file to aliyun
+        uses: appleboy/scp-action@master
+        with:
+          # IP地址
+          host: ${{ secrets.ALIYUN_SERVER_IP }}
+          # 用户，如：root等
+          username: ${{ secrets.ALIYUN_SERVER_USERNAME }}
+          # 密码
+          password: ${{ secrets.ALIYUN_SERVER_PASSWORD }}
+          # ssh端口，如：22
+          port: ${{ secrets.ALIYUN_SERVER_PORT }}
+          source: "algorithm.zip"
+          # 将压缩包文件拷贝到服务器指定目录
+          target: "/home/tmp"
+
+      # 备份、解压、删除
+      - name: Backup and unzip
+        uses: appleboy/ssh-action@master
+        with:
+          # IP地址
+          host: ${{ secrets.ALIYUN_SERVER_IP }}
+          # 用户，如:root等
+          username: ${{ secrets.ALIYUN_SERVER_USERNAME }}
+          # 密码
+          password: ${{ secrets.ALIYUN_SERVER_PASSWORD }}
+          # ssh端口，如：22
+          port: ${{ secrets.ALIYUN_SERVER_PORT }}
+          # 先备份再解压
+          script: |
+            echo "################# files remove #################"
+            if [ -f "/home/web/algorithm-bak" ];then
+              rm -rf /home/web/algorithm-bak
+              echo "algorithm-bak exists and is deleted"
+            fi
+            echo "################# files backup #################"
+            if [ -f "/home/web/algorithm" ];then
+              mv /home/web/algorithm /home/web/algorithm-bak
+              echo "algorithm exists and is backuped"
+            else
+              mkdir /home/web/algorithm
+            fi
+            echo "################# unzip dist.zip #################"
+            unzip -od  /home/web/algorithm /home/tmp/algorithm.zip
