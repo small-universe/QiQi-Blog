@@ -37,6 +37,7 @@ module.exports = {
         text: "标签", // 默认 “标签”
       },
       socialLinks: [ // 信息栏展示社交信息
+        {text: '七七部落', link: 'http://qiqi.dreamagain.top/', icon: 'reco-logo'},
         { icon: "reco-github", link: "https://github.com/small-universe" },
         { icon: "reco-qq", link: "tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1715261428" },
         { icon: "reco-mail", link: "mailto:18846770224@163.com" },
@@ -89,17 +90,19 @@ module.exports = {
   // 搜索设置
   search: true,
   searchMaxSuggestions: 10,
+  searchPlaceholder: "search...",
   // 插件
   plugins: [
-    [
-      "@vuepress-reco/vuepress-plugin-rss", //RSS插件
-      {
-        site_url: "http://algorithm.dreamagain.top", //网站地址
-        copyright: "nanci", //版权署名
-      },
-    ],
     ["@vuepress/nprogress"], // 加载进度条
     ["reading-progress"], // 阅读进度条
-    ["vuepress-plugin-code-copy", true], //一键复制代码插件
+    [
+        '@xiaopanda/vuepress-plugin-code-copy', //一键复制代码插件
+      {
+        buttonStaticIcon: true,
+        buttonIconTitle: "一键复制",
+        buttonAlign: "bottom",
+        buttonColor: "#038ea0"
+      }
+    ]
   ],
 };

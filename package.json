@@ -2,18 +2,22 @@
   "name": "qiqi-algorithm",
   "version": "1.0.0",
   "author": "reco_luan",
+  "license": "MIT",
+  "keywords": [
+    "vuepress",
+    "algorithm",
+    "LeetCode",
+    "nowcoder"
+  ],
   "scripts": {
     "dev": "vuepress dev . --open --host \"localhost\"",
     "build": "vuepress build . --dest dist"
   },
-  "devDependencies": {
-    "vuepress": "^1.8.1",
-    "vuepress-plugin-copy-code": "^0.0.1",
-    "vuepress-theme-reco": "1.6.1"
-  },
   "description": "qiqi-tribe’s subject:qiqi-algorithm",
   "dependencies": {
-    "@vuepress-reco/vuepress-plugin-rss": "^1.0.2",
-    "vuepress-plugin-reading-progress": "^1.0.10"
+    "@xiaopanda/vuepress-plugin-code-copy": "^1.0.3",
+    "vuepress": "^1.8.1",
+    "vuepress-plugin-reading-progress": "^1.0.10",
+    "vuepress-theme-reco": "1.6.1"
   }
 }
