@@ -1,0 +1,32 @@
+name: QiQi Algorithm Deploy
+
+on:
+  push:
+    branches:
+      - algorithm
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 使用某个 Repo
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+
+      # 构建静态文件
+      - name: Install and Build 🔧
+        run: |
+          yarn
+          yarn build
+
+      # 部署到 GitHub Pages
+      - name: Deploy 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.ACCESS_TOKEN }}
+          publish_dir: dist
+          external_repository: small-universe/qiqi-algorithm
+          publish_branch: gh-pages
+          cname: algorithm.dreamagain.top
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
