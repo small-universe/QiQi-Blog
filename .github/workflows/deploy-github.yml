@@ -1,4 +1,4 @@
-name: QiQi Algorithm Deploy
+name: Deploy QiQi-Algorithm
 
 on:
   push:

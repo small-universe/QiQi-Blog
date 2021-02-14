@@ -91,24 +91,6 @@ module.exports = {
   searchMaxSuggestions: 10,
   // 插件
   plugins: [
-    // 音乐
-    [
-      "meting",
-      {
-        // metingApi: "https://meting.sigure.xyz/api/music",
-        meting: {
-          server: "netease",
-          type: "playlist",
-          // 歌单id
-          mid: "3047591896",
-        },
-        aplayer: {
-          lrcType: 3,
-          theme: "#3489fd",
-        },
-      },
-    ],
-    // ],
     [
       "@vuepress-reco/vuepress-plugin-rss", //RSS插件
       {
