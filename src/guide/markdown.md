@@ -1,7 +1,7 @@
 ---
 title: Markdown指南
 category: 使用指南
-author: 𝓜𝓻.𝓗𝓸𝓹𝓮
+author: 𝓜𝓻. 𝓗𝓸𝓹𝓮
 tag:
   - markdown
 ---

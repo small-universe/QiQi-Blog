@@ -1,60 +1,66 @@
 ---
-title: vuepress从入坑指南
+title: VuePresss入坑指南
 category: 使用指南
+sticky: 999
 tags:
   - vuepress
 ---
 
 > ![](https://img.shields.io/badge/vuepress-blue.svg) ![](https://img.shields.io/badge/vuepress--theme--reco-blue.svg) 
 >
-> 没有出现问题和解决问题的教程都不是好教程
+> 没有问题演示的教程都不是好教程
 
 <!-- more -->
 
 在利用vuepress搭建个人博客的过程中参考过很多教程，最权威的教程是[vuepress官网](https://v1.vuepress.vuejs.org/zh/)，其他不懂的细节再通过百度基本能解决，不过不得不说如果要自定义主题、编写自己的组件或者开发一下插件的时候，这方面的教程很少，即使是仅有的教程也没有达到我所期望的质效果。
 
-## 一、vuepress简介
+## 一、VuePresss简介
 
-官方介绍：https://v1.vuepress.vuejs.org/zh/guide/
+通过[官方介绍](https://v1.vuepress.vuejs.org/zh/guide/)提取如下几点关键信息
 
-简单整理一下
+### 1、什么是VuePresss
 
-### 1、什么是vuepress
+Vue全家桶成员之一，尤雨溪大神于2018年4月12日推出
 
-- vue全家桶成员之一，尤雨溪大神于2018年4月12日推出
-- **vuepress = [极简静态网站生成器](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/core) + [默认主题](https://v1.vuepress.vuejs.org/zh/theme/default-theme-config.html)**
-
-
-
-### 2、vuepress是干什么的
-
-官方说明：它的诞生初衷是为了支持 Vue 及其子项目的文档需求
-
-所以它最初就是用来写项目文档的，现在还支持了博客，而且有很多优秀的社区主题供我们选择
-
-考虑到像github、gitee都能免费提供静态网页服务，所以利用`vuepress+gitee/github`就可以搭建起自己的博客网站，唯一需要花费的可能就是购买一个域名，不过域名也不是必须的，所以算是全程白嫖。
+- **VuePresss = [极简静态网站生成器](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/core) + [默认主题](https://v1.vuepress.vuejs.org/zh/theme/default-theme-config.html)**
 
 
 
-### 3、vuepress工作原理
+### 2、VuePresss是干什么的
 
-还是看官方说明：事实上，一个 VuePress 网站是一个由 [Vue ](http://vuejs.org/)、[Vue Router](https://github.com/vuejs/vue-router)和 [webpack ](http://webpack.js.org/)驱动的单页应用
+- 它的诞生初衷是为了支持 Vue 及其子项目的文档需求
 
-所以，**vuepress网站=应用**。
+- 现在，你可以通过添加**博客主题**来搭建属于自己的静态博客
 
-我们在没有服务器的前提下就可以构建出一个应用，所以vuepress就是这么牛，吹一波尤大神。
+  软硬件要求：
+
+  - vuepress 
+  - vuepress主题模板
+
+  - ~~vuepress插件~~ （可选）
+  - ~~第三方组件库，如Element-UI，View UI~~ （可选）
+  - ~~自己的服务器~~ （可选）
+  - ~~自己的备案域名~~（可选）
+
+
+
+### 3、VuePresss工作原理
+
+- 一个 VuePresss网站是一个由 [Vue ](http://vuejs.org/)、[Vue Router](https://github.com/vuejs/vue-router)和 [webpack ](http://webpack.js.org/)驱动的单页应用
+- 所以，VuePresss是借鉴了Nuxt框架，采用服务端渲染。**一个VuePresss网站=应用**。
 
 
 
 ### 4、使用体验
 
-对于非开发人员来说，我们的目的是用vuepress来写博客和写文档，当然不希望配置流程很复杂、使用也不方便。
+- 推荐使用VuePresss的社区主题，样式比较好看
+- 使用主题也并非开箱即用，还是需要不少的配置
+- 文章写在md文件中，有时需要插入网页标签，会带来一定的不便
+- 使用Markdown请使用比较友好的编辑器，推荐`Typora`
 
-从个人体验来看，基础配置不多，很容易就可以把博客搭建起来；但是在使用的时候，因为我们要在markdown文件中写一些标签之类的东西，体验就没有像在csdn、简书等这样的系统上写博客那么好，但对于像我这样的颜控还是忍不住喜欢vuepress写出来的文档风格，其次就是可以白嫖:joy:，服务器续费太贵了。
 
-当然用什么写博客都是看个人喜好，如果没有商业性质，个人博客只不过是自己记一些东西，方便查阅，没有几个人会看到。那些商业化的博客文章也只会是选择曝光度较好的一些博客系统。
 
-接下来就从一步步看看如何搭建、使用以及做一些个人定制。
+接下来就看看如何一步步搭建、扩展以及使用。
 
 
 
@@ -97,9 +103,9 @@ npm 和 yarn都是包管理工具，在使用之前需要安装node.js
 
 :::
 
-### （三）安装 VuePress
+### （三）安装 vuepress
 
-==官方推荐局部安装==，听官方的准没错，给自己省点麻烦
+==官方推荐局部安装==，听官方的准没错，省去一些可能不必要的麻烦
 
 ```sh
 yarn add -D vuepress 
@@ -111,7 +117,7 @@ npm install -D vuepress
 
 注意
 
-如果你的现有项目依赖了 webpack 3.x，我们推荐使用 [Yarn (opens new window)](https://classic.yarnpkg.com/zh-Hans/)而不是 npm 来安装 VuePress。因为在这种情形下，npm 会生成错误的依赖树。
+如果你的现有项目依赖了 webpack 3.x，我们推荐使用 [Yarn (opens new window)](https://classic.yarnpkg.com/zh-Hans/)而不是 npm 来安装 vuepress。因为在这种情形下，npm 会生成错误的依赖树。
 
 yarn能够解决npm存在的一些问题，所以推荐还是使用yarn
 
@@ -184,7 +190,7 @@ features:
 - title: Vue驱动
   details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
 - title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+  details: vuepress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
 footer: Copyright © 2021 Mr·Yang
 ---
 
@@ -294,7 +300,13 @@ module.exports = {
 ```
 
 详细配置可直接查询[官网-config配置](https://links.jianshu.com/go?to=https%3A%2F%2Fwww.vuepress.cn%2Fconfig%2F%23%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE)
- **注意：路由根路径为src文件夹，静态资源（图片）根路径为public文件夹**，这是vuepress约定的
+
+::: tip 注意
+
+1. 此时路由根路径为src文件夹（我们在package.json中通过build、dev命令后的参数指定的）
+2. 静态资源（图片）根路径为public文件夹（这是VuePress约定的）
+
+:::
 
 在src下新建：sidebar.md
 
@@ -349,9 +361,7 @@ title: 侧边栏测试
 
 ### （一）更换主题
 
-::: tip 主题
-
-**主题分类：**
+::: tip 主题分类
 
 - 默认主题
 - 自定义主题
@@ -362,13 +372,13 @@ title: 侧边栏测试
 
 
 
-可以在[npm官网](https://links.jianshu.com/go?to=https%3A%2F%2Fwww.npmjs.com%2F)中输入`vuepress-theme`寻找自己喜欢的主题，其中以 @vuepress/theme- 开头的主题是官方维护的主
+可以在[npm官网](https://links.jianshu.com/go?to=https%3A%2F%2Fwww.npmjs.com%2F)中输入`vuepress-theme`寻找相关的vuepress主题，其中以 @vuepress/theme- 开头的主题是官方维护的主
 
 这里使用  [vuepress-theme-reco](https://github.com/vuepress-reco/vuepress-theme-reco)，[官方文档](https://vuepress-reco-doc.now.sh/views/1.x/)
 
 该主题提供了快速构建的脚手架，这里选择yarn安装
 
-**使用脚手架安装**
+**1、使用脚手架安装**
 
 ```sh
 // 安装脚手架
@@ -485,7 +495,7 @@ module.exports = {
 
 
 
-**查看`package.json`**
+**2、查看`package.json`**
 
 ```json
 {
@@ -507,13 +517,13 @@ module.exports = {
 
 
 
-**更新依赖**（3种方式）
+**3、更新依赖**（3种方式）
 
 1. 下载npm-check-updates
 2. yarn upgrade-interactive --latest
 3. yarn upgrade package@version
 
-**1、第一种**
+**第一种**
 
 ```sh
 // 先下载
@@ -523,14 +533,14 @@ yarn global add npm-check-updates
 ncu --upgrade --upgradeAll && yarn upgrade
 ```
 
-**2、第二种**
+**第二种**
 
 ```sh
 yarn upgrade-interactive --latest
 // 需要手动选择升级的依赖包，按空格键选择，a 键切换所有，i 键反选选择
 ```
 
-**3、第三种**
+**第三种**
 
 ```sh
 yarn upgrade package@version
@@ -577,7 +587,7 @@ yarn upgrade package@version
 }
 ```
 
-> 测试运行
+**4、测试运行**
 
 发现页面空白，后台也没有任何报错信息
 
@@ -585,13 +595,17 @@ yarn upgrade package@version
 
 ![](./assets/vuepress07.png)
 
-发现1.6.2、1.6.3、1.6.4 才是最近发布的，可能存在不少bug，我们还是使用之前的1.6.1版本。
+发现1.6.2、1.6.3、1.6.4 才是最近发布的，可能存在不少bug，查看`issue`，找到这样的信息
 
-测试发现只要改用`"vuepress-theme-reco": "1.6.1"`就能正常显示，所以在更新依赖的时候不更新`vuepress-theme-reco`就可以了
+![](./assets/vuepress52.png)
+
+明确是版本的问题，我们还是还是切换回之前的1.6.1版本。
+
+测试发现，只要改用`"vuepress-theme-reco": "1.6.1"`就能正常显示，所以在更新依赖的时候不更新`vuepress-theme-reco`就可以了
 
 
 
-> 修改配置文件config.js
+**5、修改配置文件config.js**
 
 修改的同时我们也可以安装一些实用的插件
 
@@ -730,7 +744,7 @@ module.exports = {
 
 ### （二）修改主题
 
-> **添加图标**
+**1、添加图标**
 
 主题有默认图标，如果还不满足需求，怎么办？引入阿里妈妈提供的矢量图标库
 
@@ -778,6 +792,13 @@ module.exports = {
 
 ### （三）修改默认主题
 
+::: tip 
+
+- 学习的话可以花些时间捣鼓捣鼓
+- 使用的话可以直接跳过此节
+
+:::
+
 在使用默认主题的情况下可将默认主题的各功能组件释放出来，只需执行命令：
 
 ```sh
@@ -793,22 +814,17 @@ module.exports = {
 
 不过我们用的`vuepress-theme-reco`主题已经很强大了，没有必要花费太多精力在搭建博客上面，而是花更多的时间在内容创作上。
 
-::: tip 
 
-- 学习的话可以花些时间捣鼓捣鼓
-- 使用的话可以直接略过
-
-:::
 
 
 
 ### （四）客户端增强
 
-如果你想对自己的应用做一些优化，比如使用router做登录拦截、给vue实例挂载全局变量或注册其他组件等，可以在.vuepress下新建文件`enhanceApp.js`：
+如果你想对自己的应用做一些优化，比如使用router做登录拦截、给Vue实例挂载全局变量或注册其他组件等，可以在.vuepress下新建文件`enhanceApp.js`：
 
 ```dart
 export default ({
-  Vue, // VuePress 正在使用的 Vue 构造函数
+  Vue, // vuepress 正在使用的 Vue 构造函数
   options, // 附加到根实例的一些选项
   router, // 当前应用的路由实例
   siteData // 站点元数据
@@ -821,23 +837,23 @@ export default ({
 
 这个功能还是比较实用的，可以引入你想要的vue组件库并在md文件中使用。或者利用组件库来封装一个自定义组件。
 
-> **1、尝试集成Element-UI组件**
+**1、尝试集成Element-UI组件**
 
 参照[Element-UI官方文档](https://element.eleme.cn/#/zh-CN/component/installation)
 
-1、安装组件
+（1）安装组件
 
 ```sh
 yarn add element-ui
 ```
 
-2、引入组件
+（2）引入组件
 
 ```js
 //.vuepress/enhanceApp.js
 
 /**
- * 扩展 VuePress 应用
+ * 扩展 vuepress 应用
  */
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -852,7 +868,7 @@ export default ({
 
 在扩展之后，就可以在自定义的组件或者md文件中使用element的组件了。
 
-3、测试在md中使用
+（3）测试在md中使用
 
 创建` blogs/components/element-ui.md`，内容如下
 
@@ -905,11 +921,13 @@ categories:
 
 ```
 
-4、运行测试
+（4）运行测试
 
 页面空白，打开控制台查看报错信息
 
 ![](./assets/vuepress14.png)
+
+
 
 ::: tip 问题解决
 
@@ -929,11 +947,15 @@ npx vuepress info
 
 查看vue包的版本，有助于查看版本是否对应
 
-::: tip 感谢
+::: right 感谢
 
-[无休止的bug](https://blog.csdn.net/qq_32855007/article/details/108726430) 提供的解决方法
+[无休止的bug](https://blog.csdn.net/qq_32855007/article/details/108726430) 
+
+
 
 ::: 
+
+
 
 再次运行，页面可以正常显示
 
@@ -949,7 +971,7 @@ npx vuepress info
 
 
 
-> **2、尝试集成View UI组件**
+**2、尝试集成View UI组件**
 
 ::: warning 提示
 
@@ -957,17 +979,17 @@ View UI原来叫做iview，[官方文档]()
 
 :::
 
-1、安装iview
+（1）安装iview
 
 ```sh
 yarn add view-design
 ```
 
-2、引入组件
+（2）引入组件
 
 ```js
 /**
- * 扩展 VuePress 应用
+ * 扩展 vuepress 应用
  */
 // import Element from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css'
@@ -986,7 +1008,7 @@ export default ({
 }
 ```
 
-3、在md中测试
+（3）在md中测试
 
 创建` blogs/components/view-ui.md`，内容如下
 
@@ -1130,7 +1152,7 @@ categories:
 
 ```
 
-4、运行测试
+（4）运行测试
 
 发现页面空白，控制台信息如下，所以不知道是哪里有问题
 
@@ -1192,7 +1214,7 @@ export default ({
 
 vuepress是一个单页面应用，所谓路由，是VueRouter模拟出来的假象，通过官方对[元数据](https://vuepress.vuejs.org/zh/theme/writing-a-theme.html#%E7%BD%91%E7%AB%99%E5%92%8C%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE) 的描述，我们可以了解到`vuepress`
 
-能够提供博客以及博客中的分类、标签、时间线等功能支持主要就是使用元数据 **$page** 来实现，看一下官方文档中比较关键的说明：
+能够提供博客以及博待解决bug客中的分类、标签、时间线等功能支持主要就是使用元数据 **$page** 来实现，看一下官方文档中比较关键的说明：
 
 ::: info 元数据
 
@@ -1204,7 +1226,7 @@ vuepress是一个单页面应用，所谓路由，是VueRouter模拟出来的假
 
 :::
 
-没错,**$pages**它记录了所有md文件的元数据，我可以通过在元数据中添加分类、标签，以及时间来实现路由。
+没错，**$pages**它记录了所有md文件的元数据，我可以通过在元数据中添加分类、标签，以及时间来实现路由。
 
 每一次新写的文章，无需在config.js中设置路由，只需要在md中按照元数据的格式，设置好type(分类),tags(标签)。
 
@@ -1218,7 +1240,7 @@ vuepress是一个单页面应用，所谓路由，是VueRouter模拟出来的假
 
 我们不必把导航栏和侧边栏的配置都放到config.js中，我们可以单独配置然后在config.js中引用
 
-1、.vuepress下创建以下的文件结构
+**1、.vuepress下创建以下的文件结构**
 
 ```js
 .vuepress
@@ -1289,7 +1311,7 @@ module.exports = {
 
 ```
 
-2、config.js中导入
+**2、config.js中导入**
 
 ```js {1,2,7,8}
 const sidebar = require('./config/sidebar')
@@ -1305,11 +1327,11 @@ const nav = require('./config/navbar')
 ......
 ```
 
-3、测试
+**3、测试**
 
 ![](./assets/vuepress20.png)
 
-::: 待解决bug
+::: info 问题小结
 
 1. ~~切换主题颜色的按钮样式改变，如下图所示~~ ：==引入第三方组件库导致==
 
@@ -1400,10 +1422,6 @@ yarn run deploy
 
 
 
----
-
-
-
 果然在[基本配置](https://vuepress.vuejs.org/zh/config/#base)里有这样的说明：
 
 ![](./assets/vuepress26.png)
@@ -1439,9 +1457,9 @@ module.exports = {
 
 在看官方文档之前建议看一下简单的入门教程，推荐[阮一峰 GitHub Actions 入门教程](http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)，对`Guthub Actions`有基本了解后就可以参照官方文档进行详细的配置
 
-**配置步骤：**
+**1、配置步骤：**
 
-**第一步:**创建`.github/workflows`目录并在该目录下创建`deploy.yml`文件，内容如下：
+第一步: 创建`.github/workflows`目录并在该目录下创建`deploy.yml`文件，内容如下：
 
 ```yml
 name: Deploy
@@ -1489,7 +1507,7 @@ jobs:
           FOLDER: .vuepress/dist
 ```
 
-**第二步**：配置`ACCESS_TOKEN`
+第二步：配置`ACCESS_TOKEN`
 
 1、生成Personal access tokens（ ==仅第一次显示== ）
 
@@ -1501,7 +1519,7 @@ jobs:
 
 
 
-**第三步**：配置`SSH_PRIVATE_KEY`
+第三步：配置`SSH_PRIVATE_KEY`
 
 1、生成sshkey: 输入命令ssh-keygen -t rsa -C "邮箱地址" 【邮箱地址：注册github时填写的邮箱地址】
 
@@ -1519,7 +1537,7 @@ ssh-keygen -t rsa -C "1715261428@qq.com"
 
 
 
-**第四步**：测试
+第四步：测试
 
 报错如下
 
@@ -1544,9 +1562,10 @@ const sidebar = require('./config/sidebar/index.js')
 
 
 
-**第五步**：配置域名
+第五步：配置域名
 
-::: tip 补充：设置域名dns指向
+::: tip 设置域名dns指向（ 补充）
+
 方法有**3种**：
 
 - **第一种：**
@@ -1556,7 +1575,7 @@ const sidebar = require('./config/sidebar/index.js')
 - **第三种：**
   CNMAE：如果你希望使用二级域名访问，将一个二级域名配置成CNAME，指向username.github.io，这样可以在域名解析的时候得到一个动态的IP，这个IP是一台离你最近的镜像主机
 
-我使用的是第三种方法CNAME。
+这里使用的是第三种方法CNAME。
 
 :::
 
@@ -1609,7 +1628,7 @@ echo 'reco-demo.dreamagain.top' > CNAME
 
 与测试时得出的结论有点出入，但大体是一个意思。仓库下配置类自定义域名`reco-demo.dreamagain.top`虽然只是替换的`<user>.github.io`，但此时Gihub Pages服务已经默认通过域名直接访问仓库中资源，所以这时候不用在config.js中添加`base:"/reco-demo/"`了
 
-::: 小结
+::: tip 小结
 
 仓库名为`<username>.github.io`或者是使用自定义域名，不用在config.js中配置base字段
 
@@ -1617,7 +1636,7 @@ echo 'reco-demo.dreamagain.top' > CNAME
 
 :::
 
-**完善评论功能**
+**2、完善评论功能**
 
 第一步：[LeanCloud](https://console.leancloud.cn/login)注册并登录
 
@@ -1665,7 +1684,7 @@ echo 'reco-demo.dreamagain.top' > CNAME
 
 
 
-> 4、配置yml文件
+**1、配置Secrets和yml文件**
 
 需要在Secrets中添加：
 
@@ -1777,13 +1796,15 @@ jobs:
 
 
 
-> 5、配置nginx
+**2、配置nginx**
 
 ::: tip  
 
 [Linux安装Nginx]()
 
-默认的`nginx.conf`文件会帮你将`.*\.(js|css)?$`文件和 `.*\.(gif|jpg|jpeg|png|bmp|swf|ico)$`这些文件进行缓存
+默认的`nginx.conf`文件会帮你将`.*\.(js|css)?$`
+
+文件和 `.*\.(gif|jpg|jpeg|png|bmp|swf|ico)$`这些文件进行缓存
 
 :::
 
@@ -1861,7 +1882,7 @@ http {
 
 如此折腾，做一个属于自己的博客，其实也不会有几个人能看到，毕竟沧海一粟，如此平凡。
 
-这篇博客正好是自己第一次入坑vuepress的心路历程，特此复现记录在此，限于主要从事Java开发的前端渣渣，很多前端相关问题也是点到即止，有什么建议可以评论区留言，这篇博客内容将会不断的更新完善，努力做到简洁、通俗易懂。
+这篇博客正好是自己第一次入坑vuepress的心路历程，特此复现记录在此，限于主要从事Java开发，前端学习的不是很深入，很多问题也是点到即止，有什么建议可以评论区留言，这篇博客内容将会不断的更新完善，努力做到简洁、通俗易懂。
 
 如果你有幸看到此篇博客，并且内容正好能解决你当前遇到的问题，欢迎留言支持 (/≧▽≦/) 。
 
@@ -1869,14 +1890,11 @@ http {
 
 ::: tip 感谢
 
-【[VuePress](https://vuepress.vuejs.org/zh/) 】
+1. [VuePress](https://vuepress.vuejs.org/zh/) 
+2.   [vuepress-theme-reco](https://vuepress-reco-doc.now.sh/)
 
-【  [vuepress-theme-reco](https://vuepress-reco-doc.now.sh/)】
-
-【[南宫__](https://www.jianshu.com/p/37509da5a020)】 
-
-【 [kobuta](https://www.jianshu.com/p/2220dbacfde1)】
-
-【[Tsanfer's Blog](https://tsanfer.xyz/)】
+3. [南宫__](https://www.jianshu.com/p/37509da5a020)
+4. [kobuta](https://www.jianshu.com/p/2220dbacfde1)
+5. [Tsanfer's Blog](https://tsanfer.xyz/)
 
 :::

@@ -4,6 +4,8 @@ title: 七七部落 | 主页
 heroImage: /logo.png
 heroText: 七七部落 | 主页
 tagline: Actions speak louder than words
+# 不显示主页的图标、描述
+hero: false
 action:
 - text: 博客
   link: /blog
@@ -12,7 +14,7 @@ action:
   link: /docs/
   
 - text: 算法
-  link: https://small-universe.github.io/QiQi-Algorithm/
+  link: http://alg.dreamagain.top/
   
   
 features:

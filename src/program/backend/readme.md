@@ -6,7 +6,7 @@ tags:
   - 目录导航
 ---
 
-> ![img](https://img.shields.io/badge/后端-编程语言-success.svg)   ![img](https://img.shields.io/badge/后端-框架-success.svg)  
+> ![img](https://img.shields.io/badge/后端-编程语言-blue.svg)   ![img](https://img.shields.io/badge/后端-框架-blue.svg)  
 
 <!-- more -->
 

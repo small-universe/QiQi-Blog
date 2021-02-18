@@ -55,7 +55,9 @@
     </div>
   </div>
 </template>
-
+<!--<script>-->
+<!--document.write('<link rel="stylesheet" href="../static/new-dream/css/dream.css">');-->
+<!--</script>-->
 <script >
 export default {
   name:"toolbar",
@@ -88,12 +90,18 @@ export default {
     }
   },
   mounted() {
+    // Node.js中没有window对象，这时候访问浏览器/DOM中的API自然会报错
+    // 需要用合适的生命周期钩子中动态导入
+    // import('./lib-that-access-window-on-import').then(module => {
+    //   this.toolbar = module.default
+    // })
     window.addEventListener("dblclick", this.dbclink);
   },
   methods:{
     onlineBack(){
       let config = this.config
       config.url = "https://tool.lu/coderunner/"
+      // this.$popup.html(config)
       this.$popup.html(config)
     },
     rookieBack(){
@@ -132,6 +140,8 @@ export default {
 
 </style>
 <style scoped>
+/** 在style中导入style的固定格式 */
+@import "../static/new-dream/css/dream.css";
 .container{
   position: fixed;
   right: 0;

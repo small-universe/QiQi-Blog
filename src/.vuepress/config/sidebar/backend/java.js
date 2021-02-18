@@ -4,7 +4,7 @@ module.exports = [
         title: "学习笔记",
         collapsable: false,
         children: [
-            "generics", "reflect", "annotation","regex",
+            "generics", "collection", "reflect", "annotation","regex",
             "time",
         ],
     },

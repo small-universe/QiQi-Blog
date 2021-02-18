@@ -4,7 +4,6 @@ const { config } = require("vuepress-theme-hope");
 const navbar = require("./config/navbar");
 // 侧边栏
 const sidebar = require("./config/sidebar");
-// 自定义组件
 const common_plugin = require("./common-plugin")
 
 module.exports = config({
@@ -23,12 +22,13 @@ module.exports = config({
 
   themeConfig: {
     logo: "/logo.png",
-    nav: navbar.zh,
-    sidebar: sidebar.zh,
     author: "南辞",
     hostname: "http://qiqi.dreamagain.top",
     backToTop: false, // 回到顶部（用小喵代替）
     editLinks: false, // 显示编辑本页链接（全局不显示）
+    nav: navbar.zh,
+    sidebar: sidebar.zh,
+    sidebarIcon: false,  // 侧边栏图标是否显示
     // 主题语言
     baseLang: "zh-CN",
     // locales: {
@@ -87,10 +87,10 @@ module.exports = config({
     // 页脚
     footer: {
       display: true,
-      content:"<a href='http://qiqi.dreamagain.top'>七七部落 </a>" +
-          "| <a href='http://www.beian.gov.cn/portal/index.do'>备案号:滇ICP备20004889号-1</a> " +
-          "<a href='http://www.dreamagain.top'> | 七七博客</a>",
-      copyright: "License MIT|Copyright © 2021 Mr.Yang",
+      content:"七七部落 " +
+          "| <a href='http://icp.chinaz.com/%E6%BB%87ICP%E5%A4%8720004889%E5%8F%B7-1' target='_blank'>滇ICP备20004889号-1 </a>" +
+          "| <a href='http://www.dreamagain.top' target='_blank'>七七博客</a>"+" -『基于Nuxt.js』",
+      copyright: "<a href='https://github.com/small-universe/qiqi-tribe/blob/main/LICENSE' target='_blank'>License MIT</a> | Copyright © 2021 Mr·Yang『nanci』",
     },
 
     // 搜索配置

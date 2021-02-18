@@ -6415,11 +6415,6 @@ neo-async@^2.5.0, neo-async@^2.6.1:
   resolved "https://registry.npm.taobao.org/neo-async/download/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha1-tKr7k+OustgXTKU88WOrfXMIMF8=
 
-new-dream@^1.0.21:
-  version "1.0.21"
-  resolved "https://registry.npm.taobao.org/new-dream/download/new-dream-1.0.21.tgz#3fc560b531940282eddb4090decb9e3905770919"
-  integrity sha1-P8VgtTGUAoLt20CQ3sueOQV3CRk=
-
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.npm.taobao.org/nice-try/download/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"

@@ -76,6 +76,10 @@ module.exports = {
   console.log('Javascript code example')
 }
 ```
+::: warning 
+
+这里左右两侧图标有轻微遮挡，影响美观，应该需要在源码中调整z-index 属性。但不影响使用，这里暂且不对源码动刀了
+
 :::
 
 ::::
@@ -157,17 +161,21 @@ module.exports = {
 ::::
 ```
 
-:::: el-steps
+:::: el-steps style="height: 300px;" active="2"
 
-::: el-step title="步骤 11" icon="el-icon-edit"
+::: el-step title="步骤 1" icon="el-icon-edit" description="这是一段很长很长很长的描述性文字"
 
 :::
 
 ::: el-step title="步骤 2" icon="el-icon-upload"
 
+第二步：XXX
+
 :::
 
 ::: el-step title="步骤 3" icon="el-icon-picture"
+
+第三步：XXX
 
 :::
 

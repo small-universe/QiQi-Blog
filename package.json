@@ -18,7 +18,6 @@
   "license": "MIT",
   "dependencies": {
     "async-validator": "1.11.5",
-    "new-dream": "^1.0.21",
     "vuepress": "1.8.0",
     "vuepress-theme-hope": "1.9.6"
   },

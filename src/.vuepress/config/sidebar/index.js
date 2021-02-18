@@ -7,11 +7,9 @@ module.exports = {
     "/program/frontend/node.js/": require("./frontend/node"),
     "/program/frontend/typescript/": require("./frontend/typescript"),
     "/program/frontend/js/": require("./frontend/javascript"),
-    "/program/frontend/dart/": require("./frontend/dart"),
     "/program/frontend/jquery/": require("./frontend/jquery"),
     "/program/frontend/html/": require("./frontend/html"),
     "/program/frontend/css/": require("./frontend/css"),
-    "/program/frontend/emmet/": require("./frontend/emmet"),
 
 
     "/program/webframe/vue/": require("./webframe/vue"),
@@ -19,7 +17,6 @@ module.exports = {
 //============================ 二级 ==================================
     "/program/Android/": ["", "intro", "base", "resource"],
     "/program/backend/": require("./backend"),
-    "/program/mini-app/": require("./mini-app"),
     "/program/frontend/": require("./frontend"),
 
 
@@ -44,15 +41,13 @@ module.exports = {
       "",
       "backend/",
       "frontend/",
-      // "Android/",
-      // "mini-app/",
     ],
     "/software/": require("./software"),
     "/interview/":[""],
-    "/guide/":["vuepress","markdown","template","element-ui-plugin"],
+    "/guide/":require("./guide"),
 
     // fallback
-    "/": ["content", "guide/", "about/intro", "program/", "interview/","software/", "basic/",],
+    "/": ["content", "guide/", "about/intro", "program/", "software/", "basic/",],
   },
 
   en: {

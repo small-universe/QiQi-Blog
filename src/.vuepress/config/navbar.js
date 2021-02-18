@@ -2,6 +2,7 @@ module.exports = {
   zh: [
     { text: "主页", link: "/", icon: "home" },
     { text: "博客", link: "/blog/", icon: "blog" },
+    { text: "指南", link: "/guide/", icon: "guide" },
     {
       text: "学习笔记",
       icon:'program',

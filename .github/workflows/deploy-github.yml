@@ -45,7 +45,7 @@ jobs:
           BRANCH: gh-pages
           FOLDER: dist
 
-      # Scp脚本拷贝dist.zip到服务器
+      # Scp脚本拷贝tribe.zip到服务器
       - name: Scp file to aliyun
         uses: appleboy/scp-action@master
         with:
@@ -83,7 +83,7 @@ jobs:
             echo "################# files backup #################"
             if [ -f "/home/web/tribe" ];then
               mv /home/web/tribe /home/web/tribe-bak
-              echo "tribe exists and is backupe
+              echo "tribe exists and is backupe"
             fi
             echo "################# unzip dist.zip #################"
             unzip -od  /home/web/tribe /home/tmp/tribe.zip
