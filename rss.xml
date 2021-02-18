@@ -6,13 +6,13 @@
     <link>http://qiqi.dreamagain.top/</link>
     <description>Actions speak louder than words.</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 18 Feb 2021 01:17:22 GMT</pubDate>
-    <lastBuildDate>Thu, 18 Feb 2021 01:17:22 GMT</lastBuildDate>
+    <pubDate>Thu, 18 Feb 2021 09:24:22 GMT</pubDate>
+    <lastBuildDate>Thu, 18 Feb 2021 09:24:22 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>&lt;a href='https://github.com/small-universe/qiqi-tribe/blob/main/LICENSE' target='_blank'&gt;License MIT&lt;/a&gt; | Copyright © 2021 Mr·Yang『nanci』</copyright>
-    <category>目录</category>
     <category>使用指南</category>
+    <category>目录</category>
     <category>面试</category>
     <category>后端框架</category>
     <category>框架</category>
@@ -33,23 +33,6 @@
     <category>在线工具</category>
     <category>VS Code</category>
     <item>
-      <title>关于本站</title>
-      <link>http://qiqi.dreamagain.top/about/site/</link>
-      <guid>http://qiqi.dreamagain.top/about/site/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">关于本站</source>
-      <content:encoded><![CDATA[<h2 id="网站介绍"> 网站介绍</h2>
-<p>网站使用 <a href="https://v1.vuepress.vuejs.org/zh/guide/" target="_blank" rel="noopener noreferrer">VuePress</a> 建站工具构建，主题使用 <a href="https://github.com/Mister-Hope/vuepress-theme-hope/" target="_blank" rel="noopener noreferrer">vuepress-theme-hope</a></p>
-<h2 id="仓库链接"> 仓库链接</h2>
-<ul>
-<li><a href="https://github.com/small-universe/QiQi-Blog" target="_blank" rel="noopener noreferrer"><strong>QiQi-Blog</strong></a></li>
-</ul>
-<h2 id="免责声明"> 免责声明</h2>
-<ul>
-<li>本站内容均用于个人学习，有转载或参考的博客文章都已在每篇博客中声明，若有侵权请联系删除！</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
       <title>关于我</title>
       <link>http://qiqi.dreamagain.top/about/intro/</link>
       <guid>http://qiqi.dreamagain.top/about/intro/</guid>
@@ -69,85 +52,27 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>关于本站</title>
+      <link>http://qiqi.dreamagain.top/about/site/</link>
+      <guid>http://qiqi.dreamagain.top/about/site/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">关于本站</source>
+      <content:encoded><![CDATA[<h2 id="网站介绍"> 网站介绍</h2>
+<p>网站使用 <a href="https://v1.vuepress.vuejs.org/zh/guide/" target="_blank" rel="noopener noreferrer">VuePress</a> 建站工具构建，主题使用 <a href="https://github.com/Mister-Hope/vuepress-theme-hope/" target="_blank" rel="noopener noreferrer">vuepress-theme-hope</a></p>
+<h2 id="仓库链接"> 仓库链接</h2>
+<ul>
+<li><a href="https://github.com/small-universe/QiQi-Blog" target="_blank" rel="noopener noreferrer"><strong>QiQi-Blog</strong></a></li>
+</ul>
+<h2 id="免责声明"> 免责声明</h2>
+<ul>
+<li>本站内容均用于个人学习，有转载或参考的博客文章都已在每篇博客中声明，若有侵权请联系删除！</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Home</title>
       <link>http://qiqi.dreamagain.top/blog/</link>
       <guid>http://qiqi.dreamagain.top/blog/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">Home</source>
-    </item>
-    <item>
-      <title>目录导航</title>
-      <link>http://qiqi.dreamagain.top/content/</link>
-      <guid>http://qiqi.dreamagain.top/content/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">目录导航</source>
-      <description>&amp;lt;blockquote&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;https://img.shields.io/badge/%E4%B8%83%E4%B8%83%E5%8D%9A%E5%AE%A2-%E7%9B%AE%E5%BD%95%E5%AF%BC%E8%88%AA-blue.svg&amp;quot; alt=&amp;quot;img&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-&amp;lt;/blockquote&amp;gt;
-</description>
-      <category>目录</category>
-      <content:encoded><![CDATA[<blockquote>
-<p><img src="https://img.shields.io/badge/%E4%B8%83%E4%B8%83%E5%8D%9A%E5%AE%A2-%E7%9B%AE%E5%BD%95%E5%AF%BC%E8%88%AA-blue.svg" alt="img"></p>
-</blockquote>
-
-<h2 id="项目结构"> 项目结构</h2>
-<div><pre><code>.
-├──.github
-|   └── workflows
-|       └── deploy-github.yml(github action 用于持续部署)
-|
-├── src
-│   ├── .vuepress 
-│   │   ├── config 
-|   |   |   ├── sideBar (侧边栏)
-|   |   |   |   ├── backend
-|   |   |   |   ├── frontend
-|   |   |   |   ├── interview
-|   |   |   |   ├── software
-|   |   |   |   └── index.js
-|   |   |   |
-|   |   |   ├── navBar.js (导航栏)
-|   |   |   └── private.js (私人设置，可在.gitignore中设置不加入版本管理)
-│   │   |
-│   │   ├── public (引用图片资源目录约定使用&quot;/&quot;为public目录)
-|   |   |   └── assets
-|   |   |       ├── icon
-|   |   |       └── img
-|   |   |
-│   │   ├── styles (自定义主题的一些样式)
-│   │   │   ├── base.styl
-│   │   │   ├── index.styl
-│   │   │   └── palette.styl
-|   |   |
-│   │   └── config.js (项目的配置)
-│   │ 
-│   ├── about
-|   |   ├── intro.md
-|   |   └── site.md
-|   |  
-│   ├── guide
-|   |   ├── markdown.md
-│   │   └── template.md
-|   |
-│   ├── interview
-|   |   ├── Java208
-│   │   └── readme.md
-|   |
-│   ├── program
-|   |   ├── backend
-│   │   └── readme.md
-|   |
-│   ├── blog.md (博客首页)
-│   ├── content.md (目录导航)
-│   └── readme.md (部落主页)
-|   
-├── .gitignore
-├── deploy.sh (手动部署脚本)
-├── package.json
-└── package-lock.json
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br></div></div><h2 id="快速导航"> 快速导航</h2>
-<p>侧边栏显示即为一级目录，点击查看相关内容</p>
-]]></content:encoded>
-      <enclosure url="https://img.shields.io/badge/七七博客-目录导航-blue.svg" type="image/svg+xml"/>
     </item>
     <item>
       <title>element-ui插件使用文档</title>
@@ -325,6 +250,81 @@ module.exports <span>=</span> <span>{</span>
 <el-tag type="danger">标签五</el-tag>
 ]]></content:encoded>
       <enclosure url="https://img.shields.io/npm/v/vuepress-plugin-element-ui.svg" type="image/svg+xml"/>
+    </item>
+    <item>
+      <title>目录导航</title>
+      <link>http://qiqi.dreamagain.top/content/</link>
+      <guid>http://qiqi.dreamagain.top/content/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">目录导航</source>
+      <description>&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;https://img.shields.io/badge/%E4%B8%83%E4%B8%83%E5%8D%9A%E5%AE%A2-%E7%9B%AE%E5%BD%95%E5%AF%BC%E8%88%AA-blue.svg&amp;quot; alt=&amp;quot;img&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+</description>
+      <category>目录</category>
+      <content:encoded><![CDATA[<blockquote>
+<p><img src="https://img.shields.io/badge/%E4%B8%83%E4%B8%83%E5%8D%9A%E5%AE%A2-%E7%9B%AE%E5%BD%95%E5%AF%BC%E8%88%AA-blue.svg" alt="img"></p>
+</blockquote>
+
+<h2 id="项目结构"> 项目结构</h2>
+<div><pre><code>.
+├──.github
+|   └── workflows
+|       └── deploy-github.yml(github action 用于持续部署)
+|
+├── src
+│   ├── .vuepress 
+│   │   ├── config 
+|   |   |   ├── sideBar (侧边栏)
+|   |   |   |   ├── backend
+|   |   |   |   ├── frontend
+|   |   |   |   ├── interview
+|   |   |   |   ├── software
+|   |   |   |   └── index.js
+|   |   |   |
+|   |   |   ├── navBar.js (导航栏)
+|   |   |   └── private.js (私人设置，可在.gitignore中设置不加入版本管理)
+│   │   |
+│   │   ├── public (引用图片资源目录约定使用&quot;/&quot;为public目录)
+|   |   |   └── assets
+|   |   |       ├── icon
+|   |   |       └── img
+|   |   |
+│   │   ├── styles (自定义主题的一些样式)
+│   │   │   ├── base.styl
+│   │   │   ├── index.styl
+│   │   │   └── palette.styl
+|   |   |
+│   │   └── config.js (项目的配置)
+│   │ 
+│   ├── about
+|   |   ├── intro.md
+|   |   └── site.md
+|   |  
+│   ├── guide
+|   |   ├── markdown.md
+│   │   └── template.md
+|   |
+│   ├── interview
+|   |   ├── Java208
+│   │   └── readme.md
+|   |
+│   ├── program
+|   |   ├── backend
+│   │   └── readme.md
+|   |
+│   ├── blog.md (博客首页)
+│   ├── content.md (目录导航)
+│   └── readme.md (部落主页)
+|   
+├── .gitignore
+├── deploy.sh (手动部署脚本)
+├── package.json
+└── package-lock.json
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br></div></div><h2 id="快速导航"> 快速导航</h2>
+<p>侧边栏显示即为一级目录，点击查看相关内容</p>
+]]></content:encoded>
+      <enclosure url="https://img.shields.io/badge/七七博客-目录导航-blue.svg" type="image/svg+xml"/>
     </item>
     <item>
       <title>Markdown指南</title>
@@ -13371,30 +13371,6 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
 ]]></content:encoded>
     </item>
     <item>
-      <title>后端指南</title>
-      <link>http://qiqi.dreamagain.top/program/backend/</link>
-      <guid>http://qiqi.dreamagain.top/program/backend/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">后端指南</source>
-      <description>&amp;lt;blockquote&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;https://img.shields.io/badge/%E5%90%8E%E7%AB%AF-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80-blue.svg&amp;quot; alt=&amp;quot;img&amp;quot;&amp;gt;   &amp;lt;img src=&amp;quot;https://img.shields.io/badge/%E5%90%8E%E7%AB%AF-%E6%A1%86%E6%9E%B6-blue.svg&amp;quot; alt=&amp;quot;img&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-&amp;lt;/blockquote&amp;gt;
-</description>
-      <content:encoded><![CDATA[<blockquote>
-<p><img src="https://img.shields.io/badge/%E5%90%8E%E7%AB%AF-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80-blue.svg" alt="img">   <img src="https://img.shields.io/badge/%E5%90%8E%E7%AB%AF-%E6%A1%86%E6%9E%B6-blue.svg" alt="img"></p>
-</blockquote>
-
-<h2 id="编程语言"> 编程语言</h2>
-<ul>
-<li><a href="./java/">Java</a></li>
-</ul>
-<h2 id="后端框架"> 后端框架</h2>
-<ul>
-<li><a href="./backframe/spring.html">Spring framework</a></li>
-</ul>
-]]></content:encoded>
-      <enclosure url="https://img.shields.io/badge/后端-编程语言-blue.svg" type="image/svg+xml"/>
-    </item>
-    <item>
       <title>编程语言</title>
       <link>http://qiqi.dreamagain.top/program/backend/language/</link>
       <guid>http://qiqi.dreamagain.top/program/backend/language/</guid>
@@ -13482,6 +13458,30 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
 <p>开始下一章学习前，您需要跳转到 <a href="./../language/js/guide/">JS 快速入门章节</a> 了解 JavaScript，或 <a href="./../language/js/">深入学习 JavaScript</a> 后，方能进入 jQuery 学习。</p>
 </blockquote>
 ]]></content:encoded>
+    </item>
+    <item>
+      <title>后端指南</title>
+      <link>http://qiqi.dreamagain.top/program/backend/</link>
+      <guid>http://qiqi.dreamagain.top/program/backend/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">后端指南</source>
+      <description>&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;https://img.shields.io/badge/%E5%90%8E%E7%AB%AF-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80-blue.svg&amp;quot; alt=&amp;quot;img&amp;quot;&amp;gt;   &amp;lt;img src=&amp;quot;https://img.shields.io/badge/%E5%90%8E%E7%AB%AF-%E6%A1%86%E6%9E%B6-blue.svg&amp;quot; alt=&amp;quot;img&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+</description>
+      <content:encoded><![CDATA[<blockquote>
+<p><img src="https://img.shields.io/badge/%E5%90%8E%E7%AB%AF-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80-blue.svg" alt="img">   <img src="https://img.shields.io/badge/%E5%90%8E%E7%AB%AF-%E6%A1%86%E6%9E%B6-blue.svg" alt="img"></p>
+</blockquote>
+
+<h2 id="编程语言"> 编程语言</h2>
+<ul>
+<li><a href="./java/">Java</a></li>
+</ul>
+<h2 id="后端框架"> 后端框架</h2>
+<ul>
+<li><a href="./backframe/spring.html">Spring framework</a></li>
+</ul>
+]]></content:encoded>
+      <enclosure url="https://img.shields.io/badge/后端-编程语言-blue.svg" type="image/svg+xml"/>
     </item>
     <item>
       <title>前端指南</title>
@@ -17161,6 +17161,16 @@ command1 <span>||</span> command2
 <div><span>1</span><br></div></div>]]></content:encoded>
     </item>
     <item>
+      <title>cat</title>
+      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cat/</link>
+      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cat/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">cat</source>
+      <content:encoded><![CDATA[<h1 id="cat"> cat</h1>
+<p><code>cat</code> 命令用于显示一个文本文件的内容。</p>
+<p><code>cat - &gt;&gt; filename</code> 用于向一个现有文件的尾部追加内容。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>clear</title>
       <link>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/clear/</link>
       <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/clear/</guid>
@@ -17170,17 +17180,6 @@ command1 <span>||</span> command2
 <div><pre><code><span>clear</span>
 </code></pre>
 <div><span>1</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>cp 命令</title>
-      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cp/</link>
-      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cp/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">cp 命令</source>
-      <content:encoded><![CDATA[<h1 id="cp-命令"> cp 命令</h1>
-<p><code>cp</code> 命令用于复制文件。</p>
-<h2 id="参数"> 参数</h2>
-<p><code>-u</code> 参数只复制那些目标目录里面还不存在的文件，以及那些虽然存在、但是比源目录对应文件更陈旧的文件。</p>
-]]></content:encoded>
     </item>
     <item>
       <title>cut</title>
@@ -17217,6 +17216,17 @@ $ <span>cut</span> file1.txt -d, -f1,3
 $ <span>cut</span> -f <span>1</span>-2,4-5 data.txt
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>cp 命令</title>
+      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cp/</link>
+      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cp/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">cp 命令</source>
+      <content:encoded><![CDATA[<h1 id="cp-命令"> cp 命令</h1>
+<p><code>cp</code> 命令用于复制文件。</p>
+<h2 id="参数"> 参数</h2>
+<p><code>-u</code> 参数只复制那些目标目录里面还不存在的文件，以及那些虽然存在、但是比源目录对应文件更陈旧的文件。</p>
+]]></content:encoded>
     </item>
     <item>
       <title>date</title>
@@ -17556,17 +17566,6 @@ $ <span>ps</span> <span>|</span> <span>grep</span> <span>vim</span> <span>|</spa
 ]]></content:encoded>
     </item>
     <item>
-      <title>kill</title>
-      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/kill/</link>
-      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/kill/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">kill</source>
-      <content:encoded><![CDATA[<h1 id="kill"> kill</h1>
-<p><code>kill</code> 命令用户终止指定进程。</p>
-<div><pre><code><span>kill</span> PID
-</code></pre>
-<div><span>1</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
       <title>killall</title>
       <link>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/killall/</link>
       <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/killall/</guid>
@@ -17574,6 +17573,17 @@ $ <span>ps</span> <span>|</span> <span>grep</span> <span>vim</span> <span>|</spa
       <content:encoded><![CDATA[<h1 id="killall"> killall</h1>
 <p><code>killall</code> 命令终止给定名字的一系列相关进程。</p>
 <div><pre><code><span>killall</span> processname
+</code></pre>
+<div><span>1</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>kill</title>
+      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/kill/</link>
+      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/kill/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">kill</source>
+      <content:encoded><![CDATA[<h1 id="kill"> kill</h1>
+<p><code>kill</code> 命令用户终止指定进程。</p>
+<div><pre><code><span>kill</span> PID
 </code></pre>
 <div><span>1</span><br></div></div>]]></content:encoded>
     </item>
@@ -17941,6 +17951,15 @@ d
 ]]></content:encoded>
     </item>
     <item>
+      <title>w</title>
+      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/w/</link>
+      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/w/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">w</source>
+      <content:encoded><![CDATA[<h1 id="w"> w</h1>
+<p><code>w</code> 命令显示当期谁在线。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>wc</title>
       <link>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/wc/</link>
       <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/wc/</guid>
@@ -17951,15 +17970,6 @@ d
 <span>7459</span>   <span>15915</span>  <span>398400</span> demo.txt
 </code></pre>
 <div><span>1</span><br><span>2</span><br></div></div><p>上面代码中，<code>7459</code> 是行数，<code>15915</code> 是词数，<code>398400</code> 是字符数。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>w</title>
-      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/w/</link>
-      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/w/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">w</source>
-      <content:encoded><![CDATA[<h1 id="w"> w</h1>
-<p><code>w</code> 命令显示当期谁在线。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -18255,6 +18265,223 @@ $ <span>ln</span> <span>file</span> <span>link</span>
 $ <span>ln</span> -s item <span>link</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>硬件操作</title>
+      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/hardware/</link>
+      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/hardware/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">硬件操作</source>
+      <content:encoded><![CDATA[<h1 id="硬件操作"> 硬件操作</h1>
+<h2 id="df"> df</h2>
+<p><code>df</code> 命令查看硬盘信息。</p>
+<div><pre><code>$ <span>df</span>
+Filesystem 1K-blocks Used Available Use% Mounted on
+/dev/sda2 <span>15115452</span> <span>5012392</span> <span>9949716</span> <span>34</span>% /
+/dev/sda5 <span>59631908</span> <span>26545424</span> <span>30008432</span> <span>47</span>% /home
+/dev/sda1 <span>147764</span> <span>17370</span> <span>122765</span> <span>13</span>% /boot
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="free"> free</h2>
+<p><code>free</code> 命令查看内存占用情况。</p>
+<div><pre><code>$ <span>free</span>
+ total used <span>free</span> shared buffers cached
+Mem: <span>513712</span> <span>503976</span> <span>9736</span> <span>0</span> <span>5312</span> <span>122916</span>
+-/+ buffers/cache: <span>375748</span> <span>137964</span>
+Swap: <span>1052248</span> <span>104712</span> <span>947536</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="硬盘"> 硬盘</h2>
+<p>文件<code>/etc/fstab</code> 配置系统启动时要挂载的设备。</p>
+<div><pre><code>LABEL=/12               /               ext3        defaults        1   1
+LABEL=/home             /home           ext3        defaults        1   2
+LABEL=/boot             /boot           ext3        defaults        1   2
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>输出结果一共有 6 个字段，含义依次如下。</p>
+<ul>
+<li>设备名: 与物理设备相关联的设备文件(或设备标签)的名字，比如说<code>/dev/hda1</code>(第一个 IDE 通道上第一个主设备分区)。</li>
+<li>挂载点: 设备所连接到的文件系统树的目录。</li>
+<li>文件系统类型: Linux 允许挂载许多文件系统类型。</li>
+<li>选项: 文件系统可以通过各种各样的选项来挂载。</li>
+<li>频率: 一位数字，指定是否和在什么时间用 dump 命令来备份一个文件系统。</li>
+<li>次序: 一位数字，指定 fsck 命令按照什么次序来检查文件系统。</li>
+</ul>
+<h2 id="mount"> mount</h2>
+<p><code>mount</code> 不带参数时，显示当前挂载的文件系统。</p>
+<div><pre><code>$ <span>mount</span>
+/dev/sda2 on / <span>type</span> ext3 <span>(</span>rw<span>)</span>
+proc on /proc <span>type</span> proc <span>(</span>rw<span>)</span>
+sysfs on /sys <span>type</span> sysfs <span>(</span>rw<span>)</span>
+devpts on /dev/pts <span>type</span> devpts <span>(</span>rw,gid<span>=</span><span>5</span>,mode<span>=</span><span>620</span><span>)</span>
+/dev/sda5 on /home <span>type</span> ext3 <span>(</span>rw<span>)</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>这个列表的格式是: 设备 on 挂载点 type 文件系统类型(可选的)。</p>
+<p><code>mount</code> 带参数时，用于将设备文件挂载到挂载点，<code>-t</code> 参数用来指定文件系统类型。</p>
+<div><pre><code>$ <span>mount</span> -t iso9660 /dev/hdc /mnt/cdrom
+
+<span># 挂载一个iso文件</span>
+$ <span>mount</span> -t iso9660 -o loop image.iso /mnt/iso_image
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><h2 id="umount"> umount</h2>
+<p><code>umount</code> 命令用来卸载设备。</p>
+<div><pre><code><span>umount</span> <span>[</span>设备名<span>]</span>
+
+<span>umount</span> /dev/hdc
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="fdisk"> fdisk</h2>
+<p><code>fdisk</code> 命令用于格式化磁盘。</p>
+<div><pre><code><span>sudo</span> <span>umount</span> /dev/sdb1
+<span>sudo</span> <span>fdisk</span> /dev/sdb
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="mkfs"> mkfs</h2>
+<p><code>mkfs</code> 命令用于在一个设备上新建文件系统。</p>
+<div><pre><code><span>sudo</span> <span>mkfs</span> -t ext3 /dev/sdb1
+<span>sudo</span> <span>mkfs</span> -t vfat /dev/sdb1
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="fsck"> fsck</h2>
+<p><code>fsck</code> 命令用于检查(修复)文件系统。</p>
+<div><pre><code><span>sudo</span> <span>fsck</span> /dev/sdb1
+</code></pre>
+<div><span>1</span><br></div></div><h2 id="dd"> dd</h2>
+<p><code>dd</code> 命令用于将大型数据块，从一个磁盘复制到另一个磁盘。</p>
+<div><pre><code>$ <span>dd</span> <span>if</span><span>=</span>input_file <span>of</span><span>=</span>output_file <span>[</span>bs<span>=</span>block_size <span>[</span>count<span>=</span>blocks<span>]</span><span>]</span>
+
+<span># 将 /dev/sdb 的所有数据复制到 /dev/sdc</span>
+$ <span>dd</span> <span>if</span><span>=</span>/dev/sdb <span>of</span><span>=</span>/dev/sdc
+
+<span># 将 /dev/sdb 的所有数据拷贝到一个镜像文件</span>
+$ <span>dd</span> <span>if</span><span>=</span>/dev/sdb <span>of</span><span>=</span>flash_drive.img
+
+<span># 从cdrom制作一个iso文件</span>
+$ <span>dd</span> <span>if</span><span>=</span>/dev/cdrom <span>of</span><span>=</span>ubuntu.iso
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div><h2 id="dmidecode"> dmidecode</h2>
+<p><code>dmidecode</code> 命令用于输出 BIOS 信息。</p>
+<div><pre><code><span>sudo</span> dmidecode
+</code></pre>
+<div><span>1</span><br></div></div><p>以上命令会输出全部 BIOS 信息。为了便于查看，往往需要指定所需信息的类别。</p>
+<ul>
+<li>0 BIOS</li>
+<li>1 System</li>
+<li>2 Base Board</li>
+<li>3 Chassis 4 Processor</li>
+<li>5 Memory Controller</li>
+<li>6 Memory Module</li>
+<li>7 Cache</li>
+<li>8 Port Connector</li>
+<li>9 System Slots</li>
+<li>10 On Board Devices</li>
+<li>11 OEM Strings</li>
+<li>12 System Configuration Options</li>
+<li>13 BIOS Language</li>
+<li>14 Group Associations</li>
+<li>15 System Event Log</li>
+<li>16 Physical Memory Array</li>
+<li>17 Memory Device</li>
+<li>18 32-bit Memory Error</li>
+<li>19 Memory Array Mapped Address</li>
+<li>20 Memory Device Mapped Address</li>
+<li>21 Built-in Pointing Device</li>
+<li>22 Portable Battery</li>
+<li>23 System Reset</li>
+<li>24 Hardware Security</li>
+<li>25 System Power Controls</li>
+<li>26 Voltage Probe</li>
+<li>27 Cooling Device</li>
+<li>28 Temperature Probe</li>
+<li>29 Electrical Current Probe</li>
+<li>30 Out-of-band Remote Access</li>
+<li>31 Boot Integrity Services</li>
+<li>32 System Boot</li>
+<li>33 64-bit Memory Error</li>
+<li>34 Management Device</li>
+<li>35 Management Device Component</li>
+<li>36 Management Device Threshold Data</li>
+<li>37 Memory Channel</li>
+<li>38 IPMI Device</li>
+<li>39 Power Supply</li>
+</ul>
+<p>查看内存信息的命令如下。</p>
+<div><pre><code>$ <span>sudo</span> dmidecode -t <span>17</span>
+<span># 或者</span>
+$ dmidecode --type <span>17</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>以下是其他一些选项。</p>
+<div><pre><code><span># 查看BIOS信息</span>
+$ <span>sudo</span> dmidecode –t <span>0</span>
+
+<span># 查看CPU信息</span>
+$ <span>sudo</span> dmidecode -t <span>4</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p><code>dmidecode</code> 也支持关键词查看，关键词与类别的对应关系如下。</p>
+<ul>
+<li>bios 0, 13</li>
+<li>system 1, 12, 15, 23, 32</li>
+<li>baseboard 2, 10</li>
+<li>chassis 3</li>
+<li>processor 4</li>
+<li>memory 5, 6, 16, 17</li>
+<li>cache 7</li>
+<li>connector 8</li>
+<li>slot 9</li>
+</ul>
+<p>查看系统信息的命令如下。</p>
+<div><pre><code><span>sudo</span> dmidecode -t system
+</code></pre>
+<div><span>1</span><br></div></div><h2 id="lspci"> lspci</h2>
+<p><code>lspci</code> 命令列出本机的所有 PCI 设备。</p>
+<div><pre><code>lspci
+</code></pre>
+<div><span>1</span><br></div></div><p>该命令输出信息的格式如下。</p>
+<div><pre><code>03:00.0 Unassigned class <span>[</span>ff00<span>]</span>: Realtek Semiconductor Co., Ltd. RTS5209 PCI Express Card Reader <span>(</span>rev 01<span>)</span>
+</code></pre>
+<div><span>1</span><br></div></div><p>输出信息一共分成三个字段。</p>
+<ul>
+<li>Field 1: PCI bus slot 的编号</li>
+<li>Field 2: PCI slot 的名字</li>
+<li>Field 3: 设备名和厂商名</li>
+</ul>
+<p>如果想查看更详细信息，可以使用下面的命令。</p>
+<div><pre><code>lspci -vmm
+</code></pre>
+<div><span>1</span><br></div></div><h2 id="lsusb"> lsusb</h2>
+<p><code>lsusb</code> 命令用于操作 USB 端口。</p>
+<p>下面命令列出本机所有 USB 端口。</p>
+<div><pre><code>lsusb
+</code></pre>
+<div><span>1</span><br></div></div><p>它的输出格式如下。</p>
+<div><pre><code>Bus 002 Device 003: ID 0781:5567 SanDisk Corp. Cruzer Blade
+</code></pre>
+<div><span>1</span><br></div></div><p>各个字段的含义如下。</p>
+<ul>
+<li>Bus 002 : bus 编号</li>
+<li>Device 003: bus 002 连接的第三个设备</li>
+<li>ID 0781:5567: 当前设备的编号，冒号前是厂商编号，冒号后是设备编号</li>
+<li>SanDisk Corp. Cruzer Blade: 厂商和设备名</li>
+</ul>
+<p>找出本机有多少个 USB 接口可用。</p>
+<div><pre><code>$ <span>find</span> /dev/bus/
+/dev/bus/
+/dev/bus/usb
+/dev/bus/usb/002
+/dev/bus/usb/002/006
+/dev/bus/usb/002/005
+/dev/bus/usb/002/004
+/dev/bus/usb/002/002
+/dev/bus/usb/002/001
+/dev/bus/usb/001
+/dev/bus/usb/001/007
+/dev/bus/usb/001/003
+/dev/bus/usb/001/002
+/dev/bus/usb/001/001
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br></div></div><p>查看某个 USB 设备的详细情况。</p>
+<div><pre><code>lsusb -D /dev/bus/usb/002/005
+</code></pre>
+<div><span>1</span><br></div></div><p>查看所有设备的详细情况。</p>
+<div><pre><code>lsusb -v
+</code></pre>
+<div><span>1</span><br></div></div><p>查看 USB 端口的版本。</p>
+<div><pre><code>lsusb -v <span>|</span> <span>grep</span> -i bcdusb
+</code></pre>
+<div><span>1</span><br></div></div>]]></content:encoded>
     </item>
     <item>
       <title>文件系统</title>
@@ -18601,223 +18828,6 @@ $ <span>find</span> ~ -type f -name <span>'foo*'</span> -exec <span>ls</span> -l
 <div><span>1</span><br></div></div>]]></content:encoded>
     </item>
     <item>
-      <title>硬件操作</title>
-      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/hardware/</link>
-      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/hardware/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">硬件操作</source>
-      <content:encoded><![CDATA[<h1 id="硬件操作"> 硬件操作</h1>
-<h2 id="df"> df</h2>
-<p><code>df</code> 命令查看硬盘信息。</p>
-<div><pre><code>$ <span>df</span>
-Filesystem 1K-blocks Used Available Use% Mounted on
-/dev/sda2 <span>15115452</span> <span>5012392</span> <span>9949716</span> <span>34</span>% /
-/dev/sda5 <span>59631908</span> <span>26545424</span> <span>30008432</span> <span>47</span>% /home
-/dev/sda1 <span>147764</span> <span>17370</span> <span>122765</span> <span>13</span>% /boot
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="free"> free</h2>
-<p><code>free</code> 命令查看内存占用情况。</p>
-<div><pre><code>$ <span>free</span>
- total used <span>free</span> shared buffers cached
-Mem: <span>513712</span> <span>503976</span> <span>9736</span> <span>0</span> <span>5312</span> <span>122916</span>
--/+ buffers/cache: <span>375748</span> <span>137964</span>
-Swap: <span>1052248</span> <span>104712</span> <span>947536</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="硬盘"> 硬盘</h2>
-<p>文件<code>/etc/fstab</code> 配置系统启动时要挂载的设备。</p>
-<div><pre><code>LABEL=/12               /               ext3        defaults        1   1
-LABEL=/home             /home           ext3        defaults        1   2
-LABEL=/boot             /boot           ext3        defaults        1   2
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>输出结果一共有 6 个字段，含义依次如下。</p>
-<ul>
-<li>设备名: 与物理设备相关联的设备文件(或设备标签)的名字，比如说<code>/dev/hda1</code>(第一个 IDE 通道上第一个主设备分区)。</li>
-<li>挂载点: 设备所连接到的文件系统树的目录。</li>
-<li>文件系统类型: Linux 允许挂载许多文件系统类型。</li>
-<li>选项: 文件系统可以通过各种各样的选项来挂载。</li>
-<li>频率: 一位数字，指定是否和在什么时间用 dump 命令来备份一个文件系统。</li>
-<li>次序: 一位数字，指定 fsck 命令按照什么次序来检查文件系统。</li>
-</ul>
-<h2 id="mount"> mount</h2>
-<p><code>mount</code> 不带参数时，显示当前挂载的文件系统。</p>
-<div><pre><code>$ <span>mount</span>
-/dev/sda2 on / <span>type</span> ext3 <span>(</span>rw<span>)</span>
-proc on /proc <span>type</span> proc <span>(</span>rw<span>)</span>
-sysfs on /sys <span>type</span> sysfs <span>(</span>rw<span>)</span>
-devpts on /dev/pts <span>type</span> devpts <span>(</span>rw,gid<span>=</span><span>5</span>,mode<span>=</span><span>620</span><span>)</span>
-/dev/sda5 on /home <span>type</span> ext3 <span>(</span>rw<span>)</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>这个列表的格式是: 设备 on 挂载点 type 文件系统类型(可选的)。</p>
-<p><code>mount</code> 带参数时，用于将设备文件挂载到挂载点，<code>-t</code> 参数用来指定文件系统类型。</p>
-<div><pre><code>$ <span>mount</span> -t iso9660 /dev/hdc /mnt/cdrom
-
-<span># 挂载一个iso文件</span>
-$ <span>mount</span> -t iso9660 -o loop image.iso /mnt/iso_image
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><h2 id="umount"> umount</h2>
-<p><code>umount</code> 命令用来卸载设备。</p>
-<div><pre><code><span>umount</span> <span>[</span>设备名<span>]</span>
-
-<span>umount</span> /dev/hdc
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="fdisk"> fdisk</h2>
-<p><code>fdisk</code> 命令用于格式化磁盘。</p>
-<div><pre><code><span>sudo</span> <span>umount</span> /dev/sdb1
-<span>sudo</span> <span>fdisk</span> /dev/sdb
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="mkfs"> mkfs</h2>
-<p><code>mkfs</code> 命令用于在一个设备上新建文件系统。</p>
-<div><pre><code><span>sudo</span> <span>mkfs</span> -t ext3 /dev/sdb1
-<span>sudo</span> <span>mkfs</span> -t vfat /dev/sdb1
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="fsck"> fsck</h2>
-<p><code>fsck</code> 命令用于检查(修复)文件系统。</p>
-<div><pre><code><span>sudo</span> <span>fsck</span> /dev/sdb1
-</code></pre>
-<div><span>1</span><br></div></div><h2 id="dd"> dd</h2>
-<p><code>dd</code> 命令用于将大型数据块，从一个磁盘复制到另一个磁盘。</p>
-<div><pre><code>$ <span>dd</span> <span>if</span><span>=</span>input_file <span>of</span><span>=</span>output_file <span>[</span>bs<span>=</span>block_size <span>[</span>count<span>=</span>blocks<span>]</span><span>]</span>
-
-<span># 将 /dev/sdb 的所有数据复制到 /dev/sdc</span>
-$ <span>dd</span> <span>if</span><span>=</span>/dev/sdb <span>of</span><span>=</span>/dev/sdc
-
-<span># 将 /dev/sdb 的所有数据拷贝到一个镜像文件</span>
-$ <span>dd</span> <span>if</span><span>=</span>/dev/sdb <span>of</span><span>=</span>flash_drive.img
-
-<span># 从cdrom制作一个iso文件</span>
-$ <span>dd</span> <span>if</span><span>=</span>/dev/cdrom <span>of</span><span>=</span>ubuntu.iso
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div><h2 id="dmidecode"> dmidecode</h2>
-<p><code>dmidecode</code> 命令用于输出 BIOS 信息。</p>
-<div><pre><code><span>sudo</span> dmidecode
-</code></pre>
-<div><span>1</span><br></div></div><p>以上命令会输出全部 BIOS 信息。为了便于查看，往往需要指定所需信息的类别。</p>
-<ul>
-<li>0 BIOS</li>
-<li>1 System</li>
-<li>2 Base Board</li>
-<li>3 Chassis 4 Processor</li>
-<li>5 Memory Controller</li>
-<li>6 Memory Module</li>
-<li>7 Cache</li>
-<li>8 Port Connector</li>
-<li>9 System Slots</li>
-<li>10 On Board Devices</li>
-<li>11 OEM Strings</li>
-<li>12 System Configuration Options</li>
-<li>13 BIOS Language</li>
-<li>14 Group Associations</li>
-<li>15 System Event Log</li>
-<li>16 Physical Memory Array</li>
-<li>17 Memory Device</li>
-<li>18 32-bit Memory Error</li>
-<li>19 Memory Array Mapped Address</li>
-<li>20 Memory Device Mapped Address</li>
-<li>21 Built-in Pointing Device</li>
-<li>22 Portable Battery</li>
-<li>23 System Reset</li>
-<li>24 Hardware Security</li>
-<li>25 System Power Controls</li>
-<li>26 Voltage Probe</li>
-<li>27 Cooling Device</li>
-<li>28 Temperature Probe</li>
-<li>29 Electrical Current Probe</li>
-<li>30 Out-of-band Remote Access</li>
-<li>31 Boot Integrity Services</li>
-<li>32 System Boot</li>
-<li>33 64-bit Memory Error</li>
-<li>34 Management Device</li>
-<li>35 Management Device Component</li>
-<li>36 Management Device Threshold Data</li>
-<li>37 Memory Channel</li>
-<li>38 IPMI Device</li>
-<li>39 Power Supply</li>
-</ul>
-<p>查看内存信息的命令如下。</p>
-<div><pre><code>$ <span>sudo</span> dmidecode -t <span>17</span>
-<span># 或者</span>
-$ dmidecode --type <span>17</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>以下是其他一些选项。</p>
-<div><pre><code><span># 查看BIOS信息</span>
-$ <span>sudo</span> dmidecode –t <span>0</span>
-
-<span># 查看CPU信息</span>
-$ <span>sudo</span> dmidecode -t <span>4</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p><code>dmidecode</code> 也支持关键词查看，关键词与类别的对应关系如下。</p>
-<ul>
-<li>bios 0, 13</li>
-<li>system 1, 12, 15, 23, 32</li>
-<li>baseboard 2, 10</li>
-<li>chassis 3</li>
-<li>processor 4</li>
-<li>memory 5, 6, 16, 17</li>
-<li>cache 7</li>
-<li>connector 8</li>
-<li>slot 9</li>
-</ul>
-<p>查看系统信息的命令如下。</p>
-<div><pre><code><span>sudo</span> dmidecode -t system
-</code></pre>
-<div><span>1</span><br></div></div><h2 id="lspci"> lspci</h2>
-<p><code>lspci</code> 命令列出本机的所有 PCI 设备。</p>
-<div><pre><code>lspci
-</code></pre>
-<div><span>1</span><br></div></div><p>该命令输出信息的格式如下。</p>
-<div><pre><code>03:00.0 Unassigned class <span>[</span>ff00<span>]</span>: Realtek Semiconductor Co., Ltd. RTS5209 PCI Express Card Reader <span>(</span>rev 01<span>)</span>
-</code></pre>
-<div><span>1</span><br></div></div><p>输出信息一共分成三个字段。</p>
-<ul>
-<li>Field 1: PCI bus slot 的编号</li>
-<li>Field 2: PCI slot 的名字</li>
-<li>Field 3: 设备名和厂商名</li>
-</ul>
-<p>如果想查看更详细信息，可以使用下面的命令。</p>
-<div><pre><code>lspci -vmm
-</code></pre>
-<div><span>1</span><br></div></div><h2 id="lsusb"> lsusb</h2>
-<p><code>lsusb</code> 命令用于操作 USB 端口。</p>
-<p>下面命令列出本机所有 USB 端口。</p>
-<div><pre><code>lsusb
-</code></pre>
-<div><span>1</span><br></div></div><p>它的输出格式如下。</p>
-<div><pre><code>Bus 002 Device 003: ID 0781:5567 SanDisk Corp. Cruzer Blade
-</code></pre>
-<div><span>1</span><br></div></div><p>各个字段的含义如下。</p>
-<ul>
-<li>Bus 002 : bus 编号</li>
-<li>Device 003: bus 002 连接的第三个设备</li>
-<li>ID 0781:5567: 当前设备的编号，冒号前是厂商编号，冒号后是设备编号</li>
-<li>SanDisk Corp. Cruzer Blade: 厂商和设备名</li>
-</ul>
-<p>找出本机有多少个 USB 接口可用。</p>
-<div><pre><code>$ <span>find</span> /dev/bus/
-/dev/bus/
-/dev/bus/usb
-/dev/bus/usb/002
-/dev/bus/usb/002/006
-/dev/bus/usb/002/005
-/dev/bus/usb/002/004
-/dev/bus/usb/002/002
-/dev/bus/usb/002/001
-/dev/bus/usb/001
-/dev/bus/usb/001/007
-/dev/bus/usb/001/003
-/dev/bus/usb/001/002
-/dev/bus/usb/001/001
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br></div></div><p>查看某个 USB 设备的详细情况。</p>
-<div><pre><code>lsusb -D /dev/bus/usb/002/005
-</code></pre>
-<div><span>1</span><br></div></div><p>查看所有设备的详细情况。</p>
-<div><pre><code>lsusb -v
-</code></pre>
-<div><span>1</span><br></div></div><p>查看 USB 端口的版本。</p>
-<div><pre><code>lsusb -v <span>|</span> <span>grep</span> -i bcdusb
-</code></pre>
-<div><span>1</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
       <title>主机管理</title>
       <link>http://qiqi.dreamagain.top/software/linux/bash/archives/host/</link>
       <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/host/</guid>
@@ -19071,6 +19081,36 @@ $ <span>ls</span> -l <span><span>`</span><span>which</span> <span>cp</span><span
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br></div></div>]]></content:encoded>
     </item>
     <item>
+      <title>系统信息</title>
+      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/system/</link>
+      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/system/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">系统信息</source>
+      <content:encoded><![CDATA[<h1 id="系统信息"> 系统信息</h1>
+<h2 id="uname"> uname</h2>
+<p><code>uname</code> 命令返回当前机器的信息。</p>
+<div><pre><code><span># 内核的版本</span>
+$ <span>uname</span> -r
+<span>3.2</span>.0-24-virtual
+
+<span># CPU 架构</span>
+$ <span>uname</span> -m
+x86_64
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>如果要了解操作系统的版本，可以查看<code>/etc/issue</code> 文件。</p>
+<div><pre><code>$ <span>cat</span> /etc/issue
+Debian GNU/Linux <span>9</span> <span>\</span>n <span>\</span>l
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="service"> service</h2>
+<p><code>service</code> 命令可以查看当前正在运行的服务。</p>
+<div><pre><code>$ <span>service</span> --status-all
+ <span>[</span> + <span>]</span>  apache2
+ <span>[</span> ? <span>]</span>  atd
+ <span>[</span> - <span>]</span>  bootlogd
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>上面代码中，<code>+</code> 表示正在运行，<code>-</code> 表示已经停止，<code>?</code>表示 <code>service</code> 命令不了解相关信息。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>正则表达式</title>
       <link>http://qiqi.dreamagain.top/software/linux/bash/archives/regex/</link>
       <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/regex/</guid>
@@ -19177,34 +19217,82 @@ $
 ]]></content:encoded>
     </item>
     <item>
-      <title>系统信息</title>
-      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/system/</link>
-      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/system/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">系统信息</source>
-      <content:encoded><![CDATA[<h1 id="系统信息"> 系统信息</h1>
-<h2 id="uname"> uname</h2>
-<p><code>uname</code> 命令返回当前机器的信息。</p>
-<div><pre><code><span># 内核的版本</span>
-$ <span>uname</span> -r
-<span>3.2</span>.0-24-virtual
+      <title>时间管理</title>
+      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/time/</link>
+      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/time/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">时间管理</source>
+      <content:encoded><![CDATA[<h1 id="时间管理"> 时间管理</h1>
+<h2 id="date-命令"> date 命令</h2>
+<p><code>date</code> 命令用于输出当前时间</p>
+<div><pre><code>$ <span>date</span>
+<span>2016</span>年 03月 <span>14</span>日 星期一 <span>17</span>:32:35 CST
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p><code>date</code> 命令后面用加号(<code>+</code>)指定显示的格式。</p>
+<div><pre><code>$ <span>date</span> +%d_%b_%Y
+10_Sep_2018
 
-<span># CPU 架构</span>
-$ <span>uname</span> -m
-x86_64
+$ <span>date</span> +%D
+09/10/18
+
+$ <span>date</span> +%F-%T
+<span>2018</span>-09-10-11:09:51
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>如果要了解操作系统的版本，可以查看<code>/etc/issue</code> 文件。</p>
-<div><pre><code>$ <span>cat</span> /etc/issue
-Debian GNU/Linux <span>9</span> <span>\</span>n <span>\</span>l
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><p>完整的格式参数如下。</p>
+<ul>
+<li>%a 星期名的缩写(Sun)</li>
+<li>%A 星期名的全称(Sunday)</li>
+<li>%b 月份的缩写(Jan)</li>
+<li>%B 月份的全称(January)</li>
+<li>%c 日期和时间(Thu Mar 3 23:05:25 2005)</li>
+<li>%C 世纪，就是年份数省略后两位(20)</li>
+<li>%d 一个月的第几天(01)</li>
+<li>%D 日期，等同于<code>%m/%d/%y</code></li>
+<li>%e 一个月的第几天，用空格补零，等同于<code>%_d</code></li>
+<li>%F 完整的日期，等同于<code>%Y-%m-%d</code></li>
+<li>%g last two digits of year of ISO week number (see %G)</li>
+<li>%G year of ISO week number (see %V); normally useful only with %V</li>
+<li>%h 等同于<code>%b</code></li>
+<li>%H 小时(00..23)</li>
+<li>%I 小时(01..12)</li>
+<li>%j day of year (001..366)</li>
+<li>%k hour ( 0..23)</li>
+<li>%l hour ( 1..12)</li>
+<li>%m month (01..12)</li>
+<li>%M minute (00..59)</li>
+<li>%N nanoseconds (000000000..999999999)</li>
+<li>%p locale’s equivalent of either AM or PM; blank if not known</li>
+<li>%P like %p, but lower case</li>
+<li>%r locale’s 12-hour clock time (e.g., 11:11:04 PM)</li>
+<li>%R 24-hour hour and minute; same as %H:%M</li>
+<li>%s seconds since 1970-01-01 00:00:00 UTC</li>
+<li>%S second (00..60)</li>
+<li>%T time; same as %H:%M:%S</li>
+<li>%u day of week (1..7); 1 is Monday</li>
+<li>%U week number of year, with Sunday as first day of week (00..53)</li>
+<li>%V ISO week number, with Monday as first day of week (01..53)</li>
+<li>%w day of week (0..6); 0 is Sunday</li>
+<li>%W week number of year, with Monday as first day of week (00..53)</li>
+<li>%x locale’s date representation (e.g., 12/31/99)</li>
+<li>%X locale’s time representation (e.g., 23:13:48)</li>
+<li>%y last two digits of year (00..99)</li>
+<li>%Y year</li>
+<li>%z +hhmm numeric timezone (e.g., -0400)</li>
+<li>%😒 +hh:mm numeric timezone (e.g., -04:00)</li>
+<li>%:😒 +hh:mm:ss numeric time zone (e.g., -04:00:00)</li>
+<li>%Z alphabetic time zone abbreviation (e.g., EDT)</li>
+</ul>
+<h2 id="cal-命令"> cal 命令</h2>
+<p><code>cal</code> 命令用于显示日历。不带有参数时，显示的是当前月份。</p>
+<div><pre><code>$ <span>cal</span>
+      三月 <span>2016</span>
+日 一 二 三 四 五 六
+       <span>1</span>  <span>2</span>  <span>3</span>  <span>4</span>  <span>5</span>
+ <span>6</span>  <span>7</span>  <span>8</span>  <span>9</span> <span>10</span> <span>11</span> <span>12</span>
+<span>13</span> <span>14</span> <span>15</span> <span>16</span> <span>17</span> <span>18</span> <span>19</span>
+<span>20</span> <span>21</span> <span>22</span> <span>23</span> <span>24</span> <span>25</span> <span>26</span>
+<span>27</span> <span>28</span> <span>29</span> <span>30</span> <span>31</span>
 </code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="service"> service</h2>
-<p><code>service</code> 命令可以查看当前正在运行的服务。</p>
-<div><pre><code>$ <span>service</span> --status-all
- <span>[</span> + <span>]</span>  apache2
- <span>[</span> ? <span>]</span>  atd
- <span>[</span> - <span>]</span>  bootlogd
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>上面代码中，<code>+</code> 表示正在运行，<code>-</code> 表示已经停止，<code>?</code>表示 <code>service</code> 命令不了解相关信息。</p>
-]]></content:encoded>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div>]]></content:encoded>
     </item>
     <item>
       <title>文本处理</title>
@@ -19406,84 +19494,6 @@ $ <span>sed</span> <span>'s/regexp/replacement/g'</span> distros.txt
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br></div></div>]]></content:encoded>
     </item>
     <item>
-      <title>时间管理</title>
-      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/time/</link>
-      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/time/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">时间管理</source>
-      <content:encoded><![CDATA[<h1 id="时间管理"> 时间管理</h1>
-<h2 id="date-命令"> date 命令</h2>
-<p><code>date</code> 命令用于输出当前时间</p>
-<div><pre><code>$ <span>date</span>
-<span>2016</span>年 03月 <span>14</span>日 星期一 <span>17</span>:32:35 CST
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p><code>date</code> 命令后面用加号(<code>+</code>)指定显示的格式。</p>
-<div><pre><code>$ <span>date</span> +%d_%b_%Y
-10_Sep_2018
-
-$ <span>date</span> +%D
-09/10/18
-
-$ <span>date</span> +%F-%T
-<span>2018</span>-09-10-11:09:51
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><p>完整的格式参数如下。</p>
-<ul>
-<li>%a 星期名的缩写(Sun)</li>
-<li>%A 星期名的全称(Sunday)</li>
-<li>%b 月份的缩写(Jan)</li>
-<li>%B 月份的全称(January)</li>
-<li>%c 日期和时间(Thu Mar 3 23:05:25 2005)</li>
-<li>%C 世纪，就是年份数省略后两位(20)</li>
-<li>%d 一个月的第几天(01)</li>
-<li>%D 日期，等同于<code>%m/%d/%y</code></li>
-<li>%e 一个月的第几天，用空格补零，等同于<code>%_d</code></li>
-<li>%F 完整的日期，等同于<code>%Y-%m-%d</code></li>
-<li>%g last two digits of year of ISO week number (see %G)</li>
-<li>%G year of ISO week number (see %V); normally useful only with %V</li>
-<li>%h 等同于<code>%b</code></li>
-<li>%H 小时(00..23)</li>
-<li>%I 小时(01..12)</li>
-<li>%j day of year (001..366)</li>
-<li>%k hour ( 0..23)</li>
-<li>%l hour ( 1..12)</li>
-<li>%m month (01..12)</li>
-<li>%M minute (00..59)</li>
-<li>%N nanoseconds (000000000..999999999)</li>
-<li>%p locale’s equivalent of either AM or PM; blank if not known</li>
-<li>%P like %p, but lower case</li>
-<li>%r locale’s 12-hour clock time (e.g., 11:11:04 PM)</li>
-<li>%R 24-hour hour and minute; same as %H:%M</li>
-<li>%s seconds since 1970-01-01 00:00:00 UTC</li>
-<li>%S second (00..60)</li>
-<li>%T time; same as %H:%M:%S</li>
-<li>%u day of week (1..7); 1 is Monday</li>
-<li>%U week number of year, with Sunday as first day of week (00..53)</li>
-<li>%V ISO week number, with Monday as first day of week (01..53)</li>
-<li>%w day of week (0..6); 0 is Sunday</li>
-<li>%W week number of year, with Monday as first day of week (00..53)</li>
-<li>%x locale’s date representation (e.g., 12/31/99)</li>
-<li>%X locale’s time representation (e.g., 23:13:48)</li>
-<li>%y last two digits of year (00..99)</li>
-<li>%Y year</li>
-<li>%z +hhmm numeric timezone (e.g., -0400)</li>
-<li>%😒 +hh:mm numeric timezone (e.g., -04:00)</li>
-<li>%:😒 +hh:mm:ss numeric time zone (e.g., -04:00:00)</li>
-<li>%Z alphabetic time zone abbreviation (e.g., EDT)</li>
-</ul>
-<h2 id="cal-命令"> cal 命令</h2>
-<p><code>cal</code> 命令用于显示日历。不带有参数时，显示的是当前月份。</p>
-<div><pre><code>$ <span>cal</span>
-      三月 <span>2016</span>
-日 一 二 三 四 五 六
-       <span>1</span>  <span>2</span>  <span>3</span>  <span>4</span>  <span>5</span>
- <span>6</span>  <span>7</span>  <span>8</span>  <span>9</span> <span>10</span> <span>11</span> <span>12</span>
-<span>13</span> <span>14</span> <span>15</span> <span>16</span> <span>17</span> <span>18</span> <span>19</span>
-<span>20</span> <span>21</span> <span>22</span> <span>23</span> <span>24</span> <span>25</span> <span>26</span>
-<span>27</span> <span>28</span> <span>29</span> <span>30</span> <span>31</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
       <title>用户管理</title>
       <link>http://qiqi.dreamagain.top/software/linux/bash/archives/user/</link>
       <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/user/</guid>
@@ -19592,238 +19602,6 @@ $ <span>passwd</span>
 $ <span>sudo</span> <span>passwd</span> <span>[</span>user<span>]</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Bash 的算术运算</title>
-      <link>http://qiqi.dreamagain.top/software/linux/bash/arithmetic/</link>
-      <guid>http://qiqi.dreamagain.top/software/linux/bash/arithmetic/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">Bash 的算术运算</source>
-      <category>Linux</category>
-      <content:encoded><![CDATA[<h2 id="算术表达式"> 算术表达式</h2>
-<p><code>((...))</code> 语法可以进行整数的算术运算。</p>
-<div><pre><code>$ <span><span>((</span>foo <span>=</span> <span>5</span> <span>+</span> <span>5</span><span>))</span></span>
-$ <span>echo</span> <span>$foo</span>
-<span>10</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p><code>((...))</code> 会自动忽略内部的空格，所以下面的写法都正确，得到同样的结果。</p>
-<div><pre><code><span><span>((</span><span>2</span><span>+</span><span>2</span><span>))</span></span>
-<span><span>((</span> <span>2</span><span>+</span><span>2</span> <span>))</span></span>
-<span><span>((</span> <span>2</span> <span>+</span> <span>2</span> <span>))</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>这个语法不返回值，命令执行的结果根据算术运算的结果而定。只要算术结果不是 <code>0</code>，命令就算执行成功。</p>
-<div><pre><code>$ <span><span>((</span> <span>3</span> <span>+</span> <span>2</span> <span>))</span></span>
-$ <span>echo</span> <span>$?</span>
-<span>0</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>上面例子中，<code>3 + 2</code> 的结果是 5，命令就算执行成功，环境变量 <code>$?</code> 为 <code>0</code>。</p>
-<p>如果算术结果为 <code>0</code>，命令就算执行失败。</p>
-<div><pre><code>$ <span><span>((</span> <span>3</span> <span>-</span> <span>3</span> <span>))</span></span>
-$ <span>echo</span> <span>$?</span>
-<span>1</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>上面例子中，<code>3 - 3</code> 的结果是 <code>0</code>，环境变量 <code>$?</code> 为 <code>1</code>，表示命令执行失败。</p>
-<p>如果要读取算术运算的结果，需要在 <code>((...))</code> 前面加上美元符号 <code>$((...))</code>，使其变成算术表达式，返回算术运算的值。</p>
-<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>2</span> <span>+</span> <span>2</span><span>))</span></span>
-<span>4</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p><code>((...))</code> 语法支持的算术运算符如下。</p>
-<ul>
-<li><code>+</code>: 加法</li>
-<li><code>-</code>: 减法</li>
-<li><code>*</code>: 乘法</li>
-<li><code>/</code>: 除法(整除)</li>
-<li><code>%</code>: 余数</li>
-<li><code>**</code>: 指数</li>
-<li><code>++</code>: 自增运算(前缀或后缀)</li>
-<li><code>--</code>: 自减运算(前缀或后缀)</li>
-</ul>
-<p>注意，除法运算符的返回结果总是整数，比如 <code>5</code> 除以 <code>2</code>，得到的结果是 <code>2</code>，而不是 <code>2.5</code>。</p>
-<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>5</span> <span>/</span> <span>2</span><span>))</span></span>
-<span>2</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p><code>++</code> 和 <code>--</code> 这两个运算符有前缀和后缀的区别。作为前缀是先运算后返回值，作为后缀是先返回值后运算。</p>
-<div><pre><code>$ <span>i</span><span>=</span><span>0</span>
-$ <span>echo</span> <span>$i</span>
-<span>0</span>
-$ <span>echo</span> <span><span>$((</span>i<span>++</span><span>))</span></span>
-<span>0</span>
-$ <span>echo</span> <span>$i</span>
-<span>1</span>
-$ <span>echo</span> <span><span>$((</span><span>++</span>i<span>))</span></span>
-<span>2</span>
-$ <span>echo</span> <span>$i</span>
-<span>2</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>上面例子中，<code>++</code> 作为后缀是先返回值，执行 <code>echo</code> 命令，再进行自增运算；作为前缀则是先进行自增运算，再返回值执行 <code>echo</code> 命令。</p>
-<p><code>$((...))</code> 内部可以用圆括号改变运算顺序。</p>
-<div><pre><code>$ <span>echo</span> <span><span>$((</span> <span>(</span><span>2</span> <span>+</span> <span>3</span><span>)</span> <span>*</span> <span>4</span> <span>))</span></span>
-<span>20</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>上面例子中，内部的圆括号让加法先于乘法执行。</p>
-<p><code>$((...))</code> 结构可以嵌套。</p>
-<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>(</span><span>5</span><span>**</span><span>2</span><span>)</span> <span>*</span> <span>3</span><span>))</span></span>
-<span>75</span>
-<span># 等同于</span>
-$ <span>echo</span> <span><span>$((</span><span>$((</span><span>5</span><span>**</span><span>2</span><span>))</span></span> * <span>3</span><span>))</span>
-<span>75</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>这个语法只能计算整数，否则会报错。</p>
-<div><pre><code><span># 报错</span>
-$ <span>echo</span> <span><span>$((</span><span>1.5</span> <span>+</span> <span>1</span><span>))</span></span>
-bash: 语法错误
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p><code>$((...))</code> 的圆括号之中，不需要在变量名之前加上 <code>$</code>，不过加上也不报错。</p>
-<div><pre><code>$ <span>number</span><span>=</span><span>2</span>
-$ <span>echo</span> <span><span>$((</span>$number <span>+</span> <span>1</span><span>))</span></span>
-<span>3</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>上面例子中，变量 <code>number</code> 前面有没有美元符号，结果都是一样的。</p>
-<p>如果在 <code>$((...))</code> 里面使用字符串，Bash 会认为那是一个变量名。如果不存在同名变量，Bash 就会将其作为空值，因此不会报错。</p>
-<div><pre><code>$ <span>echo</span> <span><span>$((</span> "hello" <span>+</span> <span>2</span><span>))</span></span>
-<span>2</span>
-$ <span>echo</span> <span><span>$((</span> "hello" <span>*</span> <span>2</span><span>))</span></span>
-<span>0</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>上面例子中，<code>&quot;hello&quot;</code> 会被当作变量名，返回空值，而 <code>$((...))</code> 会将空值当作 <code>0</code>，所以乘法的运算结果就是 <code>0</code>。同理，如果 <code>$((...))</code> 里面使用不存在的变量，也会当作 <code>0</code> 处理。</p>
-<p>如果一个变量的值为字符串，跟上面的处理逻辑是一样的。即该字符串如果不对应已存在的变量，在 <code>$((...))</code> 里面会被当作空值。</p>
-<div><pre><code>$ <span>foo</span><span>=</span>hello
-$ <span>echo</span> <span><span>$((</span> foo <span>+</span> <span>2</span><span>))</span></span>
-<span>2</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>上面例子中，变量 <code>foo</code> 的值是 <code>hello</code>，而 <code>hello</code> 也会被看作变量名。这使得有可能写出动态替换的代码。</p>
-<div><pre><code>$ <span>foo</span><span>=</span>hello
-$ <span>hello</span><span>=</span><span>3</span>
-$ <span>echo</span> <span><span>$((</span> foo <span>+</span> <span>2</span> <span>))</span></span>
-<span>5</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>上面代码中，<code>foo + 2</code> 取决于变量 <code>hello</code> 的值。</p>
-<p>最后，<code>$[...]</code> 是以前的语法，也可以做整数运算，不建议使用。</p>
-<div><pre><code>$ <span>echo</span> $<span>[</span><span>2</span>+2<span>]</span>
-<span>4</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="数值的进制"> 数值的进制</h2>
-<p>Bash 的数值默认都是十进制，但是在算术表达式中，也可以使用其他进制。</p>
-<ul>
-<li><code>number</code>: 没有任何特殊表示法的数字是十进制数(以 10 为底)。</li>
-<li><code>0number</code>: 八进制数。</li>
-<li><code>0xnumber</code>: 十六进制数。</li>
-<li><code>base#number</code>: <code>base</code> 进制的数。</li>
-</ul>
-<p>下面是一些例子。</p>
-<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>0xff</span><span>))</span></span>
-<span>255</span>
-$ <span>echo</span> <span><span>$((</span><span>2</span>#<span>11111111</span><span>))</span></span>
-<span>255</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>上面例子中，<code>0xff</code> 是十六进制数，<code>2#11111111</code> 是二进制数。</p>
-<h2 id="位运算"> 位运算</h2>
-<p><code>$((...))</code> 支持以下的二进制位运算符。</p>
-<ul>
-<li><code>&lt;&lt;</code>: 位左移运算，把一个数字的所有位向左移动指定的位。</li>
-<li><code>&gt;&gt;</code>: 位右移运算，把一个数字的所有位向右移动指定的位。</li>
-<li><code>&amp;</code>: 位的“与”运算，对两个数字的所有位执行一个 <code>AND</code> 操作。</li>
-<li><code>|</code>: 位的“或”运算，对两个数字的所有位执行一个 <code>OR</code> 操作。</li>
-<li><code>~</code>: 位的“否”运算，对一个数字的所有位取反。</li>
-<li><code>^</code>: 位的异或运算(exclusive or)，对两个数字的所有位执行一个异或操作。</li>
-</ul>
-<p>下面是右移运算符 <code>&gt;&gt;</code> 的例子。</p>
-<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>16</span><span>>></span><span>2</span><span>))</span></span>
-<span>4</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>下面是左移运算符 <code>&lt;&lt;</code> 的例子。</p>
-<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>16</span><span>&lt;&lt;</span><span>2</span><span>))</span></span>
-<span>64</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>下面是 <code>17</code> (二进制 <code>10001</code>)和 <code>3</code> (二进制 <code>11</code>)的各种二进制运算的结果。</p>
-<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>17</span><span>&amp;</span><span>3</span><span>))</span></span>
-<span>1</span>
-$ <span>echo</span> <span><span>$((</span><span>17</span><span>|</span><span>3</span><span>))</span></span>
-<span>19</span>
-$ <span>echo</span> <span><span>$((</span><span>17</span><span>^</span><span>3</span><span>))</span></span>
-<span>18</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="逻辑运算"> 逻辑运算</h2>
-<p><code>$((...))</code> 支持以下的逻辑运算符。</p>
-<ul>
-<li><code>&lt;</code>: 小于</li>
-<li><code>&gt;</code>: 大于</li>
-<li><code>&lt;=</code>: 小于或相等</li>
-<li><code>&gt;=</code>: 大于或相等</li>
-<li><code>==</code>: 相等</li>
-<li><code>!=</code>: 不相等</li>
-<li><code>&amp;&amp;</code>: 逻辑与</li>
-<li><code>||</code>: 逻辑或</li>
-<li><code>!</code>: 逻辑否</li>
-<li><code>expr1?expr2:expr3</code>: 三元条件运算符。若表达式 <code>expr1</code> 的计算结果为非零值(算术真)，则执行表达式 <code>expr2</code>，否则执行表达式 <code>expr3</code>。</li>
-</ul>
-<p>如果逻辑表达式为真，返回 <code>1</code>，否则返回 <code>0</code>。</p>
-<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>3</span> <span>></span> <span>2</span><span>))</span></span>
-<span>1</span>
-$ <span>echo</span> <span><span>$((</span> <span>(</span><span>3</span> <span>></span> <span>2</span><span>)</span> <span>||</span> <span>(</span><span>4</span> <span>&lt;=</span> <span>1</span><span>)</span> <span>))</span></span>
-<span>1</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>三元运算符执行一个单独的逻辑测试。它用起来类似于 <code>if/then/else</code> 语句。</p>
-<div><pre><code>$ <span>a</span><span>=</span><span>0</span>
-$ <span>echo</span> <span><span>$((</span>a<span>&lt;</span><span>1</span> <span>?</span> <span>1</span> <span>:</span> <span>0</span><span>))</span></span>
-<span>1</span>
-$ <span>echo</span> <span><span>$((</span>a<span>></span><span>1</span> <span>?</span> <span>1</span> <span>:</span> <span>0</span><span>))</span></span>
-<span>0</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>上面例子中，第一个表达式为真时，返回第二个表达式的值，否则返回第三个表达式的值。</p>
-<h2 id="赋值运算"> 赋值运算</h2>
-<p>算术表达式 <code>$((...))</code> 可以执行赋值运算。</p>
-<div><pre><code>$ <span>echo</span> <span><span>$((</span>a<span>=</span><span>1</span><span>))</span></span>
-<span>1</span>
-$ <span>echo</span> <span>$a</span>
-<span>1</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>上面例子中，<code>a=1</code> 对变量 <code>a</code> 进行赋值。这个式子本身也是一个表达式，返回值就是等号右边的值。</p>
-<p><code>$((...))</code> 支持的赋值运算符，有以下这些。</p>
-<ul>
-<li><code>parameter = value</code>: 简单赋值。</li>
-<li><code>parameter += value</code>: 等价于 <code>parameter = parameter + value</code>。</li>
-<li><code>parameter -= value</code>: 等价于 <code>parameter = parameter – value</code>。</li>
-<li><code>parameter *= value</code>: 等价于 <code>parameter = parameter * value</code>。</li>
-<li><code>parameter /= value</code>: 等价于 <code>parameter = parameter / value</code>。</li>
-<li><code>parameter %= value</code>: 等价于 <code>parameter = parameter % value</code>。</li>
-<li><code>parameter &lt;&lt;= value</code>: 等价于 <code>parameter = parameter &lt;&lt; value</code>。</li>
-<li><code>parameter &gt;&gt;= value</code>: 等价于 <code>parameter = parameter &gt;&gt; value</code>。</li>
-<li><code>parameter &amp;= value</code>: 等价于 <code>parameter = parameter &amp; value</code>。</li>
-<li><code>parameter |= value</code>: 等价于 <code>parameter = parameter | value</code>。</li>
-<li><code>parameter ^= value</code>: 等价于 <code>parameter = parameter ^ value</code>。</li>
-</ul>
-<p>下面是一个例子。</p>
-<div><pre><code>$ <span>foo</span><span>=</span><span>5</span>
-$ <span>echo</span> <span><span>$((</span>foo<span>*</span><span>=</span><span>2</span><span>))</span></span>
-<span>10</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>如果在表达式内部赋值，可以放在圆括号中，否则会报错。</p>
-<div><pre><code><span>echo</span> <span><span>$((</span> a<span>&lt;</span><span>1</span> <span>?</span> <span>(</span>a<span>+</span><span>=</span><span>1</span><span>)</span> <span>:</span> <span>(</span>a<span>-</span><span>=</span><span>1</span><span>)</span> <span>))</span></span>
-</code></pre>
-<div><span>1</span><br></div></div><h2 id="求值运算"> 求值运算</h2>
-<p>逗号 <code>,</code> 在 <code>$((...))</code> 内部是求值运算符，执行前后两个表达式，并返回后一个表达式的值。</p>
-<div><pre><code>$ <span>echo</span> <span><span>$((</span>foo <span>=</span> <span>1</span> <span>+</span> <span>2</span><span>,</span> <span>3</span> <span>*</span> <span>4</span><span>))</span></span>
-<span>12</span>
-$ <span>echo</span> <span>$foo</span>
-<span>3</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>上面例子中，逗号前后两个表达式都会执行，然后返回后一个表达式的值 <code>12</code>。</p>
-<h2 id="expr-命令"> expr 命令</h2>
-<p><code>expr</code> 命令支持算术运算，可以不使用 <code>((...))</code> 语法。</p>
-<div><pre><code>$ <span>expr</span> <span>3</span> + <span>2</span>
-<span>5</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p><code>expr</code> 命令支持变量替换。</p>
-<div><pre><code>$ <span>foo</span><span>=</span><span>3</span>
-$ <span>expr</span> <span>$foo</span> + <span>2</span>
-<span>5</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p><code>expr</code> 命令也不支持非整数参数。</p>
-<div><pre><code>$ <span>expr</span> <span>3.5</span> + <span>2</span>
-expr: 非整数参数
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>上面例子中，如果有非整数的运算，<code>expr</code> 命令就报错了。</p>
-]]></content:encoded>
     </item>
     <item>
       <title>数组</title>
@@ -20088,6 +19866,238 @@ colors<span>[</span><span>"blue"</span><span>]</span><span>=</span><span>"#0000f
 <div><pre><code><span>echo</span> <span>${colors<span>[</span>"blue"<span>]</span>}</span>
 </code></pre>
 <div><span>1</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Bash 的算术运算</title>
+      <link>http://qiqi.dreamagain.top/software/linux/bash/arithmetic/</link>
+      <guid>http://qiqi.dreamagain.top/software/linux/bash/arithmetic/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">Bash 的算术运算</source>
+      <category>Linux</category>
+      <content:encoded><![CDATA[<h2 id="算术表达式"> 算术表达式</h2>
+<p><code>((...))</code> 语法可以进行整数的算术运算。</p>
+<div><pre><code>$ <span><span>((</span>foo <span>=</span> <span>5</span> <span>+</span> <span>5</span><span>))</span></span>
+$ <span>echo</span> <span>$foo</span>
+<span>10</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p><code>((...))</code> 会自动忽略内部的空格，所以下面的写法都正确，得到同样的结果。</p>
+<div><pre><code><span><span>((</span><span>2</span><span>+</span><span>2</span><span>))</span></span>
+<span><span>((</span> <span>2</span><span>+</span><span>2</span> <span>))</span></span>
+<span><span>((</span> <span>2</span> <span>+</span> <span>2</span> <span>))</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>这个语法不返回值，命令执行的结果根据算术运算的结果而定。只要算术结果不是 <code>0</code>，命令就算执行成功。</p>
+<div><pre><code>$ <span><span>((</span> <span>3</span> <span>+</span> <span>2</span> <span>))</span></span>
+$ <span>echo</span> <span>$?</span>
+<span>0</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>上面例子中，<code>3 + 2</code> 的结果是 5，命令就算执行成功，环境变量 <code>$?</code> 为 <code>0</code>。</p>
+<p>如果算术结果为 <code>0</code>，命令就算执行失败。</p>
+<div><pre><code>$ <span><span>((</span> <span>3</span> <span>-</span> <span>3</span> <span>))</span></span>
+$ <span>echo</span> <span>$?</span>
+<span>1</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>上面例子中，<code>3 - 3</code> 的结果是 <code>0</code>，环境变量 <code>$?</code> 为 <code>1</code>，表示命令执行失败。</p>
+<p>如果要读取算术运算的结果，需要在 <code>((...))</code> 前面加上美元符号 <code>$((...))</code>，使其变成算术表达式，返回算术运算的值。</p>
+<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>2</span> <span>+</span> <span>2</span><span>))</span></span>
+<span>4</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p><code>((...))</code> 语法支持的算术运算符如下。</p>
+<ul>
+<li><code>+</code>: 加法</li>
+<li><code>-</code>: 减法</li>
+<li><code>*</code>: 乘法</li>
+<li><code>/</code>: 除法(整除)</li>
+<li><code>%</code>: 余数</li>
+<li><code>**</code>: 指数</li>
+<li><code>++</code>: 自增运算(前缀或后缀)</li>
+<li><code>--</code>: 自减运算(前缀或后缀)</li>
+</ul>
+<p>注意，除法运算符的返回结果总是整数，比如 <code>5</code> 除以 <code>2</code>，得到的结果是 <code>2</code>，而不是 <code>2.5</code>。</p>
+<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>5</span> <span>/</span> <span>2</span><span>))</span></span>
+<span>2</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p><code>++</code> 和 <code>--</code> 这两个运算符有前缀和后缀的区别。作为前缀是先运算后返回值，作为后缀是先返回值后运算。</p>
+<div><pre><code>$ <span>i</span><span>=</span><span>0</span>
+$ <span>echo</span> <span>$i</span>
+<span>0</span>
+$ <span>echo</span> <span><span>$((</span>i<span>++</span><span>))</span></span>
+<span>0</span>
+$ <span>echo</span> <span>$i</span>
+<span>1</span>
+$ <span>echo</span> <span><span>$((</span><span>++</span>i<span>))</span></span>
+<span>2</span>
+$ <span>echo</span> <span>$i</span>
+<span>2</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>上面例子中，<code>++</code> 作为后缀是先返回值，执行 <code>echo</code> 命令，再进行自增运算；作为前缀则是先进行自增运算，再返回值执行 <code>echo</code> 命令。</p>
+<p><code>$((...))</code> 内部可以用圆括号改变运算顺序。</p>
+<div><pre><code>$ <span>echo</span> <span><span>$((</span> <span>(</span><span>2</span> <span>+</span> <span>3</span><span>)</span> <span>*</span> <span>4</span> <span>))</span></span>
+<span>20</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>上面例子中，内部的圆括号让加法先于乘法执行。</p>
+<p><code>$((...))</code> 结构可以嵌套。</p>
+<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>(</span><span>5</span><span>**</span><span>2</span><span>)</span> <span>*</span> <span>3</span><span>))</span></span>
+<span>75</span>
+<span># 等同于</span>
+$ <span>echo</span> <span><span>$((</span><span>$((</span><span>5</span><span>**</span><span>2</span><span>))</span></span> * <span>3</span><span>))</span>
+<span>75</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>这个语法只能计算整数，否则会报错。</p>
+<div><pre><code><span># 报错</span>
+$ <span>echo</span> <span><span>$((</span><span>1.5</span> <span>+</span> <span>1</span><span>))</span></span>
+bash: 语法错误
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p><code>$((...))</code> 的圆括号之中，不需要在变量名之前加上 <code>$</code>，不过加上也不报错。</p>
+<div><pre><code>$ <span>number</span><span>=</span><span>2</span>
+$ <span>echo</span> <span><span>$((</span>$number <span>+</span> <span>1</span><span>))</span></span>
+<span>3</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>上面例子中，变量 <code>number</code> 前面有没有美元符号，结果都是一样的。</p>
+<p>如果在 <code>$((...))</code> 里面使用字符串，Bash 会认为那是一个变量名。如果不存在同名变量，Bash 就会将其作为空值，因此不会报错。</p>
+<div><pre><code>$ <span>echo</span> <span><span>$((</span> "hello" <span>+</span> <span>2</span><span>))</span></span>
+<span>2</span>
+$ <span>echo</span> <span><span>$((</span> "hello" <span>*</span> <span>2</span><span>))</span></span>
+<span>0</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>上面例子中，<code>&quot;hello&quot;</code> 会被当作变量名，返回空值，而 <code>$((...))</code> 会将空值当作 <code>0</code>，所以乘法的运算结果就是 <code>0</code>。同理，如果 <code>$((...))</code> 里面使用不存在的变量，也会当作 <code>0</code> 处理。</p>
+<p>如果一个变量的值为字符串，跟上面的处理逻辑是一样的。即该字符串如果不对应已存在的变量，在 <code>$((...))</code> 里面会被当作空值。</p>
+<div><pre><code>$ <span>foo</span><span>=</span>hello
+$ <span>echo</span> <span><span>$((</span> foo <span>+</span> <span>2</span><span>))</span></span>
+<span>2</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>上面例子中，变量 <code>foo</code> 的值是 <code>hello</code>，而 <code>hello</code> 也会被看作变量名。这使得有可能写出动态替换的代码。</p>
+<div><pre><code>$ <span>foo</span><span>=</span>hello
+$ <span>hello</span><span>=</span><span>3</span>
+$ <span>echo</span> <span><span>$((</span> foo <span>+</span> <span>2</span> <span>))</span></span>
+<span>5</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>上面代码中，<code>foo + 2</code> 取决于变量 <code>hello</code> 的值。</p>
+<p>最后，<code>$[...]</code> 是以前的语法，也可以做整数运算，不建议使用。</p>
+<div><pre><code>$ <span>echo</span> $<span>[</span><span>2</span>+2<span>]</span>
+<span>4</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="数值的进制"> 数值的进制</h2>
+<p>Bash 的数值默认都是十进制，但是在算术表达式中，也可以使用其他进制。</p>
+<ul>
+<li><code>number</code>: 没有任何特殊表示法的数字是十进制数(以 10 为底)。</li>
+<li><code>0number</code>: 八进制数。</li>
+<li><code>0xnumber</code>: 十六进制数。</li>
+<li><code>base#number</code>: <code>base</code> 进制的数。</li>
+</ul>
+<p>下面是一些例子。</p>
+<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>0xff</span><span>))</span></span>
+<span>255</span>
+$ <span>echo</span> <span><span>$((</span><span>2</span>#<span>11111111</span><span>))</span></span>
+<span>255</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>上面例子中，<code>0xff</code> 是十六进制数，<code>2#11111111</code> 是二进制数。</p>
+<h2 id="位运算"> 位运算</h2>
+<p><code>$((...))</code> 支持以下的二进制位运算符。</p>
+<ul>
+<li><code>&lt;&lt;</code>: 位左移运算，把一个数字的所有位向左移动指定的位。</li>
+<li><code>&gt;&gt;</code>: 位右移运算，把一个数字的所有位向右移动指定的位。</li>
+<li><code>&amp;</code>: 位的“与”运算，对两个数字的所有位执行一个 <code>AND</code> 操作。</li>
+<li><code>|</code>: 位的“或”运算，对两个数字的所有位执行一个 <code>OR</code> 操作。</li>
+<li><code>~</code>: 位的“否”运算，对一个数字的所有位取反。</li>
+<li><code>^</code>: 位的异或运算(exclusive or)，对两个数字的所有位执行一个异或操作。</li>
+</ul>
+<p>下面是右移运算符 <code>&gt;&gt;</code> 的例子。</p>
+<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>16</span><span>>></span><span>2</span><span>))</span></span>
+<span>4</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>下面是左移运算符 <code>&lt;&lt;</code> 的例子。</p>
+<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>16</span><span>&lt;&lt;</span><span>2</span><span>))</span></span>
+<span>64</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>下面是 <code>17</code> (二进制 <code>10001</code>)和 <code>3</code> (二进制 <code>11</code>)的各种二进制运算的结果。</p>
+<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>17</span><span>&amp;</span><span>3</span><span>))</span></span>
+<span>1</span>
+$ <span>echo</span> <span><span>$((</span><span>17</span><span>|</span><span>3</span><span>))</span></span>
+<span>19</span>
+$ <span>echo</span> <span><span>$((</span><span>17</span><span>^</span><span>3</span><span>))</span></span>
+<span>18</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="逻辑运算"> 逻辑运算</h2>
+<p><code>$((...))</code> 支持以下的逻辑运算符。</p>
+<ul>
+<li><code>&lt;</code>: 小于</li>
+<li><code>&gt;</code>: 大于</li>
+<li><code>&lt;=</code>: 小于或相等</li>
+<li><code>&gt;=</code>: 大于或相等</li>
+<li><code>==</code>: 相等</li>
+<li><code>!=</code>: 不相等</li>
+<li><code>&amp;&amp;</code>: 逻辑与</li>
+<li><code>||</code>: 逻辑或</li>
+<li><code>!</code>: 逻辑否</li>
+<li><code>expr1?expr2:expr3</code>: 三元条件运算符。若表达式 <code>expr1</code> 的计算结果为非零值(算术真)，则执行表达式 <code>expr2</code>，否则执行表达式 <code>expr3</code>。</li>
+</ul>
+<p>如果逻辑表达式为真，返回 <code>1</code>，否则返回 <code>0</code>。</p>
+<div><pre><code>$ <span>echo</span> <span><span>$((</span><span>3</span> <span>></span> <span>2</span><span>))</span></span>
+<span>1</span>
+$ <span>echo</span> <span><span>$((</span> <span>(</span><span>3</span> <span>></span> <span>2</span><span>)</span> <span>||</span> <span>(</span><span>4</span> <span>&lt;=</span> <span>1</span><span>)</span> <span>))</span></span>
+<span>1</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>三元运算符执行一个单独的逻辑测试。它用起来类似于 <code>if/then/else</code> 语句。</p>
+<div><pre><code>$ <span>a</span><span>=</span><span>0</span>
+$ <span>echo</span> <span><span>$((</span>a<span>&lt;</span><span>1</span> <span>?</span> <span>1</span> <span>:</span> <span>0</span><span>))</span></span>
+<span>1</span>
+$ <span>echo</span> <span><span>$((</span>a<span>></span><span>1</span> <span>?</span> <span>1</span> <span>:</span> <span>0</span><span>))</span></span>
+<span>0</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>上面例子中，第一个表达式为真时，返回第二个表达式的值，否则返回第三个表达式的值。</p>
+<h2 id="赋值运算"> 赋值运算</h2>
+<p>算术表达式 <code>$((...))</code> 可以执行赋值运算。</p>
+<div><pre><code>$ <span>echo</span> <span><span>$((</span>a<span>=</span><span>1</span><span>))</span></span>
+<span>1</span>
+$ <span>echo</span> <span>$a</span>
+<span>1</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>上面例子中，<code>a=1</code> 对变量 <code>a</code> 进行赋值。这个式子本身也是一个表达式，返回值就是等号右边的值。</p>
+<p><code>$((...))</code> 支持的赋值运算符，有以下这些。</p>
+<ul>
+<li><code>parameter = value</code>: 简单赋值。</li>
+<li><code>parameter += value</code>: 等价于 <code>parameter = parameter + value</code>。</li>
+<li><code>parameter -= value</code>: 等价于 <code>parameter = parameter – value</code>。</li>
+<li><code>parameter *= value</code>: 等价于 <code>parameter = parameter * value</code>。</li>
+<li><code>parameter /= value</code>: 等价于 <code>parameter = parameter / value</code>。</li>
+<li><code>parameter %= value</code>: 等价于 <code>parameter = parameter % value</code>。</li>
+<li><code>parameter &lt;&lt;= value</code>: 等价于 <code>parameter = parameter &lt;&lt; value</code>。</li>
+<li><code>parameter &gt;&gt;= value</code>: 等价于 <code>parameter = parameter &gt;&gt; value</code>。</li>
+<li><code>parameter &amp;= value</code>: 等价于 <code>parameter = parameter &amp; value</code>。</li>
+<li><code>parameter |= value</code>: 等价于 <code>parameter = parameter | value</code>。</li>
+<li><code>parameter ^= value</code>: 等价于 <code>parameter = parameter ^ value</code>。</li>
+</ul>
+<p>下面是一个例子。</p>
+<div><pre><code>$ <span>foo</span><span>=</span><span>5</span>
+$ <span>echo</span> <span><span>$((</span>foo<span>*</span><span>=</span><span>2</span><span>))</span></span>
+<span>10</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>如果在表达式内部赋值，可以放在圆括号中，否则会报错。</p>
+<div><pre><code><span>echo</span> <span><span>$((</span> a<span>&lt;</span><span>1</span> <span>?</span> <span>(</span>a<span>+</span><span>=</span><span>1</span><span>)</span> <span>:</span> <span>(</span>a<span>-</span><span>=</span><span>1</span><span>)</span> <span>))</span></span>
+</code></pre>
+<div><span>1</span><br></div></div><h2 id="求值运算"> 求值运算</h2>
+<p>逗号 <code>,</code> 在 <code>$((...))</code> 内部是求值运算符，执行前后两个表达式，并返回后一个表达式的值。</p>
+<div><pre><code>$ <span>echo</span> <span><span>$((</span>foo <span>=</span> <span>1</span> <span>+</span> <span>2</span><span>,</span> <span>3</span> <span>*</span> <span>4</span><span>))</span></span>
+<span>12</span>
+$ <span>echo</span> <span>$foo</span>
+<span>3</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>上面例子中，逗号前后两个表达式都会执行，然后返回后一个表达式的值 <code>12</code>。</p>
+<h2 id="expr-命令"> expr 命令</h2>
+<p><code>expr</code> 命令支持算术运算，可以不使用 <code>((...))</code> 语法。</p>
+<div><pre><code>$ <span>expr</span> <span>3</span> + <span>2</span>
+<span>5</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p><code>expr</code> 命令支持变量替换。</p>
+<div><pre><code>$ <span>foo</span><span>=</span><span>3</span>
+$ <span>expr</span> <span>$foo</span> + <span>2</span>
+<span>5</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p><code>expr</code> 命令也不支持非整数参数。</p>
+<div><pre><code>$ <span>expr</span> <span>3.5</span> + <span>2</span>
+expr: 非整数参数
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>上面例子中，如果有非整数的运算，<code>expr</code> 命令就报错了。</p>
+]]></content:encoded>
     </item>
     <item>
       <title>条件判断</title>
@@ -20577,201 +20587,6 @@ Type a character <span>></span> a
 <ul>
 <li><a href="http://linuxcommand.org/tlcl.php" target="_blank" rel="noopener noreferrer">The Linux command-line</a>, William Shotts</li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>脚本除错</title>
-      <link>http://qiqi.dreamagain.top/software/linux/bash/debug/</link>
-      <guid>http://qiqi.dreamagain.top/software/linux/bash/debug/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">脚本除错</source>
-      <description>&amp;lt;p&amp;gt;本章介绍如何对 Shell 脚本除错。&amp;lt;/p&amp;gt;
-</description>
-      <category>Linux</category>
-      <content:encoded><![CDATA[<p>本章介绍如何对 Shell 脚本除错。</p>
-
-<h2 id="常见错误"> 常见错误</h2>
-<p>编写 Shell 脚本的时候，一定要考虑到命令失败的情况，否则很容易出错。</p>
-<div><pre><code><span>#! /bin/bash</span>
-
-<span>dir_name</span><span>=</span>/path/not/exist
-
-<span>cd</span> <span>$dir_name</span>
-<span>rm</span> *
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>上面脚本中，如果目录 <code>$dir_name</code> 不存在，<code>cd $dir_name</code> 命令就会执行失败。这时，就不会改变当前目录，脚本会继续执行下去，导致 <code>rm *</code> 命令删光当前目录的文件。</p>
-<p>如果改成下面的样子，也会有问题。</p>
-<div><pre><code><span>cd</span> <span>$dir_name</span> <span>&amp;&amp;</span> <span>rm</span> *
-</code></pre>
-<div><span>1</span><br></div></div><p>上面脚本中，只有 <code>cd $dir_name</code> 执行成功，才会执行 <code>rm *</code>。但是，如果变量 <code>$dir_name</code> 为空，<code>cd</code> 就会进入用户主目录，从而删光用户主目录的文件。</p>
-<p>下面的写法才是正确的。</p>
-<div><pre><code><span>[</span><span>[</span> -d <span>$dir_name</span> <span>]</span><span>]</span> <span>&amp;&amp;</span> <span>cd</span> <span>$dir_name</span> <span>&amp;&amp;</span> <span>rm</span> *
-</code></pre>
-<div><span>1</span><br></div></div><p>上面代码中，先判断目录 <code>$dir_name</code> 是否存在，然后才执行其他操作。</p>
-<p>如果不放心删除什么文件，可以先打印出来看一下。</p>
-<div><pre><code><span>[</span><span>[</span> -d <span>$dir_name</span> <span>]</span><span>]</span> <span>&amp;&amp;</span> <span>cd</span> <span>$dir_name</span> <span>&amp;&amp;</span> <span>echo</span> <span>rm</span> *
-</code></pre>
-<div><span>1</span><br></div></div><p>上面命令中，<code>echo rm *</code> 不会删除文件，只会打印出来要删除的文件。</p>
-<h2 id="bash-的-x-参数"> <code>bash</code> 的 <code>-x</code> 参数</h2>
-<p><code>bash</code> 的 <code>-x</code> 参数可以在执行每一行命令之前，打印该命令。这样就不用自己输出执行的命令，一旦出错，比较容易追查。</p>
-<p>下面是一个脚本 <code>script.sh</code>。</p>
-<div><pre><code><span># script.sh</span>
-<span>echo</span> hello world
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>加上 <code>-x</code> 参数，执行每条命令之前，都会显示该命令。</p>
-<div><pre><code>$ <span>bash</span> -x script.sh
-+ <span>echo</span> hello world
-hello world
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>上面例子中，行首为 <code>+</code> 的行，显示该行是所要执行的命令，下一行才是该命令的执行结果。</p>
-<p>下面再看一个 <code>-x</code> 写在脚本内部的例子。</p>
-<div><pre><code><span>#! /bin/bash -x</span>
-<span># trouble: script to demonstrate common errors</span>
-
-<span>number</span><span>=</span><span>1</span>
-<span>if</span> <span>[</span> <span>$number</span> <span>=</span> <span>1</span> <span>]</span><span>;</span> <span>then</span>
-  <span>echo</span> <span>"Number is equal to 1."</span>
-<span>else</span>
-  <span>echo</span> <span>"Number is not equal to 1."</span>
-<span>fi</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>上面的脚本执行之后，会输出每一行命令。</p>
-<div><pre><code>$ trouble
-+ <span>number</span><span>=</span><span>1</span>
-+ <span>'['</span> <span>1</span> <span>=</span> <span>1</span> <span>']'</span>
-+ <span>echo</span> <span>'Number is equal to 1.'</span>
-Number is equal to <span>1</span>.
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>输出的命令之前的 <code>+</code> 号，是由系统变量 <code>PS4</code> 决定，可以修改这个变量。</p>
-<div><pre><code>$ <span>export</span> <span><span>PS4</span></span><span>=</span><span>'<span>$LINENO</span> + '</span>
-$ trouble
-<span>5</span> + <span>number</span><span>=</span><span>1</span>
-<span>7</span> + <span>'['</span> <span>1</span> <span>=</span> <span>1</span> <span>']'</span>
-<span>8</span> + <span>echo</span> <span>'Number is equal to 1.'</span>
-Number is equal to <span>1</span>.
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>另外，<code>set</code> 命令也可以设置 Shell 的行为参数，有利于脚本除错，详见 <a href="./src/software/linux/bash/set.html">set 命令</a> 一章。</p>
-<h2 id="环境变量"> 环境变量</h2>
-<p>有一些环境变量常用于除错。</p>
-<h3 id="lineno"> LINENO</h3>
-<p>变量 <code>LINENO</code> 返回它在脚本里面的行号。</p>
-<div><pre><code><span>#!/bin/bash</span>
-
-<span>echo</span> <span>"This is line <span>$LINENO</span>"</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>执行上面的脚本 <code>test.sh</code>，<code>$LINENO</code> 会返回 <code>3</code>。</p>
-<div><pre><code>$ ./test.sh
-This is line <span>3</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h3 id="funcname"> FUNCNAME</h3>
-<p>变量 <code>FUNCNAME</code> 返回一个数组，内容是当前的函数调用堆栈。该数组的 0 号成员是当前调用的函数，1 号成员是调用当前函数的函数，以此类推。</p>
-<div><pre><code><span>#!/bin/bash</span>
-
-<span>function</span> <span>func1</span><span>(</span><span>)</span>
-<span>{</span>
-  <span>echo</span> <span>"func1: FUNCNAME0 is <span>${FUNCNAME<span>[</span>0<span>]</span>}</span>"</span>
-  <span>echo</span> <span>"func1: FUNCNAME1 is <span>${FUNCNAME<span>[</span>1<span>]</span>}</span>"</span>
-  <span>echo</span> <span>"func1: FUNCNAME2 is <span>${FUNCNAME<span>[</span>2<span>]</span>}</span>"</span>
-  func2
-<span>}</span>
-
-<span>function</span> <span>func2</span><span>(</span><span>)</span>
-<span>{</span>
-  <span>echo</span> <span>"func2: FUNCNAME0 is <span>${FUNCNAME<span>[</span>0<span>]</span>}</span>"</span>
-  <span>echo</span> <span>"func2: FUNCNAME1 is <span>${FUNCNAME<span>[</span>1<span>]</span>}</span>"</span>
-  <span>echo</span> <span>"func2: FUNCNAME2 is <span>${FUNCNAME<span>[</span>2<span>]</span>}</span>"</span>
-<span>}</span>
-
-func1
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br></div></div><p>执行上面的脚本 <code>test.sh</code>，结果如下。</p>
-<div><pre><code>$ ./test.sh
-func1: FUNCNAME0 is func1
-func1: FUNCNAME1 is main
-func1: FUNCNAME2 is
-func2: FUNCNAME0 is func2
-func2: FUNCNAME1 is func1
-func2: FUNCNAME2 is main
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>上面例子中，执行 <code>func1</code> 时，变量 <code>FUNCNAME</code> 的 0 号成员是 <code>func1</code>，1 号成员是调用 <code>func1</code> 的主脚本 <code>main</code>。执行 <code>func2</code> 时，变量 <code>FUNCNAME</code> 的 0 号成员是 <code>func2</code>，1 号成员是调用 <code>func2</code> 的 <code>func1</code>。</p>
-<h3 id="bash-source"> BASH_SOURCE</h3>
-<p>变量 <code>BASH_SOURCE</code> 返回一个数组，内容是当前的脚本调用堆栈。该数组的 0 号成员是当前执行的脚本，1 号成员是调用当前脚本的脚本，以此类推，跟变量 <code>FUNCNAME</code> 是一一对应关系。</p>
-<p>下面有两个子脚本 <code>lib1.sh</code> 和 <code>lib2.sh</code>。</p>
-<div><pre><code><span># lib1.sh</span>
-<span>function</span> <span>func1</span><span>(</span><span>)</span>
-<span>{</span>
-  <span>echo</span> <span>"func1: BASH_SOURCE0 is <span>${<span>BASH_SOURCE</span><span>[</span>0<span>]</span>}</span>"</span>
-  <span>echo</span> <span>"func1: BASH_SOURCE1 is <span>${<span>BASH_SOURCE</span><span>[</span>1<span>]</span>}</span>"</span>
-  <span>echo</span> <span>"func1: BASH_SOURCE2 is <span>${<span>BASH_SOURCE</span><span>[</span>2<span>]</span>}</span>"</span>
-  func2
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><div><pre><code><span># lib2.sh</span>
-<span>function</span> <span>func2</span><span>(</span><span>)</span>
-<span>{</span>
-  <span>echo</span> <span>"func2: BASH_SOURCE0 is <span>${<span>BASH_SOURCE</span><span>[</span>0<span>]</span>}</span>"</span>
-  <span>echo</span> <span>"func2: BASH_SOURCE1 is <span>${<span>BASH_SOURCE</span><span>[</span>1<span>]</span>}</span>"</span>
-  <span>echo</span> <span>"func2: BASH_SOURCE2 is <span>${<span>BASH_SOURCE</span><span>[</span>2<span>]</span>}</span>"</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>然后，主脚本 <code>main.sh</code> 调用上面两个子脚本。</p>
-<div><pre><code><span>#!/bin/bash</span>
-<span># main.sh</span>
-
-<span>source</span> lib1.sh
-<span>source</span> lib2.sh
-
-func1
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>执行主脚本 <code>main.sh</code>，会得到下面的结果。</p>
-<div><pre><code>$ ./main.sh
-func1: BASH_SOURCE0 is lib1.sh
-func1: BASH_SOURCE1 is ./main.sh
-func1: BASH_SOURCE2 is
-func2: BASH_SOURCE0 is lib2.sh
-func2: BASH_SOURCE1 is lib1.sh
-func2: BASH_SOURCE2 is ./main.sh
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>上面例子中，执行函数 <code>func1</code> 时，变量 <code>BASH_SOURCE</code> 的 0 号成员是 <code>func1</code> 所在的脚本 <code>lib1.sh</code>，1 号成员是主脚本 <code>main.sh</code>；执行函数 <code>func2</code> 时，变量 <code>BASH_SOURCE</code> 的 0 号成员是 <code>func2</code> 所在的脚本 <code>lib2.sh</code>，1 号成员是调用 <code>func2</code> 的脚本 <code>lib1.sh</code>。</p>
-<h3 id="bash-lineno"> BASH_LINENO</h3>
-<p>变量 <code>BASH_LINENO</code> 返回一个数组，内容是每一轮调用对应的行号。<code>${BASH_LINENO[$i]}</code> 跟 <code>${FUNCNAME[$i]}</code> 是一一对应关系，表示 <code>${FUNCNAME[$i]}</code> 在调用它的脚本文件 <code>${BASH_SOURCE[$i+1]}</code> 里面的行号。</p>
-<p>下面有两个子脚本 <code>lib1.sh</code> 和 <code>lib2.sh</code>。</p>
-<div><pre><code><span># lib1.sh</span>
-<span>function</span> <span>func1</span><span>(</span><span>)</span>
-<span>{</span>
-  <span>echo</span> <span>"func1: BASH_LINENO is <span>${<span>BASH_LINENO</span><span>[</span>0<span>]</span>}</span>"</span>
-  <span>echo</span> <span>"func1: FUNCNAME is <span>${FUNCNAME<span>[</span>0<span>]</span>}</span>"</span>
-  <span>echo</span> <span>"func1: BASH_SOURCE is <span>${<span>BASH_SOURCE</span><span>[</span>1<span>]</span>}</span>"</span>
-
-  func2
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><div><pre><code><span># lib2.sh</span>
-<span>function</span> <span>func2</span><span>(</span><span>)</span>
-<span>{</span>
-  <span>echo</span> <span>"func2: BASH_LINENO is <span>${<span>BASH_LINENO</span><span>[</span>0<span>]</span>}</span>"</span>
-  <span>echo</span> <span>"func2: FUNCNAME is <span>${FUNCNAME<span>[</span>0<span>]</span>}</span>"</span>
-  <span>echo</span> <span>"func2: BASH_SOURCE is <span>${<span>BASH_SOURCE</span><span>[</span>1<span>]</span>}</span>"</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>然后，主脚本 <code>main.sh</code> 调用上面两个子脚本。</p>
-<div><pre><code><span>#!/bin/bash</span>
-<span># main.sh</span>
-
-<span>source</span> lib1.sh
-<span>source</span> lib2.sh
-
-func1
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>执行主脚本 <code>main.sh</code>，会得到下面的结果。</p>
-<div><pre><code>$ ./main.sh
-func1: <span>BASH_LINENO</span> is <span>7</span>
-func1: FUNCNAME is func1
-func1: <span>BASH_SOURCE</span> is main.sh
-func2: <span>BASH_LINENO</span> is <span>8</span>
-func2: FUNCNAME is func2
-func2: <span>BASH_SOURCE</span> is lib1.sh
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>上面例子中，函数 <code>func1</code> 是在 <code>main.sh</code> 的第 7 行调用，函数 <code>func2</code> 是在 <code>lib1.sh</code> 的第 8 行调用的。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -21286,6 +21101,201 @@ a.txt  sub1/b.txt  sub1/sub2/c.txt
 <li><a href="https://medium.com/@leedowthwaite/why-most-people-only-think-they-understand-wildcards-63bb9c2024ab" target="_blank" rel="noopener noreferrer">Think You Understand Wildcards? Think Again</a></li>
 <li><a href="https://appcodelabs.com/advanced-wildcard-patterns-most-people-dont-know" target="_blank" rel="noopener noreferrer">Advanced Wildcard Patterns Most People Don’t Know</a></li>
 </ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>脚本除错</title>
+      <link>http://qiqi.dreamagain.top/software/linux/bash/debug/</link>
+      <guid>http://qiqi.dreamagain.top/software/linux/bash/debug/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">脚本除错</source>
+      <description>&amp;lt;p&amp;gt;本章介绍如何对 Shell 脚本除错。&amp;lt;/p&amp;gt;
+</description>
+      <category>Linux</category>
+      <content:encoded><![CDATA[<p>本章介绍如何对 Shell 脚本除错。</p>
+
+<h2 id="常见错误"> 常见错误</h2>
+<p>编写 Shell 脚本的时候，一定要考虑到命令失败的情况，否则很容易出错。</p>
+<div><pre><code><span>#! /bin/bash</span>
+
+<span>dir_name</span><span>=</span>/path/not/exist
+
+<span>cd</span> <span>$dir_name</span>
+<span>rm</span> *
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>上面脚本中，如果目录 <code>$dir_name</code> 不存在，<code>cd $dir_name</code> 命令就会执行失败。这时，就不会改变当前目录，脚本会继续执行下去，导致 <code>rm *</code> 命令删光当前目录的文件。</p>
+<p>如果改成下面的样子，也会有问题。</p>
+<div><pre><code><span>cd</span> <span>$dir_name</span> <span>&amp;&amp;</span> <span>rm</span> *
+</code></pre>
+<div><span>1</span><br></div></div><p>上面脚本中，只有 <code>cd $dir_name</code> 执行成功，才会执行 <code>rm *</code>。但是，如果变量 <code>$dir_name</code> 为空，<code>cd</code> 就会进入用户主目录，从而删光用户主目录的文件。</p>
+<p>下面的写法才是正确的。</p>
+<div><pre><code><span>[</span><span>[</span> -d <span>$dir_name</span> <span>]</span><span>]</span> <span>&amp;&amp;</span> <span>cd</span> <span>$dir_name</span> <span>&amp;&amp;</span> <span>rm</span> *
+</code></pre>
+<div><span>1</span><br></div></div><p>上面代码中，先判断目录 <code>$dir_name</code> 是否存在，然后才执行其他操作。</p>
+<p>如果不放心删除什么文件，可以先打印出来看一下。</p>
+<div><pre><code><span>[</span><span>[</span> -d <span>$dir_name</span> <span>]</span><span>]</span> <span>&amp;&amp;</span> <span>cd</span> <span>$dir_name</span> <span>&amp;&amp;</span> <span>echo</span> <span>rm</span> *
+</code></pre>
+<div><span>1</span><br></div></div><p>上面命令中，<code>echo rm *</code> 不会删除文件，只会打印出来要删除的文件。</p>
+<h2 id="bash-的-x-参数"> <code>bash</code> 的 <code>-x</code> 参数</h2>
+<p><code>bash</code> 的 <code>-x</code> 参数可以在执行每一行命令之前，打印该命令。这样就不用自己输出执行的命令，一旦出错，比较容易追查。</p>
+<p>下面是一个脚本 <code>script.sh</code>。</p>
+<div><pre><code><span># script.sh</span>
+<span>echo</span> hello world
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>加上 <code>-x</code> 参数，执行每条命令之前，都会显示该命令。</p>
+<div><pre><code>$ <span>bash</span> -x script.sh
++ <span>echo</span> hello world
+hello world
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>上面例子中，行首为 <code>+</code> 的行，显示该行是所要执行的命令，下一行才是该命令的执行结果。</p>
+<p>下面再看一个 <code>-x</code> 写在脚本内部的例子。</p>
+<div><pre><code><span>#! /bin/bash -x</span>
+<span># trouble: script to demonstrate common errors</span>
+
+<span>number</span><span>=</span><span>1</span>
+<span>if</span> <span>[</span> <span>$number</span> <span>=</span> <span>1</span> <span>]</span><span>;</span> <span>then</span>
+  <span>echo</span> <span>"Number is equal to 1."</span>
+<span>else</span>
+  <span>echo</span> <span>"Number is not equal to 1."</span>
+<span>fi</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>上面的脚本执行之后，会输出每一行命令。</p>
+<div><pre><code>$ trouble
++ <span>number</span><span>=</span><span>1</span>
++ <span>'['</span> <span>1</span> <span>=</span> <span>1</span> <span>']'</span>
++ <span>echo</span> <span>'Number is equal to 1.'</span>
+Number is equal to <span>1</span>.
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>输出的命令之前的 <code>+</code> 号，是由系统变量 <code>PS4</code> 决定，可以修改这个变量。</p>
+<div><pre><code>$ <span>export</span> <span><span>PS4</span></span><span>=</span><span>'<span>$LINENO</span> + '</span>
+$ trouble
+<span>5</span> + <span>number</span><span>=</span><span>1</span>
+<span>7</span> + <span>'['</span> <span>1</span> <span>=</span> <span>1</span> <span>']'</span>
+<span>8</span> + <span>echo</span> <span>'Number is equal to 1.'</span>
+Number is equal to <span>1</span>.
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>另外，<code>set</code> 命令也可以设置 Shell 的行为参数，有利于脚本除错，详见 <a href="./src/software/linux/bash/set.html">set 命令</a> 一章。</p>
+<h2 id="环境变量"> 环境变量</h2>
+<p>有一些环境变量常用于除错。</p>
+<h3 id="lineno"> LINENO</h3>
+<p>变量 <code>LINENO</code> 返回它在脚本里面的行号。</p>
+<div><pre><code><span>#!/bin/bash</span>
+
+<span>echo</span> <span>"This is line <span>$LINENO</span>"</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>执行上面的脚本 <code>test.sh</code>，<code>$LINENO</code> 会返回 <code>3</code>。</p>
+<div><pre><code>$ ./test.sh
+This is line <span>3</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h3 id="funcname"> FUNCNAME</h3>
+<p>变量 <code>FUNCNAME</code> 返回一个数组，内容是当前的函数调用堆栈。该数组的 0 号成员是当前调用的函数，1 号成员是调用当前函数的函数，以此类推。</p>
+<div><pre><code><span>#!/bin/bash</span>
+
+<span>function</span> <span>func1</span><span>(</span><span>)</span>
+<span>{</span>
+  <span>echo</span> <span>"func1: FUNCNAME0 is <span>${FUNCNAME<span>[</span>0<span>]</span>}</span>"</span>
+  <span>echo</span> <span>"func1: FUNCNAME1 is <span>${FUNCNAME<span>[</span>1<span>]</span>}</span>"</span>
+  <span>echo</span> <span>"func1: FUNCNAME2 is <span>${FUNCNAME<span>[</span>2<span>]</span>}</span>"</span>
+  func2
+<span>}</span>
+
+<span>function</span> <span>func2</span><span>(</span><span>)</span>
+<span>{</span>
+  <span>echo</span> <span>"func2: FUNCNAME0 is <span>${FUNCNAME<span>[</span>0<span>]</span>}</span>"</span>
+  <span>echo</span> <span>"func2: FUNCNAME1 is <span>${FUNCNAME<span>[</span>1<span>]</span>}</span>"</span>
+  <span>echo</span> <span>"func2: FUNCNAME2 is <span>${FUNCNAME<span>[</span>2<span>]</span>}</span>"</span>
+<span>}</span>
+
+func1
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br></div></div><p>执行上面的脚本 <code>test.sh</code>，结果如下。</p>
+<div><pre><code>$ ./test.sh
+func1: FUNCNAME0 is func1
+func1: FUNCNAME1 is main
+func1: FUNCNAME2 is
+func2: FUNCNAME0 is func2
+func2: FUNCNAME1 is func1
+func2: FUNCNAME2 is main
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>上面例子中，执行 <code>func1</code> 时，变量 <code>FUNCNAME</code> 的 0 号成员是 <code>func1</code>，1 号成员是调用 <code>func1</code> 的主脚本 <code>main</code>。执行 <code>func2</code> 时，变量 <code>FUNCNAME</code> 的 0 号成员是 <code>func2</code>，1 号成员是调用 <code>func2</code> 的 <code>func1</code>。</p>
+<h3 id="bash-source"> BASH_SOURCE</h3>
+<p>变量 <code>BASH_SOURCE</code> 返回一个数组，内容是当前的脚本调用堆栈。该数组的 0 号成员是当前执行的脚本，1 号成员是调用当前脚本的脚本，以此类推，跟变量 <code>FUNCNAME</code> 是一一对应关系。</p>
+<p>下面有两个子脚本 <code>lib1.sh</code> 和 <code>lib2.sh</code>。</p>
+<div><pre><code><span># lib1.sh</span>
+<span>function</span> <span>func1</span><span>(</span><span>)</span>
+<span>{</span>
+  <span>echo</span> <span>"func1: BASH_SOURCE0 is <span>${<span>BASH_SOURCE</span><span>[</span>0<span>]</span>}</span>"</span>
+  <span>echo</span> <span>"func1: BASH_SOURCE1 is <span>${<span>BASH_SOURCE</span><span>[</span>1<span>]</span>}</span>"</span>
+  <span>echo</span> <span>"func1: BASH_SOURCE2 is <span>${<span>BASH_SOURCE</span><span>[</span>2<span>]</span>}</span>"</span>
+  func2
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><div><pre><code><span># lib2.sh</span>
+<span>function</span> <span>func2</span><span>(</span><span>)</span>
+<span>{</span>
+  <span>echo</span> <span>"func2: BASH_SOURCE0 is <span>${<span>BASH_SOURCE</span><span>[</span>0<span>]</span>}</span>"</span>
+  <span>echo</span> <span>"func2: BASH_SOURCE1 is <span>${<span>BASH_SOURCE</span><span>[</span>1<span>]</span>}</span>"</span>
+  <span>echo</span> <span>"func2: BASH_SOURCE2 is <span>${<span>BASH_SOURCE</span><span>[</span>2<span>]</span>}</span>"</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>然后，主脚本 <code>main.sh</code> 调用上面两个子脚本。</p>
+<div><pre><code><span>#!/bin/bash</span>
+<span># main.sh</span>
+
+<span>source</span> lib1.sh
+<span>source</span> lib2.sh
+
+func1
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>执行主脚本 <code>main.sh</code>，会得到下面的结果。</p>
+<div><pre><code>$ ./main.sh
+func1: BASH_SOURCE0 is lib1.sh
+func1: BASH_SOURCE1 is ./main.sh
+func1: BASH_SOURCE2 is
+func2: BASH_SOURCE0 is lib2.sh
+func2: BASH_SOURCE1 is lib1.sh
+func2: BASH_SOURCE2 is ./main.sh
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>上面例子中，执行函数 <code>func1</code> 时，变量 <code>BASH_SOURCE</code> 的 0 号成员是 <code>func1</code> 所在的脚本 <code>lib1.sh</code>，1 号成员是主脚本 <code>main.sh</code>；执行函数 <code>func2</code> 时，变量 <code>BASH_SOURCE</code> 的 0 号成员是 <code>func2</code> 所在的脚本 <code>lib2.sh</code>，1 号成员是调用 <code>func2</code> 的脚本 <code>lib1.sh</code>。</p>
+<h3 id="bash-lineno"> BASH_LINENO</h3>
+<p>变量 <code>BASH_LINENO</code> 返回一个数组，内容是每一轮调用对应的行号。<code>${BASH_LINENO[$i]}</code> 跟 <code>${FUNCNAME[$i]}</code> 是一一对应关系，表示 <code>${FUNCNAME[$i]}</code> 在调用它的脚本文件 <code>${BASH_SOURCE[$i+1]}</code> 里面的行号。</p>
+<p>下面有两个子脚本 <code>lib1.sh</code> 和 <code>lib2.sh</code>。</p>
+<div><pre><code><span># lib1.sh</span>
+<span>function</span> <span>func1</span><span>(</span><span>)</span>
+<span>{</span>
+  <span>echo</span> <span>"func1: BASH_LINENO is <span>${<span>BASH_LINENO</span><span>[</span>0<span>]</span>}</span>"</span>
+  <span>echo</span> <span>"func1: FUNCNAME is <span>${FUNCNAME<span>[</span>0<span>]</span>}</span>"</span>
+  <span>echo</span> <span>"func1: BASH_SOURCE is <span>${<span>BASH_SOURCE</span><span>[</span>1<span>]</span>}</span>"</span>
+
+  func2
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><div><pre><code><span># lib2.sh</span>
+<span>function</span> <span>func2</span><span>(</span><span>)</span>
+<span>{</span>
+  <span>echo</span> <span>"func2: BASH_LINENO is <span>${<span>BASH_LINENO</span><span>[</span>0<span>]</span>}</span>"</span>
+  <span>echo</span> <span>"func2: FUNCNAME is <span>${FUNCNAME<span>[</span>0<span>]</span>}</span>"</span>
+  <span>echo</span> <span>"func2: BASH_SOURCE is <span>${<span>BASH_SOURCE</span><span>[</span>1<span>]</span>}</span>"</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>然后，主脚本 <code>main.sh</code> 调用上面两个子脚本。</p>
+<div><pre><code><span>#!/bin/bash</span>
+<span># main.sh</span>
+
+<span>source</span> lib1.sh
+<span>source</span> lib2.sh
+
+func1
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>执行主脚本 <code>main.sh</code>，会得到下面的结果。</p>
+<div><pre><code>$ ./main.sh
+func1: <span>BASH_LINENO</span> is <span>7</span>
+func1: FUNCNAME is func1
+func1: <span>BASH_SOURCE</span> is main.sh
+func2: <span>BASH_LINENO</span> is <span>8</span>
+func2: FUNCNAME is func2
+func2: <span>BASH_SOURCE</span> is lib1.sh
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>上面例子中，函数 <code>func1</code> 是在 <code>main.sh</code> 的第 7 行调用，函数 <code>func2</code> 是在 <code>lib1.sh</code> 的第 8 行调用的。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -25837,6 +25847,42 @@ Linux 系统有良好的可移植性，它几乎支持所有的 CPU 平台，这
 ]]></content:encoded>
     </item>
     <item>
+      <title>语言</title>
+      <link>http://qiqi.dreamagain.top/software/linux/intro/language/</link>
+      <guid>http://qiqi.dreamagain.top/software/linux/intro/language/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">语言</source>
+      <description>&amp;lt;p&amp;gt;Linux 中大量使用脚本语言，而不是 C 语言!&amp;lt;/p&amp;gt;
+</description>
+      <category>Linux</category>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Linux 中大量使用脚本语言，而不是 C 语言!</p>
+
+<p>说到在 Linux 下的编程，很多人会想到用 C 语言，Linux 的内核、shell、基础命令程序，也的确是用 C 语言编写的，这首先证明了一点，C 语言很强很通用。</p>
+<p>到目前为止，C 语言依然垄断着计算机工业中几乎所有的系统编程，而且也正因为是 C 语言，才使得 Unix 以及后来的 Linux 能够这么广泛地被人们去研究、去改进、去制作自己的分支，以至于我们能在各种硬件平台上使用它们。</p>
+<p>但是细心的人会发现，Linux 启动过程中所涉及的各种程序，很少有 C 语言的痕迹。它们大多是脚本程序。不单单在启动过程中是这样，那些用于安装软件的工具 yum、apt-get，甚至是 configure 和 Makefile 也都是脚本程序。而且您可能还没注意到，那些用于系统管理的工具，如配置 ADSL 拨号上网的工具、配置守护进程的工具等，很多也都是脚本程序。</p>
+<p>大量使用脚本程序，是所有类 Unix 系统不同于其他系统的一个显著特征，催生人们在 Linux 中大量使用脚本来编写程序，并不仅仅是因为脚本对人直观、容易修改这种显著特性所决定的。另外一个主要的原因就是 Linux 所支持的脚本语言种类十分丰富。</p>
+<p>所有类 Unix 系统所必备的 shell，其本身就是一个强大的脚本解释器。所以从 shell 诞生的那一天起，shell 就是那些不懂 C 语言，又必须在 Unix 上编写程序的用户们的首选工具。</p>
+<p>这就给了人们一种新的选择，使用 shell 编程不用去理会让人头晕的指针；shell 程序可以直接利用系统命令来完成一些需要用大量 C 代码的功能；shell 编程不用去理会数据类型，不用考虑烦人的数值和字符数据的转换问题；shell 程序同样提供顺序、选择分支和循环这三种能够构建任意算法的基础设施。因此，shell 很快就能够被非专业用户所接受、掌握，并编写出非常实用的程序。</p>
+<p>随着时间的推移，这些非专业用户想往更高的方向发展，遇到了一些 shell 处理起来会很“蹩脚”的问题，比如分析文本和修改文本(别忘了“万般皆文本”)。这个时候他们会发现 有 awk 和 sed。也只需要写几行脚本就能将这些问题处理得很好。而且它们也跟 shell 配合得天衣无缝。或许这个时候会觉得加入了 awk 和 sed 的 shell 脚本有些难看，不过没关系，还有 Perl 和 TCL。Perl 天生就是为处理文本而存在的，TCL 也不含糊。</p>
+<p>如果觉得这些语言都太老气了，有些过时了，不要紧，还有 Python、Ruby 等这些现代脚本语言，它们除了不能写操作系统内核之外，几乎什么都能干，而且还是面向对象的。</p>
+<p>不管怎样，在 Linux 下能够选择的脚本语言都是极其丰富的。它们最大的特点就是简单、好学且资料丰富。简单就意味着容易维护，好学就容易吸引用户，资料丰富就不会在解决 bug 上出现障碍。即便是专业的程序员，也会因为这些特点而特别偏好脚本语言，导致的一个结果就是脚本程序在 Linux 中的大爆发。</p>
+<p>为什么不选择 C 语言呢?</p>
+<h2 id="c-语言并不是最佳选择"> C 语言并不是最佳选择</h2>
+<p>C 语言是 Unix 的母语，这是毋庸罝疑的。前面也说过，正是因为有了 C 语言，才使得 Unix 有了今天的成就。但为什么在 Linux 中有这么多程序，甚至是关键程序，不用 C 语言编写呢?</p>
+<p>脚本程序由于是解释执行的，在执行效率上自然是会有很大损失的。并且大家都知道，C 语言所编写的程序又是以效率著称的。但是 C 语言是一种编译型语言，要想让 C 语言的程序能够运行，必须经过编译和链接这两个步骤。</p>
+<p>要知道，能够将由几十个源代码文件构成的 C 语言程序，有条不紊地编译完成并能最终链接成一个可执行程序，本身就是一件费时又费力的事情，如果一旦程序有问题，还必须使用专门的调试工具一点点地去跟踪判断，修正之后再重复那些复杂的编译和链接步骤，这又是一个极需技巧的事情。积累并掌握技巧又是一件费时又费力的事情。</p>
+<p>在早些年，计算机性能不佳的时候，这些付出或许是值得的。但是放到现在，处理器的速度至少快了几千倍，内存大了几千倍，硬盘甚至大了几万倍，而价格却更低了。从经济角度分析，机器的时间成本早己远远低于人的时间成本了。那么 C 语言在机器效率上的优势根本没有任何意义。脚本程序能够给人节省下来的时间成本，则更具经济效益。
+要论机器效率，汇编语言比 C 语言要好上几十倍，但是目前还有谁在用汇编语言编程呢?</p>
+<p>C 语言在设计的时候，最主要的一个目标就是能够让程序员自己处理内存管理的问题。这使得 C 语言很强大但又太过于灵活，导致了很多陷阱的出现。稍微一不注意，程序中就会存在难以发觉的 Bug，甚至是严重的安全漏洞。程序员们大多是要以时间或失败为代价去积累经验，才能尽量避免这些问题的发生。而且效率在大多数应用中根本就不是问题，首要的是正确。脚本程序的简单和直观正是正确的起点，C 语言的灵活却是错误的根源。</p>
+<p>但是，C 语言并不是一无是处，也是 Unix 的精华。C 语言作为通用程序设计语言是所向无敌的。C 语言本身也非常简洁和紧凑，资料丰富且容易学习。C 语言之后的少数语言设计，为了不被 C 语言所吞并，不得不进行大的改动，比如引进垃圾回收机制等，以和 C 语言能够在功能上保持足够距离。也正是因为这样，C 语言始终没有消失，只是它的光辉在 Linux 中稍稍地被脚本程序所遮挡了一下。</p>
+<h2 id="脚本语言也有不足"> 脚本语言也有不足</h2>
+<p>虽然效率并不是脚本程序的缺点，但是种类过于丰富却是一个极大不足。编写一个复杂的应用，往往很难使用一种脚本语言包杆到底，因为脚本语言都有自己适用的场景，为了能够快速有效地完成某个应用，就需扬长避短，利用多种脚本语言混合编程。</p>
+<p>多脚本语言的混合编程是一种知识密集型的编程方法，但不是编码密集型的(这是能够被普遍接受的原因)。为了能够良好地使用这种方法，就要求程序员不仅仅要具备相当数量的多种语言知识，还必须具备能够判断这些语言的适用场景、以及如何将它们有效地组合在一起的经验。</p>
+<p>实际上，混合编程并不是脚本语言的专利，任何编程语言都行，只要您能找准那些语言的特点。比如笔者就曾经使用过 Basic 和 C 进行混合编程，去完成一个 DOS 版万年历程序。为了支持鼠标点击操作，用 C 完成了鼠标中断的处理。余下的部分都用 Basic 来完成。</p>
+<p>在 Linux 中大量应用脚本程序的场景，好多都是这种混合编程的典范。比如 Linux 的启动过程，主程序 init 是用 C 语言写的，具体到启动流程的各个环节则是 shell 脚本程序。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Linux 简介</title>
       <link>http://qiqi.dreamagain.top/software/linux/intro/intro/</link>
       <guid>http://qiqi.dreamagain.top/software/linux/intro/intro/</guid>
@@ -25899,42 +25945,6 @@ Linux 系统有良好的可移植性，它几乎支持所有的 CPU 平台，这
 <p>如果您需要使用数据库高级服务和电子邮件网络应用，则可以选择 SuSE。</p>
 </li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>语言</title>
-      <link>http://qiqi.dreamagain.top/software/linux/intro/language/</link>
-      <guid>http://qiqi.dreamagain.top/software/linux/intro/language/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">语言</source>
-      <description>&amp;lt;p&amp;gt;Linux 中大量使用脚本语言，而不是 C 语言!&amp;lt;/p&amp;gt;
-</description>
-      <category>Linux</category>
-      <pubDate>Sat, 16 Nov 2019 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Linux 中大量使用脚本语言，而不是 C 语言!</p>
-
-<p>说到在 Linux 下的编程，很多人会想到用 C 语言，Linux 的内核、shell、基础命令程序，也的确是用 C 语言编写的，这首先证明了一点，C 语言很强很通用。</p>
-<p>到目前为止，C 语言依然垄断着计算机工业中几乎所有的系统编程，而且也正因为是 C 语言，才使得 Unix 以及后来的 Linux 能够这么广泛地被人们去研究、去改进、去制作自己的分支，以至于我们能在各种硬件平台上使用它们。</p>
-<p>但是细心的人会发现，Linux 启动过程中所涉及的各种程序，很少有 C 语言的痕迹。它们大多是脚本程序。不单单在启动过程中是这样，那些用于安装软件的工具 yum、apt-get，甚至是 configure 和 Makefile 也都是脚本程序。而且您可能还没注意到，那些用于系统管理的工具，如配置 ADSL 拨号上网的工具、配置守护进程的工具等，很多也都是脚本程序。</p>
-<p>大量使用脚本程序，是所有类 Unix 系统不同于其他系统的一个显著特征，催生人们在 Linux 中大量使用脚本来编写程序，并不仅仅是因为脚本对人直观、容易修改这种显著特性所决定的。另外一个主要的原因就是 Linux 所支持的脚本语言种类十分丰富。</p>
-<p>所有类 Unix 系统所必备的 shell，其本身就是一个强大的脚本解释器。所以从 shell 诞生的那一天起，shell 就是那些不懂 C 语言，又必须在 Unix 上编写程序的用户们的首选工具。</p>
-<p>这就给了人们一种新的选择，使用 shell 编程不用去理会让人头晕的指针；shell 程序可以直接利用系统命令来完成一些需要用大量 C 代码的功能；shell 编程不用去理会数据类型，不用考虑烦人的数值和字符数据的转换问题；shell 程序同样提供顺序、选择分支和循环这三种能够构建任意算法的基础设施。因此，shell 很快就能够被非专业用户所接受、掌握，并编写出非常实用的程序。</p>
-<p>随着时间的推移，这些非专业用户想往更高的方向发展，遇到了一些 shell 处理起来会很“蹩脚”的问题，比如分析文本和修改文本(别忘了“万般皆文本”)。这个时候他们会发现 有 awk 和 sed。也只需要写几行脚本就能将这些问题处理得很好。而且它们也跟 shell 配合得天衣无缝。或许这个时候会觉得加入了 awk 和 sed 的 shell 脚本有些难看，不过没关系，还有 Perl 和 TCL。Perl 天生就是为处理文本而存在的，TCL 也不含糊。</p>
-<p>如果觉得这些语言都太老气了，有些过时了，不要紧，还有 Python、Ruby 等这些现代脚本语言，它们除了不能写操作系统内核之外，几乎什么都能干，而且还是面向对象的。</p>
-<p>不管怎样，在 Linux 下能够选择的脚本语言都是极其丰富的。它们最大的特点就是简单、好学且资料丰富。简单就意味着容易维护，好学就容易吸引用户，资料丰富就不会在解决 bug 上出现障碍。即便是专业的程序员，也会因为这些特点而特别偏好脚本语言，导致的一个结果就是脚本程序在 Linux 中的大爆发。</p>
-<p>为什么不选择 C 语言呢?</p>
-<h2 id="c-语言并不是最佳选择"> C 语言并不是最佳选择</h2>
-<p>C 语言是 Unix 的母语，这是毋庸罝疑的。前面也说过，正是因为有了 C 语言，才使得 Unix 有了今天的成就。但为什么在 Linux 中有这么多程序，甚至是关键程序，不用 C 语言编写呢?</p>
-<p>脚本程序由于是解释执行的，在执行效率上自然是会有很大损失的。并且大家都知道，C 语言所编写的程序又是以效率著称的。但是 C 语言是一种编译型语言，要想让 C 语言的程序能够运行，必须经过编译和链接这两个步骤。</p>
-<p>要知道，能够将由几十个源代码文件构成的 C 语言程序，有条不紊地编译完成并能最终链接成一个可执行程序，本身就是一件费时又费力的事情，如果一旦程序有问题，还必须使用专门的调试工具一点点地去跟踪判断，修正之后再重复那些复杂的编译和链接步骤，这又是一个极需技巧的事情。积累并掌握技巧又是一件费时又费力的事情。</p>
-<p>在早些年，计算机性能不佳的时候，这些付出或许是值得的。但是放到现在，处理器的速度至少快了几千倍，内存大了几千倍，硬盘甚至大了几万倍，而价格却更低了。从经济角度分析，机器的时间成本早己远远低于人的时间成本了。那么 C 语言在机器效率上的优势根本没有任何意义。脚本程序能够给人节省下来的时间成本，则更具经济效益。
-要论机器效率，汇编语言比 C 语言要好上几十倍，但是目前还有谁在用汇编语言编程呢?</p>
-<p>C 语言在设计的时候，最主要的一个目标就是能够让程序员自己处理内存管理的问题。这使得 C 语言很强大但又太过于灵活，导致了很多陷阱的出现。稍微一不注意，程序中就会存在难以发觉的 Bug，甚至是严重的安全漏洞。程序员们大多是要以时间或失败为代价去积累经验，才能尽量避免这些问题的发生。而且效率在大多数应用中根本就不是问题，首要的是正确。脚本程序的简单和直观正是正确的起点，C 语言的灵活却是错误的根源。</p>
-<p>但是，C 语言并不是一无是处，也是 Unix 的精华。C 语言作为通用程序设计语言是所向无敌的。C 语言本身也非常简洁和紧凑，资料丰富且容易学习。C 语言之后的少数语言设计，为了不被 C 语言所吞并，不得不进行大的改动，比如引进垃圾回收机制等，以和 C 语言能够在功能上保持足够距离。也正是因为这样，C 语言始终没有消失，只是它的光辉在 Linux 中稍稍地被脚本程序所遮挡了一下。</p>
-<h2 id="脚本语言也有不足"> 脚本语言也有不足</h2>
-<p>虽然效率并不是脚本程序的缺点，但是种类过于丰富却是一个极大不足。编写一个复杂的应用，往往很难使用一种脚本语言包杆到底，因为脚本语言都有自己适用的场景，为了能够快速有效地完成某个应用，就需扬长避短，利用多种脚本语言混合编程。</p>
-<p>多脚本语言的混合编程是一种知识密集型的编程方法，但不是编码密集型的(这是能够被普遍接受的原因)。为了能够良好地使用这种方法，就要求程序员不仅仅要具备相当数量的多种语言知识，还必须具备能够判断这些语言的适用场景、以及如何将它们有效地组合在一起的经验。</p>
-<p>实际上，混合编程并不是脚本语言的专利，任何编程语言都行，只要您能找准那些语言的特点。比如笔者就曾经使用过 Basic 和 C 进行混合编程，去完成一个 DOS 版万年历程序。为了支持鼠标点击操作，用 C 完成了鼠标中断的处理。余下的部分都用 Basic 来完成。</p>
-<p>在 Linux 中大量应用脚本程序的场景，好多都是这种混合编程的典范。比如 Linux 的启动过程，主程序 init 是用 C 语言写的，具体到启动流程的各个环节则是 shell 脚本程序。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -26342,94 +26352,6 @@ Linux 系统有良好的可移植性，它几乎支持所有的 CPU 平台，这
 ]]></content:encoded>
     </item>
     <item>
-      <title>网络服务器相关</title>
-      <link>http://qiqi.dreamagain.top/software/linux/ubuntu/webserver/</link>
-      <guid>http://qiqi.dreamagain.top/software/linux/ubuntu/webserver/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">网络服务器相关</source>
-      <pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="网络服务器相关"> 网络服务器相关</h1>
-<h2 id="ftp"> ftp</h2>
-<h3 id="vsftpd"> vsftpd</h3>
-<ul>
-<li>
-<p>安装</p>
-<div><pre><code><span>apt-get</span> <span>install</span> vsftpd <span>ftp</span>
-</code></pre>
-<div><span>1</span><br></div></div></li>
-<li>
-<p>配置</p>
-<div><pre><code><span>vim</span> /etc/vsftpd.conf
-</code></pre>
-<div><span>1</span><br></div></div><p>至少要更改:</p>
-<div><pre><code><span>write_enable</span><span><span>=</span>YES</span>
-<span>utf8_filesystem</span><span><span>=</span>YES</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div></li>
-</ul>
-<h2 id="nginx"> Nginx</h2>
-<ul>
-<li>
-<p>安装</p>
-<div><pre><code><span>sudo</span> <span>apt-get</span> <span>install</span> nginx
-</code></pre>
-<div><span>1</span><br></div></div><p>Nginx 默认安装在 <code>/etc/nginx</code> 目录下</p>
-</li>
-<li>
-<p>配置</p>
-<p>配置文件为 <code>nginx.conf</code>。</p>
-<p>默认站点配置文件在 <code>/etc/nginx/sites-available/default</code></p>
-<p>为了使得 Nginx 能使用 PHP，需要配置</p>
-<div><pre><code>
-<span>location</span> <span>~</span> \<span>.</span>php$ <span>{</span>
-    <span>root</span>           <span>/</span>var<span>/</span>www<span>/</span>html<span>;</span>
-    <span># 配置给 socks 应该可行，还在研究中</span>
-    <span>fastcgi_pass</span>   <span>127.0</span><span>.0</span><span>.1</span><span>:</span><span>9000</span><span>;</span>
-    <span>fastcgi_index</span>  <span>index</span><span>.</span>php<span>;</span>
-    <span>fastcgi_param</span>  SCRIPT_FILENAME  <span>$document_root</span><span>$fastcgi_script_name</span><span>;</span>
-    <span>include</span>        fastcgi_params<span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div></li>
-</ul>
-<h2 id="php"> PHP</h2>
-<div><pre><code><span># Apache</span>
-<span>sudo</span> <span>apt-get</span> <span>install</span> php
-
-<span># Ngnix</span>
-<span>sudo</span> <span>apt-get</span> <span>install</span> php-fpm
-
-<span># MySQL</span>
-<span>sudo</span> <span>apt-get</span> <span>install</span> php-mysql
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><h2 id="mysql"> MySQL</h2>
-<h3 id="安装"> 安装</h3>
-<div><pre><code><span>wget</span> https://dev.mysql.com/get/mysql-apt-config_0.8.14-1_all.deb
-<span>sudo</span> dpkg -i mysql-apt-config_0.8.14-1_all.deb
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>配置版本(一般是 5.7)后安装</p>
-<div><pre><code><span>sudo</span> <span>apt-get</span> <span>install</span> mysql-server
-</code></pre>
-<div><span>1</span><br></div></div><p>之后重启，完成配置</p>
-<div><pre><code><span>sudo</span> <span>service</span> mysql restart
-mysql -u root -p
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="nmp"> NMP</h2>
-<p>需要对 Nginx 的配置文件进行修改: 主要改动的目标是把 Nginx 代理端口转发给 php-fpm。</p>
-<p>首先配置 index:</p>
-<div><pre><code><span>index</span> <span>index</span><span>.</span>php <span>index</span><span>.</span>html<span>;</span>
-</code></pre>
-<div><span>1</span><br></div></div><p>需要注意的是，Nginx 将端口转发给 php 默认的 9000 端口。而通过 apt-get 安装的 php 默认使用本地 sock 文件通信，需要对 php 的配置进行修改。要修改的文件位于: <code>/etc/php/7.2/fpm/pool.d/www.conf</code>，将</p>
-<div><pre><code><span>listen</span> <span><span>=</span> /run/php/php7.0-fpm.sock</span>
-</code></pre>
-<div><span>1</span><br></div></div><p>改成:</p>
-<div><pre><code><span>listen</span> <span><span>=</span> 127.0.0.1:9000</span>
-</code></pre>
-<div><span>1</span><br></div></div><div><p>提示</p>
-<p>如果报了 permission limitted 的错误，说明 php 没法访问 html 文件夹，修改配置的 html 文件夹权限即可。</p>
-</div>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Nginx</title>
       <link>http://qiqi.dreamagain.top/software/nginx/</link>
       <guid>http://qiqi.dreamagain.top/software/nginx/</guid>
@@ -26558,6 +26480,94 @@ mysql -u root -p
 <ul>
 <li><a href="https://docs.nginx.com/nginx/admin-guide/" target="_blank" rel="noopener noreferrer">点击此处</a></li>
 </ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>网络服务器相关</title>
+      <link>http://qiqi.dreamagain.top/software/linux/ubuntu/webserver/</link>
+      <guid>http://qiqi.dreamagain.top/software/linux/ubuntu/webserver/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">网络服务器相关</source>
+      <pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="网络服务器相关"> 网络服务器相关</h1>
+<h2 id="ftp"> ftp</h2>
+<h3 id="vsftpd"> vsftpd</h3>
+<ul>
+<li>
+<p>安装</p>
+<div><pre><code><span>apt-get</span> <span>install</span> vsftpd <span>ftp</span>
+</code></pre>
+<div><span>1</span><br></div></div></li>
+<li>
+<p>配置</p>
+<div><pre><code><span>vim</span> /etc/vsftpd.conf
+</code></pre>
+<div><span>1</span><br></div></div><p>至少要更改:</p>
+<div><pre><code><span>write_enable</span><span><span>=</span>YES</span>
+<span>utf8_filesystem</span><span><span>=</span>YES</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div></li>
+</ul>
+<h2 id="nginx"> Nginx</h2>
+<ul>
+<li>
+<p>安装</p>
+<div><pre><code><span>sudo</span> <span>apt-get</span> <span>install</span> nginx
+</code></pre>
+<div><span>1</span><br></div></div><p>Nginx 默认安装在 <code>/etc/nginx</code> 目录下</p>
+</li>
+<li>
+<p>配置</p>
+<p>配置文件为 <code>nginx.conf</code>。</p>
+<p>默认站点配置文件在 <code>/etc/nginx/sites-available/default</code></p>
+<p>为了使得 Nginx 能使用 PHP，需要配置</p>
+<div><pre><code>
+<span>location</span> <span>~</span> \<span>.</span>php$ <span>{</span>
+    <span>root</span>           <span>/</span>var<span>/</span>www<span>/</span>html<span>;</span>
+    <span># 配置给 socks 应该可行，还在研究中</span>
+    <span>fastcgi_pass</span>   <span>127.0</span><span>.0</span><span>.1</span><span>:</span><span>9000</span><span>;</span>
+    <span>fastcgi_index</span>  <span>index</span><span>.</span>php<span>;</span>
+    <span>fastcgi_param</span>  SCRIPT_FILENAME  <span>$document_root</span><span>$fastcgi_script_name</span><span>;</span>
+    <span>include</span>        fastcgi_params<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div></li>
+</ul>
+<h2 id="php"> PHP</h2>
+<div><pre><code><span># Apache</span>
+<span>sudo</span> <span>apt-get</span> <span>install</span> php
+
+<span># Ngnix</span>
+<span>sudo</span> <span>apt-get</span> <span>install</span> php-fpm
+
+<span># MySQL</span>
+<span>sudo</span> <span>apt-get</span> <span>install</span> php-mysql
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><h2 id="mysql"> MySQL</h2>
+<h3 id="安装"> 安装</h3>
+<div><pre><code><span>wget</span> https://dev.mysql.com/get/mysql-apt-config_0.8.14-1_all.deb
+<span>sudo</span> dpkg -i mysql-apt-config_0.8.14-1_all.deb
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>配置版本(一般是 5.7)后安装</p>
+<div><pre><code><span>sudo</span> <span>apt-get</span> <span>install</span> mysql-server
+</code></pre>
+<div><span>1</span><br></div></div><p>之后重启，完成配置</p>
+<div><pre><code><span>sudo</span> <span>service</span> mysql restart
+mysql -u root -p
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="nmp"> NMP</h2>
+<p>需要对 Nginx 的配置文件进行修改: 主要改动的目标是把 Nginx 代理端口转发给 php-fpm。</p>
+<p>首先配置 index:</p>
+<div><pre><code><span>index</span> <span>index</span><span>.</span>php <span>index</span><span>.</span>html<span>;</span>
+</code></pre>
+<div><span>1</span><br></div></div><p>需要注意的是，Nginx 将端口转发给 php 默认的 9000 端口。而通过 apt-get 安装的 php 默认使用本地 sock 文件通信，需要对 php 的配置进行修改。要修改的文件位于: <code>/etc/php/7.2/fpm/pool.d/www.conf</code>，将</p>
+<div><pre><code><span>listen</span> <span><span>=</span> /run/php/php7.0-fpm.sock</span>
+</code></pre>
+<div><span>1</span><br></div></div><p>改成:</p>
+<div><pre><code><span>listen</span> <span><span>=</span> 127.0.0.1:9000</span>
+</code></pre>
+<div><span>1</span><br></div></div><div><p>提示</p>
+<p>如果报了 permission limitted 的错误，说明 php 没法访问 html 文件夹，修改配置的 html 文件夹权限即可。</p>
+</div>
 ]]></content:encoded>
     </item>
     <item>
@@ -27974,82 +27984,6 @@ code --disable-extensions <span>.</span>
 ]]></content:encoded>
     </item>
     <item>
-      <title>编辑技巧</title>
-      <link>http://qiqi.dreamagain.top/software/vscode/guide/edit/</link>
-      <guid>http://qiqi.dreamagain.top/software/vscode/guide/edit/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">编辑技巧</source>
-      <category>VS Code</category>
-      <content:encoded><![CDATA[<p>这是编辑代码的一些常用功能。如果您不喜欢键盘快捷键，请考虑为旧的编辑器安装键盘映射扩展名。</p>
-<h2 id="多光标选择"> 多光标选择</h2>
-<p>要在任意位置添加光标，请用鼠标选择一个位置，然后使用 <code>Alt + Click</code>。</p>
-<p>要将光标设置在当前位置之上或之下，请使用:</p>
-<p>键盘快捷键: <code>Ctrl + Alt + ↑</code> 或 <code>Ctrl + Alt + ↓</code></p>
-<p>您可以使用 <code>Ctrl + Shift + L</code> 将附加光标添加到当前选择的所有实例中。</p>
-<p>如果不想添加所有当前选中项，则可以使用 <code>Ctrl + D</code> 代替。这只会选择您选择的选中项之后的下一个选中项，因此您可以一个一个地添加选择。</p>
-<h2 id="列-盒-选择"> 列(盒)选择</h2>
-<p>您可以在拖动鼠标时按住 <code>Shift + Alt</code>(在 macOS 上为 <code>Shift + Option</code>)来选择文本块。一个单独的光标将被添加到每一行的末尾。</p>
-<p><img src="./assets/column-select.gif" alt="列文字选择"></p>
-<p>您也可以使用键盘快捷键来触发列选择。</p>
-<h2 id="直标尺"> 直标尺</h2>
-<p>您可以使用该 <code>editor.rulers</code> 设置将垂直列标尺添加到编辑器中。</p>
-<div><pre><code><span>{</span>
-  <span>"editor.rulers"</span><span>:</span> <span>[</span><span>20</span><span>,</span> <span>40</span><span>,</span> <span>60</span><span>]</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="快速滚动"> 快速滚动</h2>
-<p>按 <code>Alt</code> 键可在编辑器和资源管理器中快速滚动。默认情况下，快速滚动使用 5 倍速倍增器，但是您可以使用 <code>editor.fastScrollSensitivity</code> 设置来控制倍增器。</p>
-<h2 id="向上-向下复制行"> 向上 / 向下复制行</h2>
-<p>键盘快捷键: <code>Shift + Alt + ↑</code> 或 <code>Shift + Alt + ↓</code></p>
-<div><p>相关信息</p>
-<p>由于按键冲突，在 Linux 上，向上 / 向下复制行没有默认的快捷键，您可以自行通过 <code>editor.action.copyLinesUpAction</code> 和 <code>editor.action.copyLinesDownAction</code> 设置自己的首选键盘快捷键。</p>
-</div>
-<h2 id="上下移动行号"> 上下移动行号</h2>
-<p>键盘快捷键: <code>Alt + ↑</code> 或 <code>Alt + ↓</code></p>
-<h2 id="缩小-扩大选择"> 缩小/扩大选择</h2>
-<p>键盘快捷键: <code>Shift + Alt + ←</code> 或 <code>Shift + Alt + →</code></p>
-<h2 id="转到文件中的符号"> 转到文件中的符号</h2>
-<p>键盘快捷键: <code>Ctrl + Shift + O</code></p>
-<p><img src="./assets/goto-file-symbol.png" alt="按符号查找"></p>
-<p>您可以通过添加冒号将符号按种类分组 <code>@:</code>。</p>
-<h2 id="转到工作区中的符号"> 转到工作区中的符号</h2>
-<p>键盘快捷键: <code>Ctrl + T</code></p>
-<p><img src="./assets/goto-workspace-symbol.png" alt="转到工作区中的符号"></p>
-<h2 id="大纲视图"> 大纲视图</h2>
-<p><strong>文件资源管理器</strong> 中的 <strong>大纲</strong> 视图(默认折叠在底部)显示了当前打开文件的符号。</p>
-<p><img src="./assets/outlilne-view.png" alt="轮廓图"></p>
-<p>您可以按符号名称，类别和文件中的位置进行排序，并可以快速导航到符号位置。</p>
-<h2 id="导航到特定行"> 导航到特定行</h2>
-<p>键盘快捷键: <code>Ctrl + G</code></p>
-<h2 id="恢复光标位置"> 恢复光标位置</h2>
-<p>键盘快捷键: <code>Ctrl + U</code></p>
-<h2 id="修剪尾随空格"> 修剪尾随空格</h2>
-<p>键盘快捷键: <code>Ctrl + K Ctrl + X</code></p>
-<h2 id="转换文本命令"> 转换文本命令</h2>
-<p>您可以使用 <strong>命令面板</strong> 中的 <strong>转换</strong> 命令将选定的文本更改为大写，小写和标题。</p>
-<p><img src="./assets/transform.png" alt="转换文字指令"></p>
-<h2 id="代码格式化"> 代码格式化</h2>
-<p>当前选择的源代码: <code>Ctrl + K Ctrl + F</code></p>
-<p>整个文档格式: <code>Shift + Alt + F</code></p>
-<h2 id="代码折叠"> 代码折叠</h2>
-<p>键盘快捷键: <code>Ctrl + Shift + [</code> 和 <code>Ctrl + Shift +]</code></p>
-<p>您还可以使用全部折叠(<code>Ctrl + K Ctrl + 0</code>)和全部展开(<code>Ctrl + K Ctrl + J</code>)来折叠/展开编辑器中的所有区域。</p>
-<p>您可以使用 <strong>折叠所有块注释</strong>(<code>Ctrl + K Ctrl + /</code>)折叠所有块注释。</p>
-<h2 id="选择当前行"> 选择当前行</h2>
-<p>键盘快捷键: <code>Ctrl + L</code></p>
-<h2 id="导航到文件的开头和结尾"> 导航到文件的开头和结尾</h2>
-<p>键盘快捷键: <code>Ctrl + Home</code> 和 <code>Ctrl + End</code></p>
-<h2 id="打开-markdown-预览"> 打开 Markdown 预览</h2>
-<p>在 Markdown 文件中，使用</p>
-<p>键盘快捷键: <code>Ctrl + Shift + V</code></p>
-<p><img src="./assets/markdown-preview.png" alt="Markdown 预览"></p>
-<h2 id="并排-markdown-编辑和预览"> 并排 Markdown 编辑和预览</h2>
-<p>在 Markdown 文件中，使用</p>
-<p>键盘快捷键: <code>Ctrl + K V</code></p>
-<p>预览和编辑器将与您在任一视图中的滚动同步。</p>
-<p><img src="./assets/markdown-side-preview.png" alt="并排 Markdown 预览"></p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>扩展</title>
       <link>http://qiqi.dreamagain.top/software/vscode/guide/extension/</link>
       <guid>http://qiqi.dreamagain.top/software/vscode/guide/extension/</guid>
@@ -28185,6 +28119,82 @@ code --disable-extensions <span>.</span>
 <p>提供 YAML 格式化，高亮支持</p>
 <h4 id="leetcode"> LeetCode</h4>
 <p>代码学习练习软件</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>编辑技巧</title>
+      <link>http://qiqi.dreamagain.top/software/vscode/guide/edit/</link>
+      <guid>http://qiqi.dreamagain.top/software/vscode/guide/edit/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">编辑技巧</source>
+      <category>VS Code</category>
+      <content:encoded><![CDATA[<p>这是编辑代码的一些常用功能。如果您不喜欢键盘快捷键，请考虑为旧的编辑器安装键盘映射扩展名。</p>
+<h2 id="多光标选择"> 多光标选择</h2>
+<p>要在任意位置添加光标，请用鼠标选择一个位置，然后使用 <code>Alt + Click</code>。</p>
+<p>要将光标设置在当前位置之上或之下，请使用:</p>
+<p>键盘快捷键: <code>Ctrl + Alt + ↑</code> 或 <code>Ctrl + Alt + ↓</code></p>
+<p>您可以使用 <code>Ctrl + Shift + L</code> 将附加光标添加到当前选择的所有实例中。</p>
+<p>如果不想添加所有当前选中项，则可以使用 <code>Ctrl + D</code> 代替。这只会选择您选择的选中项之后的下一个选中项，因此您可以一个一个地添加选择。</p>
+<h2 id="列-盒-选择"> 列(盒)选择</h2>
+<p>您可以在拖动鼠标时按住 <code>Shift + Alt</code>(在 macOS 上为 <code>Shift + Option</code>)来选择文本块。一个单独的光标将被添加到每一行的末尾。</p>
+<p><img src="./assets/column-select.gif" alt="列文字选择"></p>
+<p>您也可以使用键盘快捷键来触发列选择。</p>
+<h2 id="直标尺"> 直标尺</h2>
+<p>您可以使用该 <code>editor.rulers</code> 设置将垂直列标尺添加到编辑器中。</p>
+<div><pre><code><span>{</span>
+  <span>"editor.rulers"</span><span>:</span> <span>[</span><span>20</span><span>,</span> <span>40</span><span>,</span> <span>60</span><span>]</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="快速滚动"> 快速滚动</h2>
+<p>按 <code>Alt</code> 键可在编辑器和资源管理器中快速滚动。默认情况下，快速滚动使用 5 倍速倍增器，但是您可以使用 <code>editor.fastScrollSensitivity</code> 设置来控制倍增器。</p>
+<h2 id="向上-向下复制行"> 向上 / 向下复制行</h2>
+<p>键盘快捷键: <code>Shift + Alt + ↑</code> 或 <code>Shift + Alt + ↓</code></p>
+<div><p>相关信息</p>
+<p>由于按键冲突，在 Linux 上，向上 / 向下复制行没有默认的快捷键，您可以自行通过 <code>editor.action.copyLinesUpAction</code> 和 <code>editor.action.copyLinesDownAction</code> 设置自己的首选键盘快捷键。</p>
+</div>
+<h2 id="上下移动行号"> 上下移动行号</h2>
+<p>键盘快捷键: <code>Alt + ↑</code> 或 <code>Alt + ↓</code></p>
+<h2 id="缩小-扩大选择"> 缩小/扩大选择</h2>
+<p>键盘快捷键: <code>Shift + Alt + ←</code> 或 <code>Shift + Alt + →</code></p>
+<h2 id="转到文件中的符号"> 转到文件中的符号</h2>
+<p>键盘快捷键: <code>Ctrl + Shift + O</code></p>
+<p><img src="./assets/goto-file-symbol.png" alt="按符号查找"></p>
+<p>您可以通过添加冒号将符号按种类分组 <code>@:</code>。</p>
+<h2 id="转到工作区中的符号"> 转到工作区中的符号</h2>
+<p>键盘快捷键: <code>Ctrl + T</code></p>
+<p><img src="./assets/goto-workspace-symbol.png" alt="转到工作区中的符号"></p>
+<h2 id="大纲视图"> 大纲视图</h2>
+<p><strong>文件资源管理器</strong> 中的 <strong>大纲</strong> 视图(默认折叠在底部)显示了当前打开文件的符号。</p>
+<p><img src="./assets/outlilne-view.png" alt="轮廓图"></p>
+<p>您可以按符号名称，类别和文件中的位置进行排序，并可以快速导航到符号位置。</p>
+<h2 id="导航到特定行"> 导航到特定行</h2>
+<p>键盘快捷键: <code>Ctrl + G</code></p>
+<h2 id="恢复光标位置"> 恢复光标位置</h2>
+<p>键盘快捷键: <code>Ctrl + U</code></p>
+<h2 id="修剪尾随空格"> 修剪尾随空格</h2>
+<p>键盘快捷键: <code>Ctrl + K Ctrl + X</code></p>
+<h2 id="转换文本命令"> 转换文本命令</h2>
+<p>您可以使用 <strong>命令面板</strong> 中的 <strong>转换</strong> 命令将选定的文本更改为大写，小写和标题。</p>
+<p><img src="./assets/transform.png" alt="转换文字指令"></p>
+<h2 id="代码格式化"> 代码格式化</h2>
+<p>当前选择的源代码: <code>Ctrl + K Ctrl + F</code></p>
+<p>整个文档格式: <code>Shift + Alt + F</code></p>
+<h2 id="代码折叠"> 代码折叠</h2>
+<p>键盘快捷键: <code>Ctrl + Shift + [</code> 和 <code>Ctrl + Shift +]</code></p>
+<p>您还可以使用全部折叠(<code>Ctrl + K Ctrl + 0</code>)和全部展开(<code>Ctrl + K Ctrl + J</code>)来折叠/展开编辑器中的所有区域。</p>
+<p>您可以使用 <strong>折叠所有块注释</strong>(<code>Ctrl + K Ctrl + /</code>)折叠所有块注释。</p>
+<h2 id="选择当前行"> 选择当前行</h2>
+<p>键盘快捷键: <code>Ctrl + L</code></p>
+<h2 id="导航到文件的开头和结尾"> 导航到文件的开头和结尾</h2>
+<p>键盘快捷键: <code>Ctrl + Home</code> 和 <code>Ctrl + End</code></p>
+<h2 id="打开-markdown-预览"> 打开 Markdown 预览</h2>
+<p>在 Markdown 文件中，使用</p>
+<p>键盘快捷键: <code>Ctrl + Shift + V</code></p>
+<p><img src="./assets/markdown-preview.png" alt="Markdown 预览"></p>
+<h2 id="并排-markdown-编辑和预览"> 并排 Markdown 编辑和预览</h2>
+<p>在 Markdown 文件中，使用</p>
+<p>键盘快捷键: <code>Ctrl + K V</code></p>
+<p>预览和编辑器将与您在任一视图中的滚动同步。</p>
+<p><img src="./assets/markdown-side-preview.png" alt="并排 Markdown 预览"></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -28589,16 +28599,6 @@ code --disable-extensions <span>.</span>
 ]]></content:encoded>
     </item>
     <item>
-      <title>cat</title>
-      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cat/</link>
-      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cat/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">cat</source>
-      <content:encoded><![CDATA[<h1 id="cat"> cat</h1>
-<p><code>cat</code> 命令用于显示一个文本文件的内容。</p>
-<p><code>cat - &gt;&gt; filename</code> 用于向一个现有文件的尾部追加内容。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>配置 VSCode</title>
       <link>http://qiqi.dreamagain.top/software/vscode/settings/</link>
       <guid>http://qiqi.dreamagain.top/software/vscode/settings/</guid>
@@ -28924,6 +28924,195 @@ code --disable-extensions <span>.</span>
 ]]></content:encoded>
     </item>
     <item>
+      <title>快捷键</title>
+      <link>http://qiqi.dreamagain.top/software/vscode/shortcut-key/</link>
+      <guid>http://qiqi.dreamagain.top/software/vscode/shortcut-key/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">快捷键</source>
+      <category>VS Code</category>
+      <pubDate>Thu, 17 Sep 2020 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>通过快捷键，Visual Studio Code 可让您直接从键盘执行大多数任务。</p>
+<h2 id="常用的快捷键"> 常用的快捷键</h2>
+<div><p>提示</p>
+<p>以下这些快捷键建议大家熟练掌握，能够很大程度提高开发效率。</p>
+</div>
+<h3 id="鼠标操作"> 鼠标操作</h3>
+<ul>
+<li>
+<p>在当前行的位置，鼠标三击，可以选中当前行。</p>
+</li>
+<li>
+<p>用鼠标单击文件的行号，可以选中当前行。</p>
+</li>
+<li>
+<p>在某个行号的位置，上下移动鼠标，可以选中多行。</p>
+</li>
+</ul>
+<h3 id="移动光标"> 移动光标</h3>
+<ul>
+<li>
+<p>「方向键」: 在<strong>单个字符</strong>之间移动光标</p>
+</li>
+<li>
+<p>「Ctrl + 左右方向键」: 在<strong>单词</strong>之间移动光标(很常用)。</p>
+</li>
+</ul>
+<h3 id="快速选中"> 快速选中</h3>
+<p>在任意位置单击放置光标，按住 <code>shift</code> 在第二个位置单击，即可选中两光标位置间的所有文字。</p>
+<ul>
+<li>
+<p><code>Ctrl + Alt + ↑/↓</code>: 向方向键方向的相邻行放置一个光标；</p>
+</li>
+<li>
+<p><code>Alt + Click</code>: 放置辅助游标；</p>
+</li>
+<li>
+<p><code>Shift + Alt + ←/→</code>: 收缩/扩展选择；</p>
+</li>
+<li>
+<p><code>Shift + Alt</code> 同时拖动到对角: 列(框)选择；</p>
+</li>
+</ul>
+<h3 id="删除"> 删除</h3>
+<ul>
+<li>
+<p><code>Ctrl + Backspace</code>: 删除光标之前的一个单词</p>
+</li>
+<li>
+<p><code>Ctrl + delete</code>: 　删除光标之后的一个单词</p>
+</li>
+<li>
+<p><code>Ctrl + Shift + K</code>: 删除整行</p>
+</li>
+</ul>
+<h3 id="移动文字"> 移动文字</h3>
+<ul>
+<li>
+<p><code>Alt + ↑</code>: 光标所在行或选中的文字的所有行整体上移一行；</p>
+</li>
+<li>
+<p><code>Alt + ↓</code>: 光标所在行或选中文字的所有行整体下移一行</p>
+</li>
+</ul>
+<h3 id="复制文字"> 复制文字</h3>
+<ul>
+<li>
+<p><code>Alt + shift + ↑</code>: 光标所在行或选中的文字的所有行整体向下复制一行(如果选中了多行就是复制多行)；</p>
+</li>
+<li>
+<p><code>Alt + shift + ↓</code>: 光标所在行或选中文字的所有行整体向上复制一行(如果选中了多行就是复制多行)；</p>
+</li>
+<li>
+<p><code>Ctrl + D</code>: 选择光标处的单词，或下一次出现的当前选择；</p>
+</li>
+</ul>
+<h3 id="代码操作"> 代码操作</h3>
+<ul>
+<li>
+<p><code>Ctrl + /</code>: 添加单行注释</p>
+</li>
+<li>
+<p><code>Alt + shift + F</code>: 代码格式化</p>
+</li>
+<li>
+<p><code>Ctrl + U</code>: 将光标的移动回退到上一个位置、撤销光标的移动和选择</p>
+</li>
+<li>
+<p><code>Ctrl + Enter</code>: 在当前行下面新增一行，然后跳至该行 (即使光标不在行尾，也能快速向下插入一行)</p>
+</li>
+<li>
+<p><code>Ctrl + P</code>: 在当前的项目工程里，<strong>全局</strong>搜索文件</p>
+</li>
+<li>
+<p><code>Ctrl + G</code>: 跳转到指定行</p>
+</li>
+<li>
+<p><code>Ctrl + shift + O</code>: 在当前文件的各种<strong>方法之间</strong>进行跳转</p>
+</li>
+</ul>
+<h4 id="搜索"> 搜索</h4>
+<ul>
+<li>
+<p><code>Ctrl + F</code>: 查找，光标在搜索框里；</p>
+</li>
+<li>
+<p><code>F3</code>: 在当前文件中搜索，光标仍在编辑器里</p>
+</li>
+<li>
+<p><code>Ctrl + Shift +F</code>: 全局搜索</p>
+</li>
+<li>
+<p><code>Ctrl + H</code>: 替换。</p>
+</li>
+</ul>
+<h4 id="多光标的使用"> 多光标的使用</h4>
+<ol>
+<li>
+<p>按住 Alt 键，然后在页面中希望中现光标的位置点击鼠标。</p>
+</li>
+<li>
+<p>选中某个文本，然后反复按住快捷键 <code>Ctrl + D</code> 键， 即可将全文中与光标当前所在位置的词相同的词逐一加入选择。</p>
+</li>
+<li>
+<p>选中一堆文本后，按住 <code>Alt + Shift + I</code> 键，既可在<strong>每一行的末尾</strong>都创建一个光标。</p>
+</li>
+</ol>
+<h4 id="工作区快捷键"> 工作区快捷键</h4>
+<ul>
+<li>
+<p><code>Ctrl + B</code>: 显示/隐藏侧边栏</p>
+</li>
+<li>
+<p><code>Ctrl + \</code>: 创建多个编辑器</p>
+</li>
+<li>
+<p><code>Ctrl + Pagedown/Pageup</code>: 在已经打开的文件之间进行<strong>切换</strong></p>
+</li>
+<li>
+<p><code>Ctrl + `</code>: 打开终端</p>
+</li>
+</ul>
+<h3 id="代码折叠"> 代码折叠</h3>
+<p><code>Ctrl + Shift + [</code>: 折叠光标处最内部的未折叠区域；</p>
+<p><code>Ctrl + Shift +]</code>: 展开光标处的折叠区域；</p>
+<p><code>Ctrl + K Ctrl + [</code>: 折叠光标处最内部的未折叠区域以及该区域内的所有区域；</p>
+<p><code>Ctrl + K Ctrl +]</code>: 展开光标处的区域以及该区域内的所有区域；</p>
+<p><code>Ctrl + K Ctrl + 0</code>: 折叠编辑器中的所有区域；</p>
+<p><code>Ctrl + K Ctrl + J</code>: 展开编辑器中的所有区域；</p>
+<p><code>Ctrl + K</code> <code>Ctrl</code> + <code>X</code>: 折叠级别 <code>X</code> 的所有区域，但当前光标位置的区域除外；</p>
+<p><code>Ctrl + K Ctrl + /</code>: 折叠以块注释标记开头的所有区域；</p>
+<div><p>官方文档</p>
+<p><a href="./assets/vscodeKeyboardShortcutsWindows.pdf">Windows 下 VSCode 快捷键指南</a> (英文)</p>
+</div>
+<h3 id="windows-快捷键"> Windows 快捷键</h3>
+<p><code>Ctrl + X</code>: 剪切；</p>
+<p><code>Ctrl + C</code>: 复制；</p>
+<p><code>Ctrl + V</code>: 粘贴；</p>
+<p><code>Ctrl + A</code>: 全选；</p>
+<p><code>Ctrl + Z</code>: 撤销；</p>
+<p><code>Ctrl + Y</code>: 恢复；</p>
+<div><p>相关信息</p>
+<p>更多请见 <a href="./../../code/windows/shortcut-key.html">Windows 快捷键介绍</a></p>
+</div>
+<hr>
+<p>以下是一些高级内容</p>
+<h2 id="快捷键编辑器"> 快捷键编辑器</h2>
+<p>Visual Studio Code 使用 <strong>键盘快捷键编辑器</strong> 提供了丰富而便捷的键盘快捷键编辑体验。它列出了所有可用命令(无论是否已有快捷键绑定)，您可以轻松 更改 / 删除 / 重置 其键绑定。它还在顶部有一个搜索框，可帮助您查找命令或快捷键。您可以通过转到 <code>文件 &gt; 首选项 &gt; 键盘快捷方式</code> 下的菜单来打开此编辑器。(macOS 上为 <code>代码 &gt; 首选项 &gt; 键盘快捷键</code>)</p>
+<h3 id="检测键绑定冲突"> 检测键绑定冲突</h3>
+<p>如果您安装了许多扩展程序或自定义了键盘快捷键，则有时会将同一键盘快捷键映射到多个命令时会发生键绑定冲突。这可能导致混乱的行为，尤其是当您在编辑器中移动时，不同的键绑定进入和超出范围时。</p>
+<p>该键盘快捷键编辑器有一个上下文菜单命令显示相同的按键组合，这将筛选基于键盘快捷键来显示冲突的键绑定。</p>
+<p>选择一个您认为被覆盖掉的键绑定命令，您可以查看是否定义了多个命令，键绑定的来源以及它们何时处于活动状态。</p>
+<h3 id="查看修改键绑定"> 查看修改键绑定</h3>
+<p>您可以使用 <strong>更多操作(...)</strong> 菜单中的 <strong>显示用户按键绑定</strong>命令。</p>
+<h3 id="高级定制"> 高级定制</h3>
+<p>VS Code 中的所有键盘快捷键都可以通过该 <code>keybindings.json</code> 文件进行自定义。</p>
+<ul>
+<li>要通过 JSON 文件配置键盘快捷键，请打开 <strong>键盘快捷键</strong> 编辑器，然后选择编辑器标题栏右侧的 **打开键盘快捷键 (JSON)**按钮。</li>
+<li>这将打开您的 <code>keybindings.json</code> 文件，您可以在其中覆盖默认的案件绑定。</li>
+</ul>
+<p>您也可以使用从命令面板(Ctrl + Shift + P)中选择 <strong>首选项: 打开键盘快捷方式 (JSON)</strong> 命令打开 <code>keybindings.json</code> 文件。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>VS Code 的简单介绍</title>
       <link>http://qiqi.dreamagain.top/software/vscode/simple/</link>
       <guid>http://qiqi.dreamagain.top/software/vscode/simple/</guid>
@@ -28971,6 +29160,23 @@ code --disable-extensions <span>.</span>
 <p><code>Ctrl + Y</code>: 恢复；</p>
 <p><code>Ctrl + F</code>: 查找；</p>
 <p><code>Ctrl + H</code>: 替换。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>环境变量的添加</title>
+      <link>http://qiqi.dreamagain.top/software/windows/add-path/</link>
+      <guid>http://qiqi.dreamagain.top/software/windows/add-path/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">环境变量的添加</source>
+      <category>基础</category>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>以 Windows 10 系统为例，直接在左下角搜索栏中输入“系统变量”</p>
+<p><img src="src/software/windows/assets/pathSearch.png" alt="搜索"></p>
+<p>在弹出的框中点击环境变量</p>
+<p><img src="src/software/windows/assets/path.png" alt="系统变量"></p>
+<p>在弹出的新窗口中找到 path，选中并点击编辑</p>
+<p><img src="src/software/windows/assets/pathDetail.png" alt="系统变量"></p>
+<p>点击添加输入想要添加到 path 的路径或者执行文件名即可</p>
+<p><img src="src/software/windows/assets/pathAdd.png" alt="系统变量"></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -29182,222 +29388,6 @@ code --disable-extensions <span>.</span>
 ]]></content:encoded>
     </item>
     <item>
-      <title>快捷键</title>
-      <link>http://qiqi.dreamagain.top/software/vscode/shortcut-key/</link>
-      <guid>http://qiqi.dreamagain.top/software/vscode/shortcut-key/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">快捷键</source>
-      <category>VS Code</category>
-      <pubDate>Thu, 17 Sep 2020 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>通过快捷键，Visual Studio Code 可让您直接从键盘执行大多数任务。</p>
-<h2 id="常用的快捷键"> 常用的快捷键</h2>
-<div><p>提示</p>
-<p>以下这些快捷键建议大家熟练掌握，能够很大程度提高开发效率。</p>
-</div>
-<h3 id="鼠标操作"> 鼠标操作</h3>
-<ul>
-<li>
-<p>在当前行的位置，鼠标三击，可以选中当前行。</p>
-</li>
-<li>
-<p>用鼠标单击文件的行号，可以选中当前行。</p>
-</li>
-<li>
-<p>在某个行号的位置，上下移动鼠标，可以选中多行。</p>
-</li>
-</ul>
-<h3 id="移动光标"> 移动光标</h3>
-<ul>
-<li>
-<p>「方向键」: 在<strong>单个字符</strong>之间移动光标</p>
-</li>
-<li>
-<p>「Ctrl + 左右方向键」: 在<strong>单词</strong>之间移动光标(很常用)。</p>
-</li>
-</ul>
-<h3 id="快速选中"> 快速选中</h3>
-<p>在任意位置单击放置光标，按住 <code>shift</code> 在第二个位置单击，即可选中两光标位置间的所有文字。</p>
-<ul>
-<li>
-<p><code>Ctrl + Alt + ↑/↓</code>: 向方向键方向的相邻行放置一个光标；</p>
-</li>
-<li>
-<p><code>Alt + Click</code>: 放置辅助游标；</p>
-</li>
-<li>
-<p><code>Shift + Alt + ←/→</code>: 收缩/扩展选择；</p>
-</li>
-<li>
-<p><code>Shift + Alt</code> 同时拖动到对角: 列(框)选择；</p>
-</li>
-</ul>
-<h3 id="删除"> 删除</h3>
-<ul>
-<li>
-<p><code>Ctrl + Backspace</code>: 删除光标之前的一个单词</p>
-</li>
-<li>
-<p><code>Ctrl + delete</code>: 　删除光标之后的一个单词</p>
-</li>
-<li>
-<p><code>Ctrl + Shift + K</code>: 删除整行</p>
-</li>
-</ul>
-<h3 id="移动文字"> 移动文字</h3>
-<ul>
-<li>
-<p><code>Alt + ↑</code>: 光标所在行或选中的文字的所有行整体上移一行；</p>
-</li>
-<li>
-<p><code>Alt + ↓</code>: 光标所在行或选中文字的所有行整体下移一行</p>
-</li>
-</ul>
-<h3 id="复制文字"> 复制文字</h3>
-<ul>
-<li>
-<p><code>Alt + shift + ↑</code>: 光标所在行或选中的文字的所有行整体向下复制一行(如果选中了多行就是复制多行)；</p>
-</li>
-<li>
-<p><code>Alt + shift + ↓</code>: 光标所在行或选中文字的所有行整体向上复制一行(如果选中了多行就是复制多行)；</p>
-</li>
-<li>
-<p><code>Ctrl + D</code>: 选择光标处的单词，或下一次出现的当前选择；</p>
-</li>
-</ul>
-<h3 id="代码操作"> 代码操作</h3>
-<ul>
-<li>
-<p><code>Ctrl + /</code>: 添加单行注释</p>
-</li>
-<li>
-<p><code>Alt + shift + F</code>: 代码格式化</p>
-</li>
-<li>
-<p><code>Ctrl + U</code>: 将光标的移动回退到上一个位置、撤销光标的移动和选择</p>
-</li>
-<li>
-<p><code>Ctrl + Enter</code>: 在当前行下面新增一行，然后跳至该行 (即使光标不在行尾，也能快速向下插入一行)</p>
-</li>
-<li>
-<p><code>Ctrl + P</code>: 在当前的项目工程里，<strong>全局</strong>搜索文件</p>
-</li>
-<li>
-<p><code>Ctrl + G</code>: 跳转到指定行</p>
-</li>
-<li>
-<p><code>Ctrl + shift + O</code>: 在当前文件的各种<strong>方法之间</strong>进行跳转</p>
-</li>
-</ul>
-<h4 id="搜索"> 搜索</h4>
-<ul>
-<li>
-<p><code>Ctrl + F</code>: 查找，光标在搜索框里；</p>
-</li>
-<li>
-<p><code>F3</code>: 在当前文件中搜索，光标仍在编辑器里</p>
-</li>
-<li>
-<p><code>Ctrl + Shift +F</code>: 全局搜索</p>
-</li>
-<li>
-<p><code>Ctrl + H</code>: 替换。</p>
-</li>
-</ul>
-<h4 id="多光标的使用"> 多光标的使用</h4>
-<ol>
-<li>
-<p>按住 Alt 键，然后在页面中希望中现光标的位置点击鼠标。</p>
-</li>
-<li>
-<p>选中某个文本，然后反复按住快捷键 <code>Ctrl + D</code> 键， 即可将全文中与光标当前所在位置的词相同的词逐一加入选择。</p>
-</li>
-<li>
-<p>选中一堆文本后，按住 <code>Alt + Shift + I</code> 键，既可在<strong>每一行的末尾</strong>都创建一个光标。</p>
-</li>
-</ol>
-<h4 id="工作区快捷键"> 工作区快捷键</h4>
-<ul>
-<li>
-<p><code>Ctrl + B</code>: 显示/隐藏侧边栏</p>
-</li>
-<li>
-<p><code>Ctrl + \</code>: 创建多个编辑器</p>
-</li>
-<li>
-<p><code>Ctrl + Pagedown/Pageup</code>: 在已经打开的文件之间进行<strong>切换</strong></p>
-</li>
-<li>
-<p><code>Ctrl + `</code>: 打开终端</p>
-</li>
-</ul>
-<h3 id="代码折叠"> 代码折叠</h3>
-<p><code>Ctrl + Shift + [</code>: 折叠光标处最内部的未折叠区域；</p>
-<p><code>Ctrl + Shift +]</code>: 展开光标处的折叠区域；</p>
-<p><code>Ctrl + K Ctrl + [</code>: 折叠光标处最内部的未折叠区域以及该区域内的所有区域；</p>
-<p><code>Ctrl + K Ctrl +]</code>: 展开光标处的区域以及该区域内的所有区域；</p>
-<p><code>Ctrl + K Ctrl + 0</code>: 折叠编辑器中的所有区域；</p>
-<p><code>Ctrl + K Ctrl + J</code>: 展开编辑器中的所有区域；</p>
-<p><code>Ctrl + K</code> <code>Ctrl</code> + <code>X</code>: 折叠级别 <code>X</code> 的所有区域，但当前光标位置的区域除外；</p>
-<p><code>Ctrl + K Ctrl + /</code>: 折叠以块注释标记开头的所有区域；</p>
-<div><p>官方文档</p>
-<p><a href="./assets/vscodeKeyboardShortcutsWindows.pdf">Windows 下 VSCode 快捷键指南</a> (英文)</p>
-</div>
-<h3 id="windows-快捷键"> Windows 快捷键</h3>
-<p><code>Ctrl + X</code>: 剪切；</p>
-<p><code>Ctrl + C</code>: 复制；</p>
-<p><code>Ctrl + V</code>: 粘贴；</p>
-<p><code>Ctrl + A</code>: 全选；</p>
-<p><code>Ctrl + Z</code>: 撤销；</p>
-<p><code>Ctrl + Y</code>: 恢复；</p>
-<div><p>相关信息</p>
-<p>更多请见 <a href="./../../code/windows/shortcut-key.html">Windows 快捷键介绍</a></p>
-</div>
-<hr>
-<p>以下是一些高级内容</p>
-<h2 id="快捷键编辑器"> 快捷键编辑器</h2>
-<p>Visual Studio Code 使用 <strong>键盘快捷键编辑器</strong> 提供了丰富而便捷的键盘快捷键编辑体验。它列出了所有可用命令(无论是否已有快捷键绑定)，您可以轻松 更改 / 删除 / 重置 其键绑定。它还在顶部有一个搜索框，可帮助您查找命令或快捷键。您可以通过转到 <code>文件 &gt; 首选项 &gt; 键盘快捷方式</code> 下的菜单来打开此编辑器。(macOS 上为 <code>代码 &gt; 首选项 &gt; 键盘快捷键</code>)</p>
-<h3 id="检测键绑定冲突"> 检测键绑定冲突</h3>
-<p>如果您安装了许多扩展程序或自定义了键盘快捷键，则有时会将同一键盘快捷键映射到多个命令时会发生键绑定冲突。这可能导致混乱的行为，尤其是当您在编辑器中移动时，不同的键绑定进入和超出范围时。</p>
-<p>该键盘快捷键编辑器有一个上下文菜单命令显示相同的按键组合，这将筛选基于键盘快捷键来显示冲突的键绑定。</p>
-<p>选择一个您认为被覆盖掉的键绑定命令，您可以查看是否定义了多个命令，键绑定的来源以及它们何时处于活动状态。</p>
-<h3 id="查看修改键绑定"> 查看修改键绑定</h3>
-<p>您可以使用 <strong>更多操作(...)</strong> 菜单中的 <strong>显示用户按键绑定</strong>命令。</p>
-<h3 id="高级定制"> 高级定制</h3>
-<p>VS Code 中的所有键盘快捷键都可以通过该 <code>keybindings.json</code> 文件进行自定义。</p>
-<ul>
-<li>要通过 JSON 文件配置键盘快捷键，请打开 <strong>键盘快捷键</strong> 编辑器，然后选择编辑器标题栏右侧的 **打开键盘快捷键 (JSON)**按钮。</li>
-<li>这将打开您的 <code>keybindings.json</code> 文件，您可以在其中覆盖默认的案件绑定。</li>
-</ul>
-<p>您也可以使用从命令面板(Ctrl + Shift + P)中选择 <strong>首选项: 打开键盘快捷方式 (JSON)</strong> 命令打开 <code>keybindings.json</code> 文件。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>环境变量的添加</title>
-      <link>http://qiqi.dreamagain.top/software/windows/add-path/</link>
-      <guid>http://qiqi.dreamagain.top/software/windows/add-path/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">环境变量的添加</source>
-      <category>基础</category>
-      <pubDate>Sun, 08 Sep 2019 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>以 Windows 10 系统为例，直接在左下角搜索栏中输入“系统变量”</p>
-<p><img src="src/software/windows/assets/pathSearch.png" alt="搜索"></p>
-<p>在弹出的框中点击环境变量</p>
-<p><img src="src/software/windows/assets/path.png" alt="系统变量"></p>
-<p>在弹出的新窗口中找到 path，选中并点击编辑</p>
-<p><img src="src/software/windows/assets/pathDetail.png" alt="系统变量"></p>
-<p>点击添加输入想要添加到 path 的路径或者执行文件名即可</p>
-<p><img src="src/software/windows/assets/pathAdd.png" alt="系统变量"></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>显示隐藏的文件</title>
-      <link>http://qiqi.dreamagain.top/software/windows/hidden-file/</link>
-      <guid>http://qiqi.dreamagain.top/software/windows/hidden-file/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">显示隐藏的文件</source>
-      <category>基础</category>
-      <pubDate>Tue, 15 Sep 2020 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p><img src="src/software/windows/assets/hidden-file.png" alt="如何显示隐藏的文件与文件夹"></p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>打开命令行</title>
       <link>http://qiqi.dreamagain.top/software/windows/cmd/</link>
       <guid>http://qiqi.dreamagain.top/software/windows/cmd/</guid>
@@ -29422,22 +29412,6 @@ code --disable-extensions <span>.</span>
 
 <p><img src="src/software/windows/assets/cmd.png" alt="示意图"></p>
 <p>这样就会快速打开一个路径为当前文件夹的命令提示符窗口。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>记事本的遗留问题</title>
-      <link>http://qiqi.dreamagain.top/software/windows/notepad/</link>
-      <guid>http://qiqi.dreamagain.top/software/windows/notepad/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">记事本的遗留问题</source>
-      <pubDate>Sat, 07 Sep 2019 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>在编写代码的时候，临时的软件选择需要注意。</p>
-<p>请注意，绝对不能用 Word 和写字板。Word 和写字板保存的不是纯文本文件。</p>
-<p>千万不要使用 Windows 自带的记事本编辑任何文本文件。</p>
-<p>原因是 Microsoft 开发记事本的团队使用了一个非常弱智的行为来保存 UTF-8 编码的文件，他们自作聪明地在每个文件开头添加了几个特殊字符(UTF-8 BOM，即 0xefbbbf)，您会遇到很多不可思议的问题，比如，网页第一行可能会显示一个“?”，明明正确的程序一编译就报语法错误，等等，都是由记事本的弱智行为带来的。</p>
-<p>这个弱智行为从 Windows XP 影响到 Windows 10，在尚未发布的 Windows 10 版本(2009) 中，才得到解决。</p>
-<div><p>提示</p>
-<p>如果实在是临时急用，需要用记事本替代改一下代码，也要一定注意，保存文件时使用 ANSI 编码，并且暂时不要输入(包含)中文。</p>
-</div>
 ]]></content:encoded>
     </item>
     <item>
@@ -29468,6 +29442,32 @@ code --disable-extensions <span>.</span>
 <p><a href="./src/software/windows/notepad.html">记事本的遗留问题</a></p>
 </li>
 </ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>显示隐藏的文件</title>
+      <link>http://qiqi.dreamagain.top/software/windows/hidden-file/</link>
+      <guid>http://qiqi.dreamagain.top/software/windows/hidden-file/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">显示隐藏的文件</source>
+      <category>基础</category>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p><img src="src/software/windows/assets/hidden-file.png" alt="如何显示隐藏的文件与文件夹"></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>记事本的遗留问题</title>
+      <link>http://qiqi.dreamagain.top/software/windows/notepad/</link>
+      <guid>http://qiqi.dreamagain.top/software/windows/notepad/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">记事本的遗留问题</source>
+      <pubDate>Sat, 07 Sep 2019 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>在编写代码的时候，临时的软件选择需要注意。</p>
+<p>请注意，绝对不能用 Word 和写字板。Word 和写字板保存的不是纯文本文件。</p>
+<p>千万不要使用 Windows 自带的记事本编辑任何文本文件。</p>
+<p>原因是 Microsoft 开发记事本的团队使用了一个非常弱智的行为来保存 UTF-8 编码的文件，他们自作聪明地在每个文件开头添加了几个特殊字符(UTF-8 BOM，即 0xefbbbf)，您会遇到很多不可思议的问题，比如，网页第一行可能会显示一个“?”，明明正确的程序一编译就报语法错误，等等，都是由记事本的弱智行为带来的。</p>
+<p>这个弱智行为从 Windows XP 影响到 Windows 10，在尚未发布的 Windows 10 版本(2009) 中，才得到解决。</p>
+<div><p>提示</p>
+<p>如果实在是临时急用，需要用记事本替代改一下代码，也要一定注意，保存文件时使用 ANSI 编码，并且暂时不要输入(包含)中文。</p>
+</div>
 ]]></content:encoded>
     </item>
     <item>
@@ -29595,17 +29595,6 @@ code --disable-extensions <span>.</span>
 <li><code>Windows</code> + <code>Shift</code> + <code>S</code>: 打开截图工具；(仅在 Windows10 1809 及以上系统可用)</li>
 </ul>
 ]]></content:encoded>
-    </item>
-    <item>
-      <title>cal</title>
-      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cal/</link>
-      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cal/</guid>
-      <source url="http://qiqi.dreamagain.top/rss.xml">cal</source>
-      <content:encoded><![CDATA[<h1 id="cal"> cal</h1>
-<p><code>cal</code> 命令显示本月的日历。</p>
-<div><pre><code><span>cal</span>
-</code></pre>
-<div><span>1</span><br></div></div>]]></content:encoded>
     </item>
     <item>
       <title>awk</title>
@@ -29766,6 +29755,17 @@ sys
 </ul>
 ]]></content:encoded>
       <enclosure url="https://www.wangbase.com/blogimg/asset/201811/bg2018110702.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>cal</title>
+      <link>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cal/</link>
+      <guid>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cal/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">cal</source>
+      <content:encoded><![CDATA[<h1 id="cal"> cal</h1>
+<p><code>cal</code> 命令显示本月的日历。</p>
+<div><pre><code><span>cal</span>
+</code></pre>
+<div><span>1</span><br></div></div>]]></content:encoded>
     </item>
   </channel>
 </rss>
