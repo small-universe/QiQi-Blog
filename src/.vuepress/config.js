@@ -29,7 +29,7 @@ module.exports = config({
     nav: navbar.zh,
     sidebar: sidebar.zh,
     sidebarIcon: false,  // 侧边栏图标是否显示
-    // 主题语言
+    // 主题语言:
     baseLang: "zh-CN",
     // locales: {
     //   /** 英文设置 */
