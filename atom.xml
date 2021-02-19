@@ -6,7 +6,7 @@
   <author>
     <name>南辞</name>
   </author>
-  <updated>2021-02-18T09:50:06.660Z</updated>
+  <updated>2021-02-19T09:12:30.445Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="http://qiqi.dreamagain.top/atom.xml"/>
   <link rel="alternate" href="http://qiqi.dreamagain.top/"/>
@@ -51,30 +51,6 @@
     <name>沈启民</name>
   </contributor>
   <entry>
-    <title type="html">关于本站</title>
-    <id>http://qiqi.dreamagain.top/about/site/</id>
-    <link href="http://qiqi.dreamagain.top/about/site/"/>
-    <updated>2021-02-16T17:39:43.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="网站介绍"> 网站介绍</h2>
-<p>网站使用 <a href="https://v1.vuepress.vuejs.org/zh/guide/" target="_blank" rel="noopener noreferrer">VuePress</a> 建站工具构建，主题使用 <a href="https://github.com/Mister-Hope/vuepress-theme-hope/" target="_blank" rel="noopener noreferrer">vuepress-theme-hope</a></p>
-<h2 id="仓库链接"> 仓库链接</h2>
-<ul>
-<li><a href="https://github.com/small-universe/QiQi-Blog" target="_blank" rel="noopener noreferrer"><strong>QiQi-Blog</strong></a></li>
-</ul>
-<h2 id="免责声明"> 免责声明</h2>
-<ul>
-<li>本站内容均用于个人学习，有转载或参考的博客文章都已在每篇博客中声明，若有侵权请联系删除！</li>
-</ul>
-]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
     <title type="html">关于我</title>
     <id>http://qiqi.dreamagain.top/about/intro/</id>
     <link href="http://qiqi.dreamagain.top/about/intro/"/>
@@ -105,6 +81,30 @@
     <id>http://qiqi.dreamagain.top/blog/</id>
     <link href="http://qiqi.dreamagain.top/blog/"/>
     <updated>2021-02-18T01:11:00.000Z</updated>
+    <author>
+      <name>南辞</name>
+    </author>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
+    <title type="html">关于本站</title>
+    <id>http://qiqi.dreamagain.top/about/site/</id>
+    <link href="http://qiqi.dreamagain.top/about/site/"/>
+    <updated>2021-02-16T17:39:43.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="网站介绍"> 网站介绍</h2>
+<p>网站使用 <a href="https://v1.vuepress.vuejs.org/zh/guide/" target="_blank" rel="noopener noreferrer">VuePress</a> 建站工具构建，主题使用 <a href="https://github.com/Mister-Hope/vuepress-theme-hope/" target="_blank" rel="noopener noreferrer">vuepress-theme-hope</a></p>
+<h2 id="仓库链接"> 仓库链接</h2>
+<ul>
+<li><a href="https://github.com/small-universe/QiQi-Blog" target="_blank" rel="noopener noreferrer"><strong>QiQi-Blog</strong></a></li>
+</ul>
+<h2 id="免责声明"> 免责声明</h2>
+<ul>
+<li>本站内容均用于个人学习，有转载或参考的博客文章都已在每篇博客中声明，若有侵权请联系删除！</li>
+</ul>
+]]></content>
     <author>
       <name>南辞</name>
     </author>
@@ -367,26 +367,6 @@ module.exports <span>=</span> <span>{</span>
 <el-tag type="info">标签三</el-tag>
 <el-tag type="warning">标签四</el-tag>
 <el-tag type="danger">标签五</el-tag>
-]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <category term="使用指南"/>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
-    <title type="html">指南</title>
-    <id>http://qiqi.dreamagain.top/guide/</id>
-    <link href="http://qiqi.dreamagain.top/guide/"/>
-    <updated>2021-02-16T17:39:43.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="目录"> 目录</h2>
-<ul>
-<li><a href="./markdown.html">Markdown指南</a></li>
-<li><a href="./template.html">页面模板</a></li>
-</ul>
 ]]></content>
     <author>
       <name>南辞</name>
@@ -806,6 +786,26 @@ $$
     <rights>Copyright by 𝓜𝓻. 𝓗𝓸𝓹𝓮</rights>
   </entry>
   <entry>
+    <title type="html">指南</title>
+    <id>http://qiqi.dreamagain.top/guide/</id>
+    <link href="http://qiqi.dreamagain.top/guide/"/>
+    <updated>2021-02-16T17:39:43.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="目录"> 目录</h2>
+<ul>
+<li><a href="./markdown.html">Markdown指南</a></li>
+<li><a href="./template.html">页面模板</a></li>
+</ul>
+]]></content>
+    <author>
+      <name>南辞</name>
+    </author>
+    <category term="使用指南"/>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
     <title type="html">页面配置模板</title>
     <id>http://qiqi.dreamagain.top/guide/template/</id>
     <link href="http://qiqi.dreamagain.top/guide/template/"/>
@@ -882,7 +882,7 @@ pageInfo<span>:</span><span>[</span><span>'author'</span><span>,</span> <span>'v
     <title type="html">VuePresss入坑指南</title>
     <id>http://qiqi.dreamagain.top/guide/vuepress/</id>
     <link href="http://qiqi.dreamagain.top/guide/vuepress/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
+    <updated>2021-02-19T09:11:17.000Z</updated>
     <summary type="html"><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/vuepress-blue.svg" alt=""> <img src="https://img.shields.io/badge/vuepress--theme--reco-blue.svg" alt=""></p>
 <p>没有问题演示的教程都不是好教程</p>
@@ -1495,6 +1495,7 @@ ncu --upgrade --upgradeAll <span>&amp;&amp;</span> <span>yarn</span> upgrade
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br></div></div><p>在扩展之后，就可以在自定义的组件或者md文件中使用element的组件了。</p>
 <p>（3）测试在md中使用</p>
 <p>创建<code>blogs/components/element-ui.md</code>，内容如下</p>
+<details><summary>element-ui.md</summary>
 <div><pre><code><span><span>---</span>
 <span><span>title</span><span>:</span> Element<span>-</span>UI Test
 <span>date</span><span>:</span> 2021<span>-</span>1<span>-</span><span>15</span>
@@ -1542,7 +1543,8 @@ ncu --upgrade --upgradeAll <span>&amp;&amp;</span> <span>yarn</span> upgrade
 <span><span><span>&lt;/</span>template</span><span>></span></span>
 
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br></div></div><p>（4）运行测试</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br></div></div></details>
+<p>（4）运行测试</p>
 <p>页面空白，打开控制台查看报错信息</p>
 <p><img src="./assets/vuepress14.png" alt=""></p>
 <div><p>问题解决</p>
@@ -1594,6 +1596,7 @@ ncu --upgrade --upgradeAll <span>&amp;&amp;</span> <span>yarn</span> upgrade
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br></div></div><p>（3）在md中测试</p>
 <p>创建<code>blogs/components/view-ui.md</code>，内容如下</p>
+<details><summary>view-ui.md</summary>
 <div><pre><code><span><span>---</span>
 <span><span>title</span><span>:</span> View UI Test
 <span>date</span><span>:</span> <span>2021-01-15</span>
@@ -1732,7 +1735,8 @@ ncu --upgrade --upgradeAll <span>&amp;&amp;</span> <span>yarn</span> upgrade
 </span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
 
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br><span>57</span><br><span>58</span><br><span>59</span><br><span>60</span><br><span>61</span><br><span>62</span><br><span>63</span><br><span>64</span><br><span>65</span><br><span>66</span><br><span>67</span><br><span>68</span><br><span>69</span><br><span>70</span><br><span>71</span><br><span>72</span><br><span>73</span><br><span>74</span><br><span>75</span><br><span>76</span><br><span>77</span><br><span>78</span><br><span>79</span><br><span>80</span><br><span>81</span><br><span>82</span><br><span>83</span><br><span>84</span><br><span>85</span><br><span>86</span><br><span>87</span><br><span>88</span><br><span>89</span><br><span>90</span><br><span>91</span><br><span>92</span><br><span>93</span><br><span>94</span><br><span>95</span><br><span>96</span><br><span>97</span><br><span>98</span><br><span>99</span><br><span>100</span><br><span>101</span><br><span>102</span><br><span>103</span><br><span>104</span><br><span>105</span><br><span>106</span><br><span>107</span><br><span>108</span><br><span>109</span><br><span>110</span><br><span>111</span><br><span>112</span><br><span>113</span><br><span>114</span><br><span>115</span><br><span>116</span><br><span>117</span><br><span>118</span><br><span>119</span><br><span>120</span><br><span>121</span><br><span>122</span><br><span>123</span><br><span>124</span><br><span>125</span><br><span>126</span><br><span>127</span><br><span>128</span><br><span>129</span><br><span>130</span><br><span>131</span><br><span>132</span><br><span>133</span><br><span>134</span><br><span>135</span><br><span>136</span><br><span>137</span><br></div></div><p>（4）运行测试</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br><span>57</span><br><span>58</span><br><span>59</span><br><span>60</span><br><span>61</span><br><span>62</span><br><span>63</span><br><span>64</span><br><span>65</span><br><span>66</span><br><span>67</span><br><span>68</span><br><span>69</span><br><span>70</span><br><span>71</span><br><span>72</span><br><span>73</span><br><span>74</span><br><span>75</span><br><span>76</span><br><span>77</span><br><span>78</span><br><span>79</span><br><span>80</span><br><span>81</span><br><span>82</span><br><span>83</span><br><span>84</span><br><span>85</span><br><span>86</span><br><span>87</span><br><span>88</span><br><span>89</span><br><span>90</span><br><span>91</span><br><span>92</span><br><span>93</span><br><span>94</span><br><span>95</span><br><span>96</span><br><span>97</span><br><span>98</span><br><span>99</span><br><span>100</span><br><span>101</span><br><span>102</span><br><span>103</span><br><span>104</span><br><span>105</span><br><span>106</span><br><span>107</span><br><span>108</span><br><span>109</span><br><span>110</span><br><span>111</span><br><span>112</span><br><span>113</span><br><span>114</span><br><span>115</span><br><span>116</span><br><span>117</span><br><span>118</span><br><span>119</span><br><span>120</span><br><span>121</span><br><span>122</span><br><span>123</span><br><span>124</span><br><span>125</span><br><span>126</span><br><span>127</span><br><span>128</span><br><span>129</span><br><span>130</span><br><span>131</span><br><span>132</span><br><span>133</span><br><span>134</span><br><span>135</span><br><span>136</span><br><span>137</span><br></div></div></details>
+<p>（4）运行测试</p>
 <p>发现页面空白，控制台信息如下，所以不知道是哪里有问题</p>
 <p><img src="./assets/vuepress16.png" alt=""></p>
 <p>索性把enhanceApp.js内容全部注释，页面恢复正常。为什么会这样，原因未知，有待继续深入学习。</p>
@@ -1755,7 +1759,7 @@ Vue<span>.</span><span>use</span><span>(</span>ViewUI<span>)</span><span>;</span
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><p>查看首页面已经能够正常显示，点开View UI Test文章查看，效果也正常显示</p>
 <p><img src="./assets/vuepress18.png" alt=""></p>
-<p>以上测试了两个前端常用的组件库Element-UI和View UI，其他的组件库的使用也是类似，如果出现页面空白而后台没有报错的情况，先查看浏览器控制台报错信息再百度查找解决方法，或者尝试修改enhanceApp.js内容。</p>
+<p>以上测试了两个前端常用的组件库Element-UI和View UI，其他的组件库的使用也是类似，如果出现页面空白而后台没有报错的情况，先查看浏览器控制台报错信息，问题不明显可百度查找解决方法。</p>
 <div><p>提示</p>
 <p><strong>修改enhanceApp.js内容后项目不用重启，直接看浏览器中是否正常显示</strong>。</p>
 </div>
@@ -1765,8 +1769,7 @@ Vue<span>.</span><span>use</span><span>(</span>ViewUI<span>)</span><span>;</span
 <p>下图是对应的官方说明</p>
 <img src="./assets/vuepress19.png" style="zoom:80%;" />
 <h3 id="六-博客的自动路由"> （六）博客的自动路由</h3>
-<p>vuepress是一个单页面应用，所谓路由，是VueRouter模拟出来的假象，通过官方对<a href="https://vuepress.vuejs.org/zh/theme/writing-a-theme.html#%E7%BD%91%E7%AB%99%E5%92%8C%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE" target="_blank" rel="noopener noreferrer">元数据</a> 的描述，我们可以了解到<code>vuepress</code></p>
-<p>能够提供博客以及博待解决bug客中的分类、标签、时间线等功能支持主要就是使用元数据 <strong>$page</strong> 来实现，看一下官方文档中比较关键的说明：</p>
+<p>vuepress是一个单页面应用，所谓路由，是VueRouter模拟出来的假象，通过官方对<a href="https://vuepress.vuejs.org/zh/theme/writing-a-theme.html#%E7%BD%91%E7%AB%99%E5%92%8C%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE" target="_blank" rel="noopener noreferrer">元数据</a> 的描述，我们可以了解到<code>vuepress</code>能够提供博客中的分类、标签、时间线等功能支持主要就是使用元数据 <strong>$page</strong> 来实现，看一下官方文档中比较关键的说明：</p>
 <div><p>元数据</p>
 <p><code>pages</code> 是一个包含了每个页面元数据对象的数据，包括它的路径、页面标题（明确地通过 <a href="https://vuepress.vuejs.org/zh/guide/markdown.html#front-matter" target="_blank" rel="noopener noreferrer">YAML front matter</a> 指定，或者通过该页面的第一个标题取到），以及所有源文件中的 <code>YAML front matter</code> 的数据。</p>
 <p>如果用户在 <code>.vuepress/config.js</code> 配置了 <code>themeConfig</code>，你将可以通过 <code>$site.themeConfig</code> 访问到它。如此一来，你可以通过它来对用户开放一些自定义主题的配置 —— 比如指定目录或者页面的顺序，你也可以结合 <code>$site.pages</code> 来动态地构建导航链接。</p>
@@ -14574,221 +14577,6 @@ jdbc:mysql://localhost:3306/myemployees?serverTimezone=Asia/Shanghai</p>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
-    <title type="html">修改管理</title>
-    <id>http://qiqi.dreamagain.top/software/git/change/</id>
-    <link href="http://qiqi.dreamagain.top/software/git/change/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="管理修改"> 管理修改</h2>
-<p>Git 比其他版本控制系统设计得优秀，因为 Git 跟踪并管理的是修改，而非文件。</p>
-<p>您会问，什么是修改? 比如您新增了一行，这就是一个修改，删除了一行，也是一个修改，更改了某些字符，也是一个修改，删了一些又加了一些，也是一个修改，甚至创建一个新文件，也算一个修改。</p>
-<p>为什么说 Git 管理的是修改，而不是文件呢? 我们还是做实验。第一步，对 readme.txt 做一个修改，比如加一行内容:</p>
-<div><pre><code>$ <span>cat</span> readme.txt
-Git is a distributed version control system.
-Git is <span>free</span> software distributed under the GPL.
-Git has a mutable index called stage.
-Git tracks changes.
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>然后，添加:</p>
-<div><pre><code>$ <span>git</span> <span>add</span> readme.txt
-<span># nothing</span>
-$ <span>git</span> status
-  On branch master
-  Changes to be committed:
-    <span>(</span>use <span>"git reset HEAD &lt;file>..."</span> to unstage<span>)</span>
-        modified:   readme.txt
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>然后，再修改 readme.txt:</p>
-<div><pre><code>$ <span>cat</span> readme.txt
-Git is a distributed version control system.
-Git is <span>free</span> software distributed under the GPL.
-Git has a mutable index called stage.
-Git tracks changes of files.
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>提交:</p>
-<div><pre><code>$ <span>git</span> commit -m <span>"git tracks changes"</span>
-<span>[</span>master 519219b<span>]</span> <span>git</span> tracks changes
- <span>1</span> <span>file</span> changed, <span>1</span> insertion<span>(</span>+<span>)</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>提交后，再看看状态:</p>
-<div><pre><code>$ <span>git</span> status
-On branch master
-Changes not staged <span>for</span> commit:
-  <span>(</span>use <span>"git add &lt;file>..."</span> to update what will be committed<span>)</span>
-  <span>(</span>use <span>"git checkout -- &lt;file>..."</span> to discard changes <span>in</span> working directory<span>)</span>
-
-    modified:   readme.txt
-
-no changes added to commit <span>(</span>use <span>"git add"</span> and/or <span>"git commit -a"</span><span>)</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>怎么第二次的修改没有被提交? 我们回顾一下操作过程:</p>
-<p>第一次修改 → <code>git add</code> → 第二次修改 → <code>git commit</code></p>
-<p>您看，我们前面讲了，Git 管理的是修改，当您用 <code>git add</code> 命令后，在工作区的第一次修改被放入暂存区，准备提交，但是，在工作区的第二次修改并没有放入暂存区，所以，<code>git commit</code> 只负责把暂存区的修改提交了，也就是第一次的修改被提交了，第二次的修改不会被提交。</p>
-<p>提交后，用 <code>git diff HEAD -- readme.txt</code> 命令可以查看工作区和版本库里面最新版本的区别:</p>
-<div><pre><code>$ <span>git</span> <span>diff</span> HEAD -- readme.txt
-<span>diff</span> --git a/readme.txt b/readme.txt
-index 76d770f<span>..</span>a9c5755 <span>100644</span>
---- a/readme.txt
-+++ b/readme.txt
-@@ -1,4 +1,4 @@
- Git is a distributed version control system.
- Git is <span>free</span> software distributed under the GPL.
- Git has a mutable index called stage.
--Git tracks changes.
-+Git tracks changes of files.
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>可见，第二次修改确实没有被提交。</p>
-<p>那怎么提交第二次修改呢? 您可以继续 <code>git add</code> 再 <code>git commit</code>，也可以别着急提交第一次修改，先 <code>git add</code> 第二次修改，再 <code>git commit</code>，就相当于把两次修改合并后一块提交了:</p>
-<p>第一次修改 → <code>git add</code> → 第二次修改 → <code>git add</code> → <code>git commit</code></p>
-<p>好，现在，把第二次修改提交了，然后开始小结。</p>
-<h3 id="管理小结"> 管理小结</h3>
-<p>现在，您又理解了 Git 是如何跟踪修改的，每次修改，如果不用 <code>git add</code> 到暂存区，那就不会加入到 <code>commit</code> 中。</p>
-<h2 id="撤消对文件的修改"> 撤消对文件的修改</h2>
-<p>自然，您是不会犯错的。不过现在是凌晨两点，您正在赶一份工作报告，您在 readme.txt 中添加了一行:</p>
-<div><pre><code>$ <span>cat</span> readme.txt
-Git is a distributed version control system.
-Git is <span>free</span> software distributed under the GPL.
-Git has a mutable index called stage.
-Git tracks changes of files.
-My stupid boss still prefers SVN.
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>在您准备提交前，一杯咖啡起了作用，您猛然发现了 <code>'stupid boss'</code> 可能会让您丢掉这个月的奖金!</p>
-<p>既然错误发现得很及时，就可以很容易地纠正它。您可以删掉最后一行，手动把文件恢复到上一个版本的状态。如果用 <code>git status</code> 查看一下:</p>
-<div><pre><code>$ <span>git</span> status
-On branch master
-Changes not staged <span>for</span> commit:
-  <span>(</span>use <span>"git add &lt;file>..."</span> to update what will be committed<span>)</span>
-  <span>(</span>use <span>"git checkout -- &lt;file>..."</span> to discard changes <span>in</span> working directory<span>)</span>
-
-    modified:   readme.txt
-
-no changes added to commit <span>(</span>use <span>"git add"</span> and/or <span>"git commit -a"</span><span>)</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>您可以发现，Git 会告诉您，<code>git checkout -- &lt;file&gt;</code> 可以丢弃工作区的修改:</p>
-<div><pre><code><span>git</span> checkout -- readme.txt
-</code></pre>
-<div><span>1</span><br></div></div><p>命令 <code>git checkout -- readme.txt</code> 意思就是，把 readme.txt 文件在工作区的修改全部撤销，这里有两种情况:</p>
-<p>一种是 readme.txt 自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；</p>
-<p>一种是 readme.txt 已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。</p>
-<p>总之，就是让这个文件回到最近一次 <code>git commit</code> 或 <code>git add</code> 时的状态。</p>
-<p>现在，看看 readme.txt 的文件内容:</p>
-<div><pre><code>$ <span>cat</span> readme.txt
-Git is a distributed version control system.
-Git is <span>free</span> software distributed under the GPL.
-Git has a mutable index called stage.
-Git tracks changes of files.
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>文件内容果然复原了。</p>
-<p><code>git checkout -- file</code> 命令中的 <code>--</code> 很重要，没有 <code>--</code>，就变成了“切换到另一个分支”的命令，我们在后面的分支管理中会再次遇到 <code>git checkout</code> 命令。</p>
-<div><p>注意</p>
-<p>请务必记得 <code>git checkout -- &lt;file&gt;</code> 是一个危险的命令。您对那个文件在本地的任何修改都会消失——Git 会用最近提交的版本覆盖掉它。</p>
-<p>除非您确实清楚不想要对那个文件的本地修改了，否则请不要使用这个命令。</p>
-</div>
-<h2 id="取消暂存的文件"> 取消暂存的文件</h2>
-<p>现在假定是凌晨 3 点，您不但写了一些胡话，还 <code>git add</code> 到暂存区了:</p>
-<div><pre><code>$ <span>cat</span> readme.txt
-Git is a distributed version control system.
-Git is <span>free</span> software distributed under the GPL.
-Git has a mutable index called stage.
-Git tracks changes of files.
-My stupid boss still prefers SVN.
-
-<span>git</span> <span>add</span> readme.txt
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><p>庆幸的是，在 <code>commit</code> 之前，您发现了这个问题。用 <code>git status</code> 查看一下，修改只是添加到了暂存区，还没有提交:</p>
-<div><pre><code>$ <span>git</span> status
-On branch master
-Changes to be committed:
-  <span>(</span>use <span>"git reset HEAD &lt;file>..."</span> to unstage<span>)</span>
-
-    modified:   readme.txt
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>Git 同样告诉我们，用命令 <code>git reset HEAD &lt;file&gt;</code> 可以把暂存区的修改撤销掉(unstage)，重新放回工作区:</p>
-<div><pre><code>$ <span>git</span> reset HEAD readme.txt
-Unstaged changes after reset:
-M    readme.txt
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p><code>git reset</code> 命令既可以回退版本，也可以把暂存区的修改回退到工作区。当我们用 <code>HEAD</code> 时，表示当前的指针(最新的版本)。</p>
-<p>再用 <code>git status</code> 查看一下，现在暂存区是干净的，工作区有修改:</p>
-<div><pre><code>$ <span>git</span> status
-On branch master
-Changes not staged <span>for</span> commit:
-  <span>(</span>use <span>"git add &lt;file>..."</span> to update what will be committed<span>)</span>
-  <span>(</span>use <span>"git checkout -- &lt;file>..."</span> to discard changes <span>in</span> working directory<span>)</span>
-
-    modified:   readme.txt
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>还记得如何丢弃工作区的修改吗?</p>
-<div><pre><code><span>git</span> checkout -- readme.txt
-
-$ <span>git</span> status
-On branch master
-nothing to commit, working tree clean
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>整个世界终于清静了!</p>
-<div><p>提示</p>
-<p>那么如果您想要丢弃工作区和暂存区全部更改呢? 不要忘了 <code>HEAD</code> 就是当前指针，所以</p>
-<div><pre><code><span>git</span> reset --hard HEAD
-</code></pre>
-<div><span>1</span><br></div></div><p>就是丢弃工作区与暂存区的全部文件啦。</p>
-</div>
-<p>现在，假设您不但改错了东西，还从暂存区提交到了版本库，怎么办呢? 还记得版本回退一节吗? 可以回退到上一个版本。不过，这是有条件的，就是您还没有把自己的本地版本库推送到远程。还记得 Git 是分布式版本控制系统吗? 我们后面会讲到远程版本库，一旦您把 <code>stupid boss</code> 提交推送到远程版本库，您就真的惨了……</p>
-<h3 id="撤销小结"> 撤销小结</h3>
-<p>场景 1: 当您改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令 <code>git checkout -- file</code>。</p>
-<p>场景 2: 当您不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令 <code>git reset HEAD &lt;file&gt;</code>，就回到了场景 1，第二步按场景 1 操作。</p>
-<p>场景 3: 已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。</p>
-<hr>
-<h2 id="删除文件"> 删除文件</h2>
-<h3 id="如何删除文件"> 如何删除文件</h3>
-<p>在 Git 中，删除也是一个修改操作，我们实战一下，先添加一个新文件 test.txt 到 Git 并且提交:</p>
-<div><pre><code><span>git</span> <span>add</span> test.txt
-
-$ <span>git</span> commit -m <span>"add test.txt"</span>
-<span>[</span>master b84166e<span>]</span> <span>add</span> test.txt
- <span>1</span> <span>file</span> changed, <span>1</span> insertion<span>(</span>+<span>)</span>
- create mode <span>100644</span> test.txt
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>一般情况下，您通常直接在文件管理器中把没用的文件删了，或者用 <code>rm</code> 命令删了:</p>
-<div><pre><code><span>rm</span> test.txt
-</code></pre>
-<div><span>1</span><br></div></div><p>这个时候，Git 知道您删除了文件，因此，工作区和版本库就不一致了，<code>git status</code> 命令会立刻告诉您哪些文件被删除了:</p>
-<div><pre><code>$ <span>git</span> status
-On branch master
-Changes not staged <span>for</span> commit:
-  <span>(</span>use <span>"git add/rm &lt;file>..."</span> to update what will be committed<span>)</span>
-  <span>(</span>use <span>"git checkout -- &lt;file>..."</span> to discard changes <span>in</span> working directory<span>)</span>
-
-    deleted:    test.txt
-
-no changes added to commit <span>(</span>use <span>"git add"</span> and/or <span>"git commit -a"</span><span>)</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>现在您有两个选择，一是确实要从版本库中删除该文件，那就用命令 <code>git rm</code> 删掉，并且 <code>git commit</code>:</p>
-<div><pre><code>$ <span>git</span> <span>rm</span> test.txt
-<span>rm</span> <span>'test.txt'</span>
-
-$ <span>git</span> commit -m <span>"remove test.txt"</span>
-<span>[</span>master d46f35e<span>]</span> remove test.txt
- <span>1</span> <span>file</span> changed, <span>1</span> deletion<span>(</span>-<span>)</span>
- delete mode <span>100644</span> test.txt
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>现在，文件就从版本库中被删除了。</p>
-<h3 id="撤销删除"> 撤销删除</h3>
-<p>另一种情况是删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本:</p>
-<div><pre><code><span>git</span> checkout -- test.txt
-</code></pre>
-<div><span>1</span><br></div></div><p><code>git checkout</code> 其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。</p>
-<h3 id="删除小结"> 删除小结</h3>
-<p>命令 <code>git rm</code> 用于删除一个文件。如果一个文件已经被提交到版本库，那么您永远不用担心误删，但是要小心，您只能恢复文件到最新版本，您会丢失最近一次提交后您修改的内容。</p>
-]]></content>
-    <author>
-      <name>廖雪峰</name>
-    </author>
-    <category term="Git"/>
-    <contributor>
-      <name>廖雪峰</name>
-    </contributor>
-    <rights>Copyright by 廖雪峰 Edited by Mr.Hope</rights>
-  </entry>
-  <entry>
     <title type="html">分支管理</title>
     <id>http://qiqi.dreamagain.top/software/git/branch/</id>
     <link href="http://qiqi.dreamagain.top/software/git/branch/"/>
@@ -15481,6 +15269,221 @@ To github.com:Hope-Studio/learngit.git
 <p><code>rebase</code> 的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比。</p>
 </li>
 </ul>
+]]></content>
+    <author>
+      <name>廖雪峰</name>
+    </author>
+    <category term="Git"/>
+    <contributor>
+      <name>廖雪峰</name>
+    </contributor>
+    <rights>Copyright by 廖雪峰 Edited by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">修改管理</title>
+    <id>http://qiqi.dreamagain.top/software/git/change/</id>
+    <link href="http://qiqi.dreamagain.top/software/git/change/"/>
+    <updated>2021-02-18T01:11:00.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="管理修改"> 管理修改</h2>
+<p>Git 比其他版本控制系统设计得优秀，因为 Git 跟踪并管理的是修改，而非文件。</p>
+<p>您会问，什么是修改? 比如您新增了一行，这就是一个修改，删除了一行，也是一个修改，更改了某些字符，也是一个修改，删了一些又加了一些，也是一个修改，甚至创建一个新文件，也算一个修改。</p>
+<p>为什么说 Git 管理的是修改，而不是文件呢? 我们还是做实验。第一步，对 readme.txt 做一个修改，比如加一行内容:</p>
+<div><pre><code>$ <span>cat</span> readme.txt
+Git is a distributed version control system.
+Git is <span>free</span> software distributed under the GPL.
+Git has a mutable index called stage.
+Git tracks changes.
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>然后，添加:</p>
+<div><pre><code>$ <span>git</span> <span>add</span> readme.txt
+<span># nothing</span>
+$ <span>git</span> status
+  On branch master
+  Changes to be committed:
+    <span>(</span>use <span>"git reset HEAD &lt;file>..."</span> to unstage<span>)</span>
+        modified:   readme.txt
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>然后，再修改 readme.txt:</p>
+<div><pre><code>$ <span>cat</span> readme.txt
+Git is a distributed version control system.
+Git is <span>free</span> software distributed under the GPL.
+Git has a mutable index called stage.
+Git tracks changes of files.
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>提交:</p>
+<div><pre><code>$ <span>git</span> commit -m <span>"git tracks changes"</span>
+<span>[</span>master 519219b<span>]</span> <span>git</span> tracks changes
+ <span>1</span> <span>file</span> changed, <span>1</span> insertion<span>(</span>+<span>)</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>提交后，再看看状态:</p>
+<div><pre><code>$ <span>git</span> status
+On branch master
+Changes not staged <span>for</span> commit:
+  <span>(</span>use <span>"git add &lt;file>..."</span> to update what will be committed<span>)</span>
+  <span>(</span>use <span>"git checkout -- &lt;file>..."</span> to discard changes <span>in</span> working directory<span>)</span>
+
+    modified:   readme.txt
+
+no changes added to commit <span>(</span>use <span>"git add"</span> and/or <span>"git commit -a"</span><span>)</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>怎么第二次的修改没有被提交? 我们回顾一下操作过程:</p>
+<p>第一次修改 → <code>git add</code> → 第二次修改 → <code>git commit</code></p>
+<p>您看，我们前面讲了，Git 管理的是修改，当您用 <code>git add</code> 命令后，在工作区的第一次修改被放入暂存区，准备提交，但是，在工作区的第二次修改并没有放入暂存区，所以，<code>git commit</code> 只负责把暂存区的修改提交了，也就是第一次的修改被提交了，第二次的修改不会被提交。</p>
+<p>提交后，用 <code>git diff HEAD -- readme.txt</code> 命令可以查看工作区和版本库里面最新版本的区别:</p>
+<div><pre><code>$ <span>git</span> <span>diff</span> HEAD -- readme.txt
+<span>diff</span> --git a/readme.txt b/readme.txt
+index 76d770f<span>..</span>a9c5755 <span>100644</span>
+--- a/readme.txt
++++ b/readme.txt
+@@ -1,4 +1,4 @@
+ Git is a distributed version control system.
+ Git is <span>free</span> software distributed under the GPL.
+ Git has a mutable index called stage.
+-Git tracks changes.
++Git tracks changes of files.
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>可见，第二次修改确实没有被提交。</p>
+<p>那怎么提交第二次修改呢? 您可以继续 <code>git add</code> 再 <code>git commit</code>，也可以别着急提交第一次修改，先 <code>git add</code> 第二次修改，再 <code>git commit</code>，就相当于把两次修改合并后一块提交了:</p>
+<p>第一次修改 → <code>git add</code> → 第二次修改 → <code>git add</code> → <code>git commit</code></p>
+<p>好，现在，把第二次修改提交了，然后开始小结。</p>
+<h3 id="管理小结"> 管理小结</h3>
+<p>现在，您又理解了 Git 是如何跟踪修改的，每次修改，如果不用 <code>git add</code> 到暂存区，那就不会加入到 <code>commit</code> 中。</p>
+<h2 id="撤消对文件的修改"> 撤消对文件的修改</h2>
+<p>自然，您是不会犯错的。不过现在是凌晨两点，您正在赶一份工作报告，您在 readme.txt 中添加了一行:</p>
+<div><pre><code>$ <span>cat</span> readme.txt
+Git is a distributed version control system.
+Git is <span>free</span> software distributed under the GPL.
+Git has a mutable index called stage.
+Git tracks changes of files.
+My stupid boss still prefers SVN.
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>在您准备提交前，一杯咖啡起了作用，您猛然发现了 <code>'stupid boss'</code> 可能会让您丢掉这个月的奖金!</p>
+<p>既然错误发现得很及时，就可以很容易地纠正它。您可以删掉最后一行，手动把文件恢复到上一个版本的状态。如果用 <code>git status</code> 查看一下:</p>
+<div><pre><code>$ <span>git</span> status
+On branch master
+Changes not staged <span>for</span> commit:
+  <span>(</span>use <span>"git add &lt;file>..."</span> to update what will be committed<span>)</span>
+  <span>(</span>use <span>"git checkout -- &lt;file>..."</span> to discard changes <span>in</span> working directory<span>)</span>
+
+    modified:   readme.txt
+
+no changes added to commit <span>(</span>use <span>"git add"</span> and/or <span>"git commit -a"</span><span>)</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>您可以发现，Git 会告诉您，<code>git checkout -- &lt;file&gt;</code> 可以丢弃工作区的修改:</p>
+<div><pre><code><span>git</span> checkout -- readme.txt
+</code></pre>
+<div><span>1</span><br></div></div><p>命令 <code>git checkout -- readme.txt</code> 意思就是，把 readme.txt 文件在工作区的修改全部撤销，这里有两种情况:</p>
+<p>一种是 readme.txt 自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；</p>
+<p>一种是 readme.txt 已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。</p>
+<p>总之，就是让这个文件回到最近一次 <code>git commit</code> 或 <code>git add</code> 时的状态。</p>
+<p>现在，看看 readme.txt 的文件内容:</p>
+<div><pre><code>$ <span>cat</span> readme.txt
+Git is a distributed version control system.
+Git is <span>free</span> software distributed under the GPL.
+Git has a mutable index called stage.
+Git tracks changes of files.
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>文件内容果然复原了。</p>
+<p><code>git checkout -- file</code> 命令中的 <code>--</code> 很重要，没有 <code>--</code>，就变成了“切换到另一个分支”的命令，我们在后面的分支管理中会再次遇到 <code>git checkout</code> 命令。</p>
+<div><p>注意</p>
+<p>请务必记得 <code>git checkout -- &lt;file&gt;</code> 是一个危险的命令。您对那个文件在本地的任何修改都会消失——Git 会用最近提交的版本覆盖掉它。</p>
+<p>除非您确实清楚不想要对那个文件的本地修改了，否则请不要使用这个命令。</p>
+</div>
+<h2 id="取消暂存的文件"> 取消暂存的文件</h2>
+<p>现在假定是凌晨 3 点，您不但写了一些胡话，还 <code>git add</code> 到暂存区了:</p>
+<div><pre><code>$ <span>cat</span> readme.txt
+Git is a distributed version control system.
+Git is <span>free</span> software distributed under the GPL.
+Git has a mutable index called stage.
+Git tracks changes of files.
+My stupid boss still prefers SVN.
+
+<span>git</span> <span>add</span> readme.txt
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><p>庆幸的是，在 <code>commit</code> 之前，您发现了这个问题。用 <code>git status</code> 查看一下，修改只是添加到了暂存区，还没有提交:</p>
+<div><pre><code>$ <span>git</span> status
+On branch master
+Changes to be committed:
+  <span>(</span>use <span>"git reset HEAD &lt;file>..."</span> to unstage<span>)</span>
+
+    modified:   readme.txt
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>Git 同样告诉我们，用命令 <code>git reset HEAD &lt;file&gt;</code> 可以把暂存区的修改撤销掉(unstage)，重新放回工作区:</p>
+<div><pre><code>$ <span>git</span> reset HEAD readme.txt
+Unstaged changes after reset:
+M    readme.txt
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p><code>git reset</code> 命令既可以回退版本，也可以把暂存区的修改回退到工作区。当我们用 <code>HEAD</code> 时，表示当前的指针(最新的版本)。</p>
+<p>再用 <code>git status</code> 查看一下，现在暂存区是干净的，工作区有修改:</p>
+<div><pre><code>$ <span>git</span> status
+On branch master
+Changes not staged <span>for</span> commit:
+  <span>(</span>use <span>"git add &lt;file>..."</span> to update what will be committed<span>)</span>
+  <span>(</span>use <span>"git checkout -- &lt;file>..."</span> to discard changes <span>in</span> working directory<span>)</span>
+
+    modified:   readme.txt
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>还记得如何丢弃工作区的修改吗?</p>
+<div><pre><code><span>git</span> checkout -- readme.txt
+
+$ <span>git</span> status
+On branch master
+nothing to commit, working tree clean
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>整个世界终于清静了!</p>
+<div><p>提示</p>
+<p>那么如果您想要丢弃工作区和暂存区全部更改呢? 不要忘了 <code>HEAD</code> 就是当前指针，所以</p>
+<div><pre><code><span>git</span> reset --hard HEAD
+</code></pre>
+<div><span>1</span><br></div></div><p>就是丢弃工作区与暂存区的全部文件啦。</p>
+</div>
+<p>现在，假设您不但改错了东西，还从暂存区提交到了版本库，怎么办呢? 还记得版本回退一节吗? 可以回退到上一个版本。不过，这是有条件的，就是您还没有把自己的本地版本库推送到远程。还记得 Git 是分布式版本控制系统吗? 我们后面会讲到远程版本库，一旦您把 <code>stupid boss</code> 提交推送到远程版本库，您就真的惨了……</p>
+<h3 id="撤销小结"> 撤销小结</h3>
+<p>场景 1: 当您改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令 <code>git checkout -- file</code>。</p>
+<p>场景 2: 当您不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令 <code>git reset HEAD &lt;file&gt;</code>，就回到了场景 1，第二步按场景 1 操作。</p>
+<p>场景 3: 已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。</p>
+<hr>
+<h2 id="删除文件"> 删除文件</h2>
+<h3 id="如何删除文件"> 如何删除文件</h3>
+<p>在 Git 中，删除也是一个修改操作，我们实战一下，先添加一个新文件 test.txt 到 Git 并且提交:</p>
+<div><pre><code><span>git</span> <span>add</span> test.txt
+
+$ <span>git</span> commit -m <span>"add test.txt"</span>
+<span>[</span>master b84166e<span>]</span> <span>add</span> test.txt
+ <span>1</span> <span>file</span> changed, <span>1</span> insertion<span>(</span>+<span>)</span>
+ create mode <span>100644</span> test.txt
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>一般情况下，您通常直接在文件管理器中把没用的文件删了，或者用 <code>rm</code> 命令删了:</p>
+<div><pre><code><span>rm</span> test.txt
+</code></pre>
+<div><span>1</span><br></div></div><p>这个时候，Git 知道您删除了文件，因此，工作区和版本库就不一致了，<code>git status</code> 命令会立刻告诉您哪些文件被删除了:</p>
+<div><pre><code>$ <span>git</span> status
+On branch master
+Changes not staged <span>for</span> commit:
+  <span>(</span>use <span>"git add/rm &lt;file>..."</span> to update what will be committed<span>)</span>
+  <span>(</span>use <span>"git checkout -- &lt;file>..."</span> to discard changes <span>in</span> working directory<span>)</span>
+
+    deleted:    test.txt
+
+no changes added to commit <span>(</span>use <span>"git add"</span> and/or <span>"git commit -a"</span><span>)</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>现在您有两个选择，一是确实要从版本库中删除该文件，那就用命令 <code>git rm</code> 删掉，并且 <code>git commit</code>:</p>
+<div><pre><code>$ <span>git</span> <span>rm</span> test.txt
+<span>rm</span> <span>'test.txt'</span>
+
+$ <span>git</span> commit -m <span>"remove test.txt"</span>
+<span>[</span>master d46f35e<span>]</span> remove test.txt
+ <span>1</span> <span>file</span> changed, <span>1</span> deletion<span>(</span>-<span>)</span>
+ delete mode <span>100644</span> test.txt
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>现在，文件就从版本库中被删除了。</p>
+<h3 id="撤销删除"> 撤销删除</h3>
+<p>另一种情况是删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本:</p>
+<div><pre><code><span>git</span> checkout -- test.txt
+</code></pre>
+<div><span>1</span><br></div></div><p><code>git checkout</code> 其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。</p>
+<h3 id="删除小结"> 删除小结</h3>
+<p>命令 <code>git rm</code> 用于删除一个文件。如果一个文件已经被提交到版本库，那么您永远不用担心误删，但是要小心，您只能恢复文件到最新版本，您会丢失最近一次提交后您修改的内容。</p>
 ]]></content>
     <author>
       <name>廖雪峰</name>
@@ -16829,6 +16832,115 @@ eaadf4e HEAD@<span>{</span><span>4</span><span>}</span>: commit <span>(</span>in
     <rights>Copyright by 廖雪峰 Edited by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">纵向查看</title>
+    <id>http://qiqi.dreamagain.top/software/git/status/</id>
+    <link href="http://qiqi.dreamagain.top/software/git/status/"/>
+    <updated>2021-02-18T01:11:00.000Z</updated>
+    <content type="html"><![CDATA[<p>我们已经成功地添加并提交了一个 readme.txt 文件，继续修改 readme.txt 文件，改成如下内容:</p>
+<div><pre><code>Git is a distributed version control system.
+Git is free software.
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>现在，运行 <code>git status</code> 命令看看结果:</p>
+<div><pre><code>$ <span>git</span> status
+On branch master
+Changes not staged <span>for</span> commit:
+  <span>(</span>use <span>"git add &lt;file>..."</span> to update what will be committed<span>)</span>
+  <span>(</span>use <span>"git checkout -- &lt;file>..."</span> to discard changes <span>in</span> working directory<span>)</span>
+
+    modified:   readme.txt
+
+no changes added to commit <span>(</span>use <span>"git add"</span> and/or <span>"git commit -a"</span><span>)</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p><code>git status</code> 命令可以输出仓库当前的状态，上面的命令输出告诉我们，readme.txt 被修改过了，但还没有准备提交的修改。</p>
+<div><p>简介输出</p>
+<p><code>git status</code> 命令的输出十分详细，但其用语有些繁琐。Git 有一个选项可以帮您缩短状态命令的输出，这样可以以简洁的方式查看更改。如果您使用 <code>git status -s</code> 命令或 <code>git status --short</code> 命令，您将得到一种格式更为紧凑的输出。</p>
+<p>输出中有两栏，左栏指明了暂存区的状态，右栏指明了工作区的状态。</p>
+<p>新添加的未跟踪文件前面有 <code>??</code> 标记，新添加到暂存区中的文件前面有 <code>A</code> 标记，修改过的文件前面有 <code>M</code> 标记。</p>
+
+          <div
+            id="code-demo-5afacdea"
+           
+  
+ data-title="%E6%A1%88%E4%BE%8B"
+
+            data-code="%7B%22sh%22%3A%22%24%20git%20status%20-s%5Cn%C2%A0M%20README%5CnMM%20Rakefile%5CnA%20%20lib%2Fgit.rb%5CnM%20%20lib%2Fsimplegit.rb%5Cn%3F%3F%20LICENSE.txt%5Cn%22%7D"
+          >
+              <div>
+                
+              </div>
+              <div>
+                <div>
+<div><pre><code>$ <span>git</span> status -s
+ M README
+MM Rakefile
+A  lib/git.rb
+M  lib/simplegit.rb
+?? LICENSE.txt
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>上面的状态报告显示: <code>README</code> 文件在工作区已修改但尚未暂存，而 <code>lib/simplegit.rb</code> 文件已修改且已暂存。<code>Rakefile</code> 文件已修改，暂存后又作了修改，因此该文件的修改中既有已暂存的部分，又有未暂存的部分。</p>
+
+            </div>
+          </div>
+          
+        </div>
+<p>:
+:::</p>
+<p>Git 现在只告诉我们 readme.txt 被修改了，我们用 <code>git diff</code> 这个命令能看看具体修改了什么内容:</p>
+<div><pre><code>$ <span>git</span> <span>diff</span> readme.txt
+<span>diff</span> --git a/readme.txt b/readme.txt
+index 46d49bf<span>..</span>9247db6 <span>100644</span>
+--- a/readme.txt
++++ b/readme.txt
+@@ -1,2 +1,2 @@
+-Git is a version control system.
++Git is a distributed version control system.
+ Git is <span>free</span> software.
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p><code>git diff</code> 顾名思义就是查看 difference，显示的格式正是 Unix 通用的 diff 格式，可以从上面的命令输出看到，我们在第一行添加了一个 distributed 单词。</p>
+<p>知道了对 readme.txt 作了什么修改后，再把它提交到仓库就放心多了，提交修改和提交新文件是一样的两步，第一步是 <code>git add</code>:</p>
+<div><pre><code>$ <span>git</span> <span>add</span> readme.txt
+--no output --
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>同样没有任何输出。在执行第二步 <code>git commit</code> 之前，我们再运行 <code>git status</code> 看看当前仓库的状态:</p>
+<div><pre><code>$ <span>git</span> status
+On branch master
+Changes to be committed:
+  <span>(</span>use <span>"git reset HEAD &lt;file>..."</span> to unstage<span>)</span>
+
+    modified:   readme.txt
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p><code>git status</code> 告诉我们，将要被提交的修改包括 readme.txt，下一步，就可以放心地提交了:</p>
+<div><pre><code>$ <span>git</span> commit -m <span>"add distributed"</span>
+<span>[</span>master e475afc<span>]</span> <span>add</span> distributed
+ <span>1</span> <span>file</span> changed, <span>1</span> insertion<span>(</span>+<span>)</span>, <span>1</span> deletion<span>(</span>-<span>)</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>提交后，我们再用 <code>git status</code> 命令看看仓库的当前状态:</p>
+<div><pre><code>$ <span>git</span> status
+On branch master
+nothing to commit, working tree clean
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>Git 告诉我们当前没有需要提交的修改，而且，工作目录是干净(working tree clean)的。</p>
+<h2 id="小结"> 小结</h2>
+<ul>
+<li>
+<p>要随时掌握工作区的状态，使用 <code>git status</code> 命令。</p>
+</li>
+<li>
+<p>如果 <code>git status</code> 告诉您有文件被修改过，用 <code>git diff</code> 可以查看修改内容。</p>
+</li>
+</ul>
+</div>
+]]></content>
+    <author>
+      <name>廖雪峰</name>
+    </author>
+    <category term="Git"/>
+    <contributor>
+      <name>廖雪峰</name>
+    </contributor>
+    <rights>Copyright by 廖雪峰 Edited by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">服务器搭建</title>
     <id>http://qiqi.dreamagain.top/software/git/server/</id>
     <link href="http://qiqi.dreamagain.top/software/git/server/"/>
@@ -16950,115 +17062,6 @@ Checking connectivity<span>..</span>. done.
       <name>南辞</name>
     </contributor>
     <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
-    <title type="html">纵向查看</title>
-    <id>http://qiqi.dreamagain.top/software/git/status/</id>
-    <link href="http://qiqi.dreamagain.top/software/git/status/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
-    <content type="html"><![CDATA[<p>我们已经成功地添加并提交了一个 readme.txt 文件，继续修改 readme.txt 文件，改成如下内容:</p>
-<div><pre><code>Git is a distributed version control system.
-Git is free software.
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>现在，运行 <code>git status</code> 命令看看结果:</p>
-<div><pre><code>$ <span>git</span> status
-On branch master
-Changes not staged <span>for</span> commit:
-  <span>(</span>use <span>"git add &lt;file>..."</span> to update what will be committed<span>)</span>
-  <span>(</span>use <span>"git checkout -- &lt;file>..."</span> to discard changes <span>in</span> working directory<span>)</span>
-
-    modified:   readme.txt
-
-no changes added to commit <span>(</span>use <span>"git add"</span> and/or <span>"git commit -a"</span><span>)</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p><code>git status</code> 命令可以输出仓库当前的状态，上面的命令输出告诉我们，readme.txt 被修改过了，但还没有准备提交的修改。</p>
-<div><p>简介输出</p>
-<p><code>git status</code> 命令的输出十分详细，但其用语有些繁琐。Git 有一个选项可以帮您缩短状态命令的输出，这样可以以简洁的方式查看更改。如果您使用 <code>git status -s</code> 命令或 <code>git status --short</code> 命令，您将得到一种格式更为紧凑的输出。</p>
-<p>输出中有两栏，左栏指明了暂存区的状态，右栏指明了工作区的状态。</p>
-<p>新添加的未跟踪文件前面有 <code>??</code> 标记，新添加到暂存区中的文件前面有 <code>A</code> 标记，修改过的文件前面有 <code>M</code> 标记。</p>
-
-          <div
-            id="code-demo-5afacdea"
-           
-  
- data-title="%E6%A1%88%E4%BE%8B"
-
-            data-code="%7B%22sh%22%3A%22%24%20git%20status%20-s%5Cn%C2%A0M%20README%5CnMM%20Rakefile%5CnA%20%20lib%2Fgit.rb%5CnM%20%20lib%2Fsimplegit.rb%5Cn%3F%3F%20LICENSE.txt%5Cn%22%7D"
-          >
-              <div>
-                
-              </div>
-              <div>
-                <div>
-<div><pre><code>$ <span>git</span> status -s
- M README
-MM Rakefile
-A  lib/git.rb
-M  lib/simplegit.rb
-?? LICENSE.txt
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>上面的状态报告显示: <code>README</code> 文件在工作区已修改但尚未暂存，而 <code>lib/simplegit.rb</code> 文件已修改且已暂存。<code>Rakefile</code> 文件已修改，暂存后又作了修改，因此该文件的修改中既有已暂存的部分，又有未暂存的部分。</p>
-
-            </div>
-          </div>
-          
-        </div>
-<p>:
-:::</p>
-<p>Git 现在只告诉我们 readme.txt 被修改了，我们用 <code>git diff</code> 这个命令能看看具体修改了什么内容:</p>
-<div><pre><code>$ <span>git</span> <span>diff</span> readme.txt
-<span>diff</span> --git a/readme.txt b/readme.txt
-index 46d49bf<span>..</span>9247db6 <span>100644</span>
---- a/readme.txt
-+++ b/readme.txt
-@@ -1,2 +1,2 @@
--Git is a version control system.
-+Git is a distributed version control system.
- Git is <span>free</span> software.
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p><code>git diff</code> 顾名思义就是查看 difference，显示的格式正是 Unix 通用的 diff 格式，可以从上面的命令输出看到，我们在第一行添加了一个 distributed 单词。</p>
-<p>知道了对 readme.txt 作了什么修改后，再把它提交到仓库就放心多了，提交修改和提交新文件是一样的两步，第一步是 <code>git add</code>:</p>
-<div><pre><code>$ <span>git</span> <span>add</span> readme.txt
---no output --
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>同样没有任何输出。在执行第二步 <code>git commit</code> 之前，我们再运行 <code>git status</code> 看看当前仓库的状态:</p>
-<div><pre><code>$ <span>git</span> status
-On branch master
-Changes to be committed:
-  <span>(</span>use <span>"git reset HEAD &lt;file>..."</span> to unstage<span>)</span>
-
-    modified:   readme.txt
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p><code>git status</code> 告诉我们，将要被提交的修改包括 readme.txt，下一步，就可以放心地提交了:</p>
-<div><pre><code>$ <span>git</span> commit -m <span>"add distributed"</span>
-<span>[</span>master e475afc<span>]</span> <span>add</span> distributed
- <span>1</span> <span>file</span> changed, <span>1</span> insertion<span>(</span>+<span>)</span>, <span>1</span> deletion<span>(</span>-<span>)</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>提交后，我们再用 <code>git status</code> 命令看看仓库的当前状态:</p>
-<div><pre><code>$ <span>git</span> status
-On branch master
-nothing to commit, working tree clean
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>Git 告诉我们当前没有需要提交的修改，而且，工作目录是干净(working tree clean)的。</p>
-<h2 id="小结"> 小结</h2>
-<ul>
-<li>
-<p>要随时掌握工作区的状态，使用 <code>git status</code> 命令。</p>
-</li>
-<li>
-<p>如果 <code>git status</code> 告诉您有文件被修改过，用 <code>git diff</code> 可以查看修改内容。</p>
-</li>
-</ul>
-</div>
-]]></content>
-    <author>
-      <name>廖雪峰</name>
-    </author>
-    <category term="Git"/>
-    <contributor>
-      <name>廖雪峰</name>
-    </contributor>
-    <rights>Copyright by 廖雪峰 Edited by Mr.Hope</rights>
   </entry>
   <entry>
     <title type="html">标签管理</title>
@@ -17763,23 +17766,6 @@ command1 <span>||</span> command2
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
-    <title type="html">cat</title>
-    <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cat/</id>
-    <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cat/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="cat"> cat</h1>
-<p><code>cat</code> 命令用于显示一个文本文件的内容。</p>
-<p><code>cat - &gt;&gt; filename</code> 用于向一个现有文件的尾部追加内容。</p>
-]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
     <title type="html">clear</title>
     <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/clear/</id>
     <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/clear/"/>
@@ -17789,6 +17775,24 @@ command1 <span>||</span> command2
 <div><pre><code><span>clear</span>
 </code></pre>
 <div><span>1</span><br></div></div>]]></content>
+    <author>
+      <name>南辞</name>
+    </author>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
+    <title type="html">cp 命令</title>
+    <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cp/</id>
+    <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cp/"/>
+    <updated>2021-02-18T01:11:00.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="cp-命令"> cp 命令</h1>
+<p><code>cp</code> 命令用于复制文件。</p>
+<h2 id="参数"> 参数</h2>
+<p><code>-u</code> 参数只复制那些目标目录里面还不存在的文件，以及那些虽然存在、但是比源目录对应文件更陈旧的文件。</p>
+]]></content>
     <author>
       <name>南辞</name>
     </author>
@@ -17832,24 +17836,6 @@ $ <span>cut</span> file1.txt -d, -f1,3
 $ <span>cut</span> -f <span>1</span>-2,4-5 data.txt
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div>]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
-    <title type="html">cp 命令</title>
-    <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cp/</id>
-    <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cp/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="cp-命令"> cp 命令</h1>
-<p><code>cp</code> 命令用于复制文件。</p>
-<h2 id="参数"> 参数</h2>
-<p><code>-u</code> 参数只复制那些目标目录里面还不存在的文件，以及那些虽然存在、但是比源目录对应文件更陈旧的文件。</p>
-]]></content>
     <author>
       <name>南辞</name>
     </author>
@@ -18058,6 +18044,51 @@ ipsum dolor sit
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
+    <title type="html">file</title>
+    <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/file/</id>
+    <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/file/"/>
+    <updated>2021-02-18T01:11:00.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="file"> file</h1>
+<p><code>file</code> 命令用来某个文件的类型。</p>
+<div><pre><code>$ <span>file</span> index.html
+ index.html: HTML document, ASCII text
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>file 工具可以对所给的文件一行简短的介绍，它用文件后缀、头部信息和一些其他的线索来判断文件。您在检查一堆您不熟悉的文件时使用 find 非常方便:</p>
+<div><pre><code>$ <span>find</span> -exec <span>file</span> <span>{</span><span>}</span> <span>\</span><span>;</span>
+.:            directory
+./hanoi:      Perl script, ASCII text executable
+./.hanoi.swp: Vim swap file, version <span>7.3</span>
+./factorial:  Perl script, ASCII text executable
+./bits.c:     C source, ASCII text
+./bits:       ELF <span>32</span>-bit LSB executable, Intel <span>80386</span>, version <span>..</span>.
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div>]]></content>
+    <author>
+      <name>南辞</name>
+    </author>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
+    <title type="html">cat</title>
+    <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cat/</id>
+    <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/cat/"/>
+    <updated>2021-02-18T01:11:00.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="cat"> cat</h1>
+<p><code>cat</code> 命令用于显示一个文本文件的内容。</p>
+<p><code>cat - &gt;&gt; filename</code> 用于向一个现有文件的尾部追加内容。</p>
+]]></content>
+    <author>
+      <name>南辞</name>
+    </author>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
     <title type="html">find</title>
     <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/find/</id>
     <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/find/"/>
@@ -18117,75 +18148,6 @@ ipsum dolor sit
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
-    <title type="html">file</title>
-    <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/file/</id>
-    <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/file/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="file"> file</h1>
-<p><code>file</code> 命令用来某个文件的类型。</p>
-<div><pre><code>$ <span>file</span> index.html
- index.html: HTML document, ASCII text
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>file 工具可以对所给的文件一行简短的介绍，它用文件后缀、头部信息和一些其他的线索来判断文件。您在检查一堆您不熟悉的文件时使用 find 非常方便:</p>
-<div><pre><code>$ <span>find</span> -exec <span>file</span> <span>{</span><span>}</span> <span>\</span><span>;</span>
-.:            directory
-./hanoi:      Perl script, ASCII text executable
-./.hanoi.swp: Vim swap file, version <span>7.3</span>
-./factorial:  Perl script, ASCII text executable
-./bits.c:     C source, ASCII text
-./bits:       ELF <span>32</span>-bit LSB executable, Intel <span>80386</span>, version <span>..</span>.
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div>]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
-    <title type="html">fmt</title>
-    <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/fmt/</id>
-    <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/fmt/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="fmt"> fmt</h1>
-<p><code>fmt</code> 命令用于对文本指定样式。</p>
-<p>下面是 <code>example.txt</code> 的内容，是非常长的一行。</p>
-<div><pre><code>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-</code></pre>
-<div><span>1</span><br></div></div><p><code>fmt</code> 可以将其输出为每行 80 个字符。</p>
-<div><pre><code><span>cat</span> example.txt <span>|</span> <span>fmt</span> -w <span>20</span>
-Lorem ipsum
-dolor sit amet,
-consetetur
-sadipscing elitr,
-<span>sed</span> diam nonumy
-eirmod tempor
-invidunt ut labore
-et dolore magna
-aliquyam erat, <span>sed</span>
-diam voluptua. At
-vero eos et
-accusam et justo
-duo dolores et ea
-rebum. Stet clita
-kasd gubergren,
-no sea takimata
-sanctus est Lorem
-ipsum dolor sit
-amet.
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div>]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
     <title type="html">grep</title>
     <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/grep/</id>
     <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/grep/"/>
@@ -18228,6 +18190,47 @@ _krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/f
 $ <span>ps</span> <span>|</span> <span>grep</span> <span>vim</span> <span>|</span> <span>grep</span> -v <span>grep</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br></div></div>]]></content>
+    <author>
+      <name>南辞</name>
+    </author>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
+    <title type="html">fmt</title>
+    <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/fmt/</id>
+    <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/fmt/"/>
+    <updated>2021-02-18T01:11:00.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="fmt"> fmt</h1>
+<p><code>fmt</code> 命令用于对文本指定样式。</p>
+<p>下面是 <code>example.txt</code> 的内容，是非常长的一行。</p>
+<div><pre><code>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+</code></pre>
+<div><span>1</span><br></div></div><p><code>fmt</code> 可以将其输出为每行 80 个字符。</p>
+<div><pre><code><span>cat</span> example.txt <span>|</span> <span>fmt</span> -w <span>20</span>
+Lorem ipsum
+dolor sit amet,
+consetetur
+sadipscing elitr,
+<span>sed</span> diam nonumy
+eirmod tempor
+invidunt ut labore
+et dolore magna
+aliquyam erat, <span>sed</span>
+diam voluptua. At
+vero eos et
+accusam et justo
+duo dolores et ea
+rebum. Stet clita
+kasd gubergren,
+no sea takimata
+sanctus est Lorem
+ipsum dolor sit
+amet.
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div>]]></content>
     <author>
       <name>南辞</name>
     </author>
@@ -18832,14 +18835,16 @@ d
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
-    <title type="html">which</title>
-    <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/which/</id>
-    <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/which/"/>
+    <title type="html">who</title>
+    <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/who/</id>
+    <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/who/"/>
     <updated>2021-02-18T01:11:00.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="which"> which</h1>
-<p><code>which</code> 命令根据 <code>PATH</code> 环境变量指定的顺序，返回最早发现某个命令的位置。即不指定路径时，实际执行的命令的完整路径。</p>
-<div><pre><code>$ <span>which</span> node
-/usr/bin/node
+    <content type="html"><![CDATA[<h1 id="who"> who</h1>
+<p><code>who</code> 命令显示已经登录的用户。</p>
+<h2 id="参数"> 参数</h2>
+<p><code>-b</code> 参数显示上一次系统启动的时间。</p>
+<div><pre><code>$ <span>who</span> -b
+system boot  <span>2017</span>-06-20 <span>17</span>:41
 </code></pre>
 <div><span>1</span><br><span>2</span><br></div></div>]]></content>
     <author>
@@ -18851,16 +18856,14 @@ d
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
-    <title type="html">who</title>
-    <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/who/</id>
-    <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/who/"/>
+    <title type="html">which</title>
+    <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/which/</id>
+    <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/which/"/>
     <updated>2021-02-18T01:11:00.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="who"> who</h1>
-<p><code>who</code> 命令显示已经登录的用户。</p>
-<h2 id="参数"> 参数</h2>
-<p><code>-b</code> 参数显示上一次系统启动的时间。</p>
-<div><pre><code>$ <span>who</span> -b
-system boot  <span>2017</span>-06-20 <span>17</span>:41
+    <content type="html"><![CDATA[<h1 id="which"> which</h1>
+<p><code>which</code> 命令根据 <code>PATH</code> 环境变量指定的顺序，返回最早发现某个命令的位置。即不指定路径时，实际执行的命令的完整路径。</p>
+<div><pre><code>$ <span>which</span> node
+/usr/bin/node
 </code></pre>
 <div><span>1</span><br><span>2</span><br></div></div>]]></content>
     <author>
@@ -22618,105 +22621,6 @@ keyword
     <rights>本教程采用&lt;a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh"&gt;知识共享 署名-相同方式共享 3.0协议&lt;/a&gt;</rights>
   </entry>
   <entry>
-    <title type="html">Bash 简介</title>
-    <id>http://qiqi.dreamagain.top/software/linux/bash/intro/</id>
-    <link href="http://qiqi.dreamagain.top/software/linux/bash/intro/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
-    <summary type="html"><![CDATA[<p>Bash 是 Unix 系统和 Linux 系统的一种 Shell(命令行环境)，是目前绝大多数 Linux 发行版的默认 Shell。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>Bash 是 Unix 系统和 Linux 系统的一种 Shell(命令行环境)，是目前绝大多数 Linux 发行版的默认 Shell。</p>
-
-<h2 id="shell-的含义"> Shell 的含义</h2>
-<p>学习 Bash，首先需要理解 Shell 是什么。Shell 这个单词的原意是“外壳”，跟 kernel(内核)相对应，比喻内核外面的一层，即用户跟内核交互的对话界面。</p>
-<p>具体来说，Shell 这个词有多种含义。</p>
-<p>首先，Shell 是一个程序，提供一个与用户对话的环境。这个环境只有一个命令提示符，让用户从键盘输入命令，所以又称为命令行环境(commandline，简写为 CLI)。Shell 接收到用户输入的命令，将命令送入操作系统执行，并将结果返回给用户。本书中，除非特别指明，Shell 指的就是命令行环境。</p>
-<p>其次，Shell 是一个命令解释器，解释用户输入的命令。它支持变量、条件判断、循环操作等语法，所以用户可以用 Shell 命令写出各种小程序，又称为脚本(script)。这些脚本都通过 Shell 的解释执行，而不通过编译。</p>
-<p>最后，Shell 是一个工具箱，提供了各种小工具，供用户方便地使用操作系统的功能。</p>
-<h2 id="shell-的种类"> Shell 的种类</h2>
-<p>Shell 有很多种，只要能给用户提供命令行环境的程序，都可以看作是 Shell。</p>
-<p>历史上，主要的 Shell 有下面这些。</p>
-<ul>
-<li>Bourne Shell(sh)</li>
-<li>Bourne Again shell(bash)</li>
-<li>C Shell(csh)</li>
-<li>TENEX C Shell(tcsh)</li>
-<li>Korn shell(ksh)</li>
-<li>Z Shell(zsh)</li>
-<li>Friendly Interactive Shell(fish)</li>
-</ul>
-<p>Bash 是目前最常用的 Shell，除非特别指明，下文的 Shell 和 Bash 当作同义词使用，可以互换。</p>
-<p>下面的命令可以查看当前运行的 Shell。</p>
-<div><pre><code>$ <span>echo</span> <span>$SHELL</span>
-/bin/bash
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>下面的命令可以查看当前的 Linux 系统安装的所有 Shell。</p>
-<div><pre><code><span>cat</span> /etc/shells
-</code></pre>
-<div><span>1</span><br></div></div><p>上面两个命令中，<code>$</code> 是命令行环境的提示符，用户只需要输入提示符后面的内容。</p>
-<p>Linux 允许每个用户使用不同的 Shell，用户的默认 Shell 一般都是 Bash，或者与 Bash 兼容。</p>
-<h2 id="命令行环境"> 命令行环境</h2>
-<h3 id="终端模拟器"> 终端模拟器</h3>
-<p>如果是不带有图形环境的 Linux 系统(比如专用于服务器的系统)，启动后就直接是命令行环境。</p>
-<p>不过，现在大部分的 Linux 发行版，尤其是针对普通用户的发行版，都是图形环境。用户登录系统后，自动进入图形环境，需要自己启动终端模拟器，才能进入命令行环境。</p>
-<p>所谓“终端模拟器”(terminal emulator)就是一个模拟命令行窗口的程序，让用户在一个窗口中使用命令行环境，并且提供各种附加功能，比如调整颜色、字体大小、行距等等。</p>
-<p>不同 Linux 发行版(准确地说是不同的桌面环境)带有的终端程序是不一样的，比如 KDE 桌面环境的终端程序是 konsole，Gnome 桌面环境的终端程序是 gnome-terminal，用户也可以安装第三方的终端程序。所有终端程序，尽管名字不同，基本功能都是一样的，就是让用户可以进入命令行环境，使用 Shell。</p>
-<h3 id="命令行提示符"> 命令行提示符</h3>
-<p>进入命令行环境以后，用户会看到 Shell 的提示符。提示符往往是一串前缀，最后以一个美元符号 <code>$</code> 结尾，用户可以在这个符号后面输入各种命令。</p>
-<div><pre><code><span>[</span>user@hostname<span>]</span> $
-</code></pre>
-<div><span>1</span><br></div></div><p>上面例子中，完整的提示符是 <code>[user@hostname] $</code>，其中前缀是用户名(<code>user</code>)加上 <code>@</code>，再加主机名(<code>hostname</code>)。比如，用户名是 <code>bill</code>，主机名是 <code>home-machine</code>，前缀就是 <code>bill@home-machine</code>。</p>
-<p>注意，根用户(root)的提示符，不以美元符号 (<code>$</code>) 结尾，而以井号 (<code>#</code>) 结尾，用来提醒用户，现在具有根权限，可以执行各种操作，务必小心，不要出现误操作。这个符号是可以自己定义的，详见《命令提示符》一章。</p>
-<p>为了简洁，后文的命令行提示符都只使用 <code>$</code> 表示。</p>
-<h3 id="进入和退出方法"> 进入和退出方法</h3>
-<p>进入命令行环境以后，一般就已经打开 Bash 了。如果您的 Shell 不是 Bash，可以输入 <code>bash</code> 命令启动 Bash。</p>
-<div><pre><code><span>bash</span>
-</code></pre>
-<div><span>1</span><br></div></div><p>退出 Bash 环境，可以使用 <code>exit</code> 命令，也可以同时按下 <code>Ctrl + d</code>。</p>
-<div><pre><code><span>exit</span>
-</code></pre>
-<div><span>1</span><br></div></div><p>Bash 的基本用法就是在命令行输入各种命令，非常直观。作为练习，可以试着输入 <code>pwd</code> 命令。按下回车键，就会显示当前所在的目录。</p>
-<div><pre><code>$ <span>pwd</span>
-/home/me
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>如果不小心输入了 <code>pwe</code>，会返回一个提示，表示输入出错，没有对应的可执行程序。</p>
-<div><pre><code>$ pwe
-bash: pwe: 未找到命令
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="shell-和-bash-的历史"> Shell 和 Bash 的历史</h2>
-<p>Shell 伴随着 Unix 系统的诞生而诞生。</p>
-<p>1969 年，Ken Thompson 和 Dennis Ritchie 开发了第一版的 Unix。</p>
-<p>1971 年，Ken Thompson 编写了最初的 Shell，称为 Thompson shell，程序名是 <code>sh</code>，方便用户使用 Unix。</p>
-<p>1973 年至 1975 年间，John R. Mashey 扩展了最初的 Thompson shell，添加了编程功能，使得 Shell 成为一种编程语言。这个版本的 Shell 称为 Mashey shell。</p>
-<p>1976 年，Stephen Bourne 结合 Mashey shell 的功能，重写一个新的 Shell，称为 Bourne shell。</p>
-<p>1978 年，加州大学伯克利分校的 Bill Joy 开发了 C shell，为 Shell 提供 C 语言的语法，程序名是 <code>csh</code>。它是第一个真正替代 <code>sh</code> 的 UNIX shell，被合并到 Berkeley UNIX 的 2BSD 版本中。</p>
-<p>1979 年，UNIX 第七版发布，内置了 Bourne Shell，导致它成为 Unix 的默认 Shell。注意，Thompson shell、Mashey shell 和 Bourne shell 都是贝尔实验室的产品，程序名都是 <code>sh</code>。对于用户来说，它们是同一个东西，只是底层代码不同而已。</p>
-<p>1983 年，David Korn 开发了 Korn shell，程序名是 <code>ksh</code>。</p>
-<p>1985 年，Richard Stallman 成立了自由软件基金会(FSF)，由于 Shell 的版权属于贝尔公司，所以他决定写一个自由版权的、使用 GNU 许可证的 Shell 程序，避免 Unix 的版权争议。</p>
-<p>1988 年，自由软件基金会的第一个付薪程序员 Brian Fox 写了一个 Shell，功能基本上是 Bourne shell 的克隆，叫做 Bourne-Again SHell，简称 Bash，程序名为 <code>bash</code>，任何人都可以免费使用。后来，它逐渐成为 Linux 系统的标准 Shell。</p>
-<p>1989 年，Bash 发布 1.0 版。</p>
-<p>1996 年，Bash 发布 2.0 版。</p>
-<p>2004 年，Bash 发布 3.0 版。</p>
-<p>2009 年，Bash 发布 4.0 版。</p>
-<p>2019 年，Bash 发布 5.0 版。</p>
-<p>用户可以通过 <code>bash</code> 命令的 <code>--version</code> 参数或者环境变量 <code>$BASH_VERSION</code>，查看本机的 Bash 版本。</p>
-<div><pre><code>$ <span>bash</span> --version
-GNU bash，版本 <span>5.0</span>.3<span>(</span><span>1</span><span>)</span>-release <span>(</span>x86_64-pc-linux-gnu<span>)</span>
-
-<span># 或者</span>
-$ <span>echo</span> <span>$BASH_VERSION</span>
-<span>5.0</span>.3<span>(</span><span>1</span><span>)</span>-release
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div>]]></content>
-    <author>
-      <name>阮一峰</name>
-    </author>
-    <category term="Linux"/>
-    <contributor>
-      <name>阮一峰</name>
-    </contributor>
-    <rights>本教程采用&lt;a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh"&gt;知识共享 署名-相同方式共享 3.0协议&lt;/a&gt;</rights>
-  </entry>
-  <entry>
     <title type="html">循环</title>
     <id>http://qiqi.dreamagain.top/software/linux/bash/loop/</id>
     <link href="http://qiqi.dreamagain.top/software/linux/bash/loop/"/>
@@ -22973,6 +22877,105 @@ Hi, <span>until</span> looping <span>..</span>.
 <li><a href="https://linuxhint.com/bash_select_command/" target="_blank" rel="noopener noreferrer">Bash Select Command</a>, Fahmida Yesmin</li>
 </ul>
 ]]></content>
+    <author>
+      <name>阮一峰</name>
+    </author>
+    <category term="Linux"/>
+    <contributor>
+      <name>阮一峰</name>
+    </contributor>
+    <rights>本教程采用&lt;a href="https://creativecommons.org/licenses/by-sa/3.0/deed.zh"&gt;知识共享 署名-相同方式共享 3.0协议&lt;/a&gt;</rights>
+  </entry>
+  <entry>
+    <title type="html">Bash 简介</title>
+    <id>http://qiqi.dreamagain.top/software/linux/bash/intro/</id>
+    <link href="http://qiqi.dreamagain.top/software/linux/bash/intro/"/>
+    <updated>2021-02-18T01:11:00.000Z</updated>
+    <summary type="html"><![CDATA[<p>Bash 是 Unix 系统和 Linux 系统的一种 Shell(命令行环境)，是目前绝大多数 Linux 发行版的默认 Shell。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>Bash 是 Unix 系统和 Linux 系统的一种 Shell(命令行环境)，是目前绝大多数 Linux 发行版的默认 Shell。</p>
+
+<h2 id="shell-的含义"> Shell 的含义</h2>
+<p>学习 Bash，首先需要理解 Shell 是什么。Shell 这个单词的原意是“外壳”，跟 kernel(内核)相对应，比喻内核外面的一层，即用户跟内核交互的对话界面。</p>
+<p>具体来说，Shell 这个词有多种含义。</p>
+<p>首先，Shell 是一个程序，提供一个与用户对话的环境。这个环境只有一个命令提示符，让用户从键盘输入命令，所以又称为命令行环境(commandline，简写为 CLI)。Shell 接收到用户输入的命令，将命令送入操作系统执行，并将结果返回给用户。本书中，除非特别指明，Shell 指的就是命令行环境。</p>
+<p>其次，Shell 是一个命令解释器，解释用户输入的命令。它支持变量、条件判断、循环操作等语法，所以用户可以用 Shell 命令写出各种小程序，又称为脚本(script)。这些脚本都通过 Shell 的解释执行，而不通过编译。</p>
+<p>最后，Shell 是一个工具箱，提供了各种小工具，供用户方便地使用操作系统的功能。</p>
+<h2 id="shell-的种类"> Shell 的种类</h2>
+<p>Shell 有很多种，只要能给用户提供命令行环境的程序，都可以看作是 Shell。</p>
+<p>历史上，主要的 Shell 有下面这些。</p>
+<ul>
+<li>Bourne Shell(sh)</li>
+<li>Bourne Again shell(bash)</li>
+<li>C Shell(csh)</li>
+<li>TENEX C Shell(tcsh)</li>
+<li>Korn shell(ksh)</li>
+<li>Z Shell(zsh)</li>
+<li>Friendly Interactive Shell(fish)</li>
+</ul>
+<p>Bash 是目前最常用的 Shell，除非特别指明，下文的 Shell 和 Bash 当作同义词使用，可以互换。</p>
+<p>下面的命令可以查看当前运行的 Shell。</p>
+<div><pre><code>$ <span>echo</span> <span>$SHELL</span>
+/bin/bash
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>下面的命令可以查看当前的 Linux 系统安装的所有 Shell。</p>
+<div><pre><code><span>cat</span> /etc/shells
+</code></pre>
+<div><span>1</span><br></div></div><p>上面两个命令中，<code>$</code> 是命令行环境的提示符，用户只需要输入提示符后面的内容。</p>
+<p>Linux 允许每个用户使用不同的 Shell，用户的默认 Shell 一般都是 Bash，或者与 Bash 兼容。</p>
+<h2 id="命令行环境"> 命令行环境</h2>
+<h3 id="终端模拟器"> 终端模拟器</h3>
+<p>如果是不带有图形环境的 Linux 系统(比如专用于服务器的系统)，启动后就直接是命令行环境。</p>
+<p>不过，现在大部分的 Linux 发行版，尤其是针对普通用户的发行版，都是图形环境。用户登录系统后，自动进入图形环境，需要自己启动终端模拟器，才能进入命令行环境。</p>
+<p>所谓“终端模拟器”(terminal emulator)就是一个模拟命令行窗口的程序，让用户在一个窗口中使用命令行环境，并且提供各种附加功能，比如调整颜色、字体大小、行距等等。</p>
+<p>不同 Linux 发行版(准确地说是不同的桌面环境)带有的终端程序是不一样的，比如 KDE 桌面环境的终端程序是 konsole，Gnome 桌面环境的终端程序是 gnome-terminal，用户也可以安装第三方的终端程序。所有终端程序，尽管名字不同，基本功能都是一样的，就是让用户可以进入命令行环境，使用 Shell。</p>
+<h3 id="命令行提示符"> 命令行提示符</h3>
+<p>进入命令行环境以后，用户会看到 Shell 的提示符。提示符往往是一串前缀，最后以一个美元符号 <code>$</code> 结尾，用户可以在这个符号后面输入各种命令。</p>
+<div><pre><code><span>[</span>user@hostname<span>]</span> $
+</code></pre>
+<div><span>1</span><br></div></div><p>上面例子中，完整的提示符是 <code>[user@hostname] $</code>，其中前缀是用户名(<code>user</code>)加上 <code>@</code>，再加主机名(<code>hostname</code>)。比如，用户名是 <code>bill</code>，主机名是 <code>home-machine</code>，前缀就是 <code>bill@home-machine</code>。</p>
+<p>注意，根用户(root)的提示符，不以美元符号 (<code>$</code>) 结尾，而以井号 (<code>#</code>) 结尾，用来提醒用户，现在具有根权限，可以执行各种操作，务必小心，不要出现误操作。这个符号是可以自己定义的，详见《命令提示符》一章。</p>
+<p>为了简洁，后文的命令行提示符都只使用 <code>$</code> 表示。</p>
+<h3 id="进入和退出方法"> 进入和退出方法</h3>
+<p>进入命令行环境以后，一般就已经打开 Bash 了。如果您的 Shell 不是 Bash，可以输入 <code>bash</code> 命令启动 Bash。</p>
+<div><pre><code><span>bash</span>
+</code></pre>
+<div><span>1</span><br></div></div><p>退出 Bash 环境，可以使用 <code>exit</code> 命令，也可以同时按下 <code>Ctrl + d</code>。</p>
+<div><pre><code><span>exit</span>
+</code></pre>
+<div><span>1</span><br></div></div><p>Bash 的基本用法就是在命令行输入各种命令，非常直观。作为练习，可以试着输入 <code>pwd</code> 命令。按下回车键，就会显示当前所在的目录。</p>
+<div><pre><code>$ <span>pwd</span>
+/home/me
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>如果不小心输入了 <code>pwe</code>，会返回一个提示，表示输入出错，没有对应的可执行程序。</p>
+<div><pre><code>$ pwe
+bash: pwe: 未找到命令
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="shell-和-bash-的历史"> Shell 和 Bash 的历史</h2>
+<p>Shell 伴随着 Unix 系统的诞生而诞生。</p>
+<p>1969 年，Ken Thompson 和 Dennis Ritchie 开发了第一版的 Unix。</p>
+<p>1971 年，Ken Thompson 编写了最初的 Shell，称为 Thompson shell，程序名是 <code>sh</code>，方便用户使用 Unix。</p>
+<p>1973 年至 1975 年间，John R. Mashey 扩展了最初的 Thompson shell，添加了编程功能，使得 Shell 成为一种编程语言。这个版本的 Shell 称为 Mashey shell。</p>
+<p>1976 年，Stephen Bourne 结合 Mashey shell 的功能，重写一个新的 Shell，称为 Bourne shell。</p>
+<p>1978 年，加州大学伯克利分校的 Bill Joy 开发了 C shell，为 Shell 提供 C 语言的语法，程序名是 <code>csh</code>。它是第一个真正替代 <code>sh</code> 的 UNIX shell，被合并到 Berkeley UNIX 的 2BSD 版本中。</p>
+<p>1979 年，UNIX 第七版发布，内置了 Bourne Shell，导致它成为 Unix 的默认 Shell。注意，Thompson shell、Mashey shell 和 Bourne shell 都是贝尔实验室的产品，程序名都是 <code>sh</code>。对于用户来说，它们是同一个东西，只是底层代码不同而已。</p>
+<p>1983 年，David Korn 开发了 Korn shell，程序名是 <code>ksh</code>。</p>
+<p>1985 年，Richard Stallman 成立了自由软件基金会(FSF)，由于 Shell 的版权属于贝尔公司，所以他决定写一个自由版权的、使用 GNU 许可证的 Shell 程序，避免 Unix 的版权争议。</p>
+<p>1988 年，自由软件基金会的第一个付薪程序员 Brian Fox 写了一个 Shell，功能基本上是 Bourne shell 的克隆，叫做 Bourne-Again SHell，简称 Bash，程序名为 <code>bash</code>，任何人都可以免费使用。后来，它逐渐成为 Linux 系统的标准 Shell。</p>
+<p>1989 年，Bash 发布 1.0 版。</p>
+<p>1996 年，Bash 发布 2.0 版。</p>
+<p>2004 年，Bash 发布 3.0 版。</p>
+<p>2009 年，Bash 发布 4.0 版。</p>
+<p>2019 年，Bash 发布 5.0 版。</p>
+<p>用户可以通过 <code>bash</code> 命令的 <code>--version</code> 参数或者环境变量 <code>$BASH_VERSION</code>，查看本机的 Bash 版本。</p>
+<div><pre><code>$ <span>bash</span> --version
+GNU bash，版本 <span>5.0</span>.3<span>(</span><span>1</span><span>)</span>-release <span>(</span>x86_64-pc-linux-gnu<span>)</span>
+
+<span># 或者</span>
+$ <span>echo</span> <span>$BASH_VERSION</span>
+<span>5.0</span>.3<span>(</span><span>1</span><span>)</span>-release
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div>]]></content>
     <author>
       <name>阮一峰</name>
     </author>
@@ -27647,6 +27650,101 @@ Linux 系统有良好的可移植性，它几乎支持所有的 CPU 平台，这
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
+    <title type="html">网络服务器相关</title>
+    <id>http://qiqi.dreamagain.top/software/linux/ubuntu/webserver/</id>
+    <link href="http://qiqi.dreamagain.top/software/linux/ubuntu/webserver/"/>
+    <updated>2021-02-18T01:11:00.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="网络服务器相关"> 网络服务器相关</h1>
+<h2 id="ftp"> ftp</h2>
+<h3 id="vsftpd"> vsftpd</h3>
+<ul>
+<li>
+<p>安装</p>
+<div><pre><code><span>apt-get</span> <span>install</span> vsftpd <span>ftp</span>
+</code></pre>
+<div><span>1</span><br></div></div></li>
+<li>
+<p>配置</p>
+<div><pre><code><span>vim</span> /etc/vsftpd.conf
+</code></pre>
+<div><span>1</span><br></div></div><p>至少要更改:</p>
+<div><pre><code><span>write_enable</span><span><span>=</span>YES</span>
+<span>utf8_filesystem</span><span><span>=</span>YES</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div></li>
+</ul>
+<h2 id="nginx"> Nginx</h2>
+<ul>
+<li>
+<p>安装</p>
+<div><pre><code><span>sudo</span> <span>apt-get</span> <span>install</span> nginx
+</code></pre>
+<div><span>1</span><br></div></div><p>Nginx 默认安装在 <code>/etc/nginx</code> 目录下</p>
+</li>
+<li>
+<p>配置</p>
+<p>配置文件为 <code>nginx.conf</code>。</p>
+<p>默认站点配置文件在 <code>/etc/nginx/sites-available/default</code></p>
+<p>为了使得 Nginx 能使用 PHP，需要配置</p>
+<div><pre><code>
+<span>location</span> <span>~</span> \<span>.</span>php$ <span>{</span>
+    <span>root</span>           <span>/</span>var<span>/</span>www<span>/</span>html<span>;</span>
+    <span># 配置给 socks 应该可行，还在研究中</span>
+    <span>fastcgi_pass</span>   <span>127.0</span><span>.0</span><span>.1</span><span>:</span><span>9000</span><span>;</span>
+    <span>fastcgi_index</span>  <span>index</span><span>.</span>php<span>;</span>
+    <span>fastcgi_param</span>  SCRIPT_FILENAME  <span>$document_root</span><span>$fastcgi_script_name</span><span>;</span>
+    <span>include</span>        fastcgi_params<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div></li>
+</ul>
+<h2 id="php"> PHP</h2>
+<div><pre><code><span># Apache</span>
+<span>sudo</span> <span>apt-get</span> <span>install</span> php
+
+<span># Ngnix</span>
+<span>sudo</span> <span>apt-get</span> <span>install</span> php-fpm
+
+<span># MySQL</span>
+<span>sudo</span> <span>apt-get</span> <span>install</span> php-mysql
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><h2 id="mysql"> MySQL</h2>
+<h3 id="安装"> 安装</h3>
+<div><pre><code><span>wget</span> https://dev.mysql.com/get/mysql-apt-config_0.8.14-1_all.deb
+<span>sudo</span> dpkg -i mysql-apt-config_0.8.14-1_all.deb
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>配置版本(一般是 5.7)后安装</p>
+<div><pre><code><span>sudo</span> <span>apt-get</span> <span>install</span> mysql-server
+</code></pre>
+<div><span>1</span><br></div></div><p>之后重启，完成配置</p>
+<div><pre><code><span>sudo</span> <span>service</span> mysql restart
+mysql -u root -p
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="nmp"> NMP</h2>
+<p>需要对 Nginx 的配置文件进行修改: 主要改动的目标是把 Nginx 代理端口转发给 php-fpm。</p>
+<p>首先配置 index:</p>
+<div><pre><code><span>index</span> <span>index</span><span>.</span>php <span>index</span><span>.</span>html<span>;</span>
+</code></pre>
+<div><span>1</span><br></div></div><p>需要注意的是，Nginx 将端口转发给 php 默认的 9000 端口。而通过 apt-get 安装的 php 默认使用本地 sock 文件通信，需要对 php 的配置进行修改。要修改的文件位于: <code>/etc/php/7.2/fpm/pool.d/www.conf</code>，将</p>
+<div><pre><code><span>listen</span> <span><span>=</span> /run/php/php7.0-fpm.sock</span>
+</code></pre>
+<div><span>1</span><br></div></div><p>改成:</p>
+<div><pre><code><span>listen</span> <span><span>=</span> 127.0.0.1:9000</span>
+</code></pre>
+<div><span>1</span><br></div></div><div><p>提示</p>
+<p>如果报了 permission limitted 的错误，说明 php 没法访问 html 文件夹，修改配置的 html 文件夹权限即可。</p>
+</div>
+]]></content>
+    <author>
+      <name>南辞</name>
+    </author>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <published>2019-11-22T00:00:00.000Z</published>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
     <title type="html">Nginx</title>
     <id>http://qiqi.dreamagain.top/software/nginx/</id>
     <link href="http://qiqi.dreamagain.top/software/nginx/"/>
@@ -27782,101 +27880,6 @@ Linux 系统有良好的可移植性，它几乎支持所有的 CPU 平台，这
       <name>南辞</name>
     </contributor>
     <published>2019-12-13T00:00:00.000Z</published>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
-    <title type="html">网络服务器相关</title>
-    <id>http://qiqi.dreamagain.top/software/linux/ubuntu/webserver/</id>
-    <link href="http://qiqi.dreamagain.top/software/linux/ubuntu/webserver/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="网络服务器相关"> 网络服务器相关</h1>
-<h2 id="ftp"> ftp</h2>
-<h3 id="vsftpd"> vsftpd</h3>
-<ul>
-<li>
-<p>安装</p>
-<div><pre><code><span>apt-get</span> <span>install</span> vsftpd <span>ftp</span>
-</code></pre>
-<div><span>1</span><br></div></div></li>
-<li>
-<p>配置</p>
-<div><pre><code><span>vim</span> /etc/vsftpd.conf
-</code></pre>
-<div><span>1</span><br></div></div><p>至少要更改:</p>
-<div><pre><code><span>write_enable</span><span><span>=</span>YES</span>
-<span>utf8_filesystem</span><span><span>=</span>YES</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div></li>
-</ul>
-<h2 id="nginx"> Nginx</h2>
-<ul>
-<li>
-<p>安装</p>
-<div><pre><code><span>sudo</span> <span>apt-get</span> <span>install</span> nginx
-</code></pre>
-<div><span>1</span><br></div></div><p>Nginx 默认安装在 <code>/etc/nginx</code> 目录下</p>
-</li>
-<li>
-<p>配置</p>
-<p>配置文件为 <code>nginx.conf</code>。</p>
-<p>默认站点配置文件在 <code>/etc/nginx/sites-available/default</code></p>
-<p>为了使得 Nginx 能使用 PHP，需要配置</p>
-<div><pre><code>
-<span>location</span> <span>~</span> \<span>.</span>php$ <span>{</span>
-    <span>root</span>           <span>/</span>var<span>/</span>www<span>/</span>html<span>;</span>
-    <span># 配置给 socks 应该可行，还在研究中</span>
-    <span>fastcgi_pass</span>   <span>127.0</span><span>.0</span><span>.1</span><span>:</span><span>9000</span><span>;</span>
-    <span>fastcgi_index</span>  <span>index</span><span>.</span>php<span>;</span>
-    <span>fastcgi_param</span>  SCRIPT_FILENAME  <span>$document_root</span><span>$fastcgi_script_name</span><span>;</span>
-    <span>include</span>        fastcgi_params<span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div></li>
-</ul>
-<h2 id="php"> PHP</h2>
-<div><pre><code><span># Apache</span>
-<span>sudo</span> <span>apt-get</span> <span>install</span> php
-
-<span># Ngnix</span>
-<span>sudo</span> <span>apt-get</span> <span>install</span> php-fpm
-
-<span># MySQL</span>
-<span>sudo</span> <span>apt-get</span> <span>install</span> php-mysql
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><h2 id="mysql"> MySQL</h2>
-<h3 id="安装"> 安装</h3>
-<div><pre><code><span>wget</span> https://dev.mysql.com/get/mysql-apt-config_0.8.14-1_all.deb
-<span>sudo</span> dpkg -i mysql-apt-config_0.8.14-1_all.deb
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>配置版本(一般是 5.7)后安装</p>
-<div><pre><code><span>sudo</span> <span>apt-get</span> <span>install</span> mysql-server
-</code></pre>
-<div><span>1</span><br></div></div><p>之后重启，完成配置</p>
-<div><pre><code><span>sudo</span> <span>service</span> mysql restart
-mysql -u root -p
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="nmp"> NMP</h2>
-<p>需要对 Nginx 的配置文件进行修改: 主要改动的目标是把 Nginx 代理端口转发给 php-fpm。</p>
-<p>首先配置 index:</p>
-<div><pre><code><span>index</span> <span>index</span><span>.</span>php <span>index</span><span>.</span>html<span>;</span>
-</code></pre>
-<div><span>1</span><br></div></div><p>需要注意的是，Nginx 将端口转发给 php 默认的 9000 端口。而通过 apt-get 安装的 php 默认使用本地 sock 文件通信，需要对 php 的配置进行修改。要修改的文件位于: <code>/etc/php/7.2/fpm/pool.d/www.conf</code>，将</p>
-<div><pre><code><span>listen</span> <span><span>=</span> /run/php/php7.0-fpm.sock</span>
-</code></pre>
-<div><span>1</span><br></div></div><p>改成:</p>
-<div><pre><code><span>listen</span> <span><span>=</span> 127.0.0.1:9000</span>
-</code></pre>
-<div><span>1</span><br></div></div><div><p>提示</p>
-<p>如果报了 permission limitted 的错误，说明 php 没法访问 html 文件夹，修改配置的 html 文件夹权限即可。</p>
-</div>
-]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <published>2019-11-22T00:00:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -28173,79 +28176,16 @@ mysql -u root -p
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
-    <title type="html">软件教程</title>
-    <id>http://qiqi.dreamagain.top/software/</id>
-    <link href="http://qiqi.dreamagain.top/software/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="代码编辑器"> 代码编辑器</h2>
-<ul>
-<li><a href="./editor.html">编辑器介绍</a></li>
-</ul>
-<h2 id="团队协作"> 团队协作</h2>
-<p>开发项目的代码版本管理以及多人协作使用 Git 软件</p>
-<ul>
-<li>
-<p><a href="./git/">Git 教程</a></p>
-</li>
-<li>
-<p><a href="./git/github/">GitHub 介绍</a></p>
-</li>
-</ul>
-<h2 id="浏览器"> 浏览器</h2>
-<p>在开发中，调试网页推荐使用 Chrome。</p>
-<ul>
-<li><a href="./Chrome/">Chrome 介绍</a></li>
-</ul>
-<h2 id="后端"> 后端</h2>
-<h3 id="http-server"> Http Server</h3>
-<p>网站已经停止使用 Apache Lounge 编译的 httpd Apache。目前迁移到更加轻量，并发性能更好的 Nginx 上。</p>
-<ul>
-<li>
-<p><a href="./Apache.html">Apache</a> <i>Not supported content</i></p>
-</li>
-<li>
-<p><a href="./nginx.html">Nginx</a></p>
-</li>
-</ul>
-<h3 id="抓包与-api-调试"> 抓包与 API 调试</h3>
-<ul>
-<li><a href="./postman.html">Postman</a></li>
-</ul>
-<h2 id="工具软件"> 工具软件</h2>
-<ul>
-<li><a href="./tool/">查看详情</a></li>
-</ul>
-<h2 id="手机-app"> 手机 APP</h2>
-<h3 id="w3cschool"> W3CSchool</h3>
-<p>W3CSchool 网站出品的 APP，可以在手机上查看网站所整理的各语言的教程。</p>
-<div><p>P.S.</p>
-<p>会员没什么用别买。</p>
-</div>
-<h3 id="sololearn"> soloLearn</h3>
-<p>一个代码在线学习社区，只有英文版。由于代码语义贴近英文原生逻辑，十分建议在编辑代码时 “think in English”。</p>
-<p>软件中的 code playground 可以在线运行大部分代码，大家在手机上就可以进行练习与尝试。</p>
-<h2 id="adobe-软件"> Adobe 软件</h2>
-<p>Adobe 全系软件的获取，请见 <a href="https://www.weibo.com/vposy" target="_blank" rel="noopener noreferrer">vposy 的微博</a> 的置顶帖。</p>
-]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
     <title type="html">科学上网梯子</title>
     <id>http://qiqi.dreamagain.top/software/tool/accelerator/</id>
     <link href="http://qiqi.dreamagain.top/software/tool/accelerator/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
+    <updated>2021-02-19T09:11:17.000Z</updated>
     <summary type="html"><![CDATA[<blockquote>
-<p>🍎🍎🍎  梯子推荐：推荐好用的翻墙梯子，科学上网梯子，海外加速器梯子，国外靠谱梯子</p>
+<p>梯子推荐：推荐好用的翻墙梯子，科学上网梯子，海外加速器梯子，国外靠谱梯子</p>
 </blockquote>
 ]]></summary>
     <content type="html"><![CDATA[<blockquote>
-<p>🍎🍎🍎  梯子推荐：推荐好用的翻墙梯子，科学上网梯子，海外加速器梯子，国外靠谱梯子</p>
+<p>梯子推荐：推荐好用的翻墙梯子，科学上网梯子，海外加速器梯子，国外靠谱梯子</p>
 </blockquote>
 
 <table>
@@ -28355,6 +28295,69 @@ mysql -u root -p
       <name>南辞</name>
     </author>
     <category term="软件使用"/>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
+    <title type="html">软件教程</title>
+    <id>http://qiqi.dreamagain.top/software/</id>
+    <link href="http://qiqi.dreamagain.top/software/"/>
+    <updated>2021-02-18T01:11:00.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="代码编辑器"> 代码编辑器</h2>
+<ul>
+<li><a href="./editor.html">编辑器介绍</a></li>
+</ul>
+<h2 id="团队协作"> 团队协作</h2>
+<p>开发项目的代码版本管理以及多人协作使用 Git 软件</p>
+<ul>
+<li>
+<p><a href="./git/">Git 教程</a></p>
+</li>
+<li>
+<p><a href="./git/github/">GitHub 介绍</a></p>
+</li>
+</ul>
+<h2 id="浏览器"> 浏览器</h2>
+<p>在开发中，调试网页推荐使用 Chrome。</p>
+<ul>
+<li><a href="./Chrome/">Chrome 介绍</a></li>
+</ul>
+<h2 id="后端"> 后端</h2>
+<h3 id="http-server"> Http Server</h3>
+<p>网站已经停止使用 Apache Lounge 编译的 httpd Apache。目前迁移到更加轻量，并发性能更好的 Nginx 上。</p>
+<ul>
+<li>
+<p><a href="./Apache.html">Apache</a> <i>Not supported content</i></p>
+</li>
+<li>
+<p><a href="./nginx.html">Nginx</a></p>
+</li>
+</ul>
+<h3 id="抓包与-api-调试"> 抓包与 API 调试</h3>
+<ul>
+<li><a href="./postman.html">Postman</a></li>
+</ul>
+<h2 id="工具软件"> 工具软件</h2>
+<ul>
+<li><a href="./tool/">查看详情</a></li>
+</ul>
+<h2 id="手机-app"> 手机 APP</h2>
+<h3 id="w3cschool"> W3CSchool</h3>
+<p>W3CSchool 网站出品的 APP，可以在手机上查看网站所整理的各语言的教程。</p>
+<div><p>P.S.</p>
+<p>会员没什么用别买。</p>
+</div>
+<h3 id="sololearn"> soloLearn</h3>
+<p>一个代码在线学习社区，只有英文版。由于代码语义贴近英文原生逻辑，十分建议在编辑代码时 “think in English”。</p>
+<p>软件中的 code playground 可以在线运行大部分代码，大家在手机上就可以进行练习与尝试。</p>
+<h2 id="adobe-软件"> Adobe 软件</h2>
+<p>Adobe 全系软件的获取，请见 <a href="https://www.weibo.com/vposy" target="_blank" rel="noopener noreferrer">vposy 的微博</a> 的置顶帖。</p>
+]]></content>
+    <author>
+      <name>南辞</name>
+    </author>
     <contributor>
       <name>南辞</name>
     </contributor>
@@ -29257,6 +29260,35 @@ code --disable-extensions <span>.</span>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
+    <title type="html">调试</title>
+    <id>http://qiqi.dreamagain.top/software/vscode/guide/debug/</id>
+    <link href="http://qiqi.dreamagain.top/software/vscode/guide/debug/"/>
+    <updated>2021-02-18T01:11:00.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="配置调试器"> 配置调试器</h2>
+<p>打开命令面板(<code>Ctrl + Shift + P</code>)，然后选择 <strong>调试: 打开 launch.json</strong>，这将提示您选择与项目(Node.js，Python，C ++等)匹配的环境。这将生成一个 <code>launch.json</code> 文件。Node.js 支持是内置的，其他环境要求安装适当的语言扩展。有关更多详细信息，请参见 <a href="https://code.visualstudio.com/docs/editor/debugging" target="_blank" rel="noopener noreferrer">调试文档</a>。</p>
+<p><img src="./assets/configure-debug.gif" alt="配置调试"></p>
+<h2 id="断点并逐步执行"> 断点并逐步执行</h2>
+<p>在行号旁边放置断点。使用 <strong>调试</strong> 小部件向前导航。</p>
+<p><img src="./assets/node-debug.gif" alt="调试"></p>
+<h2 id="数据检查"> 数据检查</h2>
+<p>在 <strong>运行</strong> 面板和控制台中检查变量。</p>
+<p><img src="./assets/debug-data-inspection.gif" alt="数据检查"></p>
+<h2 id="内嵌值"> 内嵌值</h2>
+<p>您可以设置 <code>&quot;debug.inlineValues&quot;: true</code> 在调试器中内联查看变量值。此功能开销很大，并且可能会减慢步进速度，因此默认情况下禁用此功能。</p>
+<h2 id="logpoints"> Logpoints</h2>
+<p>日志点的行为很像断点，但它们不会在命中时暂停调试器，而是在控制台中记录一条消息。日志点对于调试无法修改或暂停的生产服务器时注入日志特别有用。</p>
+<p>使用左侧编辑器装订线中的 <strong>添加日志点</strong> 命令添加日志点，该日志点将显示为 🔸 形状的图标。日志消息是纯文本，但可以包含要在花括号('{}')中计算的表达式。</p>
+]]></content>
+    <author>
+      <name>南辞</name>
+    </author>
+    <category term="VS Code"/>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
     <title type="html">个性化</title>
     <id>http://qiqi.dreamagain.top/software/vscode/guide/customization/</id>
     <link href="http://qiqi.dreamagain.top/software/vscode/guide/customization/"/>
@@ -29371,35 +29403,6 @@ code --disable-extensions <span>.</span>
 <div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><p>提示</p>
 <p>您还可以使用 <strong>配置语言特定的设置</strong> 命令来创建特定于语言的设置。</p>
 </div>
-]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <category term="VS Code"/>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
-    <title type="html">调试</title>
-    <id>http://qiqi.dreamagain.top/software/vscode/guide/debug/</id>
-    <link href="http://qiqi.dreamagain.top/software/vscode/guide/debug/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="配置调试器"> 配置调试器</h2>
-<p>打开命令面板(<code>Ctrl + Shift + P</code>)，然后选择 <strong>调试: 打开 launch.json</strong>，这将提示您选择与项目(Node.js，Python，C ++等)匹配的环境。这将生成一个 <code>launch.json</code> 文件。Node.js 支持是内置的，其他环境要求安装适当的语言扩展。有关更多详细信息，请参见 <a href="https://code.visualstudio.com/docs/editor/debugging" target="_blank" rel="noopener noreferrer">调试文档</a>。</p>
-<p><img src="./assets/configure-debug.gif" alt="配置调试"></p>
-<h2 id="断点并逐步执行"> 断点并逐步执行</h2>
-<p>在行号旁边放置断点。使用 <strong>调试</strong> 小部件向前导航。</p>
-<p><img src="./assets/node-debug.gif" alt="调试"></p>
-<h2 id="数据检查"> 数据检查</h2>
-<p>在 <strong>运行</strong> 面板和控制台中检查变量。</p>
-<p><img src="./assets/debug-data-inspection.gif" alt="数据检查"></p>
-<h2 id="内嵌值"> 内嵌值</h2>
-<p>您可以设置 <code>&quot;debug.inlineValues&quot;: true</code> 在调试器中内联查看变量值。此功能开销很大，并且可能会减慢步进速度，因此默认情况下禁用此功能。</p>
-<h2 id="logpoints"> Logpoints</h2>
-<p>日志点的行为很像断点，但它们不会在命中时暂停调试器，而是在控制台中记录一条消息。日志点对于调试无法修改或暂停的生产服务器时注入日志特别有用。</p>
-<p>使用左侧编辑器装订线中的 <strong>添加日志点</strong> 命令添加日志点，该日志点将显示为 🔸 形状的图标。日志消息是纯文本，但可以包含要在花括号('{}')中计算的表达式。</p>
 ]]></content>
     <author>
       <name>南辞</name>
@@ -30478,196 +30481,6 @@ code --disable-extensions <span>.</span>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
-    <title type="html">awk</title>
-    <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/awk/</id>
-    <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/awk/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="awk"> awk</h1>
-<p><a href="https://en.wikipedia.org/wiki/AWK" target="_blank" rel="noopener noreferrer"><code>awk</code></a>是处理文本文件的一个应用程序，几乎所有 Linux 系统都自带这个程序。</p>
-<p>它依次处理文件的每一行，并读取里面的每一个字段。对于日志、CSV 那样的每行格式相同的文本文件，<code>awk</code> 可能是最方便的工具。</p>
-<p><img src="https://www.wangbase.com/blogimg/asset/201811/bg2018110702.jpg" alt="Book"></p>
-<p><code>awk</code> 其实不仅仅是工具软件，还是一种编程语言。不过，这里只介绍它的命令行用法，对于大多数场合，应该足够用了。</p>
-<h2 id="基本用法"> 基本用法</h2>
-<p><code>awk</code> 的基本用法就是下面的形式。</p>
-<div><pre><code><span># 格式</span>
-$ <span>awk</span> 动作 文件名
-
-<span># 示例</span>
-$ <span>awk</span> <span>'{print <span>$0</span>}'</span> demo.txt
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>上面示例中，<code>demo.txt</code> 是 <code>awk</code> 所要处理的文本文件。前面单引号内部有一个大括号，里面就是每一行的处理动作 <code>print $0</code>。其中，<code>print</code> 是打印命令，<code>$0</code> 代表当前行，因此上面命令的执行结果，就是把每一行原样打印出来。</p>
-<p>下面，我们先用标准输入(stdin)演示上面这个例子。</p>
-<div><pre><code>$ <span>echo</span> <span>'this is a test'</span> <span>|</span> <span>awk</span> <span>'{print <span>$0</span>}'</span>
-this is a <span>test</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>上面代码中，<code>print $0</code> 就是把标准输入 <code>this is a test</code>，重新打印了一遍。</p>
-<p><code>awk</code> 会根据空格和制表符，将每一行分成若干字段，依次用<code>$1</code>、<code>$2</code>、<code>$3</code> 代表第一个字段、第二个字段、第三个字段等等。</p>
-<div><pre><code>$ <span>echo</span> <span>'this is a test'</span> <span>|</span> <span>awk</span> <span>'{print <span>$3</span>}'</span>
-a
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>上面代码中，<code>$3</code> 代表 <code>this is a test</code> 的第三个字段 <code>a</code>。</p>
-<p>下面，为了便于举例，我们把<code>/etc/passwd</code> 文件保存成 <code>demo.txt</code>。</p>
-<div><pre><code>root:x:0:0:root:/root:/usr/bin/zsh
-daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
-bin:x:2:2:bin:/bin:/usr/sbin/nologin
-sys:x:3:3:sys:/dev:/usr/sbin/nologin
-sync:x:4:65534:sync:/bin:/bin/sync
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>这个文件的字段分隔符是冒号(<code>:</code>)，所以要用 <code>-F</code> 参数指定分隔符为冒号。然后，才能提取到它的第一个字段。</p>
-<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'{ print <span>$1</span> }'</span> demo.txt
-root
-daemon
-bin
-sys
-<span>sync</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="变量"> 变量</h2>
-<p>除了<code>$ + 数字</code>表示某个字段，<code>awk</code> 还提供其他一些变量。</p>
-<p>变量 <code>NF</code> 表示当前行有多少个字段，因此<code>$NF</code> 就代表最后一个字段。</p>
-<div><pre><code>$ <span>echo</span> <span>'this is a test'</span> <span>|</span> <span>awk</span> <span>'{print <span>$NF</span>}'</span>
-<span>test</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p><code>$(NF-1)</code> 代表倒数第二个字段。</p>
-<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'{print <span>$1</span>, <span><span>$(</span>NF-1<span>)</span></span>}'</span> demo.txt
-root /root
-daemon /usr/sbin
-bin /bin
-sys /dev
-<span>sync</span> /bin
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>上面代码中，<code>print</code> 命令里面的逗号，表示输出的时候，两个部分之间使用空格分隔。</p>
-<p>变量 <code>NR</code> 表示当前处理的是第几行。</p>
-<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'{print NR ") " <span>$1</span>}'</span> demo.txt
-<span>1</span><span>)</span> root
-<span>2</span><span>)</span> daemon
-<span>3</span><span>)</span> bin
-<span>4</span><span>)</span> sys
-<span>5</span><span>)</span> <span>sync</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>上面代码中，<code>print</code> 命令里面，如果原样输出字符，要放在双引号里面。</p>
-<p><code>awk</code> 的其他内置变量如下。</p>
-<blockquote>
-<ul>
-<li><code>FILENAME</code>: 当前文件名</li>
-<li><code>FS</code>: 字段分隔符，默认是空格和制表符。</li>
-<li><code>RS</code>: 行分隔符，用于分割每一行，默认是换行符。</li>
-<li><code>OFS</code>: 输出字段的分隔符，用于打印时分隔字段，默认为空格。</li>
-<li><code>ORS</code>: 输出记录的分隔符，用于打印时分隔记录，默认为换行符。</li>
-<li><code>OFMT</code>: 数字输出的格式，默认为<code>％.6g</code>。</li>
-</ul>
-</blockquote>
-<h2 id="函数"> 函数</h2>
-<p><code>awk</code> 还提供了一些内置函数，方便对原始数据的处理。</p>
-<p>函数 <code>toupper()</code> 用于将字符转为大写。</p>
-<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'{ print toupper(<span>$1</span>) }'</span> demo.txt
-ROOT
-DAEMON
-BIN
-SYS
-SYNC
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>上面代码中，第一个字段输出时都变成了大写。</p>
-<p>其他常用函数如下。</p>
-<blockquote>
-<ul>
-<li><code>tolower()</code>: 字符转为小写。</li>
-<li><code>length()</code>: 返回字符串长度。</li>
-<li><code>substr()</code>: 返回子字符串。</li>
-<li><code>sin()</code>: 正弦。</li>
-<li><code>cos()</code>: 余弦。</li>
-<li><code>sqrt()</code>: 平方根。</li>
-<li><code>rand()</code>: 随机数。</li>
-</ul>
-</blockquote>
-<p><code>awk</code> 内置函数的完整列表，可以查看<a href="https://www.gnu.org/software/gawk/manual/html_node/Built_002din.html#Built_002din" target="_blank" rel="noopener noreferrer">手册</a>。</p>
-<h2 id="条件"> 条件</h2>
-<p><code>awk</code> 允许指定输出条件，只输出符合条件的行。</p>
-<p>输出条件要写在动作的前面。</p>
-<div><pre><code><span>awk</span> <span>'条件 动作'</span> 文件名
-</code></pre>
-<div><span>1</span><br></div></div><p>请看下面的例子。</p>
-<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'/usr/ {print <span>$1</span>}'</span> demo.txt
-root
-daemon
-bin
-sys
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>上面代码中，<code>print</code> 命令前面是一个正则表达式，只输出包含 <code>usr</code> 的行。</p>
-<p>下面的例子只输出奇数行，以及输出第三行以后的行。</p>
-<div><pre><code><span># 输出奇数行</span>
-$ <span>awk</span> -F <span>':'</span> <span>'NR % 2 == 1 {print <span>$1</span>}'</span> demo.txt
-root
-bin
-<span>sync</span>
-
-<span># 输出第三行以后的行</span>
-$ <span>awk</span> -F <span>':'</span> <span>'NR >3 {print <span>$1</span>}'</span> demo.txt
-sys
-<span>sync</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div><p>下面的例子输出第一个字段等于指定值的行。</p>
-<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'<span>$1</span> == "root" {print <span>$1</span>}'</span> demo.txt
-root
-
-$ <span>awk</span> -F <span>':'</span> <span>'<span>$1</span> == "root" || <span>$1</span> == "bin" {print <span>$1</span>}'</span> demo.txt
-root
-bin
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="if-语句"> if 语句</h2>
-<p><code>awk</code> 提供了 <code>if</code> 结构，用于编写复杂的条件。</p>
-<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'{if (<span>$1</span> > "m") print <span>$1</span>}'</span> demo.txt
-root
-sys
-<span>sync</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>上面代码输出第一个字段的第一个字符大于 <code>m</code> 的行。</p>
-<p><code>if</code> 结构还可以指定 <code>else</code> 部分。</p>
-<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'{if (<span>$1</span> > "m") print <span>$1</span>; else print "---"}'</span> demo.txt
-root
----
----
-sys
-<span>sync</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="参考链接"> 参考链接</h2>
-<ul>
-<li><a href="https://gregable.com/2010/09/why-you-should-know-just-little-awk.html" target="_blank" rel="noopener noreferrer">An Awk tutorial by Example</a>, Greg Grothaus</li>
-<li><a href="https://likegeeks.com/awk-command/" target="_blank" rel="noopener noreferrer">30 Examples for Awk Command in Text Processing</a>, Mokhtar Ebrahim</li>
-</ul>
-]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
-    <title type="html">环境变量的添加</title>
-    <id>http://qiqi.dreamagain.top/software/windows/add-path/</id>
-    <link href="http://qiqi.dreamagain.top/software/windows/add-path/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
-    <content type="html"><![CDATA[<p>以 Windows 10 系统为例，直接在左下角搜索栏中输入“系统变量”</p>
-<p><img src="src/software/windows/assets/pathSearch.png" alt="搜索"></p>
-<p>在弹出的框中点击环境变量</p>
-<p><img src="src/software/windows/assets/path.png" alt="系统变量"></p>
-<p>在弹出的新窗口中找到 path，选中并点击编辑</p>
-<p><img src="src/software/windows/assets/pathDetail.png" alt="系统变量"></p>
-<p>点击添加输入想要添加到 path 的路径或者执行文件名即可</p>
-<p><img src="src/software/windows/assets/pathAdd.png" alt="系统变量"></p>
-]]></content>
-    <author>
-      <name>南辞</name>
-    </author>
-    <category term="基础"/>
-    <contributor>
-      <name>南辞</name>
-    </contributor>
-    <published>2019-09-08T00:00:00.000Z</published>
-    <rights>Copyright by 南辞</rights>
-  </entry>
-  <entry>
     <title type="html">用户界面</title>
     <id>http://qiqi.dreamagain.top/software/vscode/ui/</id>
     <link href="http://qiqi.dreamagain.top/software/vscode/ui/"/>
@@ -30880,6 +30693,30 @@ sys
       <name>南辞</name>
     </contributor>
     <published>2020-09-17T00:00:00.000Z</published>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
+    <title type="html">环境变量的添加</title>
+    <id>http://qiqi.dreamagain.top/software/windows/add-path/</id>
+    <link href="http://qiqi.dreamagain.top/software/windows/add-path/"/>
+    <updated>2021-02-18T01:11:00.000Z</updated>
+    <content type="html"><![CDATA[<p>以 Windows 10 系统为例，直接在左下角搜索栏中输入“系统变量”</p>
+<p><img src="src/software/windows/assets/pathSearch.png" alt="搜索"></p>
+<p>在弹出的框中点击环境变量</p>
+<p><img src="src/software/windows/assets/path.png" alt="系统变量"></p>
+<p>在弹出的新窗口中找到 path，选中并点击编辑</p>
+<p><img src="src/software/windows/assets/pathDetail.png" alt="系统变量"></p>
+<p>点击添加输入想要添加到 path 的路径或者执行文件名即可</p>
+<p><img src="src/software/windows/assets/pathAdd.png" alt="系统变量"></p>
+]]></content>
+    <author>
+      <name>南辞</name>
+    </author>
+    <category term="基础"/>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <published>2019-09-08T00:00:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -31124,6 +30961,172 @@ sys
       <name>南辞</name>
     </contributor>
     <published>2019-09-07T00:00:00.000Z</published>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
+    <title type="html">awk</title>
+    <id>http://qiqi.dreamagain.top/software/linux/bash/archives/commands/awk/</id>
+    <link href="http://qiqi.dreamagain.top/software/linux/bash/archives/commands/awk/"/>
+    <updated>2021-02-18T01:11:00.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="awk"> awk</h1>
+<p><a href="https://en.wikipedia.org/wiki/AWK" target="_blank" rel="noopener noreferrer"><code>awk</code></a>是处理文本文件的一个应用程序，几乎所有 Linux 系统都自带这个程序。</p>
+<p>它依次处理文件的每一行，并读取里面的每一个字段。对于日志、CSV 那样的每行格式相同的文本文件，<code>awk</code> 可能是最方便的工具。</p>
+<p><img src="https://www.wangbase.com/blogimg/asset/201811/bg2018110702.jpg" alt="Book"></p>
+<p><code>awk</code> 其实不仅仅是工具软件，还是一种编程语言。不过，这里只介绍它的命令行用法，对于大多数场合，应该足够用了。</p>
+<h2 id="基本用法"> 基本用法</h2>
+<p><code>awk</code> 的基本用法就是下面的形式。</p>
+<div><pre><code><span># 格式</span>
+$ <span>awk</span> 动作 文件名
+
+<span># 示例</span>
+$ <span>awk</span> <span>'{print <span>$0</span>}'</span> demo.txt
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>上面示例中，<code>demo.txt</code> 是 <code>awk</code> 所要处理的文本文件。前面单引号内部有一个大括号，里面就是每一行的处理动作 <code>print $0</code>。其中，<code>print</code> 是打印命令，<code>$0</code> 代表当前行，因此上面命令的执行结果，就是把每一行原样打印出来。</p>
+<p>下面，我们先用标准输入(stdin)演示上面这个例子。</p>
+<div><pre><code>$ <span>echo</span> <span>'this is a test'</span> <span>|</span> <span>awk</span> <span>'{print <span>$0</span>}'</span>
+this is a <span>test</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>上面代码中，<code>print $0</code> 就是把标准输入 <code>this is a test</code>，重新打印了一遍。</p>
+<p><code>awk</code> 会根据空格和制表符，将每一行分成若干字段，依次用<code>$1</code>、<code>$2</code>、<code>$3</code> 代表第一个字段、第二个字段、第三个字段等等。</p>
+<div><pre><code>$ <span>echo</span> <span>'this is a test'</span> <span>|</span> <span>awk</span> <span>'{print <span>$3</span>}'</span>
+a
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>上面代码中，<code>$3</code> 代表 <code>this is a test</code> 的第三个字段 <code>a</code>。</p>
+<p>下面，为了便于举例，我们把<code>/etc/passwd</code> 文件保存成 <code>demo.txt</code>。</p>
+<div><pre><code>root:x:0:0:root:/root:/usr/bin/zsh
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>这个文件的字段分隔符是冒号(<code>:</code>)，所以要用 <code>-F</code> 参数指定分隔符为冒号。然后，才能提取到它的第一个字段。</p>
+<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'{ print <span>$1</span> }'</span> demo.txt
+root
+daemon
+bin
+sys
+<span>sync</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="变量"> 变量</h2>
+<p>除了<code>$ + 数字</code>表示某个字段，<code>awk</code> 还提供其他一些变量。</p>
+<p>变量 <code>NF</code> 表示当前行有多少个字段，因此<code>$NF</code> 就代表最后一个字段。</p>
+<div><pre><code>$ <span>echo</span> <span>'this is a test'</span> <span>|</span> <span>awk</span> <span>'{print <span>$NF</span>}'</span>
+<span>test</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p><code>$(NF-1)</code> 代表倒数第二个字段。</p>
+<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'{print <span>$1</span>, <span><span>$(</span>NF-1<span>)</span></span>}'</span> demo.txt
+root /root
+daemon /usr/sbin
+bin /bin
+sys /dev
+<span>sync</span> /bin
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>上面代码中，<code>print</code> 命令里面的逗号，表示输出的时候，两个部分之间使用空格分隔。</p>
+<p>变量 <code>NR</code> 表示当前处理的是第几行。</p>
+<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'{print NR ") " <span>$1</span>}'</span> demo.txt
+<span>1</span><span>)</span> root
+<span>2</span><span>)</span> daemon
+<span>3</span><span>)</span> bin
+<span>4</span><span>)</span> sys
+<span>5</span><span>)</span> <span>sync</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>上面代码中，<code>print</code> 命令里面，如果原样输出字符，要放在双引号里面。</p>
+<p><code>awk</code> 的其他内置变量如下。</p>
+<blockquote>
+<ul>
+<li><code>FILENAME</code>: 当前文件名</li>
+<li><code>FS</code>: 字段分隔符，默认是空格和制表符。</li>
+<li><code>RS</code>: 行分隔符，用于分割每一行，默认是换行符。</li>
+<li><code>OFS</code>: 输出字段的分隔符，用于打印时分隔字段，默认为空格。</li>
+<li><code>ORS</code>: 输出记录的分隔符，用于打印时分隔记录，默认为换行符。</li>
+<li><code>OFMT</code>: 数字输出的格式，默认为<code>％.6g</code>。</li>
+</ul>
+</blockquote>
+<h2 id="函数"> 函数</h2>
+<p><code>awk</code> 还提供了一些内置函数，方便对原始数据的处理。</p>
+<p>函数 <code>toupper()</code> 用于将字符转为大写。</p>
+<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'{ print toupper(<span>$1</span>) }'</span> demo.txt
+ROOT
+DAEMON
+BIN
+SYS
+SYNC
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>上面代码中，第一个字段输出时都变成了大写。</p>
+<p>其他常用函数如下。</p>
+<blockquote>
+<ul>
+<li><code>tolower()</code>: 字符转为小写。</li>
+<li><code>length()</code>: 返回字符串长度。</li>
+<li><code>substr()</code>: 返回子字符串。</li>
+<li><code>sin()</code>: 正弦。</li>
+<li><code>cos()</code>: 余弦。</li>
+<li><code>sqrt()</code>: 平方根。</li>
+<li><code>rand()</code>: 随机数。</li>
+</ul>
+</blockquote>
+<p><code>awk</code> 内置函数的完整列表，可以查看<a href="https://www.gnu.org/software/gawk/manual/html_node/Built_002din.html#Built_002din" target="_blank" rel="noopener noreferrer">手册</a>。</p>
+<h2 id="条件"> 条件</h2>
+<p><code>awk</code> 允许指定输出条件，只输出符合条件的行。</p>
+<p>输出条件要写在动作的前面。</p>
+<div><pre><code><span>awk</span> <span>'条件 动作'</span> 文件名
+</code></pre>
+<div><span>1</span><br></div></div><p>请看下面的例子。</p>
+<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'/usr/ {print <span>$1</span>}'</span> demo.txt
+root
+daemon
+bin
+sys
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>上面代码中，<code>print</code> 命令前面是一个正则表达式，只输出包含 <code>usr</code> 的行。</p>
+<p>下面的例子只输出奇数行，以及输出第三行以后的行。</p>
+<div><pre><code><span># 输出奇数行</span>
+$ <span>awk</span> -F <span>':'</span> <span>'NR % 2 == 1 {print <span>$1</span>}'</span> demo.txt
+root
+bin
+<span>sync</span>
+
+<span># 输出第三行以后的行</span>
+$ <span>awk</span> -F <span>':'</span> <span>'NR >3 {print <span>$1</span>}'</span> demo.txt
+sys
+<span>sync</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div><p>下面的例子输出第一个字段等于指定值的行。</p>
+<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'<span>$1</span> == "root" {print <span>$1</span>}'</span> demo.txt
+root
+
+$ <span>awk</span> -F <span>':'</span> <span>'<span>$1</span> == "root" || <span>$1</span> == "bin" {print <span>$1</span>}'</span> demo.txt
+root
+bin
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="if-语句"> if 语句</h2>
+<p><code>awk</code> 提供了 <code>if</code> 结构，用于编写复杂的条件。</p>
+<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'{if (<span>$1</span> > "m") print <span>$1</span>}'</span> demo.txt
+root
+sys
+<span>sync</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>上面代码输出第一个字段的第一个字符大于 <code>m</code> 的行。</p>
+<p><code>if</code> 结构还可以指定 <code>else</code> 部分。</p>
+<div><pre><code>$ <span>awk</span> -F <span>':'</span> <span>'{if (<span>$1</span> > "m") print <span>$1</span>; else print "---"}'</span> demo.txt
+root
+---
+---
+sys
+<span>sync</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="参考链接"> 参考链接</h2>
+<ul>
+<li><a href="https://gregable.com/2010/09/why-you-should-know-just-little-awk.html" target="_blank" rel="noopener noreferrer">An Awk tutorial by Example</a>, Greg Grothaus</li>
+<li><a href="https://likegeeks.com/awk-command/" target="_blank" rel="noopener noreferrer">30 Examples for Awk Command in Text Processing</a>, Mokhtar Ebrahim</li>
+</ul>
+]]></content>
+    <author>
+      <name>南辞</name>
+    </author>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
