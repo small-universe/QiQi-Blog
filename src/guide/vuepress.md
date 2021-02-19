@@ -872,6 +872,8 @@ export default ({
 
 创建` blogs/components/element-ui.md`，内容如下
 
+::: details  element-ui.md
+
 ```md
 ---
 title: Element-UI Test
@@ -920,6 +922,8 @@ categories:
 </template>
 
 ```
+
+:::
 
 （4）运行测试
 
@@ -1011,6 +1015,8 @@ export default ({
 （3）在md中测试
 
 创建` blogs/components/view-ui.md`，内容如下
+
+::: details view-ui.md
 
 ```md
 ---
@@ -1152,6 +1158,8 @@ categories:
 
 ```
 
+:::
+
 （4）运行测试
 
 发现页面空白，控制台信息如下，所以不知道是哪里有问题
@@ -1188,7 +1196,7 @@ export default ({
 
 
 
-以上测试了两个前端常用的组件库Element-UI和View UI，其他的组件库的使用也是类似，如果出现页面空白而后台没有报错的情况，先查看浏览器控制台报错信息再百度查找解决方法，或者尝试修改enhanceApp.js内容。
+以上测试了两个前端常用的组件库Element-UI和View UI，其他的组件库的使用也是类似，如果出现页面空白而后台没有报错的情况，先查看浏览器控制台报错信息，问题不明显可百度查找解决方法。
 
 ::: tip
 
@@ -1212,9 +1220,7 @@ export default ({
 
 ### （六）博客的自动路由
 
-vuepress是一个单页面应用，所谓路由，是VueRouter模拟出来的假象，通过官方对[元数据](https://vuepress.vuejs.org/zh/theme/writing-a-theme.html#%E7%BD%91%E7%AB%99%E5%92%8C%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE) 的描述，我们可以了解到`vuepress`
-
-能够提供博客以及博待解决bug客中的分类、标签、时间线等功能支持主要就是使用元数据 **$page** 来实现，看一下官方文档中比较关键的说明：
+vuepress是一个单页面应用，所谓路由，是VueRouter模拟出来的假象，通过官方对[元数据](https://vuepress.vuejs.org/zh/theme/writing-a-theme.html#%E7%BD%91%E7%AB%99%E5%92%8C%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE) 的描述，我们可以了解到`vuepress`能够提供博客中的分类、标签、时间线等功能支持主要就是使用元数据 **$page** 来实现，看一下官方文档中比较关键的说明：
 
 ::: info 元数据
 
