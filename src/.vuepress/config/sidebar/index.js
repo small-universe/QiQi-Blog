@@ -19,19 +19,6 @@ module.exports = {
     "/program/backend/": require("./backend"),
     "/program/frontend/": require("./frontend"),
 
-
-    "/software/vscode/": require("./software/vscode"),
-    "/software/git/": require("./software/git"),
-    "/software/linux/": require("./software/linux"),
-    "/software/windows/": [
-      "",
-      "shortcut-key",
-      "hidden-file",
-      "add-path",
-      "cmd",
-      "notepad",
-    ],
-
     "/interview/Java208/":require("./interview/Java208"),
 
 //=========================== 一级 ==================================

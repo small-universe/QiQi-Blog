@@ -239,7 +239,7 @@ module.exports = config({
   },
   // 插件配置
   plugins: [
-    // 樱花飘落
+    // 樱花
     // ["sakura", {
     //   num: 15,  // 默认数量
     //   show: true, //  是否显示

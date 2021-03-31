@@ -1,5 +1,5 @@
 ---
-title: windows下安装多版本Node.js
+title: windows下安装多版本Node
 category: 软件使用
 tags:
   - windows
@@ -7,7 +7,7 @@ tags:
   - Node.js
 ---
 
-nvm Node.js npm yarn
+![](https://img.shields.io/badge/nvm-blue.svg)  ![](https://img.shields.io/badge/Node.js-blue.svg) ![](https://img.shields.io/badge/npm -blue.svg)  ![](https://img.shields.io/badge/yarn-blue.svg)
 
 <!-- more -->
 
