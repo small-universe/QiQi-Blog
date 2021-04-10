@@ -19,7 +19,7 @@
   "dependencies": {
     "async-validator": "1.11.5",
     "vuepress": "1.8.0",
-    "vuepress-theme-hope": "1.9.6"
+    "vuepress-theme-hope": "1.12.1"
   },
   "devDependencies": {
     "@vuepress/plugin-nprogress": "^1.8.1",
