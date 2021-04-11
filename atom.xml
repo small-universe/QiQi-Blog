@@ -6,12 +6,13 @@
   <author>
     <name>南辞</name>
   </author>
-  <updated>2021-03-31T05:56:16.696Z</updated>
+  <updated>2021-04-11T06:16:42.300Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="http://qiqi.dreamagain.top/atom.xml"/>
   <link rel="alternate" href="http://qiqi.dreamagain.top/"/>
   <rights>&lt;a href='https://github.com/small-universe/qiqi-tribe/blob/main/LICENSE' target='_blank'&gt;License MIT&lt;/a&gt; | Copyright © 2021 Mr·Yang『nanci』</rights>
   <category term="目录"/>
+  <category term="电子书"/>
   <category term="使用指南"/>
   <category term="面试"/>
   <category term="后端框架"/>
@@ -54,6 +55,7 @@
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -78,6 +80,7 @@
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -91,6 +94,7 @@
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -172,6 +176,22 @@
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
+    <rights>Copyright by 南辞</rights>
+  </entry>
+  <entry>
+    <title type="html">阅览室</title>
+    <id>http://qiqi.dreamagain.top/ebook/</id>
+    <link href="http://qiqi.dreamagain.top/ebook/"/>
+    <updated>2021-04-10T04:40:33.000Z</updated>
+    <author>
+      <name>南辞</name>
+    </author>
+    <category term="电子书"/>
+    <contributor>
+      <name>南辞</name>
+    </contributor>
+    <published>2021-04-10T04:40:33.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -355,6 +375,7 @@ module.exports <span>=</span> <span>{</span>
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -763,6 +784,7 @@ $$
     <contributor>
       <name>𝓜𝓻. 𝓗𝓸𝓹𝓮</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 𝓜𝓻. 𝓗𝓸𝓹𝓮</rights>
   </entry>
   <entry>
@@ -783,6 +805,7 @@ $$
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -2257,6 +2280,7 @@ http <span>{</span>
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -2580,6 +2604,7 @@ http <span>{</span>
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -2925,6 +2950,7 @@ stringBuilder<span>.</span><span>append</span><span>(</span><span>"abcdefg"</spa
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -3073,6 +3099,7 @@ unmlist<span>.</span> <span>add</span><span>(</span><span>"B"</span><span>)</spa
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -3285,6 +3312,7 @@ unmlist<span>.</span> <span>add</span><span>(</span><span>"B"</span><span>)</spa
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -3347,6 +3375,7 @@ unmlist<span>.</span> <span>add</span><span>(</span><span>"B"</span><span>)</spa
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -3528,6 +3557,7 @@ unmlist<span>.</span> <span>add</span><span>(</span><span>"B"</span><span>)</spa
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -3670,6 +3700,7 @@ unmlist<span>.</span> <span>add</span><span>(</span><span>"B"</span><span>)</spa
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -3791,6 +3822,7 @@ unmlist<span>.</span> <span>add</span><span>(</span><span>"B"</span><span>)</spa
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -4045,6 +4077,7 @@ Access-Control-Max-Age: 86400
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -4573,6 +4606,7 @@ Access-Control-Max-Age: 86400
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -4796,6 +4830,7 @@ Access-Control-Max-Age: 86400
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -4925,6 +4960,7 @@ Access-Control-Max-Age: 86400
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -5068,6 +5104,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -5091,7 +5128,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
 <ul>
 <li>#{}是预编译处理，${}是字符串替换；</li>
 <li>MyBatis在处理#{}时，会将sql中的#{}替换为?号，调用PreparedStatement的set方法来赋值；</li>
-<li>MyBatis在处理<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span></span><span>时</span><span>，</span><span>就</span><span>是</span><span>把</span></span></span></span>{}替换成变量的值；</li>
+<li>MyBatis在处理<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span></span><span>时，就是把</span></span></span></span>{}替换成变量的值；</li>
 <li>使用**#{}可以有效的防止SQL注入**，提高系统安全性。</li>
 </ul>
 <h3 id="_126-mybatis有几种分页方式"> 126.MyBatis有几种分页方式?</h3>
@@ -5200,6 +5237,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -5248,6 +5286,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -5274,6 +5313,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -5304,6 +5344,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -5435,6 +5476,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -5549,6 +5591,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -5710,6 +5753,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -5735,6 +5779,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -6275,6 +6320,7 @@ public class TokenAuthenticationFilter extends BasicAuthenticationFilter {
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -6314,6 +6360,7 @@ public class TokenAuthenticationFilter extends BasicAuthenticationFilter {
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -6339,6 +6386,7 @@ public class TokenAuthenticationFilter extends BasicAuthenticationFilter {
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -7555,6 +7603,7 @@ father
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -7680,6 +7729,7 @@ father
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -7866,6 +7916,7 @@ father
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -7927,6 +7978,7 @@ father
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -8453,6 +8505,7 @@ method<span>=</span>doService1
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -9095,6 +9148,7 @@ Found value: ! OK?
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -10723,6 +10777,7 @@ stringBuilder<span>.</span> <span>append</span><span>(</span><span>"abcdefg"</sp
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -12771,6 +12826,7 @@ Java IO流共涉及40多个类，这些类看上去很杂乱，但实际上很�
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -13669,6 +13725,7 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -13692,10 +13749,10 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
 <h3 id="一-学习教程"> （一）学习教程</h3>
 <h4 id="网站"> 网站：</h4>
 <ul>
-<li><a href="https://www.liaoxuefeng.com/wiki/1252599548343744" target="_blank" rel="noopener noreferrer">廖雪峰 - Java教程</a> <i>Not supported content</i><i>Not supported content</i></li>
-<li><a href="https://www.runoob.com/java/java-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a> <i>Not supported content</i></li>
-<li><a href="https://www.w3cschool.cn/java/" target="_blank" rel="noopener noreferrer">w3cschool</a> <i>Not supported content</i> <i>Not supported content</i> <i>Not supported content</i></li>
-<li><a href="https://www.sxt.cn/Java_jQuery_in_action/History_Direction.html" target="_blank" rel="noopener noreferrer">速学堂 Java教程</a><i>Not supported content</i> <i>Not supported content</i></li>
+<li><a href="https://www.liaoxuefeng.com/wiki/1252599548343744" target="_blank" rel="noopener noreferrer">廖雪峰 - Java教程</a> <MyBadge text="真大佬" /><MyBadge text="推荐" /></li>
+<li><a href="https://www.runoob.com/java/java-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a> <MyBadge text="内容比较新" /></li>
+<li><a href="https://www.w3cschool.cn/java/" target="_blank" rel="noopener noreferrer">w3cschool</a> <MyBadge text="内容最新" /> <MyBadge text="有手机APP" /> <MyBadge text="广告信息多" type="warn" /></li>
+<li><a href="https://www.sxt.cn/Java_jQuery_in_action/History_Direction.html" target="_blank" rel="noopener noreferrer">速学堂 Java教程</a><MyBadge text="内容比较简洁" /> <MyBadge text="需结合视频学习" /></li>
 </ul>
 <h4 id="视频"> 视频</h4>
 <ul>
@@ -13725,6 +13782,7 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -13755,6 +13813,7 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -13966,13 +14025,13 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
 <h3 id="杂牌网站"> 杂牌网站</h3>
 <ul>
 <li>
-<p><a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer">菜鸟教程</a> <i>Not supported content</i></p>
+<p><a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer">菜鸟教程</a> <MyBadge text="内容比较新" /></p>
 </li>
 <li>
-<p><a href="https://www.w3cschool.cn" target="_blank" rel="noopener noreferrer">w3cschool</a> <i>Not supported content</i> <i>Not supported content</i> <i>Not supported content</i></p>
+<p><a href="https://www.w3cschool.cn" target="_blank" rel="noopener noreferrer">w3cschool</a> <MyBadge text="内容最新" /> <MyBadge text="有手机APP" /> <MyBadge text="广告信息多" type="warn" /></p>
 </li>
 <li>
-<p><a href="http://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer">w3school</a> <i>Not supported content</i></p>
+<p><a href="http://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer">w3school</a> <MyBadge text="内容比较旧" type="warn" /></p>
 </li>
 </ul>
 ]]></content>
@@ -13983,19 +14042,21 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
     <title type="html">七七部落 | 主页</title>
     <id>http://qiqi.dreamagain.top/</id>
     <link href="http://qiqi.dreamagain.top/"/>
-    <updated>2021-02-18T01:11:00.000Z</updated>
+    <updated>2021-04-10T04:40:33.000Z</updated>
     <author>
       <name>南辞</name>
     </author>
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-16T17:39:43.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -14059,6 +14120,7 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -14483,6 +14545,7 @@ with pipelining 0.250783 seconds
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-03-31T05:51:25.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -14909,6 +14972,7 @@ OK
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-03-31T05:51:25.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -16040,6 +16104,7 @@ db3:keys<span>=</span><span>1</span>,expires<span>=</span><span>0</span>,avg_ttl
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-03-31T05:51:25.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -16668,6 +16733,7 @@ alter table 表 modify column 字段名 字段类型 约束;
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-03-31T05:51:25.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -16877,6 +16943,7 @@ sql99语法：
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-03-31T05:51:25.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -18493,6 +18560,7 @@ page
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-03-31T05:51:25.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -18664,6 +18732,7 @@ SELECT * FROM account;
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-03-31T05:51:25.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -18891,6 +18960,7 @@ mysql<span>></span> <span>select</span> <span>count</span><span>(</span><span>di
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-03-31T05:51:25.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -19126,6 +19196,7 @@ alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;xzx123456&#39;;
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-03-31T05:51:25.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -20048,6 +20119,7 @@ while(i&lt;=insertCount){
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-03-31T05:51:25.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -20067,6 +20139,7 @@ while(i&lt;=insertCount){
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -20085,6 +20158,7 @@ while(i&lt;=insertCount){
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -20362,6 +20436,7 @@ while(i&lt;=insertCount){
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -20447,6 +20522,7 @@ while(i&lt;=insertCount){
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -20479,6 +20555,7 @@ while(i&lt;=insertCount){
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-02-18T01:11:00.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
   <entry>
@@ -20635,6 +20712,7 @@ while(i&lt;=insertCount){
     <contributor>
       <name>南辞</name>
     </contributor>
+    <published>2021-03-31T05:51:25.000Z</published>
     <rights>Copyright by 南辞</rights>
   </entry>
 </feed>

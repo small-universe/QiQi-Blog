@@ -6,12 +6,13 @@
     <link>http://qiqi.dreamagain.top/</link>
     <description>Actions speak louder than words.</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 31 Mar 2021 05:56:16 GMT</pubDate>
-    <lastBuildDate>Wed, 31 Mar 2021 05:56:16 GMT</lastBuildDate>
+    <pubDate>Sun, 11 Apr 2021 06:16:42 GMT</pubDate>
+    <lastBuildDate>Sun, 11 Apr 2021 06:16:42 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>&lt;a href='https://github.com/small-universe/qiqi-tribe/blob/main/LICENSE' target='_blank'&gt;License MIT&lt;/a&gt; | Copyright © 2021 Mr·Yang『nanci』</copyright>
     <category>目录</category>
+    <category>电子书</category>
     <category>使用指南</category>
     <category>面试</category>
     <category>后端框架</category>
@@ -29,6 +30,7 @@
       <link>http://qiqi.dreamagain.top/about/intro/</link>
       <guid>http://qiqi.dreamagain.top/about/intro/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">关于我</source>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="自我介绍"> 自我介绍</h2>
 <ul>
 <li>笔名: 南辞</li>
@@ -48,6 +50,7 @@
       <link>http://qiqi.dreamagain.top/about/site/</link>
       <guid>http://qiqi.dreamagain.top/about/site/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">关于本站</source>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="网站介绍"> 网站介绍</h2>
 <p>网站使用 <a href="https://v1.vuepress.vuejs.org/zh/guide/" target="_blank" rel="noopener noreferrer">VuePress</a> 建站工具构建，主题使用 <a href="https://github.com/Mister-Hope/vuepress-theme-hope/" target="_blank" rel="noopener noreferrer">vuepress-theme-hope</a></p>
 <h2 id="仓库链接"> 仓库链接</h2>
@@ -65,6 +68,7 @@
       <link>http://qiqi.dreamagain.top/blog/</link>
       <guid>http://qiqi.dreamagain.top/blog/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">Home</source>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
     </item>
     <item>
       <title>目录导航</title>
@@ -76,6 +80,7 @@
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>目录</category>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/%E4%B8%83%E4%B8%83%E5%8D%9A%E5%AE%A2-%E7%9B%AE%E5%BD%95%E5%AF%BC%E8%88%AA-blue.svg" alt="img"></p>
 </blockquote>
@@ -142,6 +147,14 @@
       <enclosure url="https://img.shields.io/badge/七七博客-目录导航-blue.svg" type="image/svg+xml"/>
     </item>
     <item>
+      <title>阅览室</title>
+      <link>http://qiqi.dreamagain.top/ebook/</link>
+      <guid>http://qiqi.dreamagain.top/ebook/</guid>
+      <source url="http://qiqi.dreamagain.top/rss.xml">阅览室</source>
+      <category>电子书</category>
+      <pubDate>Sat, 10 Apr 2021 04:40:33 GMT</pubDate>
+    </item>
+    <item>
       <title>element-ui插件使用文档</title>
       <link>http://qiqi.dreamagain.top/guide/element-ui-plugin/</link>
       <guid>http://qiqi.dreamagain.top/guide/element-ui-plugin/</guid>
@@ -150,6 +163,7 @@
 &amp;lt;p&amp;gt;Vuepress plugin - extend &amp;lt;a href=&amp;quot;https://github.com/ElemeFE/element&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;Element UI&amp;lt;/a&amp;gt; base on markdown-it-container&amp;lt;/p&amp;gt;
 </description>
       <category>使用指南</category>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<p><a href="https://www.npmjs.com/package/vuepress-plugin-element-ui" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/npm/v/vuepress-plugin-element-ui.svg" alt="Version"></a> <a href="https://www.npmjs.com/package/vuepress-plugin-element-ui" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/npm/l/vuepress-plugin-element-ui.svg" alt="License"></a> <img src="https://img.shields.io/badge/thanks-element-brightgreen.svg" alt="img"></p>
 <p>Vuepress plugin - extend <a href="https://github.com/ElemeFE/element" target="_blank" rel="noopener noreferrer">Element UI</a> base on markdown-it-container</p>
 
@@ -328,6 +342,7 @@ module.exports <span>=</span> <span>{</span>
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>使用指南</category>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><code>vuepress-theme-hope</code> 通过内置 <a href="https://vuepress-md-enhance.mrhope.site" target="_blank" rel="noopener noreferrer">md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>
 </blockquote>
@@ -725,6 +740,7 @@ $$
       <guid>http://qiqi.dreamagain.top/guide/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">指南</source>
       <category>使用指南</category>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="目录"> 目录</h2>
 <ul>
 <li><a href="./markdown.html">Markdown指南</a></li>
@@ -809,6 +825,7 @@ pageInfo<span>:</span><span>[</span><span>'author'</span><span>,</span> <span>'v
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>使用指南</category>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/vuepress-blue.svg" alt=""> <img src="https://img.shields.io/badge/vuepress--theme--reco-blue.svg" alt=""></p>
 <p>没有问题演示的教程都不是好教程</p>
@@ -2203,6 +2220,7 @@ http <span>{</span>
 &amp;lt;p&amp;gt;提示：此份面试题在学完相关基础后食用效果最佳，可以快速查缺补漏，加深对知识的理解。切忌死记硬背，编程重在理解思想和代码编写&amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;
 </description>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<div><p>声明</p>
 <p>此份面试题来自知乎<a href="https://www.zhihu.com/question/27858692/answer/787505434" target="_blank" rel="noopener noreferrer">java经验总结</a> ，原文参考答案比较浅显且部分有误，目前已对部分参考答案进行订正、补充。</p>
 <p>提示：此份面试题在学完相关基础后食用效果最佳，可以快速查缺补漏，加深对知识的理解。切忌死记硬背，编程重在理解思想和代码编写</p>
@@ -2514,6 +2532,7 @@ http <span>{</span>
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9701%E2%80%94Java%E5%9F%BA%E7%A1%80/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9701%E2%80%94Java%E5%9F%BA%E7%A1%80/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块01-Java基础</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>1.JDK和JRE有什么区别?</p>
 <p>2.==和equals的区别是什么?</p>
@@ -2852,6 +2871,7 @@ stringBuilder<span>.</span><span>append</span><span>(</span><span>"abcdefg"</spa
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9702%E2%80%94Java%E9%9B%86%E5%90%88/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9702%E2%80%94Java%E9%9B%86%E5%90%88/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块02-Java集合（容器）</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>18.java容器都有哪些?</p>
 <p>19.Collection和Collections有什么区别?</p>
@@ -2993,6 +3013,7 @@ unmlist<span>.</span> <span>add</span><span>(</span><span>"B"</span><span>)</spa
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9703%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9703%E2%80%94%E5%A4%9A%E7%BA%BF%E7%A8%8B/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块03-Java多线程</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>35.并行和并发有什么区别?</p>
 <p>36.线程和进程的区别?</p>
@@ -3198,6 +3219,7 @@ unmlist<span>.</span> <span>add</span><span>(</span><span>"B"</span><span>)</spa
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9704%E2%80%94%E5%8F%8D%E5%B0%84/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9704%E2%80%94%E5%8F%8D%E5%B0%84/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块04-Java反射</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>57.什么是反射?</p>
 <p>58.什么是java序列化?什么情况下需要序列化?</p>
@@ -3253,6 +3275,7 @@ unmlist<span>.</span> <span>add</span><span>(</span><span>"B"</span><span>)</spa
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9705%E2%80%94%E5%AF%B9%E8%B1%A1%E6%8B%B7%E8%B4%9D/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9705%E2%80%94%E5%AF%B9%E8%B1%A1%E6%8B%B7%E8%B4%9D/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块05-Java对象拷贝</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>61.为什么要使用克隆?</p>
 <p>62.如何实现对象克隆?</p>
@@ -3427,6 +3450,7 @@ unmlist<span>.</span> <span>add</span><span>(</span><span>"B"</span><span>)</spa
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9706%E2%80%94Java%20Web/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9706%E2%80%94Java%20Web/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块06—Java Web</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>64.jsp和servlet有什么区别?</p>
 <p>65.jsp有哪些内置对象?作用分别是什么?</p>
@@ -3562,6 +3586,7 @@ unmlist<span>.</span> <span>add</span><span>(</span><span>"B"</span><span>)</spa
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9707%E2%80%94%E5%BC%82%E5%B8%B8/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9707%E2%80%94%E5%BC%82%E5%B8%B8/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块07—Java异常</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>74.throw和throws 的区别?</p>
 <p>75.final、finally、finalize有什么区别?</p>
@@ -3676,6 +3701,7 @@ unmlist<span>.</span> <span>add</span><span>(</span><span>"B"</span><span>)</spa
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9708%E2%80%94%E7%BD%91%E7%BB%9C/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9708%E2%80%94%E7%BD%91%E7%BB%9C/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块08—网络</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>79.http响应码301和302代表的是什么?有什么区别?</p>
 <p>80.forward和redirect的区别?</p>
@@ -3923,6 +3949,7 @@ Access-Control-Max-Age: 86400
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9709%E2%80%94%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9709%E2%80%94%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块09—设计模式</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>88.说一下你熟悉的设计模式?</p>
 <p>89.简单工厂和抽象工厂有什么区别?</p>
@@ -4444,6 +4471,7 @@ Access-Control-Max-Age: 86400
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9710%E2%80%94SpringSpring%20MVC/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9710%E2%80%94SpringSpring%20MVC/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块10—Spring/Spring MVC</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>90.为什么要使用Spring?</p>
 <p>91.解释一下什么是AOP?</p>
@@ -4660,6 +4688,7 @@ Access-Control-Max-Age: 86400
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9711%E2%80%94Spring%20BootSpring%20Cloud/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9711%E2%80%94Spring%20BootSpring%20Cloud/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块11—Spring Boot/Spring Cloud</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>104.什么是Spring Boot?</p>
 <p>105.为什么要用Spring Boot?</p>
@@ -4782,6 +4811,7 @@ Access-Control-Max-Age: 86400
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9712%E2%80%94Hibernate/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9712%E2%80%94Hibernate/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块12—Hibernate</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>113.为什么要使用Hibernate?</p>
 <p>114.什么是 ORM框架?</p>
@@ -4918,6 +4948,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9713%E2%80%94MyBatis/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9713%E2%80%94MyBatis/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块13—MyBatis</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>125.MyBatis 中#{和$0的区别是什么?</p>
 <p>126.MyBatis有几种分页方式?</p>
@@ -4934,7 +4965,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
 <ul>
 <li>#{}是预编译处理，${}是字符串替换；</li>
 <li>MyBatis在处理#{}时，会将sql中的#{}替换为?号，调用PreparedStatement的set方法来赋值；</li>
-<li>MyBatis在处理<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span></span><span>时</span><span>，</span><span>就</span><span>是</span><span>把</span></span></span></span>{}替换成变量的值；</li>
+<li>MyBatis在处理<span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span></span><span>时，就是把</span></span></span></span>{}替换成变量的值；</li>
 <li>使用**#{}可以有效的防止SQL注入**，提高系统安全性。</li>
 </ul>
 <h3 id="_126-mybatis有几种分页方式"> 126.MyBatis有几种分页方式?</h3>
@@ -5043,6 +5074,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9714%E2%80%94RabbitMQ/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9714%E2%80%94RabbitMQ/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块14—RabbitMQ</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>135.RabbitMQ的使用场景有哪些?</p>
 <p>136.RabbitMQ有哪些重要的角色?</p>
@@ -5084,6 +5116,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9715%E2%80%94Kafka/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9715%E2%80%94Kafka/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块15—Kafka</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>152.kafka可以脱离zookeeper单独使用吗?为什么?</p>
 <p>153.kafka有几种数据保留的策略?</p>
@@ -5103,6 +5136,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9716%E2%80%94Zookeeper/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9716%E2%80%94Zookeeper/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块16—Zookeeper</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>157.zookeeper是什么?</p>
 <p>158.zookeeper都有哪些功能?</p>
@@ -5126,6 +5160,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9717%E2%80%94MySQL/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9717%E2%80%94MySQL/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块17—MySQL</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="_1、数据库的三范式是什么"> 1、数据库的三范式是什么?</h2>
 <ul>
 <li>第一范式：强调的是列的原子性，即数据库表的每一列都是不可分割的原子数据项。</li>
@@ -5250,6 +5285,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9718%E2%80%94Redis/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9718%E2%80%94Redis/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块18—Redis</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>179.redis是什么?都有哪些使用场景?</p>
 <p>180.redis有哪些功能?</p>
@@ -5357,6 +5393,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
       <link>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9719%E2%80%94JVM/</link>
       <guid>http://qiqi.dreamagain.top/interview/Java208/%E6%A8%A1%E5%9D%9719%E2%80%94JVM/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">模块19—JVM</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <p>194.说一下 jvm的主要组成部分?及其作用?</p>
 <p>195.说一下 jvm运行时数据区?</p>
@@ -5516,6 +5553,7 @@ HQL是面向对象查询操作的，SQL是结构化查询语言 是面向数据�
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>面试</category>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/%E9%9D%A2%E8%AF%95%E7%9B%B8%E5%85%B3-blue.svg" alt="img"></p>
 </blockquote>
@@ -6043,6 +6081,7 @@ public class TokenAuthenticationFilter extends BasicAuthenticationFilter {
       <link>http://qiqi.dreamagain.top/program/backend/backframe/orm/</link>
       <guid>http://qiqi.dreamagain.top/program/backend/backframe/orm/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">ORM相关框架</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
     </item>
     <item>
       <title>后端框架</title>
@@ -6069,6 +6108,7 @@ public class TokenAuthenticationFilter extends BasicAuthenticationFilter {
       <link>http://qiqi.dreamagain.top/program/backend/backframe/spring/</link>
       <guid>http://qiqi.dreamagain.top/program/backend/backframe/spring/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">Spring家族框架体系</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
     </item>
     <item>
       <title>后端框架</title>
@@ -6076,6 +6116,7 @@ public class TokenAuthenticationFilter extends BasicAuthenticationFilter {
       <guid>http://qiqi.dreamagain.top/program/backend/framework/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">后端框架</source>
       <category>框架</category>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="一、spring家族"> 一、Spring家族</h2>
 <h3 id="一-spring-framework"> <a href="">（一）Spring Framework</a></h3>
 <h3 id="二-spring-mvc"> <a href="">（二）Spring MVC</a></h3>
@@ -6094,6 +6135,7 @@ public class TokenAuthenticationFilter extends BasicAuthenticationFilter {
       <guid>http://qiqi.dreamagain.top/program/backend/java/annotation/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">JavaSE-注解</source>
       <category>Java</category>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="一、理解注解"> 一、理解注解</h2>
 <h3 id="一-为什么要引入注解"> （一）为什么要引入注解</h3>
 <p>使用注解之前(甚至在使用之后)，XML被广泛的应用于描述元数据，得到各大框架的青睐，它以松耦合的方式完成了框架中几乎所有的配置，但是随着项目越来越庞大，XML的内容也越来越复杂，一些应用开发人员和架构师发现维护成本变高。他们希望使用一些和代码紧耦合的东西，于是就有人提出来一种标记式高耦合的配置方式注解。方法上可以进行注解，类上也可以注解，字段属性上也可以注解，反正几乎需要配置的地方都可以进行注解。</p>
@@ -7307,6 +7349,7 @@ father
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>Java</category>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/collection-blue.svg" alt=""> <img src="https://img.shields.io/badge/List-blue.svg" alt=""> <img src="https://img.shields.io/badge/Set-blue.svg" alt=""> <img src="https://img.shields.io/badge/Map-blue.svg" alt="">
 </p>
@@ -7422,6 +7465,7 @@ father
       <guid>http://qiqi.dreamagain.top/program/backend/java/generics/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">JavaSE-泛型</source>
       <category>Java</category>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="一、前言"> 一、前言</h2>
 <p>Java 泛型（Generic）的引入加强了参数类型的安全性，减少了类型的转换，但有一点需要注意：Java 的泛型在编译器有效，在运行期被删除，也就是说所有泛型参数类型在编译后都会被清除掉，看下面一个列子，代码如下：</p>
 <div><pre><code><span>public</span> <span>class</span> <span>Foo</span> <span>{</span>
@@ -7605,6 +7649,7 @@ father
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>Java</category>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/Java%E7%AE%80%E4%BB%8B-blue.svg" alt=""> <img src="https://img.shields.io/badge/%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B-blue.svg" alt=""> <img src="https://img.shields.io/badge/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-blue.svg" alt="">
 </p>
@@ -7656,6 +7701,7 @@ father
       <guid>http://qiqi.dreamagain.top/program/backend/java/reflect/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">JavaSE-反射</source>
       <category>Java</category>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="一、什么是反射"> 一、什么是反射：</h2>
 <p>（1）Java反射机制的核心是在程序运行时动态加载类并获取类的详细信息，从而操作类或对象的属性和方法。本质是JVM得到class对象之后，再通过class对象进行反编译，从而获取对象的各种信息。</p>
 <p>（2）Java属于先编译再运行的语言，程序中对象的类型在编译期就确定下来了，而当程序在运行时可能需要动态加载某些类，这些类因为之前用不到，所以没有被加载到JVM。通过反射，可以在运行时动态地创建对象并调用其属性，不需要提前在编译期知道运行的对象是谁。</p>
@@ -8175,6 +8221,7 @@ method<span>=</span>doService1
       <guid>http://qiqi.dreamagain.top/program/backend/java/regex/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">JavaSE-正则表达式</source>
       <category>Java</category>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="一、概述"> 一、概述</h2>
 <ul>
 <li>用来描述或者匹配一系列符合某个语句规则的字符串</li>
@@ -8809,6 +8856,7 @@ Found value: ! OK?
       <link>http://qiqi.dreamagain.top/program/backend/java/solution/Java%E5%9F%BA%E7%A1%80/</link>
       <guid>http://qiqi.dreamagain.top/program/backend/java/solution/Java%E5%9F%BA%E7%A1%80/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">Java基础</source>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <h3 id="一、java概述"> 一、Java概述</h3>
 <p>1、何为编程</p>
@@ -10430,6 +10478,7 @@ stringBuilder<span>.</span> <span>append</span><span>(</span><span>"abcdefg"</sp
       <link>http://qiqi.dreamagain.top/program/backend/java/solution/Java%E8%BF%9B%E9%98%B6/</link>
       <guid>http://qiqi.dreamagain.top/program/backend/java/solution/Java%E8%BF%9B%E9%98%B6/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">Java进阶</source>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="问题"> 问题：</h2>
 <h3 id="一、集合-容器"> 一、集合/容器</h3>
 <h4 id="一-概述"> （一）概述</h4>
@@ -12472,6 +12521,7 @@ Java IO流共涉及40多个类，这些类看上去很杂乱，但实际上很�
       <guid>http://qiqi.dreamagain.top/program/backend/java/time/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">JavaSE-时间与日期</source>
       <category>Java</category>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="一、基本概念"> 一、基本概念</h2>
 <p>在计算机中，我们经常需要处理日期和时间。</p>
 <p>这是日期：</p>
@@ -13363,6 +13413,7 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
       <guid>http://qiqi.dreamagain.top/program/backend/language/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">编程语言</source>
       <category>编程语言</category>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="一、如何快速入门"> 一、如何快速入门</h2>
 <p>一门编程语言的入门学习最好参考网上优质网站教程、视频教程和参考书籍，尤其对于有编程基础的人而言，通过网站教程和参考书是最快的入门方式，虽然没有视频教程来得直观，但是学完后印象会比较深刻。</p>
 <div><p>提示</p>
@@ -13379,10 +13430,10 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
 <h3 id="一-学习教程"> （一）学习教程</h3>
 <h4 id="网站"> 网站：</h4>
 <ul>
-<li><a href="https://www.liaoxuefeng.com/wiki/1252599548343744" target="_blank" rel="noopener noreferrer">廖雪峰 - Java教程</a> <i>Not supported content</i><i>Not supported content</i></li>
-<li><a href="https://www.runoob.com/java/java-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a> <i>Not supported content</i></li>
-<li><a href="https://www.w3cschool.cn/java/" target="_blank" rel="noopener noreferrer">w3cschool</a> <i>Not supported content</i> <i>Not supported content</i> <i>Not supported content</i></li>
-<li><a href="https://www.sxt.cn/Java_jQuery_in_action/History_Direction.html" target="_blank" rel="noopener noreferrer">速学堂 Java教程</a><i>Not supported content</i> <i>Not supported content</i></li>
+<li><a href="https://www.liaoxuefeng.com/wiki/1252599548343744" target="_blank" rel="noopener noreferrer">廖雪峰 - Java教程</a> <MyBadge text="真大佬" /><MyBadge text="推荐" /></li>
+<li><a href="https://www.runoob.com/java/java-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a> <MyBadge text="内容比较新" /></li>
+<li><a href="https://www.w3cschool.cn/java/" target="_blank" rel="noopener noreferrer">w3cschool</a> <MyBadge text="内容最新" /> <MyBadge text="有手机APP" /> <MyBadge text="广告信息多" type="warn" /></li>
+<li><a href="https://www.sxt.cn/Java_jQuery_in_action/History_Direction.html" target="_blank" rel="noopener noreferrer">速学堂 Java教程</a><MyBadge text="内容比较简洁" /> <MyBadge text="需结合视频学习" /></li>
 </ul>
 <h4 id="视频"> 视频</h4>
 <ul>
@@ -13415,6 +13466,7 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
 &amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;https://img.shields.io/badge/%E5%90%8E%E7%AB%AF-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80-blue.svg&amp;quot; alt=&amp;quot;img&amp;quot;&amp;gt;   &amp;lt;img src=&amp;quot;https://img.shields.io/badge/%E5%90%8E%E7%AB%AF-%E6%A1%86%E6%9E%B6-blue.svg&amp;quot; alt=&amp;quot;img&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
 &amp;lt;/blockquote&amp;gt;
 </description>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/%E5%90%8E%E7%AB%AF-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80-blue.svg" alt="img">   <img src="https://img.shields.io/badge/%E5%90%8E%E7%AB%AF-%E6%A1%86%E6%9E%B6-blue.svg" alt="img"></p>
 </blockquote>
@@ -13595,6 +13647,7 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>编程开发</category>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80-blue.svg" alt=""> <img src="https://img.shields.io/badge/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80-blue.svg" alt=""> <img src="https://img.shields.io/badge/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-blue.svg" alt="">  <img src="https://img.shields.io/badge/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91-blue.svg" alt=""> <img src="https://img.shields.io/badge/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91-blue.svg" alt=""> <img src="https://img.shields.io/badge/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91-blue.svg" alt=""> <img src="https://img.shields.io/badge/%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99-blue.svg" alt=""></p>
 </blockquote>
@@ -13627,13 +13680,13 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
 <h3 id="杂牌网站"> 杂牌网站</h3>
 <ul>
 <li>
-<p><a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer">菜鸟教程</a> <i>Not supported content</i></p>
+<p><a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer">菜鸟教程</a> <MyBadge text="内容比较新" /></p>
 </li>
 <li>
-<p><a href="https://www.w3cschool.cn" target="_blank" rel="noopener noreferrer">w3cschool</a> <i>Not supported content</i> <i>Not supported content</i> <i>Not supported content</i></p>
+<p><a href="https://www.w3cschool.cn" target="_blank" rel="noopener noreferrer">w3cschool</a> <MyBadge text="内容最新" /> <MyBadge text="有手机APP" /> <MyBadge text="广告信息多" type="warn" /></p>
 </li>
 <li>
-<p><a href="http://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer">w3school</a> <i>Not supported content</i></p>
+<p><a href="http://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer">w3school</a> <MyBadge text="内容比较旧" type="warn" /></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -13644,12 +13697,14 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
       <link>http://qiqi.dreamagain.top/</link>
       <guid>http://qiqi.dreamagain.top/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">七七部落 | 主页</source>
+      <pubDate>Tue, 16 Feb 2021 17:39:43 GMT</pubDate>
     </item>
     <item>
       <title>非关系型数据库</title>
       <link>http://qiqi.dreamagain.top/software/database/NoSQL/</link>
       <guid>http://qiqi.dreamagain.top/software/database/NoSQL/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">非关系型数据库</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="一、redis"> 一、Redis</h2>
 <p><img src="./assets/image-20210316153254142.png" alt="image-20210316153254142"></p>
 <h3 id="一-redis是什么"> （一）redis是什么?</h3>
@@ -13707,6 +13762,7 @@ calendar.setTimeInMillis(zdt.toEpochSecond() * 1000);
       <guid>http://qiqi.dreamagain.top/software/database/NoSQL/Redis/redis-advance/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">Redis 进阶</source>
       <category>数据库</category>
+      <pubDate>Wed, 31 Mar 2021 05:51:25 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="redis-数据备份与恢复"> Redis 数据备份与恢复</h2>
 <h3 id="一-数据备份"> （一）数据备份</h3>
 <p>Redis <strong>SAVE</strong> 命令用于创建当前数据库的备份。</p>
@@ -14124,6 +14180,7 @@ with pipelining 0.250783 seconds
       <guid>http://qiqi.dreamagain.top/software/database/NoSQL/Redis/redis-base/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">Redis 基础</source>
       <category>数据库</category>
+      <pubDate>Wed, 31 Mar 2021 05:51:25 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="一、redis-简介"> 一、Redis 简介</h2>
 <h3 id="一-redis-简介"> （一）Redis 简介</h3>
 <p>Redis 是完全开源免费的，遵守BSD协议，是一个高性能的key-value数据库。</p>
@@ -14543,6 +14600,7 @@ OK
       <guid>http://qiqi.dreamagain.top/software/database/NoSQL/Redis/redis-cmd/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">Redis 命令</source>
       <category>数据库</category>
+      <pubDate>Wed, 31 Mar 2021 05:51:25 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="一、redis-命令"> 一、Redis 命令</h2>
 <p>Redis 命令用于在 redis 服务上执行操作。</p>
 <p>要在 redis 服务上执行命令需要一个 redis 客户端。Redis 客户端在我们之前下载的的 redis 的安装包中。</p>
@@ -15671,6 +15729,7 @@ db3:keys<span>=</span><span>1</span>,expires<span>=</span><span>0</span>,avg_ttl
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>数据库</category>
+      <pubDate>Wed, 31 Mar 2021 05:51:25 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/DDL-Data_Definition_Language-blue.svg" alt=""></p>
 </blockquote>
@@ -16293,6 +16352,7 @@ alter table 表 modify column 字段名 字段类型 约束;
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>数据库</category>
+      <pubDate>Wed, 31 Mar 2021 05:51:25 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/DML-Data_Manipulation_Language-blue.svg" alt=""></p>
 </blockquote>
@@ -16496,6 +16556,7 @@ sql99语法：
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>数据库</category>
+      <pubDate>Wed, 31 Mar 2021 05:51:25 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/DQL-Data_Query_Language-blue.svg" alt=""></p>
 </blockquote>
@@ -18106,6 +18167,7 @@ page
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>数据库</category>
+      <pubDate>Wed, 31 Mar 2021 05:51:25 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/TCL-Transaction_Control_Language-blue.svg" alt=""></p>
 </blockquote>
@@ -18271,6 +18333,7 @@ SELECT * FROM account;
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>数据库</category>
+      <pubDate>Wed, 31 Mar 2021 05:51:25 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/MySQL-%E7%B4%A2%E5%BC%95-blue.svg" alt=""></p>
 </blockquote>
@@ -18492,6 +18555,7 @@ mysql<span>></span> <span>select</span> <span>count</span><span>(</span><span>di
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>数据库</category>
+      <pubDate>Wed, 31 Mar 2021 05:51:25 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p>​	<img src="https://img.shields.io/badge/MySQL-%E7%AE%80%E4%BB%8B-blue.svg" alt=""></p>
 </blockquote>
@@ -18721,6 +18785,7 @@ alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;xzx123456&#39;;
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>数据库</category>
+      <pubDate>Wed, 31 Mar 2021 05:51:25 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/MySQL%E5%9F%BA%E7%A1%80-%E5%85%B6%E4%BB%96-blue.svg" alt=""></p>
 </blockquote>
@@ -19632,6 +19697,7 @@ while(i&lt;=insertCount){
       <link>http://qiqi.dreamagain.top/software/database/SQL/</link>
       <guid>http://qiqi.dreamagain.top/software/database/SQL/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">常用关系型数据库</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h1 id="常用关系型数据库"> 常用关系型数据库</h1>
 <h2 id="一、mysql"> 一、MySQL</h2>
 <h2 id="二、oracle"> 二、Oracle</h2>
@@ -19644,6 +19710,7 @@ while(i&lt;=insertCount){
       <link>http://qiqi.dreamagain.top/software/database/</link>
       <guid>http://qiqi.dreamagain.top/software/database/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">数据库</source>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h1 id="数据库"> 数据库</h1>
 <h2 id="一、关系型数据库与非关系型数据库的区别"> 一、关系型数据库与非关系型数据库的区别</h2>
 <h2 id="二、关系型数据库"> 二、关系型数据库</h2>
@@ -19658,6 +19725,7 @@ while(i&lt;=insertCount){
       <description>&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;https://img.shields.io/badge/nvm-blue.svg&amp;quot; alt=&amp;quot;&amp;quot;&amp;gt;  &amp;lt;img src=&amp;quot;https://img.shields.io/badge/Node.js-blue.svg&amp;quot; alt=&amp;quot;&amp;quot;&amp;gt; ![](https://img.shields.io/badge/npm -blue.svg)  &amp;lt;img src=&amp;quot;https://img.shields.io/badge/yarn-blue.svg&amp;quot; alt=&amp;quot;&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
 </description>
       <category>软件使用</category>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<p><img src="https://img.shields.io/badge/nvm-blue.svg" alt="">  <img src="https://img.shields.io/badge/Node.js-blue.svg" alt=""> ![](https://img.shields.io/badge/npm -blue.svg)  <img src="https://img.shields.io/badge/yarn-blue.svg" alt=""></p>
 
 <p>对于Node.js的爱好者来说，必然希望能够在同一台机器上安装多个版本的Node.js(至少两个：稳定版和最新版)。稳定版用来在实际生产项目中使用，最新版本用来研究Node.js的新特性、踩坑。</p>
@@ -19927,6 +19995,7 @@ while(i&lt;=insertCount){
       <guid>http://qiqi.dreamagain.top/software/tool/online/common/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">常用工具</source>
       <category>在线工具</category>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="一、搜索类在线工具"> 一、搜索类在线工具</h2>
 <ol>
 <li><a href="https://searchcode.com/" target="_blank" rel="noopener noreferrer">SearchCode</a> 是一个源码搜索引擎，目前支持从 Github、Bitbucket、Google Code、CodePlex、SourceForge 和 Fedora Project 平台搜索公开的源码。</li>
@@ -20005,6 +20074,7 @@ while(i&lt;=insertCount){
       <guid>http://qiqi.dreamagain.top/software/tool/online/website/</guid>
       <source url="http://qiqi.dreamagain.top/rss.xml">在线工具网站整理</source>
       <category>在线工具</category>
+      <pubDate>Thu, 18 Feb 2021 01:11:00 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7-blue.svg" alt=""> <img src="https://img.shields.io/badge/%E6%95%B4%E7%90%86%E7%AF%87-blue.svg" alt=""></p>
 </blockquote>
@@ -20035,6 +20105,7 @@ while(i&lt;=insertCount){
 &amp;lt;/blockquote&amp;gt;
 </description>
       <category>软件使用</category>
+      <pubDate>Wed, 31 Mar 2021 05:51:25 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p><img src="https://img.shields.io/badge/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E6%A2%AF%E5%AD%90-blue.svg" alt=""></p>
 </blockquote>
