@@ -16,6 +16,10 @@ project:
     type: project
     link: /software/
 
+  - name: 阅读书屋
+    type: link
+    link: /ebook/
+
 #  - name: 面试相关
 #    type: project
 #    link: /interview/

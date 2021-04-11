@@ -1,7 +1,7 @@
 ---
 home: true
 title: 七七部落 | 主页
-heroImage: /logo.png
+heroImage: /images/index/kaisi.png
 heroText: 七七部落 | 主页
 tagline: Actions speak louder than words
 # 不显示主页的图标、描述
