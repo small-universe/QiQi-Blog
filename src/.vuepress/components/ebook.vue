@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import examplesData from '../data/examplesData'
+// import examplesData from '../data/examplesData'
 export default {
   data () {
     return {
