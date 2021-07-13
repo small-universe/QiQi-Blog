@@ -13,4 +13,5 @@
 
 - [使用案例](http://qiqi.dreamagain.top)
 
-- [在线开发](https://codesandbox.io/s/github/small-universe/qiqi-tribe/tree/dev?file=/src/.vuepress/config.js)
+- [在线开发](https://codesandbox.io/s/github/small-universe/qiqi-tribe/tree/feature?file=/src/.vuepress/config.js)
+
